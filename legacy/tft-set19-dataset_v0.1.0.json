@@ -1,0 +1,1211 @@
+{
+  "set": 19,
+  "name": "Prismatic Tour",
+  "snapshot": "2026-11-15 pre-release reveal",
+  "source": "Riot Dev Drop 2026-11-15, champion and trait details compiled by TFT Ninja",
+  "champions": [
+    {
+      "id": "c0",
+      "name": "Elise",
+      "cost": 1,
+      "traits": [
+        "Ionic Spark",
+        "Frontman"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c1",
+      "name": "Gnar",
+      "cost": 1,
+      "traits": [
+        "Pentakill",
+        "Trickshot"
+      ],
+      "role": "Attack Specialist",
+      "unlock": false
+    },
+    {
+      "id": "c2",
+      "name": "Katarina",
+      "cost": 1,
+      "traits": [
+        "Classical",
+        "Slayer"
+      ],
+      "role": "Magic Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c3",
+      "name": "Kayn",
+      "cost": 1,
+      "traits": [
+        "Heartsteel",
+        "Slayer"
+      ],
+      "role": "Attack Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c4",
+      "name": "Kennen",
+      "cost": 1,
+      "traits": [
+        "True Damage",
+        "Bodyguard"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c5",
+      "name": "Kobuko",
+      "cost": 1,
+      "traits": [
+        "Hyperpop",
+        "Frontman"
+      ],
+      "role": "Magic Tank",
+      "unlock": true
+    },
+    {
+      "id": "c6",
+      "name": "Lillia",
+      "cost": 1,
+      "traits": [
+        "K/DA",
+        "Bodyguard"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c7",
+      "name": "Neeko",
+      "cost": 1,
+      "traits": [
+        "K/DA",
+        "Encore",
+        "Prodigy"
+      ],
+      "role": "Magic Caster",
+      "unlock": false
+    },
+    {
+      "id": "c8",
+      "name": "Olaf",
+      "cost": 1,
+      "traits": [
+        "Pentakill",
+        "Rock",
+        "Juggernaut"
+      ],
+      "role": "Attack Tank",
+      "unlock": false
+    },
+    {
+      "id": "c9",
+      "name": "Sett",
+      "cost": 1,
+      "traits": [
+        "Heartsteel",
+        "Frontman"
+      ],
+      "role": "Attack Tank",
+      "unlock": false
+    },
+    {
+      "id": "c10",
+      "name": "Taric",
+      "cost": 1,
+      "traits": [
+        "Beach Pop",
+        "Juggernaut"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c11",
+      "name": "Varus",
+      "cost": 1,
+      "traits": [
+        "Rock",
+        "Encore"
+      ],
+      "role": "Attack Caster",
+      "unlock": false
+    },
+    {
+      "id": "c12",
+      "name": "Yunara",
+      "cost": 1,
+      "traits": [
+        "Ionic Spark",
+        "Swiftstriker"
+      ],
+      "role": "Attack Marksman",
+      "unlock": false
+    },
+    {
+      "id": "c13",
+      "name": "Ziggs",
+      "cost": 1,
+      "traits": [
+        "Hyperpop",
+        "Arcanist",
+        "Swiftstriker"
+      ],
+      "role": "Magic Marksman",
+      "unlock": false
+    },
+    {
+      "id": "c14",
+      "name": "Zoe",
+      "cost": 1,
+      "traits": [
+        "Beach Pop",
+        "Arcanist"
+      ],
+      "role": "Magic Caster",
+      "unlock": false
+    },
+    {
+      "id": "c15",
+      "name": "Annie",
+      "cost": 2,
+      "traits": [
+        "Ionic Spark",
+        "Arcanist",
+        "Juggernaut"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c16",
+      "name": "Ashe",
+      "cost": 2,
+      "traits": [
+        "Beach Pop",
+        "Swiftstriker"
+      ],
+      "role": "Attack Marksman",
+      "unlock": true
+    },
+    {
+      "id": "c17",
+      "name": "Camille",
+      "cost": 2,
+      "traits": [
+        "Rock",
+        "Slayer"
+      ],
+      "role": "Attack Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c18",
+      "name": "Ezreal",
+      "cost": 2,
+      "traits": [
+        "Heartsteel",
+        "Encore"
+      ],
+      "role": "Attack Caster",
+      "unlock": false
+    },
+    {
+      "id": "c19",
+      "name": "Gragas",
+      "cost": 2,
+      "traits": [
+        "K/DA",
+        "Juggernaut"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c20",
+      "name": "Illaoi",
+      "cost": 2,
+      "traits": [
+        "Illbeats",
+        "Frontman"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c21",
+      "name": "Jax",
+      "cost": 2,
+      "traits": [
+        "EDM",
+        "Bodyguard",
+        "Swiftstriker"
+      ],
+      "role": "Magic Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c22",
+      "name": "Karthus",
+      "cost": 2,
+      "traits": [
+        "Pentakill",
+        "Arcanist"
+      ],
+      "role": "Magic Caster",
+      "unlock": false
+    },
+    {
+      "id": "c23",
+      "name": "Lucian",
+      "cost": 2,
+      "traits": [
+        "Jazz",
+        "Hitmaker",
+        "Encore"
+      ],
+      "role": "Attack Caster",
+      "unlock": false
+    },
+    {
+      "id": "c24",
+      "name": "Lulu",
+      "cost": 2,
+      "traits": [
+        "Hyperpop",
+        "Choreographer"
+      ],
+      "role": "Magic Caster",
+      "unlock": true
+    },
+    {
+      "id": "c25",
+      "name": "Lux",
+      "cost": 2,
+      "traits": [
+        "Ionic Spark",
+        "Prodigy"
+      ],
+      "role": "Magic Caster",
+      "unlock": false
+    },
+    {
+      "id": "c26",
+      "name": "Nasus",
+      "cost": 2,
+      "traits": [
+        "Classical",
+        "Bodyguard"
+      ],
+      "role": "Magic Tank",
+      "unlock": true
+    },
+    {
+      "id": "c27",
+      "name": "Qiyana",
+      "cost": 2,
+      "traits": [
+        "True Damage",
+        "Renegade"
+      ],
+      "role": "Attack Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c28",
+      "name": "Renata Glasc",
+      "cost": 2,
+      "traits": [
+        "Classical",
+        "Choreographer"
+      ],
+      "role": "Magic Caster",
+      "unlock": true
+    },
+    {
+      "id": "c29",
+      "name": "Renekton",
+      "cost": 2,
+      "traits": [
+        "Beach Pop",
+        "Frontman"
+      ],
+      "role": "Attack Tank",
+      "unlock": false
+    },
+    {
+      "id": "c30",
+      "name": "Samira",
+      "cost": 2,
+      "traits": [
+        "Classical",
+        "Renegade",
+        "Trickshot"
+      ],
+      "role": "Attack Caster",
+      "unlock": true
+    },
+    {
+      "id": "c31",
+      "name": "Seraphine",
+      "cost": 2,
+      "traits": [
+        "Indie"
+      ],
+      "role": "Magic Caster",
+      "unlock": true
+    },
+    {
+      "id": "c32",
+      "name": "Tristana",
+      "cost": 2,
+      "traits": [
+        "Hyperpop",
+        "Hitmaker"
+      ],
+      "role": "Attack Caster",
+      "unlock": true
+    },
+    {
+      "id": "c33",
+      "name": "Amumu",
+      "cost": 3,
+      "traits": [
+        "Emo"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c34",
+      "name": "Bard",
+      "cost": 3,
+      "traits": [
+        "Jazz",
+        "Swiftstriker"
+      ],
+      "role": "Magic Marksman",
+      "unlock": false
+    },
+    {
+      "id": "c35",
+      "name": "Braum",
+      "cost": 3,
+      "traits": [
+        "Illbeats",
+        "Juggernaut"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c36",
+      "name": "Briar",
+      "cost": 3,
+      "traits": [
+        "Ionic Spark",
+        "Slayer"
+      ],
+      "role": "Attack Assassin",
+      "unlock": false
+    },
+    {
+      "id": "c37",
+      "name": "Draven",
+      "cost": 3,
+      "traits": [
+        "Illbeats",
+        "Trickshot"
+      ],
+      "role": "Attack Caster",
+      "unlock": false
+    },
+    {
+      "id": "c38",
+      "name": "Ekko",
+      "cost": 3,
+      "traits": [
+        "True Damage",
+        "Juggernaut",
+        "Prodigy"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c39",
+      "name": "Evelynn",
+      "cost": 3,
+      "traits": [
+        "K/DA",
+        "Renegade"
+      ],
+      "role": "Magic Fighter",
+      "unlock": true
+    },
+    {
+      "id": "c40",
+      "name": "Galio",
+      "cost": 3,
+      "traits": [
+        "Jazz",
+        "Frontman"
+      ],
+      "role": "Magic Tank",
+      "unlock": true
+    },
+    {
+      "id": "c41",
+      "name": "K'Sante",
+      "cost": 3,
+      "traits": [
+        "Heartsteel",
+        "Bodyguard"
+      ],
+      "role": "Attack Tank",
+      "unlock": false
+    },
+    {
+      "id": "c42",
+      "name": "Kai'Sa",
+      "cost": 3,
+      "traits": [
+        "K/DA",
+        "Trickshot"
+      ],
+      "role": "Attack Marksman",
+      "unlock": false
+    },
+    {
+      "id": "c43",
+      "name": "Malzahar",
+      "cost": 3,
+      "traits": [
+        "Composer",
+        "Prodigy"
+      ],
+      "role": "Magic Caster",
+      "unlock": false
+    },
+    {
+      "id": "c44",
+      "name": "Senna",
+      "cost": 3,
+      "traits": [
+        "True Damage",
+        "Hitmaker"
+      ],
+      "role": "Attack Caster",
+      "unlock": false
+    },
+    {
+      "id": "c45",
+      "name": "Swain",
+      "cost": 3,
+      "traits": [
+        "Rock",
+        "Arcanist",
+        "Frontman"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c46",
+      "name": "Syndra",
+      "cost": 3,
+      "traits": [
+        "Beach Pop",
+        "Choreographer"
+      ],
+      "role": "Magic Caster",
+      "unlock": true
+    },
+    {
+      "id": "c47",
+      "name": "Tibbers",
+      "cost": 3,
+      "traits": [
+        "Ionic Spark",
+        "Bodyguard"
+      ],
+      "role": "Attack Tank",
+      "unlock": true
+    },
+    {
+      "id": "c48",
+      "name": "Viego",
+      "cost": 3,
+      "traits": [
+        "Pentakill",
+        "Choreographer",
+        "Slayer"
+      ],
+      "role": "Attack Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c49",
+      "name": "Ahri",
+      "cost": 4,
+      "traits": [
+        "K/DA",
+        "Choreographer"
+      ],
+      "role": "Magic Caster",
+      "unlock": false
+    },
+    {
+      "id": "c50",
+      "name": "Alistar",
+      "cost": 4,
+      "traits": [
+        "Country"
+      ],
+      "role": "Magic Tank",
+      "unlock": true
+    },
+    {
+      "id": "c51",
+      "name": "Alune",
+      "cost": 4,
+      "traits": [
+        "Heartsteel",
+        "Manager",
+        "Prodigy"
+      ],
+      "role": "Magic Caster",
+      "unlock": true
+    },
+    {
+      "id": "c52",
+      "name": "Aurora",
+      "cost": 4,
+      "traits": [
+        "Ionic Spark",
+        "Renegade"
+      ],
+      "role": "Magic Caster",
+      "unlock": false
+    },
+    {
+      "id": "c53",
+      "name": "Garen",
+      "cost": 4,
+      "traits": [
+        "Synthwave",
+        "Choreographer"
+      ],
+      "role": "Attack Tank",
+      "unlock": false
+    },
+    {
+      "id": "c54",
+      "name": "Graves",
+      "cost": 4,
+      "traits": [
+        "Beach Pop",
+        "Renegade"
+      ],
+      "role": "Attack Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c55",
+      "name": "Jhin",
+      "cost": 4,
+      "traits": [
+        "Classical",
+        "Encore"
+      ],
+      "role": "Attack Specialist",
+      "unlock": false
+    },
+    {
+      "id": "c56",
+      "name": "Jinx",
+      "cost": 4,
+      "traits": [
+        "Ionic Spark",
+        "Hitmaker"
+      ],
+      "role": "Attack Marksman",
+      "unlock": true
+    },
+    {
+      "id": "c57",
+      "name": "Kayle",
+      "cost": 4,
+      "traits": [
+        "Pentakill",
+        "Swiftstriker"
+      ],
+      "role": "Magic Marksman",
+      "unlock": true
+    },
+    {
+      "id": "c58",
+      "name": "Leona",
+      "cost": 4,
+      "traits": [
+        "K/DA",
+        "Bodyguard",
+        "Manager"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c59",
+      "name": "Locke",
+      "cost": 4,
+      "traits": [
+        "Rock",
+        "Swiftstriker"
+      ],
+      "role": "Magic Assassin",
+      "unlock": false
+    },
+    {
+      "id": "c60",
+      "name": "Mel",
+      "cost": 4,
+      "traits": [
+        "R&B",
+        "Arcanist"
+      ],
+      "role": "Magic Caster",
+      "unlock": false
+    },
+    {
+      "id": "c61",
+      "name": "Shyvana",
+      "cost": 4,
+      "traits": [
+        "Ionic Spark",
+        "Frontman"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c62",
+      "name": "Thresh",
+      "cost": 4,
+      "traits": [
+        "Classical",
+        "Frontman"
+      ],
+      "role": "Magic Tank",
+      "unlock": true
+    },
+    {
+      "id": "c63",
+      "name": "Vayne",
+      "cost": 4,
+      "traits": [
+        "Rock",
+        "Trickshot"
+      ],
+      "role": "Attack Marksman",
+      "unlock": true
+    },
+    {
+      "id": "c64",
+      "name": "Wukong",
+      "cost": 4,
+      "traits": [
+        "Gu Feng"
+      ],
+      "role": "Attack Tank",
+      "unlock": true
+    },
+    {
+      "id": "c65",
+      "name": "Xayah",
+      "cost": 4,
+      "traits": [
+        "Gu Feng",
+        "Hitmaker"
+      ],
+      "role": "Attack Caster",
+      "unlock": false
+    },
+    {
+      "id": "c66",
+      "name": "Yasuo",
+      "cost": 4,
+      "traits": [
+        "True Damage",
+        "Slayer"
+      ],
+      "role": "Attack Fighter",
+      "unlock": true
+    },
+    {
+      "id": "c67",
+      "name": "Yone",
+      "cost": 4,
+      "traits": [
+        "Heartsteel",
+        "Slayer"
+      ],
+      "role": "Attack Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c68",
+      "name": "Yorick",
+      "cost": 4,
+      "traits": [
+        "Pentakill",
+        "Juggernaut"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c69",
+      "name": "Yuumi",
+      "cost": 4,
+      "traits": [
+        "Illbeats",
+        "Encore"
+      ],
+      "role": "Magic Caster",
+      "unlock": false
+    },
+    {
+      "id": "c70",
+      "name": "Zac",
+      "cost": 4,
+      "traits": [
+        "Beach Pop",
+        "Juggernaut"
+      ],
+      "role": "Magic Tank",
+      "unlock": true
+    },
+    {
+      "id": "c71",
+      "name": "Akali (K/DA)",
+      "cost": 5,
+      "traits": [
+        "K/DA"
+      ],
+      "role": "Attack Assassin",
+      "unlock": true
+    },
+    {
+      "id": "c72",
+      "name": "Akali (True Damage)",
+      "cost": 5,
+      "traits": [
+        "True Damage",
+        "Freestyle"
+      ],
+      "role": "Magic Fighter",
+      "unlock": true
+    },
+    {
+      "id": "c73",
+      "name": "Aphelios",
+      "cost": 5,
+      "traits": [
+        "Heartsteel"
+      ],
+      "role": "Attack Marksman",
+      "unlock": true
+    },
+    {
+      "id": "c74",
+      "name": "Dr. Mundo",
+      "cost": 5,
+      "traits": [
+        "Record Mogul",
+        "Manager"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c75",
+      "name": "Gwen",
+      "cost": 5,
+      "traits": [
+        "Ionic Spark",
+        "Melodic Heart"
+      ],
+      "role": "Magic Fighter",
+      "unlock": true
+    },
+    {
+      "id": "c76",
+      "name": "Janna",
+      "cost": 5,
+      "traits": [
+        "Gu Feng",
+        "Windblessed",
+        "Prodigy"
+      ],
+      "role": "Magic Caster",
+      "unlock": true
+    },
+    {
+      "id": "c77",
+      "name": "Lee Sin",
+      "cost": 5,
+      "traits": [
+        "Gu Feng"
+      ],
+      "role": "Attack Fighter",
+      "unlock": true
+    },
+    {
+      "id": "c78",
+      "name": "Miss Fortune",
+      "cost": 5,
+      "traits": [
+        "8-Bit",
+        "Hitmaker"
+      ],
+      "role": "Attack Caster",
+      "unlock": false
+    },
+    {
+      "id": "c79",
+      "name": "Mordekaiser",
+      "cost": 5,
+      "traits": [
+        "Pentakill"
+      ],
+      "role": "Magic Fighter",
+      "unlock": true
+    },
+    {
+      "id": "c80",
+      "name": "Nidalee",
+      "cost": 5,
+      "traits": [
+        "Mariachi",
+        "Choreographer"
+      ],
+      "role": "Magic Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c81",
+      "name": "Nunu & Willump",
+      "cost": 5,
+      "traits": [
+        "Disco",
+        "Frontman"
+      ],
+      "role": "Magic Specialist",
+      "unlock": false
+    },
+    {
+      "id": "c82",
+      "name": "Pyke",
+      "cost": 5,
+      "traits": [
+        "Rock",
+        "Renegade"
+      ],
+      "role": "Attack Fighter",
+      "unlock": true
+    },
+    {
+      "id": "c83",
+      "name": "Rell",
+      "cost": 5,
+      "traits": [
+        "R&B",
+        "Beat Master"
+      ],
+      "role": "Magic Tank",
+      "unlock": false
+    },
+    {
+      "id": "c84",
+      "name": "Taliyah",
+      "cost": 5,
+      "traits": [
+        "Beach Pop",
+        "Encore"
+      ],
+      "role": "Magic Caster",
+      "unlock": true
+    },
+    {
+      "id": "c85",
+      "name": "Teemo",
+      "cost": 5,
+      "traits": [
+        "Hyperpop",
+        "Hype Man"
+      ],
+      "role": "Magic Caster",
+      "unlock": true
+    },
+    {
+      "id": "c86",
+      "name": "Twisted Fate",
+      "cost": 5,
+      "traits": [
+        "Tango",
+        "Trickshot"
+      ],
+      "role": "Magic Marksman",
+      "unlock": false
+    },
+    {
+      "id": "c87",
+      "name": "Vi",
+      "cost": 5,
+      "traits": [
+        "EDM",
+        "Juggernaut"
+      ],
+      "role": "Attack Fighter",
+      "unlock": false
+    },
+    {
+      "id": "c88",
+      "name": "Vladimir",
+      "cost": 5,
+      "traits": [
+        "Classical",
+        "Arcanist"
+      ],
+      "role": "Magic Fighter",
+      "unlock": true
+    },
+    {
+      "id": "c89",
+      "name": "Zeri",
+      "cost": 5,
+      "traits": [
+        "Goth",
+        "Swiftstriker"
+      ],
+      "role": "Attack Caster",
+      "unlock": false
+    },
+    {
+      "id": "c90",
+      "name": "Baron Nashor",
+      "cost": 7,
+      "traits": [
+        "One Monster Band"
+      ],
+      "role": "Attack Fighter",
+      "unlock": true
+    },
+    {
+      "id": "c91",
+      "name": "Rakan",
+      "cost": 7,
+      "traits": [
+        "Boy Band"
+      ],
+      "role": "Magic Assassin",
+      "unlock": true
+    },
+    {
+      "id": "c92",
+      "name": "Smeech",
+      "cost": 7,
+      "traits": [
+        "Jazz",
+        "Slayer"
+      ],
+      "role": "Attack Specialist",
+      "unlock": true
+    },
+    {
+      "id": "c93",
+      "name": "Sona",
+      "cost": 7,
+      "traits": [
+        "Producer",
+        "Collab"
+      ],
+      "role": "Magic Specialist",
+      "unlock": true
+    }
+  ],
+  "traits": {
+    "Arcanist": [
+      2,
+      4,
+      6
+    ],
+    "Beach Pop": [
+      3,
+      5,
+      7
+    ],
+    "Bodyguard": [
+      2,
+      4,
+      6
+    ],
+    "Choreographer": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "Classical": [
+      2,
+      4,
+      6
+    ],
+    "EDM": [
+      2
+    ],
+    "Encore": [
+      2,
+      4
+    ],
+    "Frontman": [
+      2,
+      4,
+      6
+    ],
+    "Gu Feng": [
+      2,
+      3,
+      4
+    ],
+    "Heartsteel": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "Hitmaker": [
+      2,
+      4
+    ],
+    "Hyperpop": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "Illbeats": [
+      2,
+      3,
+      4
+    ],
+    "Ionic Spark": [
+      3,
+      5,
+      7,
+      10
+    ],
+    "Jazz": [
+      2,
+      3,
+      4
+    ],
+    "Juggernaut": [
+      2,
+      4,
+      6
+    ],
+    "K/DA": [
+      3,
+      5,
+      7,
+      10,
+      13,
+      15,
+      21
+    ],
+    "Manager": [
+      2,
+      3,
+      4
+    ],
+    "Pentakill": [
+      3,
+      5,
+      7
+    ],
+    "Prodigy": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "R&B": [
+      1,
+      2
+    ],
+    "Renegade": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "Rock": [
+      3,
+      4,
+      5,
+      7
+    ],
+    "Slayer": [
+      2,
+      4,
+      6
+    ],
+    "Swiftstriker": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "Trickshot": [
+      2,
+      3,
+      4
+    ],
+    "True Damage": [
+      3,
+      5,
+      10
+    ]
+  },
+  "uniqueTraits": [
+    "8-Bit",
+    "Beat Master",
+    "Boy Band",
+    "Collab",
+    "Composer",
+    "Country",
+    "Disco",
+    "Emo",
+    "Freestyle",
+    "Goth",
+    "Hype Man",
+    "Indie",
+    "Mariachi",
+    "Melodic Heart",
+    "One Monster Band",
+    "Producer",
+    "Record Mogul",
+    "Synthwave",
+    "Tango",
+    "Windblessed"
+  ]
+}

@@ -1,0 +1,1332 @@
+{
+ "meta": {
+  "set": 19,
+  "patch": "Dev Drop (pre-PBE)",
+  "source": [
+   "Riot Games Set 19 Dev Drop (2026-11-15), transcribed by TFT Ninja",
+   "https://tft.ninja/sets/19/traits"
+  ],
+  "updated": "2026-11-15",
+  "status": "preview",
+  "count": 47,
+  "note": "수치(%/스탯)는 Dev Drop에서 비공개. 단계(브레이크포인트)만 사용."
+ },
+ "traits": [
+  {
+   "id": "arcanist",
+   "name": "Arcanist",
+   "nameKo": "비전 마법사",
+   "type": "trait",
+   "description": "Your team gains Ability Power, Arcanists gain more.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Ability Power, more for Arcanists"
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Ability Power, more for Arcanists"
+    },
+    {
+     "min": 6,
+     "effect": "Bonus Ability Power, more for Arcanists"
+    }
+   ],
+   "champions": [
+    "Ziggs",
+    "Zoe",
+    "Annie",
+    "Karthus",
+    "Swain",
+    "Mel",
+    "Vladimir"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "beach-pop",
+   "name": "Beach Pop",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Gain placeable instruments that empower adjacent allies. Empowered allies regenerate a portion of their Health periodically. Empowered Beach Pop champions gain Attack Speed and also regenerate Mana periodically.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "1 Instrument; bonus Attack Speed, Mana regeneration"
+    },
+    {
+     "min": 5,
+     "effect": "2 Instruments; bonus Attack Speed, Mana regeneration"
+    },
+    {
+     "min": 7,
+     "effect": "AND periodically, an ocean breeze heals Beach Pop champions and grants them Mana."
+    }
+   ],
+   "champions": [
+    "Taric",
+    "Zoe",
+    "Ashe",
+    "Renekton",
+    "Syndra",
+    "Graves",
+    "Zac",
+    "Taliyah"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "bodyguard",
+   "name": "Bodyguard",
+   "nameKo": null,
+   "type": "trait",
+   "description": "While at least one Bodyguard is alive, your team gains bonus Armor and Magic Resist. Bodyguards gain more.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Armor and Magic Resist for Bodyguards"
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Armor and Magic Resist for Bodyguards"
+    },
+    {
+     "min": 6,
+     "effect": "Bonus Armor and Magic Resist for Bodyguards"
+    }
+   ],
+   "champions": [
+    "Kennen",
+    "Lillia",
+    "Jax",
+    "Nasus",
+    "K'Sante",
+    "Tibbers",
+    "Leona"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "choreographer",
+   "name": "Choreographer",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Allies who start in the front 2 rows gain Shield. All other allies gain Damage Amp. Choreographers gain double.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Shield; Damage Amp"
+    },
+    {
+     "min": 3,
+     "effect": "Shield; Damage Amp"
+    },
+    {
+     "min": 4,
+     "effect": "Shield; Damage Amp"
+    },
+    {
+     "min": 5,
+     "effect": "Shield; Damage Amp"
+    }
+   ],
+   "champions": [
+    "Lulu",
+    "Renata Glasc",
+    "Syndra",
+    "Viego",
+    "Ahri",
+    "Garen",
+    "Nidalee"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "classical",
+   "name": "Classical",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Classical champions Captivate enemies in unique ways. They gain Damage Amp, increased periodically while an enemy is Captivated.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Damage Amp; the Captivated deal reduced damage."
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Damage Amp; the Captivated throw roses on death, healing a Classical champion."
+    },
+    {
+     "min": 6,
+     "effect": "Bonus Damage Amp; the Captivated have a chance to join your bench on death."
+    }
+   ],
+   "champions": [
+    "Katarina",
+    "Nasus",
+    "Renata Glasc",
+    "Samira",
+    "Jhin",
+    "Thresh",
+    "Vladimir"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "edm",
+   "name": "EDM",
+   "nameKo": null,
+   "type": "trait",
+   "description": "EDM Abilities become harder, better, faster, and stronger.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "EDM Abilities become harder, better, faster, and stronger."
+    }
+   ],
+   "champions": [
+    "Jax",
+    "Vi"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "encore",
+   "name": "Encore",
+   "nameKo": null,
+   "type": "trait",
+   "description": "When Encore champions fire projectiles with their abilities, they fire an extra one with reduced effectiveness.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Reduced projectile effectiveness"
+    },
+    {
+     "min": 4,
+     "effect": "Reduced projectile effectiveness"
+    }
+   ],
+   "champions": [
+    "Neeko",
+    "Varus",
+    "Ezreal",
+    "Lucian",
+    "Jhin",
+    "Yuumi",
+    "Taliyah"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "frontman",
+   "name": "Frontman",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Your team gains bonus Health. Frontmen gain more, which increases after the first time they cast.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Health, increased after the first cast"
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Health, increased after the first cast"
+    },
+    {
+     "min": 6,
+     "effect": "Bonus Health, increased after the first cast"
+    }
+   ],
+   "champions": [
+    "Elise",
+    "Kobuko",
+    "Sett",
+    "Illaoi",
+    "Renekton",
+    "Galio",
+    "Swain",
+    "Shyvana",
+    "Thresh",
+    "Nunu & Willump"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "gu-feng",
+   "name": "Gu Feng",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Gu Feng champions gain stats, scaling with your player level.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Attack Damage and Ability Power, plus Armor and Magic Resist per level."
+    },
+    {
+     "min": 3,
+     "effect": "and bonus Health per level."
+    },
+    {
+     "min": 4,
+     "effect": "Choose between two Scrolls that can be equipped by Gu Feng champions. One of the Scrolls opens a dangerous path to Level 11."
+    }
+   ],
+   "champions": [
+    "Wukong",
+    "Xayah",
+    "Janna",
+    "Lee Sin"
+   ],
+   "status": "preview",
+   "notes": [
+    "4단계: 두 두루마리 중 하나를 선택, 하나는 레벨 11 경로를 연다(설명)."
+   ]
+  },
+  {
+   "id": "heartsteel",
+   "name": "Heartsteel",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Prismatic: Buckle up—HEARTSTEEL IS BACK! Sett: Health Kayn: Attack Damage Ezreal: Critical Strike Chance K'Sante: Armor and Magic Resist Alune: Ability Power Yone: Omnivamp Aphelios: Attack Speed Emblem: Durability Sona: Increased Healing and Shielding",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Heartsteel members grant your team bonuses."
+    },
+    {
+     "min": 3,
+     "effect": "Choose a Bias, empowering their Ability."
+    },
+    {
+     "min": 5,
+     "effect": "Choose a 2nd Bias."
+    },
+    {
+     "min": 7,
+     "effect": "Heartsteel champions gain an additional portion of active Heartsteel bonuses."
+    }
+   ],
+   "champions": [
+    "Kayn",
+    "Sett",
+    "Ezreal",
+    "K'Sante",
+    "Alune",
+    "Yone",
+    "Aphelios"
+   ],
+   "status": "preview",
+   "notes": [],
+   "prismaticEligible": true
+  },
+  {
+   "id": "hitmaker",
+   "name": "Hitmaker",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Hitmakers gain bonus Attack Damage. The Hitmakers with the most items become Big Shots, gaining even more Attack Damage.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Big Shot, bonus Attack Damage"
+    },
+    {
+     "min": 4,
+     "effect": "Big Shots, bonus Attack Damage"
+    }
+   ],
+   "champions": [
+    "Lucian",
+    "Tristana",
+    "Senna",
+    "Jinx",
+    "Xayah",
+    "Miss Fortune"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "hyperpop",
+   "name": "Hyperpop",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Hyperpop champions gain Health and Attack Speed. After player combat, they generate 4/6/12/40 Hype based on their star level + 1 Hype per takedown. Each time you hit a new Hype Level, gain special rewards! At higher trait tiers, gain more Hype!",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Health, bonus Attack Speed"
+    },
+    {
+     "min": 3,
+     "effect": "Bonus Health, bonus Attack Speed, Hype multiplier"
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Health, bonus Attack Speed, Hype multiplier"
+    },
+    {
+     "min": 5,
+     "effect": "Bonus Health, bonus Attack Speed, Hype multiplier"
+    }
+   ],
+   "champions": [
+    "Kobuko",
+    "Ziggs",
+    "Lulu",
+    "Tristana",
+    "Teemo"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "illbeats",
+   "name": "Illbeats",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Open the Illbeats Mixer to allocate Decibels. Illbeats champions receive different stats based on your mix. Your team gains a portion of the mix. Health Attack Damage Ability Power Gold Chance on Takedown",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Decibels"
+    },
+    {
+     "min": 3,
+     "effect": "Decibels"
+    },
+    {
+     "min": 4,
+     "effect": "Decibels. The mix is stronger."
+    }
+   ],
+   "champions": [
+    "Illaoi",
+    "Braum",
+    "Draven",
+    "Yuumi"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "ionic-spark",
+   "name": "Ionic Spark",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Fans cheer on Ionic Spark members with gifts periodically. Ionic Spark members gain Health.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "Bonus Health; Letters that restore Health and grant Attack Speed"
+    },
+    {
+     "min": 5,
+     "effect": "Bonus Health; Personalized gifts that grant Attack Damage or Ability Power"
+    },
+    {
+     "min": 7,
+     "effect": "Bonus Health; Periodically after player combat, gain gold and a consumable!"
+    },
+    {
+     "min": 10,
+     "effect": "Fans rush the stage!"
+    }
+   ],
+   "champions": [
+    "Elise",
+    "Yunara",
+    "Annie",
+    "Lux",
+    "Briar",
+    "Tibbers",
+    "Aurora",
+    "Jinx",
+    "Shyvana",
+    "Gwen"
+   ],
+   "status": "preview",
+   "notes": [],
+   "prismaticEligible": true
+  },
+  {
+   "id": "jazz",
+   "name": "Jazz",
+   "nameKo": null,
+   "type": "trait",
+   "description": "For each active trait (except uniques), your team gains bonus Health and Damage Amp.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Health, bonus Damage Amp"
+    },
+    {
+     "min": 3,
+     "effect": "Bonus Health, bonus Damage Amp"
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Health, bonus Damage Amp"
+    }
+   ],
+   "champions": [
+    "Lucian",
+    "Bard",
+    "Galio",
+    "Smeech"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "juggernaut",
+   "name": "Juggernaut",
+   "nameKo": "전쟁기계",
+   "type": "trait",
+   "description": "Juggernauts gain Durability, increasing based on their missing Health.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Base to maximum Durability"
+    },
+    {
+     "min": 4,
+     "effect": "Base to maximum Durability"
+    },
+    {
+     "min": 6,
+     "effect": "Base to maximum Durability"
+    }
+   ],
+   "champions": [
+    "Olaf",
+    "Taric",
+    "Annie",
+    "Gragas",
+    "Braum",
+    "Ekko",
+    "Yorick",
+    "Zac",
+    "Vi"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "k-da",
+   "name": "K/DA",
+   "nameKo": null,
+   "type": "trait",
+   "description": "K/DA champions release new songs based on their total star level. At Combat Start and after a delay, they gain power for each of their songs.",
+   "countMode": "stars",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "POP/STARS: Reduced max Mana."
+    },
+    {
+     "min": 5,
+     "effect": "DRUM GO DUM: Shield based on max Health."
+    },
+    {
+     "min": 7,
+     "effect": "VILLAIN: Attack Speed that decays over time."
+    },
+    {
+     "min": 10,
+     "effect": "I'LL SHOW YOU: Boost all previous effects."
+    },
+    {
+     "min": 13,
+     "effect": "WATCH ME: Stun all enemies temporarily."
+    },
+    {
+     "min": 15,
+     "effect": "FIRESTARTER: Enemies take magic damage based on their max Health over time."
+    },
+    {
+     "min": 21,
+     "effect": "GIRLS: K/DA members ascend to 4-star."
+    }
+   ],
+   "champions": [
+    "Lillia",
+    "Neeko",
+    "Gragas",
+    "Evelynn",
+    "Kai'Sa",
+    "Ahri",
+    "Leona",
+    "Akali (K/DA)"
+   ],
+   "status": "preview",
+   "notes": [],
+   "prismaticEligible": true
+  },
+  {
+   "id": "manager",
+   "name": "Manager",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Gain a Spotlight Hex. The ally who starts combat in it gains bonuses at Combat Start and periodically thereafter.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Attack Damage and Ability Power"
+    },
+    {
+     "min": 3,
+     "effect": "AND Mana"
+    },
+    {
+     "min": 4,
+     "effect": "AND they drop Gold!"
+    }
+   ],
+   "champions": [
+    "Alune",
+    "Leona",
+    "Dr. Mundo"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "pentakill",
+   "name": "Pentakill",
+   "nameKo": "펜타킬",
+   "type": "trait",
+   "description": "Pentakill members gain Attack Damage and Ability Power. The first few enemies to drop below a Health threshold are executed and summon an allied ghoul in their place.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "Bonus Attack Damage and Ability Power, a set number of enemies executed"
+    },
+    {
+     "min": 5,
+     "effect": "Bonus Attack Damage and Ability Power, a set number of enemies executed"
+    },
+    {
+     "min": 7,
+     "effect": "Bonus Attack Damage and Ability Power, a set number of enemies executed. The first enemy to die summons the Iron Maiden instead."
+    }
+   ],
+   "champions": [
+    "Gnar",
+    "Olaf",
+    "Karthus",
+    "Viego",
+    "Kayle",
+    "Yorick",
+    "Mordekaiser"
+   ],
+   "status": "preview",
+   "notes": [
+    "Dev Drop에 7이 두 번 표기됨: 두 번째 행(MOSH PIT)은 프리즘 단계로 분리."
+   ],
+   "prismatic": {
+    "min": 7,
+    "effect": "Bonus Attack Damage and Ability Power. MOSH PIT!!!!!!!",
+    "requires": "Prismatic Tour augment quest"
+   },
+   "prismaticEligible": true
+  },
+  {
+   "id": "prodigy",
+   "name": "Prodigy",
+   "nameKo": "신동",
+   "type": "trait",
+   "description": "Your team gains bonus Mana Regen. Prodigies gain more.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Mana Regen"
+    },
+    {
+     "min": 3,
+     "effect": "Bonus Mana Regen"
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Mana Regen"
+    },
+    {
+     "min": 5,
+     "effect": "Bonus Mana Regen; The lowest Health ally heals for a portion of damage dealt by Prodigies' abilities."
+    }
+   ],
+   "champions": [
+    "Neeko",
+    "Lux",
+    "Ekko",
+    "Malzahar",
+    "Alune",
+    "Janna"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "r-and-b",
+   "name": "R&B",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Your team takes less damage from abilities. / Your strongest Mel and Rell are soul-linked. A portion of damage Mel takes is redirected to Rell. Rell heals for a portion of damage dealt by Mel.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Your team takes less damage from abilities."
+    },
+    {
+     "min": 2,
+     "effect": "Your strongest Mel and Rell are soul-linked. A portion of damage Mel takes is redirected to Rell. Rell heals for a portion of damage dealt by Mel."
+    }
+   ],
+   "champions": [
+    "Mel",
+    "Rell"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "renegade",
+   "name": "Renegade",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Renegades gain Precision , Critical Strike Chance, and Critical Strike Damage.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Critical Strike Chance, bonus Critical Strike Damage"
+    },
+    {
+     "min": 3,
+     "effect": "Bonus Critical Strike Chance, bonus Critical Strike Damage"
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Critical Strike Chance, bonus Critical Strike Damage"
+    },
+    {
+     "min": 5,
+     "effect": "Bonus Critical Strike Chance, bonus Critical Strike Damage. Additionally, Renegades gain Durability."
+    }
+   ],
+   "champions": [
+    "Qiyana",
+    "Samira",
+    "Evelynn",
+    "Aurora",
+    "Graves",
+    "Pyke"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "rock",
+   "name": "Rock",
+   "nameKo": null,
+   "type": "trait",
+   "description": "The Infernal Idol grows stronger based on the star level of your Rock champions.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "Summon the Infernal Idol."
+    },
+    {
+     "min": 4,
+     "effect": "He heals for a portion of damage dealt by Rock champions."
+    },
+    {
+     "min": 5,
+     "effect": "On cast, he fires a massive blast through the most enemies!"
+    },
+    {
+     "min": 7,
+     "effect": "Periodically while he lives, bolts blast nearby enemies, repeating a portion of damage dealt by Rock champions as magic damage."
+    }
+   ],
+   "champions": [
+    "Olaf",
+    "Varus",
+    "Camille",
+    "Swain",
+    "Locke",
+    "Vayne",
+    "Pyke"
+   ],
+   "status": "preview",
+   "notes": [
+    "Infernal Idol 강도는 Rock 챔피언 별 레벨에 비례(설명). 단계 활성은 유닛 수로 계산 — PBE에서 확인 필요."
+   ]
+  },
+  {
+   "id": "slayer",
+   "name": "Slayer",
+   "nameKo": "학살자",
+   "type": "trait",
+   "description": "Slayers gain Attack Speed and Omnivamp, which increases up to a cap, based on their missing Health.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Attack Speed, bonus Omnivamp"
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Attack Speed, bonus Omnivamp"
+    },
+    {
+     "min": 6,
+     "effect": "Bonus Attack Speed, bonus Omnivamp"
+    }
+   ],
+   "champions": [
+    "Katarina",
+    "Kayn",
+    "Camille",
+    "Briar",
+    "Viego",
+    "Yasuo",
+    "Yone",
+    "Smeech"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "swiftstriker",
+   "name": "Swiftstriker",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Your team gains Attack Speed. Swiftstrikers gain more periodically, up to a stack limit.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Bonus Attack Speed per stack"
+    },
+    {
+     "min": 3,
+     "effect": "Bonus Attack Speed per stack"
+    },
+    {
+     "min": 4,
+     "effect": "Bonus Attack Speed per stack"
+    },
+    {
+     "min": 5,
+     "effect": "Bonus Attack Speed per stack"
+    }
+   ],
+   "champions": [
+    "Yunara",
+    "Ziggs",
+    "Ashe",
+    "Jax",
+    "Bard",
+    "Kayle",
+    "Locke",
+    "Zeri"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "trickshot",
+   "name": "Trickshot",
+   "nameKo": null,
+   "type": "trait",
+   "description": "Trickshots' Attacks and Abilities ricochet. Each ricochet deals a percentage of the previous bounce's damage.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Ricochets; a portion of previous damage"
+    },
+    {
+     "min": 3,
+     "effect": "Ricochets; a portion of previous damage"
+    },
+    {
+     "min": 4,
+     "effect": "Ricochets; a portion of previous damage"
+    }
+   ],
+   "champions": [
+    "Gnar",
+    "Samira",
+    "Draven",
+    "Kai'Sa",
+    "Vayne",
+    "Twisted Fate"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "true-damage",
+   "name": "True Damage",
+   "nameKo": null,
+   "type": "trait",
+   "description": "While on the A-Side, earn Bling for winning player combat. On the B-Side, earn Bling for losing. Periodically, choose to convert Bling into rewards or Keep Rising. A-Side: Win Prismatic: KNOW MY NAME blasts from the record player! True Damage members deal 99% bonus true damage and earn double the bling. B-Side: Lose Prismatic: GIANTS blasts from the record player! True Damage members deal 99% bonus true damage and drop gold on kill.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "A-Side: True Damage members deal bonus true damage. Gain Bling on kill + additional Bling if you win combat. / B-Side: After losing, gain Bling + additional Bling per consecutive loss on the B-Side. If you win, lose a portion of your Bling."
+    },
+    {
+     "min": 5,
+     "effect": "A-Side: Bonus true damage. Bling on kill + additional Bling if you win combat. / B-Side: Each round after combat, heal some player Health and gain XP."
+    }
+   ],
+   "champions": [
+    "Kennen",
+    "Qiyana",
+    "Ekko",
+    "Senna",
+    "Yasuo",
+    "Akali (True Damage)"
+   ],
+   "status": "preview",
+   "notes": [
+    "기존 v0.1.0 데이터의 10 단계는 Dev Drop에 없음 → 제거. A/B 사이드 각각 3/5."
+   ],
+   "sides": {
+    "A": [
+     "True Damage members deal bonus true damage. Gain Bling on kill + additional Bling if you win combat.",
+     "Bonus true damage. Bling on kill + additional Bling if you win combat."
+    ],
+    "B": [
+     "After losing, gain Bling + additional Bling per consecutive loss on the B-Side. If you win, lose a portion of your Bling.",
+     "Each round after combat, heal some player Health and gain XP."
+    ]
+   },
+   "prismatic": {
+    "min": null,
+    "effect": "A: KNOW MY NAME / B: GIANTS (설명 참고)",
+    "requires": "Prismatic Tour augment quest"
+   },
+   "prismaticEligible": true
+  },
+  {
+   "id": "8-bit",
+   "name": "8-Bit",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Keep score of your team's damage dealt, with Miss Fortune’s damage contributing triple. When you beat a high score, get a prize.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Keep score of your team's damage dealt, with Miss Fortune’s damage contributing triple. When you beat a high score, get a prize."
+    }
+   ],
+   "champions": [
+    "Miss Fortune"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "beat-master",
+   "name": "Beat Master",
+   "nameKo": null,
+   "type": "unique",
+   "description": "While mounted, her max Mana is reduced and every 3rd attack deals a portion of her total Armor and Magic Resist as magic damage in a line.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "At a threshold of her max Health, Rell mounts up and fully heals over time."
+    }
+   ],
+   "champions": [
+    "Rell"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "boy-band",
+   "name": "Boy Band",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Rakan is accompanied by placeable clones that have a portion of his max Health, deal damage, and copy his Completed and Radiant items.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Rakan is accompanied by placeable clones that have a portion of his max Health, deal damage, and copy his Completed and Radiant items."
+    }
+   ],
+   "champions": [
+    "Rakan"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "collab",
+   "name": "Collab",
+   "nameKo": null,
+   "type": "rotating",
+   "description": "Collab champions become inspired after taking or dealing damage a set number of times, gaining Attack Damage and Ability Power. Every time you reach the required number of inspirations during player combat, gain copies of Collab champions. Each game a different set of champions gain the Collab trait!",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "Bonus Attack Damage and Ability Power"
+    },
+    {
+     "min": 5,
+     "effect": "Bonus Attack Damage and Ability Power"
+    }
+   ],
+   "champions": [
+    "Sona"
+   ],
+   "status": "preview",
+   "notes": [
+    "게임마다 Collab 특성을 받는 챔피언이 바뀜. Dev Drop 기준 고정 보유자는 Sona뿐 → 팀 빌더에서 수동 지정 가능."
+   ]
+  },
+  {
+   "id": "composer",
+   "name": "Composer",
+   "nameKo": null,
+   "type": "unique",
+   "description": "For each one you have, your team gains bonus Ability Power. Malzahar gains double. If he has dealt enough damage and you have all 5 instruments, Malzahar writes his masterpiece, unlocking Baron Nashor.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Mystical Instruments can appear in your shop. There is one of each rarity."
+    }
+   ],
+   "champions": [
+    "Malzahar"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "country",
+   "name": "Country",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Combat Start: If your strongest Alistar has enough bonus Health, he gains Durability.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Combat Start: If your strongest Alistar has enough bonus Health, he gains Durability."
+    }
+   ],
+   "champions": [
+    "Alistar"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "disco",
+   "name": "Disco",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Enter Disco Fever after casting enough times, granting your team Attack Speed.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Your team heals for a portion of max Health per second."
+    }
+   ],
+   "champions": [
+    "Nunu & Willump"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "emo",
+   "name": "Emo",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Amumu gains bonus Armor and Magic Resist if he starts combat with no adjacent allies.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Amumu gains bonus Armor and Magic Resist if he starts combat with no adjacent allies."
+    }
+   ],
+   "champions": [
+    "Amumu"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "freestyle",
+   "name": "Freestyle",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores Player Health.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores Player Health."
+    }
+   ],
+   "champions": [
+    "Akali (True Damage)"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "goth",
+   "name": "Goth",
+   "nameKo": null,
+   "type": "unique",
+   "description": "The first time your strongest Zeri damages an enemy each combat, vampiric bats steal some Attack Damage from them, bringing it back to her.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "The first time your strongest Zeri damages an enemy each combat, vampiric bats steal some Attack Damage from them, bringing it back to her."
+    }
+   ],
+   "champions": [
+    "Zeri"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "hype-man",
+   "name": "Hype Man",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Whenever a Hyperpop champion deals enough damage or takes enough damage, store an extra Hyperpop Hype.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Whenever a Hyperpop champion deals enough damage or takes enough damage, store an extra Hyperpop Hype."
+    }
+   ],
+   "champions": [
+    "Teemo"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "indie",
+   "name": "Indie",
+   "nameKo": null,
+   "type": "unique",
+   "description": "When you 3-star a champion, she becomes a Rising Star, upgrading her Ability and granting you a special subscriber reward. After 3-starring enough champions, she becomes a Superstar!",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "After combat, Seraphine attracts new followers, granting you a random champion."
+    }
+   ],
+   "champions": [
+    "Seraphine"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "mariachi",
+   "name": "Mariachi",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Whenever she drops below a Health threshold, she leaps away and transforms back to Human form.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "When Nidalee casts her Ability while above a Health threshold, she transforms into Cougar Form and casts Pounce Party. Otherwise, she casts Dance of Life."
+    }
+   ],
+   "champions": [
+    "Nidalee"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "melodic-heart",
+   "name": "Melodic Heart",
+   "nameKo": null,
+   "type": "unique",
+   "description": "For the opening moments of combat, your strongest Gwen is surrounded by Mist and cannot be targeted by attacks. Allies gain Durability while within the Mist.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "For the opening moments of combat, your strongest Gwen is surrounded by Mist and cannot be targeted by attacks. Allies gain Durability while within the Mist."
+    }
+   ],
+   "champions": [
+    "Gwen"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "one-monster-band",
+   "name": "One Monster Band",
+   "nameKo": null,
+   "type": "unique",
+   "description": "After the first time Baron Nashor casts, he envelops the board in song, stealing a portion of the Attack Damage, Ability Power, Attack Speed, and Critical Strike Chance from all enemies.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Baron Nashor takes up 2 team slots and is unstoppable."
+    }
+   ],
+   "champions": [
+    "Baron Nashor"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "producer",
+   "name": "Producer",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Sona converts all bonus Attack Damage and Attack Speed into Ability Power.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "When Sona is fielded, choose a band to feature, gaining their trait."
+    }
+   ],
+   "champions": [
+    "Sona"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "record-mogul",
+   "name": "Record Mogul",
+   "nameKo": null,
+   "type": "unique",
+   "description": "The Record Contract is returned when the Recording Artist is sold or benched.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Gain a Record Contract now and periodically thereafter. Contracted champions gain Damage Amp and their kills grant Dr. Mundo permanent Health."
+    }
+   ],
+   "champions": [
+    "Dr. Mundo"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "synthwave",
+   "name": "Synthwave",
+   "nameKo": null,
+   "type": "unique",
+   "description": "At a Health threshold, gain a temporary Shield equal to a portion of Healing and Shielding received this combat.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "At a Health threshold, gain a temporary Shield equal to a portion of Healing and Shielding received this combat."
+    }
+   ],
+   "champions": [
+    "Garen"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "tango",
+   "name": "Tango",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Twisted Fate marks the nearest ally as his Tango Partner. They ignite with passion, gaining Attack Speed. Their damage Burns and Wounds enemies for a time."
+    }
+   ],
+   "champions": [
+    "Twisted Fate"
+   ],
+   "status": "preview",
+   "notes": []
+  },
+  {
+   "id": "windblessed",
+   "name": "Windblessed",
+   "nameKo": null,
+   "type": "unique",
+   "description": "Combat Start: Your strongest Janna releases a tornado that travels forward, knocking up enemies in its path.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Combat Start: Your strongest Janna releases a tornado that travels forward, knocking up enemies in its path."
+    }
+   ],
+   "champions": [
+    "Janna"
+   ],
+   "status": "preview",
+   "notes": []
+  }
+ ]
+}

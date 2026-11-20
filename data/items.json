@@ -1,0 +1,1798 @@
+{
+ "meta": {
+  "set": 19,
+  "patch": "PBE 16.24 (Set 19, 2026-11-20)",
+  "source": [
+   "PBE 16.24 game data via Blitz.gg Set 19 pages (feed updated 2026-11-20)",
+   "https://blitz.gg/tft/set19"
+  ],
+  "updated": "2026-11-20",
+  "status": "pbe",
+  "count": 145,
+  "note": "Set 19 PBE 아이템 목록. 한국어 이름은 이름이 같은 Set 18 아이템에서 유지"
+ },
+ "items": [
+  {
+   "id": "b-f-sword",
+   "apiName": "DA_Component_BFSword",
+   "name": "B.F. Sword",
+   "nameKo": "B.F. 대검",
+   "type": "component",
+   "recipe": null,
+   "stats": "공격력 +10%",
+   "description": "AD +10% Attack Damage",
+   "status": "pbe"
+  },
+  {
+   "id": "chain-vest",
+   "apiName": "DA_Component_ChainVest",
+   "name": "Chain Vest",
+   "nameKo": "쇠사슬 조끼",
+   "type": "component",
+   "recipe": null,
+   "stats": "방어력 +20",
+   "description": "Armor +20 Armor",
+   "status": "pbe"
+  },
+  {
+   "id": "frying-pan",
+   "apiName": "DA_Component_FryingPan",
+   "name": "Frying Pan",
+   "nameKo": "프라이팬",
+   "type": "component",
+   "recipe": null,
+   "stats": "",
+   "description": "...why else would it be here?",
+   "status": "pbe"
+  },
+  {
+   "id": "giants-belt",
+   "apiName": "DA_Component_GiantsBelt",
+   "name": "Giant's Belt",
+   "nameKo": "거인의 허리띠",
+   "type": "component",
+   "recipe": null,
+   "stats": "체력 +150",
+   "description": "Health +150 Health",
+   "status": "pbe"
+  },
+  {
+   "id": "needlessly-large-rod",
+   "apiName": "DA_Component_NeedlesslyLargeRod",
+   "name": "Needlessly Large Rod",
+   "nameKo": "쓸데없이 큰 지팡이",
+   "type": "component",
+   "recipe": null,
+   "stats": "주문력 +10",
+   "description": "AP +10% Ability Power",
+   "status": "pbe"
+  },
+  {
+   "id": "negatron-cloak",
+   "apiName": "DA_Component_NegatronCloak",
+   "name": "Negatron Cloak",
+   "nameKo": "음전자 망토",
+   "type": "component",
+   "recipe": null,
+   "stats": "마법 저항력 +20",
+   "description": "MR +20 Magic Resist",
+   "status": "pbe"
+  },
+  {
+   "id": "recurve-bow",
+   "apiName": "DA_Component_RecurveBow",
+   "name": "Recurve Bow",
+   "nameKo": "곡궁",
+   "type": "component",
+   "recipe": null,
+   "stats": "공격 속도 +10%",
+   "description": "Attack Speed +10% Attack Speed",
+   "status": "pbe"
+  },
+  {
+   "id": "sparring-gloves",
+   "apiName": "DA_Component_SparringGloves",
+   "name": "Sparring Gloves",
+   "nameKo": "연습용 장갑",
+   "type": "component",
+   "recipe": null,
+   "stats": "치명타 확률 +20%",
+   "description": "Crit Chance +20% Critical Strike Chance",
+   "status": "pbe"
+  },
+  {
+   "id": "spatula",
+   "apiName": "DA_Component_Spatula",
+   "name": "Spatula",
+   "nameKo": "뒤집개",
+   "type": "component",
+   "recipe": null,
+   "stats": "",
+   "description": "It must do something...",
+   "status": "pbe"
+  },
+  {
+   "id": "tear-of-the-goddess",
+   "apiName": "DA_Component_TearOfTheGoddess",
+   "name": "Tear Of The Goddess",
+   "nameKo": "여신의 눈물",
+   "type": "component",
+   "recipe": null,
+   "stats": "",
+   "description": "Mana Regen +1 Mana Regeneration",
+   "status": "pbe"
+  },
+  {
+   "id": "adaptive-helm",
+   "apiName": "DA_AdaptiveHelm",
+   "name": "Adaptive Helm",
+   "nameKo": "적응형 투구",
+   "type": "completed",
+   "recipe": [
+    "negatron-cloak",
+    "tear-of-the-goddess"
+   ],
+   "stats": "마법 저항력 +20",
+   "description": "Gain an additional 15% Mana from all sources. The wearer gains an additional bonus based on their Role: Tanks and Fighters: Gain 30 Armor and Magic Resistance. Other Roles: Gain 10% Attack Damage and Ability Power.",
+   "status": "pbe"
+  },
+  {
+   "id": "arcanist-emblem",
+   "apiName": "DA_Arcanist19_Emblem",
+   "name": "Arcanist Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "frying-pan",
+    "needlessly-large-rod"
+   ],
+   "stats": "",
+   "description": "The holder gains the Arcanist trait. Gain 10 Mana on kill.",
+   "status": "pbe",
+   "grantsTrait": "Arcanist"
+  },
+  {
+   "id": "archangels-staff",
+   "apiName": "DA_ArchangelsStaff",
+   "name": "Archangel's Staff",
+   "nameKo": "대천사의 지팡이",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "tear-of-the-goddess"
+   ],
+   "stats": "주문력 +30",
+   "description": "Gain 20% Ability Power every 5 seconds in combat.",
+   "status": "pbe"
+  },
+  {
+   "id": "bloodthirster",
+   "apiName": "DA_Bloodthirster",
+   "name": "Bloodthirster",
+   "nameKo": "피바라기",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "negatron-cloak"
+   ],
+   "stats": "공격력 +15%, 주문력 +15, 마법 저항력 +20",
+   "description": "Once per combat at 60% Health, gain a 25% max Health Shield. After this effect triggers gain 15% Omnivamp for the rest of combat.",
+   "status": "pbe"
+  },
+  {
+   "id": "blue-buff",
+   "apiName": "DA_BlueBuff",
+   "name": "Blue Buff",
+   "nameKo": "푸른 파수꾼",
+   "type": "completed",
+   "recipe": [
+    "tear-of-the-goddess",
+    "tear-of-the-goddess"
+   ],
+   "stats": "공격력 +15%, 주문력 +15",
+   "description": "Combat Start: Gain 10 Mana.",
+   "status": "pbe"
+  },
+  {
+   "id": "bodyguard-emblem",
+   "apiName": "DA_Bodyguard19_Emblem",
+   "name": "Bodyguard Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "chain-vest",
+    "frying-pan"
+   ],
+   "stats": "",
+   "description": "The holder gains the Bodyguard trait. Gain Attack Damage equal to 20% of total Armor and Ability Power equal to 20% of total Magic Resist.",
+   "status": "pbe",
+   "grantsTrait": "Bodyguard"
+  },
+  {
+   "id": "bramble-vest",
+   "apiName": "DA_BrambleVest",
+   "name": "Bramble Vest",
+   "nameKo": "덤불 조끼",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "chain-vest"
+   ],
+   "stats": "방어력 +50",
+   "description": "Gain 6% max Health. Take 5% reduced damage from attacks. When struck by any attack, deal 100 magic damage to all adjacent enemies. Cooldown: 2 seconds",
+   "status": "pbe"
+  },
+  {
+   "id": "choreographer-emblem",
+   "apiName": "DA_Choreographer19_Emblem",
+   "name": "Choreographer Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder gains the Choreographer trait and an additional bonus based on if they're placed in the front 2 rows or back 2 rows. Front: 25% increased healing and shielding. Back: 20% Attack Speed and additional movement speed. Elusive - Cannot be crafted.",
+   "status": "pbe",
+   "grantsTrait": "Choreographer"
+  },
+  {
+   "id": "crownguard",
+   "apiName": "DA_Crownguard",
+   "name": "Crownguard",
+   "nameKo": "크라운가드",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "needlessly-large-rod"
+   ],
+   "stats": "주문력 +20, 방어력 +20, 체력 +100",
+   "description": "Combat start: Gain a 20% max Health Shield for 8 seconds. All healing and shielding applied to the holder is increased by 25%.",
+   "status": "pbe"
+  },
+  {
+   "id": "deathblade",
+   "apiName": "DA_Deathblade",
+   "name": "Deathblade",
+   "nameKo": "죽음의 검",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "b-f-sword"
+   ],
+   "stats": "공격력 +55%, 피해 증폭 +10%",
+   "description": "Gain 15% additional Attack Damage from all sources.",
+   "status": "pbe"
+  },
+  {
+   "id": "rock-emblem",
+   "apiName": "DA_DemonVision19_Emblem",
+   "name": "Rock Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "sparring-gloves",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "The holder gains the Rock trait.",
+   "status": "pbe",
+   "grantsTrait": "Rock"
+  },
+  {
+   "id": "dragons-claw",
+   "apiName": "DA_DragonsClaw",
+   "name": "Dragon's Claw",
+   "nameKo": "용의 발톱",
+   "type": "completed",
+   "recipe": [
+    "negatron-cloak",
+    "negatron-cloak"
+   ],
+   "stats": "마법 저항력 +60",
+   "description": "Gain 6% max Health. Every 2 seconds, heal 2.5% max Health.",
+   "status": "pbe"
+  },
+  {
+   "id": "edge-of-night",
+   "apiName": "DA_EdgeOfNight",
+   "name": "Edge of Night",
+   "nameKo": "밤의 끝자락",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "chain-vest"
+   ],
+   "stats": "공격력 +10%, 주문력 +10, 공격 속도 +15%, 방어력 +20",
+   "description": "At 40% Health, briefly become untargetable, shed negative effects, and heal 15% missing health.",
+   "status": "pbe"
+  },
+  {
+   "id": "evenshroud",
+   "apiName": "DA_Evenshroud",
+   "name": "Evenshroud",
+   "nameKo": "저녁갑주",
+   "type": "completed",
+   "recipe": [
+    "giants-belt",
+    "negatron-cloak"
+   ],
+   "stats": "마법 저항력 +20, 체력 +250",
+   "description": "30% Sunder enemies within 2 hexes. Gain 15 Armor and Magic Resist for the first 15 seconds of combat. Sunder: Reduce Armor",
+   "status": "pbe"
+  },
+  {
+   "id": "frontman-emblem",
+   "apiName": "DA_Frontman19_Emblem",
+   "name": "Frontman Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "frying-pan",
+    "giants-belt"
+   ],
+   "stats": "",
+   "description": "The holder gains the Frontman trait. Every 5 seconds, the next attack deals 12% of the holder's max Health as magic damage.",
+   "status": "pbe",
+   "grantsTrait": "Frontman"
+  },
+  {
+   "id": "gargoyle-stoneplate",
+   "apiName": "DA_GargoyleStoneplate",
+   "name": "Gargoyle Stoneplate",
+   "nameKo": "가고일 돌갑옷",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "negatron-cloak"
+   ],
+   "stats": "방어력 +25, 마법 저항력 +25, 체력 +100",
+   "description": "Gain 10 Armor and 10 Magic Resist for each enemy targeting the holder.",
+   "status": "pbe"
+  },
+  {
+   "id": "giant-slayer",
+   "apiName": "DA_GiantSlayer",
+   "name": "Giant Slayer",
+   "nameKo": "거인 학살자",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "recurve-bow"
+   ],
+   "stats": "공격력 +15%, 주문력 +15, 공격 속도 +15%",
+   "description": "Gain 15% additional Damage Amp against Tanks.",
+   "status": "pbe"
+  },
+  {
+   "id": "hyperpop-emblem",
+   "apiName": "DA_GlitterBomb19_Emblem",
+   "name": "Hyperpop Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder gains the Hyperpop trait. Elusive - Cannot be crafted.",
+   "status": "pbe",
+   "grantsTrait": "Hyperpop"
+  },
+  {
+   "id": "guinsoos-rageblade",
+   "apiName": "DA_GuinsoosRageblade",
+   "name": "Guinsoo's Rageblade",
+   "nameKo": "구인수의 격노검",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "recurve-bow"
+   ],
+   "stats": "주문력 +10, 공격 속도 +10%",
+   "description": "Gain 7% stacking Attack Speed every second.",
+   "status": "pbe"
+  },
+  {
+   "id": "hand-of-justice",
+   "apiName": "DA_HandOfJustice",
+   "name": "Hand Of Justice",
+   "nameKo": "정의의 손길",
+   "type": "completed",
+   "recipe": [
+    "sparring-gloves",
+    "tear-of-the-goddess"
+   ],
+   "stats": "치명타 확률 +20%",
+   "description": "Gain 2 effects: • 18% Attack Damage and 18% Ability Power. • 12% Omnivamp. While above 50% health, double the Attack Damage and Ability Power. While below 50% Health, double the Omnivamp.",
+   "status": "pbe"
+  },
+  {
+   "id": "heartsteel-emblem",
+   "apiName": "DA_Heartsteel19_Emblem",
+   "name": "Heartsteel Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "chain-vest",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "The holder gains the Heartsteel trait. Bias Effect: Gain 125% of every Heartsteel bonus.",
+   "status": "pbe",
+   "grantsTrait": "Heartsteel"
+  },
+  {
+   "id": "hextech-gunblade",
+   "apiName": "DA_HextechGunblade",
+   "name": "Hextech Gunblade",
+   "nameKo": "마법공학 총검",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "needlessly-large-rod"
+   ],
+   "stats": "공격력 +20%, 주문력 +20",
+   "description": "Heal the lowest percent Health ally for 20% of damage dealt. Ally Healing: ?",
+   "status": "pbe"
+  },
+  {
+   "id": "hitmaker-emblem",
+   "apiName": "DA_Hitmaker19_Emblem",
+   "name": "Hitmaker Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "b-f-sword",
+    "frying-pan"
+   ],
+   "stats": "",
+   "description": "The holder gains the Hitmaker trait. Become an additional Big Shot.",
+   "status": "pbe",
+   "grantsTrait": "Hitmaker"
+  },
+  {
+   "id": "illbeats-emblem",
+   "apiName": "DA_IllBeats19_Emblem",
+   "name": "IllBeats Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "giants-belt",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "The holder gains the IllBeats trait.",
+   "status": "pbe",
+   "grantsTrait": "Illbeats"
+  },
+  {
+   "id": "infinity-edge",
+   "apiName": "DA_InfinityEdge",
+   "name": "Infinity Edge",
+   "nameKo": "무한의 대검",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "sparring-gloves"
+   ],
+   "stats": "공격력 +35%, 치명타 확률 +35%",
+   "description": "Gain Precision. Precision: Ability damage can critically strike. Extra Precision grants 10% Critical Strike Damage.",
+   "status": "pbe"
+  },
+  {
+   "id": "ionic-spark",
+   "apiName": "DA_IonicSpark",
+   "name": "Ionic Spark",
+   "nameKo": "이온 충격기",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "negatron-cloak"
+   ],
+   "stats": "주문력 +15, 마법 저항력 +35, 체력 +250",
+   "description": "30% Shred enemies within 2 hexes. When enemies cast an Ability, deal magic damage equal to 150% of the Mana spent. Shred: Reduce Magic Resist",
+   "status": "pbe"
+  },
+  {
+   "id": "ionic-spark-emblem",
+   "apiName": "DA_IonicSpark19_Emblem",
+   "name": "Ionic Spark Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "negatron-cloak",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "The holder gains the Ionic Spark trait.",
+   "status": "pbe",
+   "grantsTrait": "Ionic Spark"
+  },
+  {
+   "id": "jazz-emblem",
+   "apiName": "DA_Jazz19_Emblem",
+   "name": "Jazz Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder gains the Jazz trait. Elusive - Cannot be crafted.",
+   "status": "pbe",
+   "grantsTrait": "Jazz"
+  },
+  {
+   "id": "jeweled-gauntlet",
+   "apiName": "DA_JeweledGauntlet",
+   "name": "Jeweled Gauntlet",
+   "nameKo": "보석 건틀릿",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "sparring-gloves"
+   ],
+   "stats": "주문력 +35, 치명타 확률 +35%",
+   "description": "Gain Precision. Precision: Ability damage can critically strike. Extra Precision grants 10% Critical Strike Damage.",
+   "status": "pbe"
+  },
+  {
+   "id": "juggernaut-emblem",
+   "apiName": "DA_Juggernaut19_Emblem",
+   "name": "Juggernaut Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder gains the Juggernaut trait and becomes unstoppable. They also gain 5% Damage Amp per 1,000 max Health. Elusive - Cannot be crafted.",
+   "status": "pbe",
+   "grantsTrait": "Juggernaut"
+  },
+  {
+   "id": "k-da-emblem",
+   "apiName": "DA_KDA19_Emblem",
+   "name": "K/DA Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "needlessly-large-rod",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "The holder gains the K/DA trait.",
+   "status": "pbe",
+   "grantsTrait": "K/DA"
+  },
+  {
+   "id": "krakens-fury",
+   "apiName": "DA_KrakensFury",
+   "name": "Kraken's Fury",
+   "nameKo": "크라켄의 분노",
+   "type": "completed",
+   "recipe": [
+    "negatron-cloak",
+    "recurve-bow"
+   ],
+   "stats": "공격력 +10%, 공격 속도 +10%, 마법 저항력 +20",
+   "description": "Attacks grant 3.5% stacking Attack Damage, up to 15 attacks. After 15 attacks, gain 15% Attack Speed.",
+   "status": "pbe"
+  },
+  {
+   "id": "last-whisper",
+   "apiName": "DA_LastWhisper",
+   "name": "Last Whisper",
+   "nameKo": "최후의 속삭임",
+   "type": "completed",
+   "recipe": [
+    "recurve-bow",
+    "sparring-gloves"
+   ],
+   "stats": "공격력 +15%, 공격 속도 +20%, 치명타 확률 +20%",
+   "description": "Attacks and Ability damage 30% Sunders the target for 3 seconds. This effect does not stack. Sunder: Reduce Armor",
+   "status": "pbe"
+  },
+  {
+   "id": "manager-emblem",
+   "apiName": "DA_Manager19_Emblem",
+   "name": "Manager Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder gains the Manager trait. On cast, grant the ally in the Spotlight Hex 20% of Mana spent. Elusive - Cannot be crafted.",
+   "status": "pbe",
+   "grantsTrait": "Manager"
+  },
+  {
+   "id": "morellonomicon",
+   "apiName": "DA_Morellonomicon",
+   "name": "Morellonomicon",
+   "nameKo": "모렐로노미콘",
+   "type": "completed",
+   "recipe": [
+    "giants-belt",
+    "needlessly-large-rod"
+   ],
+   "stats": "주문력 +20, 체력 +150",
+   "description": "Attacks and Abilities deal 1% Burn and 33% Wound to enemies for 10 seconds. Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received.",
+   "status": "pbe"
+  },
+  {
+   "id": "slayer-emblem",
+   "apiName": "DA_Mosher19_Emblem",
+   "name": "Slayer Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "frying-pan",
+    "negatron-cloak"
+   ],
+   "stats": "",
+   "description": "The holder gains the Slayer trait. Deal up to 40% more damage to enemies based on their missing Health.",
+   "status": "pbe",
+   "grantsTrait": "Slayer"
+  },
+  {
+   "id": "nashors-tooth",
+   "apiName": "DA_NashorsTooth",
+   "name": "Nashor's Tooth",
+   "nameKo": "내셔의 이빨",
+   "type": "completed",
+   "recipe": [
+    "giants-belt",
+    "recurve-bow"
+   ],
+   "stats": "주문력 +15, 공격 속도 +10%, 체력 +150, 치명타 확률 +20%",
+   "description": "Attacks grant 2 bonus Mana, increased to 4 if they critically strike.",
+   "status": "pbe"
+  },
+  {
+   "id": "beach-pop-emblem",
+   "apiName": "DA_Oceansong19_Emblem",
+   "name": "Beach Pop Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "spatula",
+    "tear-of-the-goddess"
+   ],
+   "stats": "",
+   "description": "The holder gains the Beach Pop trait.",
+   "status": "pbe",
+   "grantsTrait": "Beach Pop"
+  },
+  {
+   "id": "pentakill-emblem",
+   "apiName": "DA_Pentakill19_Emblem",
+   "name": "Pentakill Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "b-f-sword",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "The holder gains the Pentakill trait.",
+   "status": "pbe",
+   "grantsTrait": "Pentakill"
+  },
+  {
+   "id": "prodigy-emblem",
+   "apiName": "DA_Prodigy19_Emblem",
+   "name": "Prodigy Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "frying-pan",
+    "tear-of-the-goddess"
+   ],
+   "stats": "",
+   "description": "The holder gains the Prodigy trait. On cast, gain 1% max Health for every 10 Mana spent.",
+   "status": "pbe",
+   "grantsTrait": "Prodigy"
+  },
+  {
+   "id": "protectors-vow",
+   "apiName": "DA_ProtectorsVow",
+   "name": "Protector's Vow",
+   "nameKo": "수호자의 맹세",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "tear-of-the-goddess"
+   ],
+   "stats": "방어력 +25, 마법 저항력 +25",
+   "description": "Combat Start: Gain 20 Mana. At 40% Health, gain 15 Mana and a Shield equal to 20% max Health.",
+   "status": "pbe"
+  },
+  {
+   "id": "quicksilver",
+   "apiName": "DA_Quicksilver",
+   "name": "Quicksilver",
+   "nameKo": "수은",
+   "type": "completed",
+   "recipe": [
+    "negatron-cloak",
+    "sparring-gloves"
+   ],
+   "stats": "공격 속도 +15%, 마법 저항력 +20, 치명타 확률 +20%",
+   "description": "Become Unstoppable for the first 18 seconds of combat. Gain 3% stacking Attack Speed every second.",
+   "status": "pbe"
+  },
+  {
+   "id": "rabadons-deathcap",
+   "apiName": "DA_RabadonsDeathcap",
+   "name": "Rabadon's Deathcap",
+   "nameKo": "라바돈의 죽음모자",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "needlessly-large-rod"
+   ],
+   "stats": "주문력 +55, 피해 증폭 +15%",
+   "description": "Gain 15% additional Ability Power from all sources.",
+   "status": "pbe"
+  },
+  {
+   "id": "red-buff",
+   "apiName": "DA_RedBuff",
+   "name": "Red Buff",
+   "nameKo": "붉은 덩굴정령",
+   "type": "completed",
+   "recipe": [
+    "recurve-bow",
+    "recurve-bow"
+   ],
+   "stats": "공격 속도 +45%, 피해 증폭 +6%",
+   "description": "Attacks and Abilities 1% Burn and 33% Wound enemies for 5 seconds. Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received.",
+   "status": "pbe"
+  },
+  {
+   "id": "renegade-emblem",
+   "apiName": "DA_Renegade19_Emblem",
+   "name": "Renegade Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "frying-pan",
+    "sparring-gloves"
+   ],
+   "stats": "",
+   "description": "The holder gains the Renegade trait. Critical Strikes have a 50% chance to deal 40% bonus Critical Strike Damage.",
+   "status": "pbe",
+   "grantsTrait": "Renegade"
+  },
+  {
+   "id": "spear-of-shojin",
+   "apiName": "DA_SpearOfShojin",
+   "name": "Spear of Shojin",
+   "nameKo": "쇼진의 창",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "tear-of-the-goddess"
+   ],
+   "stats": "공격력 +15%, 주문력 +15",
+   "description": "Attacks grant 5 bonus Mana.",
+   "status": "pbe"
+  },
+  {
+   "id": "spirit-visage",
+   "apiName": "DA_SpiritVisage",
+   "name": "Spirit Visage",
+   "nameKo": "정령의 형상",
+   "type": "completed",
+   "recipe": [
+    "giants-belt",
+    "tear-of-the-goddess"
+   ],
+   "stats": "체력 +300",
+   "description": "Regenerate 2% of missing Health each second.",
+   "status": "pbe"
+  },
+  {
+   "id": "steadfast-heart",
+   "apiName": "DA_SteadfastHeart",
+   "name": "Steadfast Heart",
+   "nameKo": "굳건한 심장",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "sparring-gloves"
+   ],
+   "stats": "방어력 +20, 체력 +250, 치명타 확률 +20%",
+   "description": "Gain 5% Durability. While above 50% Health, instead gain 15% Durability.",
+   "status": "pbe"
+  },
+  {
+   "id": "steraks-gage",
+   "apiName": "DA_SteraksGage",
+   "name": "Sterak's Gage",
+   "nameKo": "스테락의 도전",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "giants-belt"
+   ],
+   "stats": "공격력 +45%, 체력 +300",
+   "description": "At 40% Health, gain a Shield equal to 40% of the wearer's maximum Health that rapidly decays over 4 seconds.",
+   "status": "pbe"
+  },
+  {
+   "id": "strikers-flail",
+   "apiName": "DA_StrikersFlail",
+   "name": "Striker's Flail",
+   "nameKo": "타격대의 철퇴",
+   "type": "completed",
+   "recipe": [
+    "giants-belt",
+    "sparring-gloves"
+   ],
+   "stats": "공격 속도 +10%, 체력 +150, 치명타 확률 +20%",
+   "description": "Critical Strikes grant 5% Damage Amp for 5 seconds, stacking up to 4 times.",
+   "status": "pbe"
+  },
+  {
+   "id": "sunfire-cape",
+   "apiName": "DA_SunfireCape",
+   "name": "Sunfire Cape",
+   "nameKo": "태양불꽃 망토",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "giants-belt"
+   ],
+   "stats": "방어력 +20, 체력 +150",
+   "description": "Gain 8% max Health. Every 2 seconds, deal 1% Burn and 33% Wound to an enemy within 2 hexes for 10 seconds. Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received.",
+   "status": "pbe"
+  },
+  {
+   "id": "swiftstriker-emblem",
+   "apiName": "DA_Swiftstriker19_Emblem",
+   "name": "Swiftstriker Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "frying-pan",
+    "recurve-bow"
+   ],
+   "stats": "",
+   "description": "The holder gains the Swiftstriker trait. Attacks deal ? bonus true damage. Damage increases based on Stage.",
+   "status": "pbe",
+   "grantsTrait": "Swiftstriker"
+  },
+  {
+   "id": "tacticians-cape",
+   "apiName": "DA_TacticiansCape",
+   "name": "Tactician's Cape",
+   "nameKo": "전략가의 망토",
+   "type": "special",
+   "recipe": [
+    "frying-pan",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "Your team gains +1 maximum team size. 10% chance to drop 1 gold after 10 seconds of combat....and a bit of Luck.",
+   "status": "pbe"
+  },
+  {
+   "id": "tacticians-crown",
+   "apiName": "DA_TacticiansCrown",
+   "name": "Tacticians Crown",
+   "nameKo": null,
+   "type": "special",
+   "recipe": [
+    "spatula",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "Your team gains +1 maximum team size. 10% chance to drop 1 gold when you win combat....the Heart of a hero...",
+   "status": "pbe"
+  },
+  {
+   "id": "tacticians-shield",
+   "apiName": "DA_TacticiansShield",
+   "name": "Tacticians Shield",
+   "nameKo": null,
+   "type": "special",
+   "recipe": [
+    "frying-pan",
+    "frying-pan"
+   ],
+   "stats": "",
+   "description": "Your team gains +1 maximum team size. 10% chance to drop 1 gold when the holder dies. Imbued with a Philosopher's wisdom...",
+   "status": "pbe"
+  },
+  {
+   "id": "thiefs-gloves",
+   "apiName": "DA_ThiefsGloves",
+   "name": "Thief's Gloves",
+   "nameKo": "도적의 장갑",
+   "type": "completed",
+   "recipe": [
+    "sparring-gloves",
+    "sparring-gloves"
+   ],
+   "stats": "체력 +150, 치명타 확률 +20%",
+   "description": "Each round: Equip 2 random items [Consumes 3 item slots.]",
+   "status": "pbe"
+  },
+  {
+   "id": "titans-resolve",
+   "apiName": "DA_TitansResolve",
+   "name": "Titan's Resolve",
+   "nameKo": "거인의 결의",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "recurve-bow"
+   ],
+   "stats": "공격 속도 +10%, 방어력 +20",
+   "description": "Gain 2% Attack Damage and Ability Power when attacking or taking damage, stacking up to 25 times. At full stacks, gain 15% max Health and become Unstoppable.",
+   "status": "pbe"
+  },
+  {
+   "id": "true-damage-emblem",
+   "apiName": "DA_TrueDamage19_Emblem",
+   "name": "True Damage Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder gains the True Damage trait. Elusive - Cannot be crafted.",
+   "status": "pbe",
+   "grantsTrait": "True Damage"
+  },
+  {
+   "id": "classical-emblem",
+   "apiName": "DA_Virtuosos19_Emblem",
+   "name": "Classical Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "recipe": [
+    "recurve-bow",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "The holder gains the Classical trait. Enemies hit by their Ability are Captivated for 3 seconds. Captivated enemies grant bonuses to Classical champions.",
+   "status": "pbe",
+   "grantsTrait": "Classical"
+  },
+  {
+   "id": "void-staff",
+   "apiName": "DA_VoidStaff",
+   "name": "Void Staff",
+   "nameKo": "공허의 지팡이",
+   "type": "completed",
+   "recipe": [
+    "recurve-bow",
+    "tear-of-the-goddess"
+   ],
+   "stats": "주문력 +35, 공격 속도 +15%",
+   "description": "Attacks and Ability damage 30% Shred the target for 5 seconds. This effect does not stack. Shred: Reduce Magic Resist",
+   "status": "pbe"
+  },
+  {
+   "id": "warmogs-armor",
+   "apiName": "DA_WarmogsArmor",
+   "name": "Warmog's Armor",
+   "nameKo": "워모그의 갑옷",
+   "type": "completed",
+   "recipe": [
+    "giants-belt",
+    "giants-belt"
+   ],
+   "stats": "체력 +500",
+   "description": "Gain 18% max Health.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-adaptive-helm",
+   "apiName": "DA_AdaptiveHelm_Radiant",
+   "name": "Radiant Adaptive Helm",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain an additional 30% Mana from all sources. The wearer gains an additional bonus based on their Role: Tanks and Fighters: Gain 80 Armor and Magic Resistance. Other Roles: Gain 35% Attack Damage and Ability Power.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-archangels-staff",
+   "apiName": "DA_ArchangelsStaffRadiant",
+   "name": "Radiant Archangel's Staff",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 40% Ability Power every 5 seconds in combat.",
+   "status": "pbe"
+  },
+  {
+   "id": "aegis-of-dawn",
+   "apiName": "DA_Artifact_AegisOfDawn",
+   "name": "Aegis of Dawn",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Every 2.5 seconds, steal 3 Armor from enemies within 1-hex and heal ? of the holder's Armor. If Aegis of Dusk is also equipped, trigger this item's effect every 1.25 seconds instead. Healing increases based on Stage.",
+   "status": "pbe"
+  },
+  {
+   "id": "aegis-of-dusk",
+   "apiName": "DA_Artifact_AegisOfDusk",
+   "name": "Aegis of Dusk",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Every 2.5 seconds, steal 3 Magic Resist from enemies within 1-hex and deal 18% of the holder's Magic Resist as magic damage. If Aegis of Dawn is also equipped, trigger this item's effect every 1.25 seconds instead. Damage increases based on Stage.",
+   "status": "pbe"
+  },
+  {
+   "id": "blighting-jewel",
+   "apiName": "DA_Artifact_BlightingJewel",
+   "name": "Blighting Jewel",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Dealing magic damage reduces the target’s Magic Resist by 3. If their Magic Resist is 0, grant the holder 2 Mana instead. Damage over time effects can only trigger on each enemy once every 0.5 seconds.",
+   "status": "pbe"
+  },
+  {
+   "id": "cappa-juice",
+   "apiName": "DA_Artifact_CappaJuice",
+   "name": "Cappa Juice",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder dons a Hat on each takedown. The holder gains 1% Attack Damage and Ability Power per Hat. On death lose 20% of all Hats. Current Hats: ?",
+   "status": "pbe"
+  },
+  {
+   "id": "dawncore",
+   "apiName": "DA_Artifact_Dawncore",
+   "name": "Dawncore",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Reduce the holder's max Mana by 10. Subsequent spellcasts reduce max Mana by 5%, to a minimum of 15.",
+   "status": "pbe"
+  },
+  {
+   "id": "deaths-defiance",
+   "apiName": "DA_Artifact_DeathsDefiance",
+   "name": "Death's Defiance",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "50% of the damage the holder receives is instead dealt over 4 seconds as non-lethal damage. Unique - only 1 per champion",
+   "status": "pbe"
+  },
+  {
+   "id": "eternal-pact",
+   "apiName": "DA_Artifact_EternalPact",
+   "name": "Eternal Pact",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Once per combat, bind to the highest Max Health allied champion. If they die, gain 10 Mana regen and 40% Ability Power. When the ally uses their ability, gain 10 Mana. Every 6 seconds, shield the ally for 200% of the holder's Ability Power.",
+   "status": "pbe"
+  },
+  {
+   "id": "fishbones",
+   "apiName": "DA_Artifact_Fishbones",
+   "name": "Fishbones",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder's attacks target random enemies. Gain +2 Attack Range.",
+   "status": "pbe"
+  },
+  {
+   "id": "forbidden-idol",
+   "apiName": "DA_Artifact_ForbiddenIdol",
+   "name": "Forbidden Idol",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Shields have 40% of their value converted to max Health instead.",
+   "status": "pbe"
+  },
+  {
+   "id": "gamblers-blade",
+   "apiName": "DA_Artifact_GamblersBlade",
+   "name": "Gambler's Blade",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Grant 1% bonus Attack Speed per gold in your bank (up to 30 gold). Each attack has a 6% chance to drop 1 gold. Gold generated this game: ? Unique - only 1 per champion",
+   "status": "pbe"
+  },
+  {
+   "id": "gold-collector",
+   "apiName": "DA_Artifact_GoldCollector",
+   "name": "Gold Collector",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks and Abilities execute enemies below 12% of their maximum Health. Executions on champions have a 33% chance to drop 1 gold. Gold collected: ? Unique - only 1 per champion",
+   "status": "pbe"
+  },
+  {
+   "id": "hellfire-hatchet",
+   "apiName": "DA_Artifact_HellfireHatchet",
+   "name": "Hellfire Hatchet",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks deal 3% of the holder's max Health as bonus physical damage. For every 1% missing Health, gain 1.5% Attack Speed.",
+   "status": "pbe"
+  },
+  {
+   "id": "horizon-focus",
+   "apiName": "DA_Artifact_HorizonFocus",
+   "name": "Horizon Focus",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Stunning an enemy causes lightning to strike them, dealing 30% of their max Health as magic damage.",
+   "status": "pbe"
+  },
+  {
+   "id": "hullcrusher",
+   "apiName": "DA_Artifact_Hullcrusher",
+   "name": "Hullcrusher",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Combat Start: If there are no adjacent allies, gain 400 Health, 10% Attack Damage, and 10% Ability Power.",
+   "status": "pbe"
+  },
+  {
+   "id": "infinity-force",
+   "apiName": "DA_Artifact_InfinityForce",
+   "name": "Infinity Force",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Tons of EVERYTHING!",
+   "status": "pbe"
+  },
+  {
+   "id": "lich-bane",
+   "apiName": "DA_Artifact_LichBane",
+   "name": "Lich Bane",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder’s first attack after each Ability cast deals ? bonus magic damage. Damage increases based on Stage.",
+   "status": "pbe"
+  },
+  {
+   "id": "lightshield-crest",
+   "apiName": "DA_Artifact_LightshieldCrest",
+   "name": "Lightshield Crest",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Every 3 seconds, Shield the lowest percent Health ally for 70% of the holder’s combined Armor and Magic Resist for 5 seconds. On death, grant this Shield to all allies.",
+   "status": "pbe"
+  },
+  {
+   "id": "ludens-tempest",
+   "apiName": "DA_Artifact_LudensTempest",
+   "name": "Luden's Tempest",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "100% of overkill damage plus 130 is dealt as magic damage to the two enemies nearest the target.",
+   "status": "pbe"
+  },
+  {
+   "id": "manazane",
+   "apiName": "DA_Artifact_Manazane",
+   "name": "Manazane",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "After casting the first time in combat, gain 110 Mana over 5 seconds.",
+   "status": "pbe"
+  },
+  {
+   "id": "mittens",
+   "apiName": "DA_Artifact_Mittens",
+   "name": "Mittens",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Shrinks the holder, granting them increased movement speed and immunity to Slow, Burn, and Wound. Slow: Reduces Attack Speed. Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received.",
+   "status": "pbe"
+  },
+  {
+   "id": "moguls-mail",
+   "apiName": "DA_Artifact_MogulsMail",
+   "name": "Mogul's Mail",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Grants 1 Armor, 1 Magic Resist, and 5 Health when taking damage, stacking up to 35 times. At full stacks, grant 1 gold and continue gaining 1 gold every 11 seconds. Gold generated this game: ? Unique - only 1 per champion",
+   "status": "pbe"
+  },
+  {
+   "id": "flickerblades",
+   "apiName": "DA_Artifact_NavoriFlickerblade",
+   "name": "Flickerblades",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks grant 4% stacking Attack Speed. Every 3 attacks also grant 2% Attack Damage and 2% Ability Power.",
+   "status": "pbe"
+  },
+  {
+   "id": "rapid-firecannon",
+   "apiName": "DA_Artifact_RapidFireCannon",
+   "name": "Rapid Firecannon",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain +1 Attack Range, increased by 1 whenever the holder kills an enemy.",
+   "status": "pbe"
+  },
+  {
+   "id": "seekers-armguard",
+   "apiName": "DA_Artifact_SeekersArmguard",
+   "name": "Seeker's Armguard",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Takedowns increase the holder’s Armor, Magic Resist, and Ability Power by 20.",
+   "status": "pbe"
+  },
+  {
+   "id": "silvermere-dawn",
+   "apiName": "DA_Artifact_SilvermereDawn",
+   "name": "Silvermere Dawn",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Grants immunity to Stuns and the holder's attacks Stun the target for 0.8 seconds. The holder’s Attack Speed is locked at 0.5.",
+   "status": "pbe"
+  },
+  {
+   "id": "snipers-focus",
+   "apiName": "DA_Artifact_SnipersFocus",
+   "name": "Sniper's Focus",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 40% Damage Amp against targets 4 or more hexes away.",
+   "status": "pbe"
+  },
+  {
+   "id": "statikk-shiv",
+   "apiName": "DA_Artifact_StatikkShiv",
+   "name": "Statikk Shiv",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Every 3rd attack deals 15 + 35% of the holder's Ability Power as additional magic damage to 6 enemies.",
+   "status": "pbe"
+  },
+  {
+   "id": "the-indomitable",
+   "apiName": "DA_Artifact_TheIndomitable",
+   "name": "The Indomitable",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "The holder's Move Speed is drastically reduced. Gain 15% max Health, become unstoppable, and pull the current target into melee range.",
+   "status": "pbe"
+  },
+  {
+   "id": "titanic-hydra",
+   "apiName": "DA_Artifact_TitanicHydra",
+   "name": "Titanic Hydra",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks deal 2% of the holder's max Health plus 4% of their Attack Damage as bonus physical damage to the target and adjacent enemies.",
+   "status": "pbe"
+  },
+  {
+   "id": "void-gauntlet",
+   "apiName": "DA_Artifact_VoidGauntlet",
+   "name": "Void Gauntlet",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Store 30% max Health plus 2.5% more every second. On death, unleash the stored Health as magic damage split between enemies within 4 hexes. Unique - only 1 per champion",
+   "status": "pbe"
+  },
+  {
+   "id": "wits-end",
+   "apiName": "DA_Artifact_WitsEnd",
+   "name": "Wit's End",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks deal ? bonus magic damage. Heals the holder for 25% of all magic damage dealt. Damage increases based on Stage.",
+   "status": "pbe"
+  },
+  {
+   "id": "zhonyas-paradox",
+   "apiName": "DA_Artifact_ZhonyasParadox",
+   "name": "Zhonya's Paradox",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "Once per combat at 40% Health, become invulnerable, unstoppable, and untargetable for 3 seconds. Unique - only 1 per champion",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-bloodthirster",
+   "apiName": "DA_BloodthirsterRadiant",
+   "name": "Radiant Bloodthirster",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Once per combat at 60% Health, gain a 50% max Health Shield. After this effect triggers gain 30% Omnivamp for the rest of combat.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-blue-buff",
+   "apiName": "DA_BlueBuffRadiant",
+   "name": "Radiant Blue Buff",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Combat Start: Gain 20 Mana.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-bramble-vest",
+   "apiName": "DA_BrambleVestRadiant",
+   "name": "Radiant Bramble Vest",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 12% max Health. Take 10% reduced damage from attacks. When struck by any attack, deal 200 magic damage to all adjacent enemies. Cooldown: 2 seconds",
+   "status": "pbe"
+  },
+  {
+   "id": "chalice-of-power",
+   "apiName": "DA_ChaliceOfPower",
+   "name": "Chalice of Power",
+   "nameKo": null,
+   "type": "support",
+   "recipe": null,
+   "stats": "",
+   "description": "Grant 25% Ability Power and 1 Mana Regen to the holder and allies within 2 hexes in the same row.",
+   "status": "pbe"
+  },
+  {
+   "id": "prismatic-crownguard",
+   "apiName": "DA_CrownguardRadiant",
+   "name": "Prismatic Crownguard",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Combat start: Gain a 30% max Health Shield for 8 seconds. All healing and shielding applied to the holder is increased by 50%.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-deathblade",
+   "apiName": "DA_DeathbladeRadiant",
+   "name": "Radiant Deathblade",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 30% additional Attack Damage from all sources.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-dragons-claw",
+   "apiName": "DA_DragonsClawRadiant",
+   "name": "Radiant Dragon's Claw",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 28% max Health. Every 2 seconds, heal 5% max Health.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-edge-of-night",
+   "apiName": "DA_EdgeOfNightRadiant",
+   "name": "Radiant Edge of Night",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "At 40% Health, briefly become untargetable, shed negative effects, and heal all missing health.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-evenshroud",
+   "apiName": "DA_EvenshroudRadiant",
+   "name": "Radiant Evenshroud",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "30% Sunder enemies within 3 hexes. Gain 50 Armor and Magic Resist for the first 20 seconds of combat. Sunder: Reduce Armor",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-gargoyle-stoneplate",
+   "apiName": "DA_GargoyleStoneplate_Radiant",
+   "name": "Radiant Gargoyle Stoneplate",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 20 Armor and 20 Magic Resist for each enemy targeting the holder.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-giant-slayer",
+   "apiName": "DA_GiantSlayer_Radiant",
+   "name": "Radiant Giant Slayer",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 30% additional Damage Amp against Tanks.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-guinsoos-rageblade",
+   "apiName": "DA_GuinsoosRagebladeRadiant",
+   "name": "Radiant Guinsoo's Rageblade",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 16% stacking Attack Speed every second.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-hand-of-justice",
+   "apiName": "DA_HandOfJusticeRadiant",
+   "name": "Radiant Hand of Justice",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 2 effects: • 35% Attack Damage and 35% Ability Power. • 25% Omnivamp. While above 50% health, double the Attack Damage and Ability Power. While below 50% Health, double the Omnivamp.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-hextech-gunblade",
+   "apiName": "DA_HextechGunbladeRadiant",
+   "name": "Radiant Hextech Gunblade",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Heal the lowest percent Health ally for 40% of damage dealt. Ally Healing: ?",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-infinity-edge",
+   "apiName": "DA_InfinityEdgeRadiant",
+   "name": "Radiant Infinity Edge",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain Precision. Precision: Ability damage can critically strike. Extra Precision grants 10% Critical Strike Damage.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-ionic-spark",
+   "apiName": "DA_IonicSparkRadiant",
+   "name": "Radiant Ionic Spark",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "30% Shred enemies within 2 hexes. When enemies cast an Ability, deal magic damage equal to 300% of the Mana spent. Shred: Reduce Magic Resist",
+   "status": "pbe"
+  },
+  {
+   "id": "talisman-of-ascension",
+   "apiName": "DA_Item_Artifact_TalismanOfAscension",
+   "name": "Talisman of Ascension",
+   "nameKo": null,
+   "type": "artifact",
+   "recipe": null,
+   "stats": "",
+   "description": "After 22 seconds gain 100% max Health, 12 Mana Regen, and 120% Damage Amp for the rest of combat.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-jeweled-gauntlet",
+   "apiName": "DA_JeweledGauntletRadiant",
+   "name": "Radiant Jeweled Gauntlet",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain Precision. Precision: Ability damage can critically strike. Extra Precision grants 10% Critical Strike Damage.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-krakens-fury",
+   "apiName": "DA_KrakensFury_Radiant",
+   "name": "Radiant Kraken's Fury",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks grant 7% stacking Attack Damage, up to 15 attacks. After 15 attacks, gain 30% Attack Speed.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-last-whisper",
+   "apiName": "DA_LastWhisperRadiant",
+   "name": "Radiant Last Whisper",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks and Ability damage 30% Sunders the target for the rest of combat. This effect does not stack. Sunder: Reduce Armor",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-morellonomicon",
+   "apiName": "DA_MorellonomiconRadiant",
+   "name": "Radiant Morellonomicon",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks and Abilities deal 2% Burn and 33% Wound to enemies for 10 seconds. Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-nashors-tooth",
+   "apiName": "DA_NashorsToothRadiant",
+   "name": "Radiant Nashor's Tooth",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks grant 4 bonus Mana, increased to 6 if they critically strike.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-protectors-vow",
+   "apiName": "DA_ProtectorsVowRadiant",
+   "name": "Radiant Protector's Vow",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Combat Start: Gain 40 Mana. At 40% Health, gain 30 Mana and a Shield equal to 50% max Health",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-quicksilver",
+   "apiName": "DA_QuicksilverRadiant",
+   "name": "Radiant Quicksilver",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain Unstoppable for the first 45 seconds of combat. Gain 6% stacking Attack Speed every second.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-rabadons-deathcap",
+   "apiName": "DA_RabadonsDeathcap_Radiant",
+   "name": "Radiant Rabadon's Deathcap",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 30% additional Ability Power from all sources.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-lucky-item-chest",
+   "apiName": "DA_RadiantLuckyItemChest",
+   "name": "Radiant Lucky Item Chest",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Use on a champion to open an armory of items especially suited for them. These items are based on the champion's recommended items.",
+   "status": "pbe"
+  },
+  {
+   "id": "randuins-omen",
+   "apiName": "DA_RanduinsOmen",
+   "name": "Randuin's Omen",
+   "nameKo": null,
+   "type": "support",
+   "recipe": null,
+   "stats": "",
+   "description": "Grant 33 Armor and Magic Resist to the holder and allies within 1 hex.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-red-buff",
+   "apiName": "DA_RedBuffRadiant",
+   "name": "Radiant Red Buff",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks and Abilities 2% Burn and 33% Wound enemies for 5 seconds. Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-spear-of-shojin",
+   "apiName": "DA_SpearOfShojinRadiant",
+   "name": "Radiant Spear of Shojin",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks grant 10 bonus Mana.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-spirit-visage",
+   "apiName": "DA_SpiritVisage_Radiant",
+   "name": "Radiant Spirit Visage",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Regenerate 4% of missing Health each second.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-steadfast-heart",
+   "apiName": "DA_SteadfastHeartRadiant",
+   "name": "Radiant Steadfast Heart",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 10% Durability. While above 50% Health, instead gain 30% Durability.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-steraks-gage",
+   "apiName": "DA_SteraksGageRadiant",
+   "name": "Radiant Sterak's Gage",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "At 40% Health, gain a Shield equal to 80% of the wearer's maximum Health that rapidly decays over 6 seconds.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-strikers-flail",
+   "apiName": "DA_StrikersFlailRadiant",
+   "name": "Radiant Striker's Flail",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Critical Strikes grant 10% Damage Amp for 5 seconds, stacking up to 4 times.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-sunfire-cape",
+   "apiName": "DA_SunfireCape_Radiant",
+   "name": "Radiant Sunfire Cape",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 16% max Health. Every 2 seconds, deal 2% Burn and 33% Wound to an enemy within 2 hexes for 10 seconds. Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-thiefs-gloves",
+   "apiName": "DA_ThiefsGlovesRadiant",
+   "name": "Radiant Thief's Gloves",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Each round: Equip 2 random Radiant items [Consumes 3 item slots.]",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-titans-resolve",
+   "apiName": "DA_TitansResolve_Radiant",
+   "name": "Radiant Titan's Resolve",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 4% Attack Damage and Ability Power when attacking or taking damage, stacking up to 25 times. At full stacks, gain 30% max Health and become Unstoppable.",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-void-staff",
+   "apiName": "DA_VoidStaffRadiant",
+   "name": "Radiant Void Staff",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Attacks and Ability damage 30% Shred the target for the rest of combat. This effect does not stack. Shred: Reduce Magic Resist",
+   "status": "pbe"
+  },
+  {
+   "id": "radiant-warmogs-armor",
+   "apiName": "DA_WarmogsArmorRadiant",
+   "name": "Radiant Warmog's Armor",
+   "nameKo": null,
+   "type": "radiant",
+   "recipe": null,
+   "stats": "",
+   "description": "Gain 36% max Health.",
+   "status": "pbe"
+  },
+  {
+   "id": "zzrot-portal",
+   "apiName": "DA_ZZRotPortal",
+   "name": "Zz'Rot Portal",
+   "nameKo": null,
+   "type": "support",
+   "recipe": null,
+   "stats": "",
+   "description": "Summon a large Voidspawn. Its strength increases with each Stage.",
+   "status": "pbe"
+  },
+  {
+   "id": "zekes-herald",
+   "apiName": "DA_ZekesHerald",
+   "name": "Zeke's Herald",
+   "nameKo": null,
+   "type": "support",
+   "recipe": null,
+   "stats": "",
+   "description": "Grant 33% Attack Speed to the holder and allies within 2 hexes in the same row.",
+   "status": "pbe"
+  }
+ ]
+}

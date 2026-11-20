@@ -1,0 +1,1525 @@
+{
+ "meta": {
+  "set": 19,
+  "patch": "Dev Drop (pre-PBE)",
+  "source": [
+   "Riot Games Set 19 Dev Drop (2026-11-15), transcribed by TFT Ninja",
+   "https://tft.ninja/sets/19/units",
+   "Korean names: CommunityDragon ko_kr"
+  ],
+  "updated": "2026-11-15",
+  "status": "preview",
+  "count": 94
+ },
+ "champions": [
+  {
+   "id": "elise",
+   "name": "Elise",
+   "nameKo": "엘리스",
+   "cost": 1,
+   "traits": [
+    "Ionic Spark",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "gnar",
+   "name": "Gnar",
+   "nameKo": "나르",
+   "cost": 1,
+   "traits": [
+    "Pentakill",
+    "Trickshot"
+   ],
+   "role": "Attack Specialist",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "katarina",
+   "name": "Katarina",
+   "nameKo": "카타리나",
+   "cost": 1,
+   "traits": [
+    "Classical",
+    "Slayer"
+   ],
+   "role": "Magic Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "kayn",
+   "name": "Kayn",
+   "nameKo": "케인",
+   "cost": 1,
+   "traits": [
+    "Heartsteel",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "kennen",
+   "name": "Kennen",
+   "nameKo": "케넨",
+   "cost": 1,
+   "traits": [
+    "True Damage",
+    "Bodyguard"
+   ],
+   "role": "Magic Tank",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "kobuko",
+   "name": "Kobuko",
+   "nameKo": "코부코",
+   "cost": 1,
+   "traits": [
+    "Hyperpop",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Reach the required star level on Ziggs and equip the required number of items to him.",
+   "status": "preview"
+  },
+  {
+   "id": "lillia",
+   "name": "Lillia",
+   "nameKo": "릴리아",
+   "cost": 1,
+   "traits": [
+    "K/DA",
+    "Bodyguard"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "neeko",
+   "name": "Neeko",
+   "nameKo": "니코",
+   "cost": 1,
+   "traits": [
+    "K/DA",
+    "Encore",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "olaf",
+   "name": "Olaf",
+   "nameKo": "올라프",
+   "cost": 1,
+   "traits": [
+    "Pentakill",
+    "Rock",
+    "Juggernaut"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "sett",
+   "name": "Sett",
+   "nameKo": "세트",
+   "cost": 1,
+   "traits": [
+    "Heartsteel",
+    "Frontman"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "taric",
+   "name": "Taric",
+   "nameKo": "타릭",
+   "cost": 1,
+   "traits": [
+    "Beach Pop",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "varus",
+   "name": "Varus",
+   "nameKo": "바루스",
+   "cost": 1,
+   "traits": [
+    "Rock",
+    "Encore"
+   ],
+   "role": "Attack Caster",
+   "effects": [
+    "Slow"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "yunara",
+   "name": "Yunara",
+   "nameKo": "유나라",
+   "cost": 1,
+   "traits": [
+    "Ionic Spark",
+    "Swiftstriker"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "ziggs",
+   "name": "Ziggs",
+   "nameKo": "직스",
+   "cost": 1,
+   "traits": [
+    "Hyperpop",
+    "Arcanist",
+    "Swiftstriker"
+   ],
+   "role": "Magic Marksman",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "zoe",
+   "name": "Zoe",
+   "nameKo": "조이",
+   "cost": 1,
+   "traits": [
+    "Beach Pop",
+    "Arcanist"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "annie",
+   "name": "Annie",
+   "nameKo": "애니",
+   "cost": 2,
+   "traits": [
+    "Ionic Spark",
+    "Arcanist",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Burn"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "ashe",
+   "name": "Ashe",
+   "nameKo": "애쉬",
+   "cost": 2,
+   "traits": [
+    "Beach Pop",
+    "Swiftstriker"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Equip the required number of items to a Beach Pop champion.",
+   "status": "preview"
+  },
+  {
+   "id": "camille",
+   "name": "Camille",
+   "nameKo": "카밀",
+   "cost": 2,
+   "traits": [
+    "Rock",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "ezreal",
+   "name": "Ezreal",
+   "nameKo": "이즈리얼",
+   "cost": 2,
+   "traits": [
+    "Heartsteel",
+    "Encore"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "gragas",
+   "name": "Gragas",
+   "nameKo": "그라가스",
+   "cost": 2,
+   "traits": [
+    "K/DA",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "illaoi",
+   "name": "Illaoi",
+   "nameKo": "일라오이",
+   "cost": 2,
+   "traits": [
+    "Illbeats",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "jax",
+   "name": "Jax",
+   "nameKo": "잭스",
+   "cost": 2,
+   "traits": [
+    "EDM",
+    "Bodyguard",
+    "Swiftstriker"
+   ],
+   "role": "Magic Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "karthus",
+   "name": "Karthus",
+   "nameKo": "카서스",
+   "cost": 2,
+   "traits": [
+    "Pentakill",
+    "Arcanist"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "lucian",
+   "name": "Lucian",
+   "nameKo": "루시안",
+   "cost": 2,
+   "traits": [
+    "Jazz",
+    "Hitmaker",
+    "Encore"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "lulu",
+   "name": "Lulu",
+   "nameKo": "룰루",
+   "cost": 2,
+   "traits": [
+    "Hyperpop",
+    "Choreographer"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Have your Hyperpop champions cast the required number of times with the trait active.",
+   "status": "preview"
+  },
+  {
+   "id": "lux",
+   "name": "Lux",
+   "nameKo": "럭스",
+   "cost": 2,
+   "traits": [
+    "Ionic Spark",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "nasus",
+   "name": "Nasus",
+   "nameKo": "나서스",
+   "cost": 2,
+   "traits": [
+    "Classical",
+    "Bodyguard"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Equip the required number of items to a Classical champion.",
+   "status": "preview"
+  },
+  {
+   "id": "qiyana",
+   "name": "Qiyana",
+   "nameKo": "키아나",
+   "cost": 2,
+   "traits": [
+    "True Damage",
+    "Renegade"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "renata-glasc",
+   "name": "Renata Glasc",
+   "nameKo": "레나타 글라스크",
+   "cost": 2,
+   "traits": [
+    "Classical",
+    "Choreographer"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Equip the required number of items to a Classical or Choreographer champion.",
+   "status": "preview"
+  },
+  {
+   "id": "renekton",
+   "name": "Renekton",
+   "nameKo": "레넥톤",
+   "cost": 2,
+   "traits": [
+    "Beach Pop",
+    "Frontman"
+   ],
+   "role": "Attack Tank",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "samira",
+   "name": "Samira",
+   "nameKo": "사미라",
+   "cost": 2,
+   "traits": [
+    "Classical",
+    "Renegade",
+    "Trickshot"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Equip the required number of items to a Classical, Renegade, or Trickshot champion.",
+   "status": "preview"
+  },
+  {
+   "id": "seraphine",
+   "name": "Seraphine",
+   "nameKo": "세라핀",
+   "cost": 2,
+   "traits": [
+    "Indie"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Reroll the required number of times before the Stage 2 Carousel.",
+   "status": "preview"
+  },
+  {
+   "id": "tristana",
+   "name": "Tristana",
+   "nameKo": "트리스타나",
+   "cost": 2,
+   "traits": [
+    "Hyperpop",
+    "Hitmaker"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Get the required number of kills with Hyperpop active.",
+   "status": "preview"
+  },
+  {
+   "id": "amumu",
+   "name": "Amumu",
+   "nameKo": "아무무",
+   "cost": 3,
+   "traits": [
+    "Emo"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "bard",
+   "name": "Bard",
+   "nameKo": "바드",
+   "cost": 3,
+   "traits": [
+    "Jazz",
+    "Swiftstriker"
+   ],
+   "role": "Magic Marksman",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "braum",
+   "name": "Braum",
+   "nameKo": "브라움",
+   "cost": 3,
+   "traits": [
+    "Illbeats",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "briar",
+   "name": "Briar",
+   "nameKo": "브라이어",
+   "cost": 3,
+   "traits": [
+    "Ionic Spark",
+    "Slayer"
+   ],
+   "role": "Attack Assassin",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "draven",
+   "name": "Draven",
+   "nameKo": "드레이븐",
+   "cost": 3,
+   "traits": [
+    "Illbeats",
+    "Trickshot"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "ekko",
+   "name": "Ekko",
+   "nameKo": "에코",
+   "cost": 3,
+   "traits": [
+    "True Damage",
+    "Juggernaut",
+    "Prodigy"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "evelynn",
+   "name": "Evelynn",
+   "nameKo": "이블린",
+   "cost": 3,
+   "traits": [
+    "K/DA",
+    "Renegade"
+   ],
+   "role": "Magic Fighter",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Field the required number of K/DA or Renegade champions.",
+   "status": "preview"
+  },
+  {
+   "id": "galio",
+   "name": "Galio",
+   "nameKo": "갈리오",
+   "cost": 3,
+   "traits": [
+    "Jazz",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Have the required number of Bodyguard, Juggernaut, or Frontman traits active.",
+   "status": "preview"
+  },
+  {
+   "id": "k-sante",
+   "name": "K'Sante",
+   "nameKo": "크산테",
+   "cost": 3,
+   "traits": [
+    "Heartsteel",
+    "Bodyguard"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "CC"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "kai-sa",
+   "name": "Kai'Sa",
+   "nameKo": "카이사",
+   "cost": 3,
+   "traits": [
+    "K/DA",
+    "Trickshot"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "malzahar",
+   "name": "Malzahar",
+   "nameKo": "말자하",
+   "cost": 3,
+   "traits": [
+    "Composer",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [
+    "Shred"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "senna",
+   "name": "Senna",
+   "nameKo": "세나",
+   "cost": 3,
+   "traits": [
+    "True Damage",
+    "Hitmaker"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "swain",
+   "name": "Swain",
+   "nameKo": "스웨인",
+   "cost": 3,
+   "traits": [
+    "Rock",
+    "Arcanist",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "syndra",
+   "name": "Syndra",
+   "nameKo": "신드라",
+   "cost": 3,
+   "traits": [
+    "Beach Pop",
+    "Choreographer"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Field the required number of unique star levels of Beach Pop or Choreographer.",
+   "status": "preview"
+  },
+  {
+   "id": "tibbers",
+   "name": "Tibbers",
+   "nameKo": "티버",
+   "cost": 3,
+   "traits": [
+    "Ionic Spark",
+    "Bodyguard"
+   ],
+   "role": "Attack Tank",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Reach the required star level on Annie and equip the required number of items to her.",
+   "status": "preview"
+  },
+  {
+   "id": "viego",
+   "name": "Viego",
+   "nameKo": "비에고",
+   "cost": 3,
+   "traits": [
+    "Pentakill",
+    "Choreographer",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "ahri",
+   "name": "Ahri",
+   "nameKo": "아리",
+   "cost": 4,
+   "traits": [
+    "K/DA",
+    "Choreographer"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "alistar",
+   "name": "Alistar",
+   "nameKo": "알리스타",
+   "cost": 4,
+   "traits": [
+    "Country"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "A Chain Vest equipped to a Caster or Marksman.",
+   "status": "preview"
+  },
+  {
+   "id": "alune",
+   "name": "Alune",
+   "nameKo": "알룬",
+   "cost": 4,
+   "traits": [
+    "Heartsteel",
+    "Manager",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Field the required number of unique Heartsteel or Prodigy champions.",
+   "status": "preview"
+  },
+  {
+   "id": "aurora",
+   "name": "Aurora",
+   "nameKo": "오로라",
+   "cost": 4,
+   "traits": [
+    "Ionic Spark",
+    "Renegade"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "garen",
+   "name": "Garen",
+   "nameKo": "가렌",
+   "cost": 4,
+   "traits": [
+    "Synthwave",
+    "Choreographer"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "graves",
+   "name": "Graves",
+   "nameKo": "그레이브즈",
+   "cost": 4,
+   "traits": [
+    "Beach Pop",
+    "Renegade"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "jhin",
+   "name": "Jhin",
+   "nameKo": "진",
+   "cost": 4,
+   "traits": [
+    "Classical",
+    "Encore"
+   ],
+   "role": "Attack Specialist",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "jinx",
+   "name": "Jinx",
+   "nameKo": "징크스",
+   "cost": 4,
+   "traits": [
+    "Ionic Spark",
+    "Hitmaker"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Equip the required number of items to an Ionic Spark or Hitmaker champion.",
+   "status": "preview"
+  },
+  {
+   "id": "kayle",
+   "name": "Kayle",
+   "nameKo": "케일",
+   "cost": 4,
+   "traits": [
+    "Pentakill",
+    "Swiftstriker"
+   ],
+   "role": "Magic Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Field the required number of unique Pentakill or Swiftstriker champions.",
+   "status": "preview"
+  },
+  {
+   "id": "leona",
+   "name": "Leona",
+   "nameKo": "레오나",
+   "cost": 4,
+   "traits": [
+    "K/DA",
+    "Bodyguard",
+    "Manager"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Shred"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "locke",
+   "name": "Locke",
+   "nameKo": null,
+   "cost": 4,
+   "traits": [
+    "Rock",
+    "Swiftstriker"
+   ],
+   "role": "Magic Assassin",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "mel",
+   "name": "Mel",
+   "nameKo": "멜",
+   "cost": 4,
+   "traits": [
+    "R&B",
+    "Arcanist"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "shyvana",
+   "name": "Shyvana",
+   "nameKo": "쉬바나",
+   "cost": 4,
+   "traits": [
+    "Ionic Spark",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "thresh",
+   "name": "Thresh",
+   "nameKo": "쓰레쉬",
+   "cost": 4,
+   "traits": [
+    "Classical",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Have enemies spend the required number of seconds Captivated by Classical.",
+   "status": "preview"
+  },
+  {
+   "id": "vayne",
+   "name": "Vayne",
+   "nameKo": "베인",
+   "cost": 4,
+   "traits": [
+    "Rock",
+    "Trickshot"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Field Rock for the required number of combats.",
+   "status": "preview"
+  },
+  {
+   "id": "wukong",
+   "name": "Wukong",
+   "nameKo": "오공",
+   "cost": 4,
+   "traits": [
+    "Gu Feng"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "Shred",
+    "Sunder",
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Have allies deal the required damage while fielding Xayah.",
+   "status": "preview"
+  },
+  {
+   "id": "xayah",
+   "name": "Xayah",
+   "nameKo": "자야",
+   "cost": 4,
+   "traits": [
+    "Gu Feng",
+    "Hitmaker"
+   ],
+   "role": "Attack Caster",
+   "effects": [
+    "Sunder"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "yasuo",
+   "name": "Yasuo",
+   "nameKo": "야스오",
+   "cost": 4,
+   "traits": [
+    "True Damage",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Field the required number of star levels of True Damage and Slayer champions.",
+   "status": "preview"
+  },
+  {
+   "id": "yone",
+   "name": "Yone",
+   "nameKo": "요네",
+   "cost": 4,
+   "traits": [
+    "Heartsteel",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "yorick",
+   "name": "Yorick",
+   "nameKo": "요릭",
+   "cost": 4,
+   "traits": [
+    "Pentakill",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Slow",
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "yuumi",
+   "name": "Yuumi",
+   "nameKo": "유미",
+   "cost": 4,
+   "traits": [
+    "Illbeats",
+    "Encore"
+   ],
+   "role": "Magic Caster",
+   "effects": [
+    "Shred"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "zac",
+   "name": "Zac",
+   "nameKo": "자크",
+   "cost": 4,
+   "traits": [
+    "Beach Pop",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Field the required number of unique Beach Pop or Juggernaut champions.",
+   "status": "preview"
+  },
+  {
+   "id": "akali-k-da",
+   "name": "Akali (K/DA)",
+   "nameKo": "아칼리 (K/DA)",
+   "cost": 5,
+   "traits": [
+    "K/DA"
+   ],
+   "role": "Attack Assassin",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Field the required number of unique star levels of K/DA without True Damage Akali unlocked.",
+   "status": "preview"
+  },
+  {
+   "id": "akali-true-damage",
+   "name": "Akali (True Damage)",
+   "nameKo": "아칼리 (True Damage)",
+   "cost": 5,
+   "traits": [
+    "True Damage",
+    "Freestyle"
+   ],
+   "role": "Magic Fighter",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Earn the required True Damage Bling without K/DA Akali unlocked.",
+   "status": "preview"
+  },
+  {
+   "id": "aphelios",
+   "name": "Aphelios",
+   "nameKo": "아펠리오스",
+   "cost": 5,
+   "traits": [
+    "Heartsteel"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Reach the required star level on Alune or Yone.",
+   "status": "preview"
+  },
+  {
+   "id": "dr-mundo",
+   "name": "Dr. Mundo",
+   "nameKo": "문도 박사",
+   "cost": 5,
+   "traits": [
+    "Record Mogul",
+    "Manager"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "gwen",
+   "name": "Gwen",
+   "nameKo": "그웬",
+   "cost": 5,
+   "traits": [
+    "Ionic Spark",
+    "Melodic Heart"
+   ],
+   "role": "Magic Fighter",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Have Ionic Spark fans cheer the required number of times.",
+   "status": "preview"
+  },
+  {
+   "id": "janna",
+   "name": "Janna",
+   "nameKo": "잔나",
+   "cost": 5,
+   "traits": [
+    "Gu Feng",
+    "Windblessed",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Earn the required interest while fielding Xayah.",
+   "status": "preview"
+  },
+  {
+   "id": "lee-sin",
+   "name": "Lee Sin",
+   "nameKo": "리 신",
+   "cost": 5,
+   "traits": [
+    "Gu Feng"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Deal the required player damage while fielding Xayah.",
+   "status": "preview"
+  },
+  {
+   "id": "miss-fortune",
+   "name": "Miss Fortune",
+   "nameKo": "미스 포츈",
+   "cost": 5,
+   "traits": [
+    "8-Bit",
+    "Hitmaker"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "mordekaiser",
+   "name": "Mordekaiser",
+   "nameKo": "모데카이저",
+   "cost": 5,
+   "traits": [
+    "Pentakill"
+   ],
+   "role": "Magic Fighter",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Field the required number of unique star levels of Pentakill.",
+   "status": "preview"
+  },
+  {
+   "id": "nidalee",
+   "name": "Nidalee",
+   "nameKo": "니달리",
+   "cost": 5,
+   "traits": [
+    "Mariachi",
+    "Choreographer"
+   ],
+   "role": "Magic Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "nunu-and-willump",
+   "name": "Nunu & Willump",
+   "nameKo": "누누와 윌럼프",
+   "cost": 5,
+   "traits": [
+    "Disco",
+    "Frontman"
+   ],
+   "role": "Magic Specialist",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "pyke",
+   "name": "Pyke",
+   "nameKo": "파이크",
+   "cost": 5,
+   "traits": [
+    "Rock",
+    "Renegade"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Have at least the required amount of gold at the end of combat.",
+   "status": "preview"
+  },
+  {
+   "id": "rell",
+   "name": "Rell",
+   "nameKo": "렐",
+   "cost": 5,
+   "traits": [
+    "R&B",
+    "Beat Master"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "taliyah",
+   "name": "Taliyah",
+   "nameKo": "탈리야",
+   "cost": 5,
+   "traits": [
+    "Beach Pop",
+    "Encore"
+   ],
+   "role": "Magic Caster",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Start a champion of each cost in a Beach Pop hex.",
+   "status": "preview"
+  },
+  {
+   "id": "teemo",
+   "name": "Teemo",
+   "nameKo": "티모",
+   "cost": 5,
+   "traits": [
+    "Hyperpop",
+    "Hype Man"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Collect the required amount of Hyperpop Hype.",
+   "status": "preview"
+  },
+  {
+   "id": "twisted-fate",
+   "name": "Twisted Fate",
+   "nameKo": "트위스티드 페이트",
+   "cost": 5,
+   "traits": [
+    "Tango",
+    "Trickshot"
+   ],
+   "role": "Magic Marksman",
+   "effects": [
+    "Burn"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "vi",
+   "name": "Vi",
+   "nameKo": "바이",
+   "cost": 5,
+   "traits": [
+    "EDM",
+    "Juggernaut"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "vladimir",
+   "name": "Vladimir",
+   "nameKo": "블라디미르",
+   "cost": 5,
+   "traits": [
+    "Classical",
+    "Arcanist"
+   ],
+   "role": "Magic Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Field only the specified number of champions in the two front rows of the battlefield.",
+   "status": "preview"
+  },
+  {
+   "id": "zeri",
+   "name": "Zeri",
+   "nameKo": "제리",
+   "cost": 5,
+   "traits": [
+    "Goth",
+    "Swiftstriker"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "status": "preview"
+  },
+  {
+   "id": "baron-nashor",
+   "name": "Baron Nashor",
+   "nameKo": "내셔 남작",
+   "cost": 7,
+   "traits": [
+    "One Monster Band"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Collect all members of Baron's ensemble.",
+   "status": "preview"
+  },
+  {
+   "id": "rakan",
+   "name": "Rakan",
+   "nameKo": "라칸",
+   "cost": 7,
+   "traits": [
+    "Boy Band"
+   ],
+   "role": "Magic Assassin",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "At Level 8+, win or lose the required number of consecutive combats.",
+   "status": "preview"
+  },
+  {
+   "id": "smeech",
+   "name": "Smeech",
+   "nameKo": "스미치",
+   "cost": 7,
+   "traits": [
+    "Jazz",
+    "Slayer"
+   ],
+   "role": "Attack Specialist",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Have at least the required number of non-unique traits active.",
+   "status": "preview"
+  },
+  {
+   "id": "sona",
+   "name": "Sona",
+   "nameKo": "소나",
+   "cost": 7,
+   "traits": [
+    "Producer",
+    "Collab"
+   ],
+   "role": "Magic Specialist",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Inspire Collab champions the required number of times.",
+   "status": "preview"
+  }
+ ]
+}

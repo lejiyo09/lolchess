@@ -1,0 +1,3086 @@
+{
+ "meta": {
+  "set": 19,
+  "patch": "PBE 16.24 (Set 19, 2026-11-20)",
+  "source": [
+   "PBE 16.24 game data via Blitz.gg Set 19 pages (feed updated 2026-11-20)",
+   "https://blitz.gg/tft/set19"
+  ],
+  "updated": "2026-11-20",
+  "status": "pbe",
+  "count": 94,
+  "note": "한국어 이름·효과 태그는 이전 데이터(CDragon ko_kr / Dev Drop)에서 유지. heroVariant = Hero 증강 형태"
+ },
+ "champions": [
+  {
+   "id": "elise",
+   "name": "Elise",
+   "nameKo": "엘리스",
+   "cost": 1,
+   "traits": [
+    "Ionic Spark",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Elise19",
+   "stats": {
+    "hp": 700,
+    "armor": 40,
+    "mr": 40,
+    "ad": 50,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Cocoon",
+    "desc": "Transform into Spider Form, gaining AP 280/330/400 Health. Then, fire webbing at the enemy that dealt the most damage this round, Stunning the first enemy hit for 1.5 seconds and dealing AP 90/135/200 magic damage. Subsequent casts heal AP 230/300/350, then fire webbing.",
+    "manaStart": 60,
+    "manaCost": 120
+   },
+   "heroVariant": {
+    "role": "Magic Assassin",
+    "ability": {
+     "name": "Bite Marks",
+     "desc": "Deal AP 250/375/600 magic damage to target, increased by 30% against Tanks. If this kills, ascend and become untargetable before dropping near the lowest health enemy within 4 hexes and casting again, dealing 70% damage."
+    },
+    "note": "Hero 증강 선택 시 바뀌는 형태"
+   }
+  },
+  {
+   "id": "gnar",
+   "name": "Gnar",
+   "nameKo": "나르",
+   "cost": 1,
+   "traits": [
+    "Pentakill",
+    "Trickshot"
+   ],
+   "role": "Hybrid Specialist",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Gnar19",
+   "stats": {
+    "hp": 500,
+    "armor": 25,
+    "mr": 25,
+    "ad": 40,
+    "as": 0.7,
+    "range": 4
+   },
+   "ability": {
+    "name": "Hard Rock",
+    "desc": "Passive: Every 3rd attack is replaced with a rock that deals AD 120/180/270 physical damage and grants Gnar AP 9% Attack Speed.",
+    "manaStart": 0,
+    "manaCost": 3
+   }
+  },
+  {
+   "id": "katarina",
+   "name": "Katarina",
+   "nameKo": "카타리나",
+   "cost": 1,
+   "traits": [
+    "Classical",
+    "Slayer"
+   ],
+   "role": "Magic Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Katarina19",
+   "stats": {
+    "hp": 650,
+    "armor": 35,
+    "mr": 35,
+    "ad": 30,
+    "as": 0.75,
+    "range": 1
+   },
+   "ability": {
+    "name": "Blade Sonata",
+    "desc": "Twirl, slashing adjacent enemies for AP 120/180/285 magic damage. Then, eviscerate the current target, dealing AP 240/360/575 magic damage to them. Enemies hit are Captivated for 5 seconds. Captivated enemies grant bonuses to Classical champions.",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "kayn",
+   "name": "Kayn",
+   "nameKo": "케인",
+   "cost": 1,
+   "traits": [
+    "Heartsteel",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Kayn19",
+   "stats": {
+    "hp": 650,
+    "armor": 35,
+    "mr": 35,
+    "ad": 42,
+    "as": 0.75,
+    "range": 1
+   },
+   "ability": {
+    "name": "Shadow of the Night",
+    "desc": "Dash and swipe, dealing AD AP 130/200/315 physical damage to enemies in a 2 hex line. Heartsteel Upgrade: At 70% Health, turn into the Shadow Assassin, briefly becoming untargetable and dealing 35% bonus magic damage for the rest of combat.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "kennen",
+   "name": "Kennen",
+   "nameKo": "케넨",
+   "cost": 1,
+   "traits": [
+    "True Damage",
+    "Bodyguard"
+   ],
+   "role": "Magic Tank",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Kennen19",
+   "stats": {
+    "hp": 700,
+    "armor": 45,
+    "mr": 45,
+    "ad": 45,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Electric Shock",
+    "desc": "Passive: Reduce all incoming damage by AP 12/15/19. Every second, zap adjacent enemies, dealing AP 12/18/30 magic damage.",
+    "manaStart": 0,
+    "manaCost": 0
+   },
+   "heroVariant": {
+    "role": "Magic Assassin",
+    "ability": {
+     "name": "He's Electric",
+     "desc": "Summon a surrounding storm and dash to the farthest enemy within 3 hexes. Deal AP 25/35/60 magic damage to enemies hit. Then call down lightning on them, dealing AP 85/130/190 magic damage. Lightning strikes deal 2 additional True Damage for each kill this game. Bonus True Damage: 2"
+    },
+    "note": "Hero 증강 선택 시 바뀌는 형태"
+   }
+  },
+  {
+   "id": "kobuko",
+   "name": "Kobuko",
+   "nameKo": "코부코",
+   "cost": 1,
+   "traits": [
+    "Hyperpop",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "2-star Ziggs with 1 item",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Kobuko19",
+   "stats": {
+    "hp": 700,
+    "armor": 40,
+    "mr": 40,
+    "ad": 65,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Pump It Up!",
+    "desc": "Passive: Your strongest Kobuko gains bonus Health equal to 85% of your Hyperpop Hype. (Current Health: 0) Active: Amp Up for 8 seconds, healing Health AP 57/67/92 each second.",
+    "manaStart": 40,
+    "manaCost": 90
+   }
+  },
+  {
+   "id": "lillia",
+   "name": "Lillia",
+   "nameKo": "릴리아",
+   "cost": 1,
+   "traits": [
+    "K/DA",
+    "Bodyguard"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Lillia19",
+   "stats": {
+    "hp": 700,
+    "armor": 40,
+    "mr": 40,
+    "ad": 45,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "We Love You K/DA",
+    "desc": "Heal AP 280/350/550 Health and strike the target, dealing AP 120/180/270 magic damage to enemies in a 1 Hex circle and 10% Weakening them for 5 seconds. Weaken: Reduce Damage Dealt",
+    "manaStart": 40,
+    "manaCost": 100
+   },
+   "heroVariant": {
+    "role": "Magic Fighter",
+    "ability": {
+     "name": "Dancin' n' Prancin'",
+     "desc": "Passive: Gain 18% Omnivamp. Active: Prance up to 3 hexes, prioritizing landing near enemies with fewer stacks of Dream Dust. Then spin, dealing AP 20/30/45 magic damage and applying a stack of Dream Dust to adjacent enemies. Each stack of Dream Dust deals AP 200/300/480 magic damage over 16 seconds."
+    },
+    "note": "Hero 증강 선택 시 바뀌는 형태"
+   }
+  },
+  {
+   "id": "neeko",
+   "name": "Neeko",
+   "nameKo": "니코",
+   "cost": 1,
+   "traits": [
+    "K/DA",
+    "Encore",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Neeko19",
+   "stats": {
+    "hp": 500,
+    "armor": 25,
+    "mr": 25,
+    "ad": 30,
+    "as": 0.7,
+    "range": 4
+   },
+   "ability": {
+    "name": "K/DA Fan Club",
+    "desc": "Convene the K/DA fan club, throwing 3 confetti streams at target that each deal AP 75/115/175 magic damage. If they kill, permanently gain 1% Ability Power. Current Bonus: 0 Ability Power",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "olaf",
+   "name": "Olaf",
+   "nameKo": "올라프",
+   "cost": 1,
+   "traits": [
+    "Pentakill",
+    "Rock",
+    "Juggernaut"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Olaf19",
+   "stats": {
+    "hp": 650,
+    "armor": 40,
+    "mr": 40,
+    "ad": 60,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Ragnarok 'n' Roll",
+    "desc": "Passive: On attack, heal Health AP 18.5/22.5/31.5. On death, instead heal to full and gain 100% Attack Speed, but continuously lose 22% max Health each second.",
+    "manaStart": 0,
+    "manaCost": 0
+   },
+   "heroVariant": {
+    "role": "Attack Marksman",
+    "ability": {
+     "name": "Axe Crescendo",
+     "desc": "For the next 3 attacks, throw flaming axes that deal AD AP 155/230/365 physical damage. Each time this is cast, increase the number of flaming axe throws by 1 for the rest of combat."
+    },
+    "note": "Hero 증강 선택 시 바뀌는 형태"
+   }
+  },
+  {
+   "id": "sett",
+   "name": "Sett",
+   "nameKo": "세트",
+   "cost": 1,
+   "traits": [
+    "Heartsteel",
+    "Frontman"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Sett19",
+   "stats": {
+    "hp": 700,
+    "armor": 30,
+    "mr": 30,
+    "ad": 45,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Live My Life",
+    "desc": "Passive: Gain 30% more max Health from all sources. Active: Heal AP Health 228/238/248. Strike the target twice, dealing Health 49 physical damage on each hit. Heartsteel Upgrade: Every 4 seconds, heal 4% max Health, increased by up to 100% based on missing Health.",
+    "manaStart": 30,
+    "manaCost": 90
+   },
+   "heroVariant": {
+    "role": "Attack Fighter",
+    "ability": {
+     "name": "Punch Line",
+     "desc": "Punch the target for AD AP 340/510/810 physical damage. Execute enemies below 14% Health, knocking them back in a line and dealing AD 100/150/240 physical damage to enemies they pass through. This effect can cascade. Heartsteel Upgrade: Gain 35% Attack Damage when targeting Tanks."
+    },
+    "note": "Hero 증강 선택 시 바뀌는 형태"
+   }
+  },
+  {
+   "id": "taric",
+   "name": "Taric",
+   "nameKo": "타릭",
+   "cost": 1,
+   "traits": [
+    "Beach Pop",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Taric19",
+   "stats": {
+    "hp": 700,
+    "armor": 40,
+    "mr": 40,
+    "ad": 65,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Good Reverberations",
+    "desc": "Grant AP 275/350/500 Shield to Taric and a nearby damaged ally for 4 seconds.",
+    "manaStart": 30,
+    "manaCost": 90
+   }
+  },
+  {
+   "id": "varus",
+   "name": "Varus",
+   "nameKo": "바루스",
+   "cost": 1,
+   "traits": [
+    "Rock",
+    "Encore"
+   ],
+   "role": "Attack Caster",
+   "effects": [
+    "Slow"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Varus19",
+   "stats": {
+    "hp": 500,
+    "armor": 25,
+    "mr": 25,
+    "ad": 35,
+    "as": 0.7,
+    "range": 4
+   },
+   "ability": {
+    "name": "One Thousand Arrows",
+    "desc": "Fire a hail of arrows, dealing AD AP 260/390/590 physical damage to the target and AD AP 130/195/295 damage to adjacent enemies. 20% Slow them for 4 seconds. Slow: Reduce Attack Speed",
+    "manaStart": 30,
+    "manaCost": 70
+   }
+  },
+  {
+   "id": "yunara",
+   "name": "Yunara",
+   "nameKo": "유나라",
+   "cost": 1,
+   "traits": [
+    "Ionic Spark",
+    "Swiftstriker"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Yunara19",
+   "stats": {
+    "hp": 500,
+    "armor": 25,
+    "mr": 25,
+    "ad": 50,
+    "as": 0.7,
+    "range": 4
+   },
+   "ability": {
+    "name": "Cultivation of Teen Spirit",
+    "desc": "For the rest of combat, attacks fire an additional orb that deals AD AP 16/25/37 physical damage.",
+    "manaStart": 50,
+    "manaCost": 80
+   }
+  },
+  {
+   "id": "ziggs",
+   "name": "Ziggs",
+   "nameKo": "직스",
+   "cost": 1,
+   "traits": [
+    "Hyperpop",
+    "Arcanist",
+    "Swiftstriker"
+   ],
+   "role": "Magic Marksman",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Ziggs19",
+   "stats": {
+    "hp": 500,
+    "armor": 25,
+    "mr": 25,
+    "ad": 10,
+    "as": 0.7,
+    "range": 4
+   },
+   "ability": {
+    "name": "GlitterBOM3S",
+    "desc": "Passive: Attacks deal AP 40/60/90 bonus magic damage. Active: Throw a bomb at the target that deals AP 155/235/355 magic damage to them and AP 70/105/160 magic damage to adjacent enemies.",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "zoe",
+   "name": "Zoe",
+   "nameKo": "조이",
+   "cost": 1,
+   "traits": [
+    "Beach Pop",
+    "Arcanist"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Zoe19",
+   "stats": {
+    "hp": 500,
+    "armor": 25,
+    "mr": 25,
+    "ad": 30,
+    "as": 0.7,
+    "range": 4
+   },
+   "ability": {
+    "name": "Paddle Ball",
+    "desc": "Fire a paddle ball backwards and redirect it towards the farthest enemy, dealing AP 450/675/1000 magic damage to the first enemy hit. If they die, the ball ricochets, dealing excess damage to the next enemy hit.",
+    "manaStart": 15,
+    "manaCost": 90
+   }
+  },
+  {
+   "id": "annie",
+   "name": "Annie",
+   "nameKo": "애니",
+   "cost": 2,
+   "traits": [
+    "Ionic Spark",
+    "Arcanist",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Burn"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Annie19",
+   "stats": {
+    "hp": 900,
+    "armor": 45,
+    "mr": 45,
+    "ad": 50,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "We DID Start the Fire",
+    "desc": "Gain AP 350/425/600 Shield for 4 seconds. Unleash a cone of fire, dealing AP 80/120/180 magic damage to enemies. 1% Burn and Wound them for 4 seconds.",
+    "manaStart": 20,
+    "manaCost": 80
+   },
+   "heroVariant": {
+    "role": "Magic Caster",
+    "ability": {
+     "name": "Tibbers! I Can't See the Stage",
+     "desc": "Passive: At the start of combat, leap onto your strongest Tibbers. While riding, become invulnerable to damage and gain 3% Ability Power each second. When Tibbers dies, leap away. Active: Deal AP 155/235/375 magic damage to the target and AP 50/75/125 magic damage to up to 2 other nearby enemies."
+    },
+    "note": "Hero 증강 선택 시 바뀌는 형태"
+   }
+  },
+  {
+   "id": "ashe",
+   "name": "Ashe",
+   "nameKo": "애쉬",
+   "cost": 2,
+   "traits": [
+    "Beach Pop",
+    "Swiftstriker"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "A Beach Pop Champion with 2 items",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Ashe19",
+   "stats": {
+    "hp": 550,
+    "armor": 30,
+    "mr": 30,
+    "ad": 50,
+    "as": 0.75,
+    "range": 5
+   },
+   "ability": {
+    "name": "Feelin' Shot Shot Shot",
+    "desc": "The next 6 attacks have AP 50% Attack Speed and are replaced with flurries of 3 arrows. Each arrow deals AD 35/53/80 physical damage.",
+    "manaStart": 20,
+    "manaCost": 60
+   }
+  },
+  {
+   "id": "camille",
+   "name": "Camille",
+   "nameKo": "카밀",
+   "cost": 2,
+   "traits": [
+    "Rock",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Camille19",
+   "stats": {
+    "hp": 750,
+    "armor": 45,
+    "mr": 45,
+    "ad": 45,
+    "as": 0.8,
+    "range": 1
+   },
+   "ability": {
+    "name": "Hookshot Through the Heart",
+    "desc": "Passive: When the target dies, hookshot to the next one and deal AD 90/135/210 physical damage to them. Active: Do a sweeping kick, dealing AD AP 260/390/600 physical damage in a cone.",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "ezreal",
+   "name": "Ezreal",
+   "nameKo": "이즈리얼",
+   "cost": 2,
+   "traits": [
+    "Heartsteel",
+    "Encore"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Ezreal19",
+   "stats": {
+    "hp": 550,
+    "armor": 30,
+    "mr": 30,
+    "ad": 40,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Bite the Bullet",
+    "desc": "Fire a missile that marks the target, then fire a second blast that detonates it. The explosion deals AD AP 240/360/545 physical damage to the target and AD AP 79.2/118.8/179.85 physical damage to enemies within 1 hex. Heartsteel Upgrade: Detonation deals 25% more damage. Every 3rd cast hits enemies in a 2 hex radius instead.",
+    "manaStart": 0,
+    "manaCost": 35
+   }
+  },
+  {
+   "id": "gragas",
+   "name": "Gragas",
+   "nameKo": "그라가스",
+   "cost": 2,
+   "traits": [
+    "K/DA",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Gragas19",
+   "stats": {
+    "hp": 950,
+    "armor": 45,
+    "mr": 45,
+    "ad": 50,
+    "as": 0.55,
+    "range": 1
+   },
+   "ability": {
+    "name": "Fan Clubbing",
+    "desc": "Become boisterous for 5 seconds, restoring Health AP 75/80/87 Health per second and dealing Health AP 117/137/157 bonus magic damage on attack. For every 3-star K/DA ally, increase both effects by 15%. (Total Increase: ?)",
+    "manaStart": 30,
+    "manaCost": 80
+   }
+  },
+  {
+   "id": "illaoi",
+   "name": "Illaoi",
+   "nameKo": "일라오이",
+   "cost": 2,
+   "traits": [
+    "Illbeats",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Illaoi19",
+   "stats": {
+    "hp": 950,
+    "armor": 45,
+    "mr": 45,
+    "ad": 50,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Smash-Hit Royalties",
+    "desc": "Active: Heal AP 275/325/475 and deal AP 120/180/270 magic damage in a 2 hex line. Quest: On cast during player combat, Illaoi gains 2 Fame + 1 more for every 10g you have, up to 70g. At 200 Fame, Illaoi goes Platinum, gaining 15% Durability and dropping 1 gold on cast instead. (Current Fame: 0/200)Illaoi has gone Platinum! (Gold Generated: 0)",
+    "manaStart": 30,
+    "manaCost": 90
+   }
+  },
+  {
+   "id": "jax",
+   "name": "Jax",
+   "nameKo": "잭스",
+   "cost": 2,
+   "traits": [
+    "EDM",
+    "Bodyguard",
+    "Swiftstriker"
+   ],
+   "role": "Magic Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Jax19",
+   "stats": {
+    "hp": 750,
+    "armor": 50,
+    "mr": 50,
+    "ad": 15,
+    "as": 0.75,
+    "range": 1
+   },
+   "ability": {
+    "name": "Instant Crush",
+    "desc": "Bash the current target, dealing AP 200/300/480 magic damage and healing for 20% of damage dealt. Gain 15% Attack Speed for the rest of combat. EDM Upgrade: Fire beams at the 2 nearest enemies that deal AP 50/75/115 AP 50/75/115 magic damage, reduced by ? for each enemy they pass through.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "karthus",
+   "name": "Karthus",
+   "nameKo": "카서스",
+   "cost": 2,
+   "traits": [
+    "Pentakill",
+    "Arcanist"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Karthus19",
+   "stats": {
+    "hp": 550,
+    "armor": 30,
+    "mr": 30,
+    "ad": 30,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Requiem",
+    "desc": "After a brief delay, deal AP 440/660/930 magic damage to the current target. If they die, recast this ability at 70% effectiveness.",
+    "manaStart": 10,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "lucian",
+   "name": "Lucian",
+   "nameKo": "루시안",
+   "cost": 2,
+   "traits": [
+    "Jazz",
+    "Hitmaker",
+    "Encore"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Lucian19",
+   "stats": {
+    "hp": 550,
+    "armor": 30,
+    "mr": 30,
+    "ad": 30,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Relentless Pursuit",
+    "desc": "Dash to a nearby hex, then fire 2 shots at target that each deal AD AP 88/132/198 physical damage.",
+    "manaStart": 0,
+    "manaCost": 20
+   }
+  },
+  {
+   "id": "lulu",
+   "name": "Lulu",
+   "nameKo": "룰루",
+   "cost": 2,
+   "traits": [
+    "Hyperpop",
+    "Choreographer"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Have your Hyperpop Champions cast 10 times with the trait active",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Lulu19",
+   "stats": {
+    "hp": 550,
+    "armor": 30,
+    "mr": 30,
+    "ad": 35,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Hype Girl",
+    "desc": "Rotate between 2 effects: Whimsy!: Grant an ally AP 80%/90%/100% decaying Attack Speed and AP 20/30/45 magic damage on hit for 5 seconds. Wild Growth: Increase an ally's Health by AP 175/260/395 for 5 seconds. While active, adjacent enemies take AP 20/30/45 magic damage each second.",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "lux",
+   "name": "Lux",
+   "nameKo": "럭스",
+   "cost": 2,
+   "traits": [
+    "Ionic Spark",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Lux19",
+   "stats": {
+    "hp": 550,
+    "armor": 30,
+    "mr": 30,
+    "ad": 30,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Lux Lux Beam!",
+    "desc": "Toss a prism into the air, then blast it with a beam of light. The beam splits, dealing AP 300/450/675 magic damage to the target, and AP 160/240/360 to another nearby enemy. For each one that dies, gain 8 Mana.",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "nasus",
+   "name": "Nasus",
+   "nameKo": "나서스",
+   "cost": 2,
+   "traits": [
+    "Classical",
+    "Bodyguard"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Equip the required number of items to a Classical champion.",
+   "unlockConditionStatus": "preview",
+   "status": "pbe",
+   "apiName": "DA_Nasus19",
+   "stats": {
+    "hp": 950,
+    "armor": 45,
+    "mr": 45,
+    "ad": 50,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Patron of the Arts",
+    "desc": "Create a magnificent 2 hex field that lasts 5 seconds. While active, heal AP 100/150/250 each second and allies within the field heal AP 25/35/60. Enemies take AP 30/45/70 magic damage and are Captivated if they have less max Health than Nasus. Captivated enemies grant bonuses to Classical champions.",
+    "manaStart": 25,
+    "manaCost": 75
+   }
+  },
+  {
+   "id": "qiyana",
+   "name": "Qiyana",
+   "nameKo": "키아나",
+   "cost": 2,
+   "traits": [
+    "True Damage",
+    "Renegade"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Qiyana19",
+   "stats": {
+    "hp": 750,
+    "armor": 40,
+    "mr": 40,
+    "ad": 45,
+    "as": 0.8,
+    "range": 1
+   },
+   "ability": {
+    "name": "Shuffled Playlist",
+    "desc": "Passive: Qiyana's ring changes color periodically, giving her Ability bonus effects. Active: Dash to strike enemies in a line, dealing AD AP 225/335/510 physical damage to the target and AD AP 112.5/167.5/255 to other enemies hit. Red: Deal 20% bonus damage. Green: Heal for 20% of damage dealt. Blue: Refund 10 Mana. Gold: Gain 1 gold and randomly use another effect. (Gold Gained: 0)",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "renata-glasc",
+   "name": "Renata Glasc",
+   "nameKo": "레나타 글라스크",
+   "cost": 2,
+   "traits": [
+    "Classical",
+    "Choreographer"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Equip the required number of items to a Classical or Choreographer champion.",
+   "unlockConditionStatus": "preview",
+   "status": "pbe",
+   "apiName": "DA_RenataGlasc19",
+   "stats": {
+    "hp": 550,
+    "armor": 30,
+    "mr": 30,
+    "ad": 30,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Hostile Measures",
+    "desc": "Fire a musical bar at the target, applying 2 stacks of Toxin. Toxin stacks deal AP 160/240/580 magic damage over 15 seconds. Additionally, apply 1 stack of Toxin to 2 nearby enemies, prioritizing unpoisoned enemies. Enemies are Captivated for 3 seconds upon Toxin application, increased to 9 seconds if their star level is less than Renata's. Captivated enemies grant bonuses to Classical champions.",
+    "manaStart": 0,
+    "manaCost": 45
+   }
+  },
+  {
+   "id": "renekton",
+   "name": "Renekton",
+   "nameKo": "레넥톤",
+   "cost": 2,
+   "traits": [
+    "Beach Pop",
+    "Frontman"
+   ],
+   "role": "Attack Tank",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Renekton19",
+   "stats": {
+    "hp": 950,
+    "armor": 40,
+    "mr": 40,
+    "ad": 50,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Crocodile Rock",
+    "desc": "Grow larger, gaining AP 180/230/325 max Health for the rest of combat. Then spin, dealing Health AD 176/221/316 physical damage to adjacent enemies.",
+    "manaStart": 60,
+    "manaCost": 110
+   },
+   "heroVariant": {
+    "role": "Attack Fighter",
+    "ability": {
+     "name": "Lifeguard on Duty",
+     "desc": "Passive: Start combat sunbathing, gaining 12% Attack Damage each second. When an ally drops below 60% Health, grant them AP 200/300/600 Shield for 6 seconds and dive in, dealing AD 120/180/270 physical damage to enemies in a 3 hex radius. Active: Smack the target 6 times, dealing AD 55/85/135 physical damage each."
+    },
+    "note": "Hero 증강 선택 시 바뀌는 형태"
+   }
+  },
+  {
+   "id": "samira",
+   "name": "Samira",
+   "nameKo": "사미라",
+   "cost": 2,
+   "traits": [
+    "Classical",
+    "Renegade",
+    "Trickshot"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "2 items on a Classical, Renegade, or Trickshot Champion",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Samira19",
+   "stats": {
+    "hp": 550,
+    "armor": 30,
+    "mr": 30,
+    "ad": 42,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Bullets N' Roses",
+    "desc": "Passive: When Samira critically strikes an enemy, they become Captivated for 3 seconds. Active: Fire 10 bullets at the current target, each dealing AD AP 42/48/95 damage. Captivated enemies grant bonuses to Classical champions.",
+    "manaStart": 0,
+    "manaCost": 55
+   }
+  },
+  {
+   "id": "seraphine",
+   "name": "Seraphine",
+   "nameKo": "세라핀",
+   "cost": 2,
+   "traits": [
+    "Indie"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Reroll 4 times before Stage 2 Carousel",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_SeraphineIndie19",
+   "stats": {
+    "hp": 700,
+    "armor": 30,
+    "mr": 30,
+    "ad": 30,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Livestream of Note",
+    "desc": "Indie: Release a stream of notes at the target while posing for the fans, dealing AP 550/825/1240 magic damage over 2.5 seconds. Rising Star: Release bonus notes at nearby enemies. Superstar: Toss high notes at every enemy.",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "tristana",
+   "name": "Tristana",
+   "nameKo": "트리스타나",
+   "cost": 2,
+   "traits": [
+    "Hyperpop",
+    "Hitmaker"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Get 5 kills with Hyperpop Active",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Tristana19",
+   "stats": {
+    "hp": 550,
+    "armor": 30,
+    "mr": 30,
+    "ad": 45,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Head Banger",
+    "desc": "Throw bombs at 3 nearby enemies and detonate them, each dealing AD AP 140/210/315 physical damage. The final blast deals AD AP 280/420/630 damage instead.",
+    "manaStart": 0,
+    "manaCost": 55
+   }
+  },
+  {
+   "id": "amumu",
+   "name": "Amumu",
+   "nameKo": "아무무",
+   "cost": 3,
+   "traits": [
+    "Emo"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Amumu19",
+   "stats": {
+    "hp": 1200,
+    "armor": 60,
+    "mr": 60,
+    "ad": 50,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "So Sad and Lorn",
+    "desc": "Heal AP 450/575/725. Toss bandages at the 4 nearest enemies, dealing AP 100/150/240 magic damage and Stunning them for 1.25 seconds.",
+    "manaStart": 60,
+    "manaCost": 120
+   }
+  },
+  {
+   "id": "bard",
+   "name": "Bard",
+   "nameKo": "바드",
+   "cost": 3,
+   "traits": [
+    "Jazz",
+    "Swiftstriker"
+   ],
+   "role": "Magic Marksman",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Bard19",
+   "stats": {
+    "hp": 650,
+    "armor": 35,
+    "mr": 35,
+    "ad": 30,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Come Chime with Me",
+    "desc": "Passive: Gain the Horn of the Traveler. While equipped, casts generate XP and attacks grant bonus Mana. Active: Summon a wave of meeps that deal AP 210/315/505 magic damage to enemies hit, reduced by 30% for each one it passes through.",
+    "manaStart": 20,
+    "manaCost": 80
+   }
+  },
+  {
+   "id": "braum",
+   "name": "Braum",
+   "nameKo": "브라움",
+   "cost": 3,
+   "traits": [
+    "Illbeats",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Braum19",
+   "stats": {
+    "hp": 1100,
+    "armor": 50,
+    "mr": 50,
+    "ad": 55,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Percussive Slam",
+    "desc": "Gain AP Health 385/435/485 Shield for 4 seconds. Then slam the ground, dealing AP 120/180/300 magic damage to adjacent enemies and Stunning them for 1.5 seconds.",
+    "manaStart": 75,
+    "manaCost": 135
+   }
+  },
+  {
+   "id": "briar",
+   "name": "Briar",
+   "nameKo": "브라이어",
+   "cost": 3,
+   "traits": [
+    "Ionic Spark",
+    "Slayer"
+   ],
+   "role": "Attack Assassin",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Briar19",
+   "stats": {
+    "hp": 850,
+    "armor": 50,
+    "mr": 50,
+    "ad": 50,
+    "as": 0.8,
+    "range": 1
+   },
+   "ability": {
+    "name": "Snack Attack",
+    "desc": "Heal AP 100/150/200 and kick a snack at the furthest enemy within 3 hexes. Dash toward it, dealing AD 100/150/240 physical damage in a 1 hex area. Then chow down, gaining 200% Attack Speed for the next 3 attacks and replacing them with slashes that deal AD 100/150/240 physical damage.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "draven",
+   "name": "Draven",
+   "nameKo": "드레이븐",
+   "cost": 3,
+   "traits": [
+    "Illbeats",
+    "Trickshot"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Draven19",
+   "stats": {
+    "hp": 650,
+    "armor": 35,
+    "mr": 35,
+    "ad": 45,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "You Spin Me Round (Like An Axe)",
+    "desc": "Throw a massive spinning record at the target, dealing AD 155/235/370 physical damage. The record leaves behind a vortex that lasts 3 seconds and deals AD AP 130/200/310 physical damage per second split amongst enemies within 1 hex.",
+    "manaStart": 0,
+    "manaCost": 60
+   }
+  },
+  {
+   "id": "ekko",
+   "name": "Ekko",
+   "nameKo": "에코",
+   "cost": 3,
+   "traits": [
+    "True Damage",
+    "Juggernaut",
+    "Prodigy"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Ekko19",
+   "stats": {
+    "hp": 1100,
+    "armor": 50,
+    "mr": 50,
+    "ad": 50,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Turn Back Time",
+    "desc": "Passive: Rewind 30% of damage taken over 4 seconds. Active: Instantly heal all damage being rewinded + AP 150/180/250 Health. Then whack the current target for AP 230/345/675 magic damage.",
+    "manaStart": 30,
+    "manaCost": 120
+   }
+  },
+  {
+   "id": "evelynn",
+   "name": "Evelynn",
+   "nameKo": "이블린",
+   "cost": 3,
+   "traits": [
+    "K/DA",
+    "Renegade"
+   ],
+   "role": "Magic Fighter",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "3 unique K/DA or Renegade Champions",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Evelynn19",
+   "stats": {
+    "hp": 850,
+    "armor": 50,
+    "mr": 50,
+    "ad": 30,
+    "as": 0.8,
+    "range": 1
+   },
+   "ability": {
+    "name": "Villainous",
+    "desc": "Passive: At combat start, teleport behind the current target, then become enshrouded for 15 seconds. While enshrouded, become untargetable to attacks and gain 50% Durability if at least 3 other allies are alive. Active: Deal AP 280/420/700 magic damage to the current target and AP 120/180/300 magic damage to other enemies in a semicircle. Ignore 40% of enemy Magic Resist.",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "galio",
+   "name": "Galio",
+   "nameKo": "갈리오",
+   "cost": 3,
+   "traits": [
+    "Jazz",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Have the required number of Bodyguard, Juggernaut, or Frontman traits active.",
+   "unlockConditionStatus": "preview",
+   "status": "pbe",
+   "apiName": "DA_Galio19",
+   "stats": {
+    "hp": 1100,
+    "armor": 50,
+    "mr": 50,
+    "ad": 50,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Blow Up a Storm",
+    "desc": "Gain Health AP 435/510/610 Shield for 4 seconds. Stun for 1 second and deal AP 120/180/300 magic damage to the enemy that's dealt the most damage this combat.",
+    "manaStart": 50,
+    "manaCost": 120
+   }
+  },
+  {
+   "id": "k-sante",
+   "name": "K'Sante",
+   "nameKo": "크산테",
+   "cost": 3,
+   "traits": [
+    "Heartsteel",
+    "Bodyguard"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "CC"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_KSante19",
+   "stats": {
+    "hp": 1100,
+    "armor": 50,
+    "mr": 50,
+    "ad": 50,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "In Your House!",
+    "desc": "Gain AP 550/650/800 Shield for 4 seconds. Charge and push the target, Stunning them and other enemies hit for 1.25 seconds. Then slam them, dealing AD 150/225/360 physical damage. After charging, Taunt nearby enemies. Heartsteel Upgrade: Gain 2525 Armor and Magic Resist and deal Armor MR 50/75/120 Armor MR 50/75/120 bonus physical damage on attack.",
+    "manaStart": 70,
+    "manaCost": 140
+   }
+  },
+  {
+   "id": "kai-sa",
+   "name": "Kai'Sa",
+   "nameKo": "카이사",
+   "cost": 3,
+   "traits": [
+    "K/DA",
+    "Trickshot"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Kaisa19",
+   "stats": {
+    "hp": 650,
+    "armor": 35,
+    "mr": 35,
+    "ad": 30,
+    "as": 0.75,
+    "range": 5
+   },
+   "ability": {
+    "name": "Make it Rain",
+    "desc": "Passive: Every 3 attacks, fire 3 missiles that deal AD AP 39/59/95 physical damage. Active: Gain 15% Attack Speed for the rest of combat.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "malzahar",
+   "name": "Malzahar",
+   "nameKo": "말자하",
+   "cost": 3,
+   "traits": [
+    "Composer",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [
+    "Shred"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Malzahar19",
+   "stats": {
+    "hp": 800,
+    "armor": 35,
+    "mr": 35,
+    "ad": 35,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Forbidden Cacophony",
+    "desc": "Fire a beam at the target for 2 seconds, dealing AP 325/485/815 magic damage. The energy rhythmically explodes 4 times, 30% Shredding enemies in a 1 hex area for 4 seconds, and dealing AP 40/60/110 magic damage each time. Shred: Reduce Magic Resist",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "senna",
+   "name": "Senna",
+   "nameKo": "세나",
+   "cost": 3,
+   "traits": [
+    "True Damage",
+    "Hitmaker"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Senna19",
+   "stats": {
+    "hp": 650,
+    "armor": 35,
+    "mr": 35,
+    "ad": 55,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Reverberation Devastation",
+    "desc": "Blast the target, dealing AD AP 185/275/445 physical damage and marking them. If they are marked, detonate it instead, dealing AD AP 277.5/412.5/667.5 damage. On detonation or killing a marked enemy, gain 8% Damage Amp until the end of combat.",
+    "manaStart": 0,
+    "manaCost": 20
+   }
+  },
+  {
+   "id": "swain",
+   "name": "Swain",
+   "nameKo": "스웨인",
+   "cost": 3,
+   "traits": [
+    "Rock",
+    "Arcanist",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Swain19",
+   "stats": {
+    "hp": 1100,
+    "armor": 50,
+    "mr": 50,
+    "ad": 40,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "A Cruel Devil's Thesis",
+    "desc": "Enter Demon Form, gaining AP 220/275/400 max Health and dealing AP 20/30/48 magic damage to adjacent enemies every second. Subsequent casts heal AP 275/350/475 and increase damage by AP 5/8/12.",
+    "manaStart": 70,
+    "manaCost": 120
+   }
+  },
+  {
+   "id": "syndra",
+   "name": "Syndra",
+   "nameKo": "신드라",
+   "cost": 3,
+   "traits": [
+    "Beach Pop",
+    "Choreographer"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Field the required number of unique star levels of Beach Pop or Choreographer.",
+   "unlockConditionStatus": "preview",
+   "status": "pbe",
+   "apiName": "DA_Syndra19",
+   "stats": {
+    "hp": 650,
+    "armor": 35,
+    "mr": 35,
+    "ad": 30,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Serve's Up",
+    "desc": "Spike a volleyball at target, dealing AP 330/495/790 magic damage. It bounces to an enemy behind them with the least items, dealing AP 110/165/265 magic damage.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "tibbers",
+   "name": "Tibbers",
+   "nameKo": "티버",
+   "cost": 3,
+   "traits": [
+    "Ionic Spark",
+    "Bodyguard"
+   ],
+   "role": "Attack Tank",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "2-star Annie with 1 item",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Tibbers19",
+   "stats": {
+    "hp": 0,
+    "armor": 50,
+    "mr": 50,
+    "ad": 50,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Girl's Best Friend",
+    "desc": "Passive: At 30% Health or when your strongest Annie dies, become enraged, gaining 300 max Health, 100% Attack Damage, and 200% Attack Speed that decays over 6 seconds. Active: Gain AP 550/650/800 Shield for 4 seconds. If enraged, refresh the decaying Attack Speed.",
+    "manaStart": 40,
+    "manaCost": 100
+   }
+  },
+  {
+   "id": "viego",
+   "name": "Viego",
+   "nameKo": "비에고",
+   "cost": 3,
+   "traits": [
+    "Pentakill",
+    "Choreographer",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Viego19",
+   "stats": {
+    "hp": 850,
+    "armor": 55,
+    "mr": 55,
+    "ad": 60,
+    "as": 0.8,
+    "range": 1
+   },
+   "ability": {
+    "name": "Singled Out",
+    "desc": "Summon 10 swords around the target. After a brief delay, impale them, dealing AD AP 37/56/89 physical damage per sword. Every 8 takedowns, gain a permanent sword. (Current Takedowns: 0)",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "ahri",
+   "name": "Ahri",
+   "nameKo": "아리",
+   "cost": 4,
+   "traits": [
+    "K/DA",
+    "Choreographer"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Ahri19",
+   "stats": {
+    "hp": 850,
+    "armor": 40,
+    "mr": 40,
+    "ad": 30,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Burn it Down",
+    "desc": "Passive: Start combat with 6 fox-fires and gain 2 after casting, up to 14. Then enter a flow state, moving faster and empowering subsequent casts. Active: Launch all fox-fires at the target, each dealing AP 28/42/400 magic damage. If in the flow, instead launch a heart at the target that deals AP 235/350/2000 magic damage and split the fox-fires among all enemies within 2 hexes of them.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "alistar",
+   "name": "Alistar",
+   "nameKo": "알리스타",
+   "cost": 4,
+   "traits": [
+    "Country"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 7 - A Chain Vest equipped to a Caster or Marksman",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Alistar19",
+   "stats": {
+    "hp": 1400,
+    "armor": 60,
+    "mr": 60,
+    "ad": 60,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Blue Cow Crying in the Rain",
+    "desc": "Heal AP 265/300/2000, increased by up to 100% based on missing Health. Then slam the target, knocking up enemies within 3 hexes of them for 1.5 seconds and dealing AP 100/150/2500 magic damage to all enemies hit.",
+    "manaStart": 70,
+    "manaCost": 155
+   }
+  },
+  {
+   "id": "alune",
+   "name": "Alune",
+   "nameKo": "알룬",
+   "cost": 4,
+   "traits": [
+    "Heartsteel",
+    "Manager",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 7 - 4 unique Heartsteel or Prodigy Champions",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Alune19",
+   "stats": {
+    "hp": 800,
+    "armor": 40,
+    "mr": 40,
+    "ad": 30,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Spotlight",
+    "desc": "Call down a spotlight on the target, dealing AP 315/475/2250 magic damage. All enemies within 2 hexes of them split AP 340/510/2500 magic damage. If the target dies, split excess damage between the 2 nearest enemies. Heartsteel Upgrade: Fire 5 blasts at target that deal AP 30/45/72 AP 30/45/72 magic damage.",
+    "manaStart": 20,
+    "manaCost": 65
+   }
+  },
+  {
+   "id": "aurora",
+   "name": "Aurora",
+   "nameKo": "오로라",
+   "cost": 4,
+   "traits": [
+    "Ionic Spark",
+    "Renegade"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Aurora19",
+   "stats": {
+    "hp": 850,
+    "armor": 40,
+    "mr": 40,
+    "ad": 35,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Between Worlds Apart",
+    "desc": "Blink away and fire a blast through the best line. The blast deals AP 275/415/2000 magic damage to the 2 highest Health enemies, and AP 90/135/1500 magic damage to the rest. Then, blink back.",
+    "manaStart": 0,
+    "manaCost": 60
+   }
+  },
+  {
+   "id": "garen",
+   "name": "Garen",
+   "nameKo": "가렌",
+   "cost": 4,
+   "traits": [
+    "Synthwave",
+    "Choreographer"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Garen19",
+   "stats": {
+    "hp": 1300,
+    "armor": 70,
+    "mr": 70,
+    "ad": 60,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Sword of Truth",
+    "desc": "Heal Health AP 456/506/2556, then fire a wave towards the current target, dealing AD 70/105/3000 physical damage to enemies hit and 10% Weakening them for 4 seconds. Weaken: Reduce Damage Dealt",
+    "manaStart": 30,
+    "manaCost": 100
+   }
+  },
+  {
+   "id": "graves",
+   "name": "Graves",
+   "nameKo": "그레이브즈",
+   "cost": 4,
+   "traits": [
+    "Beach Pop",
+    "Renegade"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Graves19",
+   "stats": {
+    "hp": 1100,
+    "armor": 60,
+    "mr": 60,
+    "ad": 85,
+    "as": 0.6,
+    "range": 2
+   },
+   "ability": {
+    "name": "Left Hand Free",
+    "desc": "For the next 2 attacks, gain 125% Attack Speed, dash to targets, and replace attacks with a cone of 5 bullets that deal AD AP 45/67/360 physical damage each. On kill, empower an additional attack.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "jhin",
+   "name": "Jhin",
+   "nameKo": "진",
+   "cost": 4,
+   "traits": [
+    "Classical",
+    "Encore"
+   ],
+   "role": "Attack Specialist",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Jhin19",
+   "stats": {
+    "hp": 804,
+    "armor": 44,
+    "mr": 44,
+    "ad": 30,
+    "as": 0.84,
+    "range": 5
+   },
+   "ability": {
+    "name": "String Quartet",
+    "desc": "Passive: Convert 1% bonus Attack Speed into 0.8% Attack Damage. Attacks summon violins that attack in unison, dealing AD 27/41/124 physical damage and Captivating the target for 4 seconds. Every 4th attack is empowered, dealing AD AP 94/141/848 physical damage and resetting the violins. On the 4th sequence onwards, all violins remain out, Jhin gains infinite range, and attacks pierce, dealing 60% reduced damage for each target hit.",
+    "manaStart": 4,
+    "manaCost": 4
+   }
+  },
+  {
+   "id": "jinx",
+   "name": "Jinx",
+   "nameKo": "징크스",
+   "cost": 4,
+   "traits": [
+    "Ionic Spark",
+    "Hitmaker"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 7 - 3 items on an Ionic Spark or Hitmaker Champion",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Jinx19",
+   "stats": {
+    "hp": 850,
+    "armor": 40,
+    "mr": 40,
+    "ad": 55,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Boom Boom POW POW",
+    "desc": "Rapidly fire Attack Speed ? missiles at nearby enemies, each dealing AD AP 49/74/330 physical damage.",
+    "manaStart": 30,
+    "manaCost": 90
+   }
+  },
+  {
+   "id": "kayle",
+   "name": "Kayle",
+   "nameKo": "케일",
+   "cost": 4,
+   "traits": [
+    "Pentakill",
+    "Swiftstriker"
+   ],
+   "role": "Magic Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 7 - 4 unique Pentakill or Swiftstriker Champions",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Kayle19",
+   "stats": {
+    "hp": 850,
+    "armor": 40,
+    "mr": 40,
+    "ad": 10,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Stairway to Hell",
+    "desc": "Passive: Attacks deal AP 40/60/500 bonus magic damage. Active: For 4 seconds, gain 80% Attack Speed, infinite range, and summon a sword with each attack. Afterwards, rain swords on the target, dealing AP 180/270/2000 to all enemies within 2 hexes, plus AP 37/55/400 magic damage to the target for each sword.",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "leona",
+   "name": "Leona",
+   "nameKo": "레오나",
+   "cost": 4,
+   "traits": [
+    "K/DA",
+    "Bodyguard",
+    "Manager"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Shred"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Leona19",
+   "stats": {
+    "hp": 1300,
+    "armor": 60,
+    "mr": 60,
+    "ad": 60,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Coordinated Light Show",
+    "desc": "Gain AP 600/750/2000 Shield for 4 seconds. Call down 7 beams of light on nearby enemies, each dealing AP 50/75/2000 magic damage and reducing their target's Magic Resist by 4.",
+    "manaStart": 60,
+    "manaCost": 115
+   }
+  },
+  {
+   "id": "locke",
+   "name": "Locke",
+   "nameKo": null,
+   "cost": 4,
+   "traits": [
+    "Rock",
+    "Swiftstriker"
+   ],
+   "role": "Magic Assassin",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Locke19",
+   "stats": {
+    "hp": 0,
+    "armor": 65,
+    "mr": 65,
+    "ad": 10,
+    "as": 0.9,
+    "range": 1
+   },
+   "ability": {
+    "name": "Pursue Sin (The Soul Nail Song)",
+    "desc": "Passive: Attacks deal AP 45/68/500 bonus magic damage. All damage Locke deals to enemies is increased by 15% for each mark he has applied to them. Active: Hurl 3 Soul Nails at the furthest enemy within 4 hexes, each dealing AP 15/22/400 magic damage and marking all enemies hit. Then, teleport to the enemy and deal AP 135/205/2000 magic damage.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "mel",
+   "name": "Mel",
+   "nameKo": "멜",
+   "cost": 4,
+   "traits": [
+    "R&B",
+    "Arcanist"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Mel19",
+   "stats": {
+    "hp": 850,
+    "armor": 40,
+    "mr": 40,
+    "ad": 30,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Chain of Blues",
+    "desc": "Fire 30 missiles split between the 3 closest enemies that each deal AP 18/28/200 magic damage and apply a stack of Blues. For every 3 stacks of Blues, enemies take 5% more damage from this Ability.",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "shyvana",
+   "name": "Shyvana",
+   "nameKo": "쉬바나",
+   "cost": 4,
+   "traits": [
+    "Ionic Spark",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Shyvana19",
+   "stats": {
+    "hp": 0,
+    "armor": 60,
+    "mr": 60,
+    "ad": 55,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "Dragon Force",
+    "desc": "Passive: At 70% Health, transform into Dragon Form. While transformed, gain 300 max Health, 150% Attack Speed, and every 3rd attacks deals AP 100/150/3000 bonus magic damage in a 1 hex area. Active: Gain Health AP 360/410/1010 Shield for 4 seconds.",
+    "manaStart": 40,
+    "manaCost": 100
+   }
+  },
+  {
+   "id": "thresh",
+   "name": "Thresh",
+   "nameKo": "쓰레쉬",
+   "cost": 4,
+   "traits": [
+    "Classical",
+    "Frontman"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Have enemies spend 275 seconds Captivated by Classical",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Thresh19",
+   "stats": {
+    "hp": 1200,
+    "armor": 60,
+    "mr": 60,
+    "ad": 50,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Dark Passage (Reprise)",
+    "desc": "Passive: Every 6 seconds, Captivate the farthest enemy who is not already Captivated for 12 seconds. Active: Heal AP 350/450/2000. Then drain AP 80/100/1200 max Health from up to 3 nearby enemies over 3 seconds. While draining, gain 15% Durability. Captivated enemies grant bonuses to Classical champions.",
+    "manaStart": 40,
+    "manaCost": 100
+   }
+  },
+  {
+   "id": "vayne",
+   "name": "Vayne",
+   "nameKo": "베인",
+   "cost": 4,
+   "traits": [
+    "Rock",
+    "Trickshot"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 7 - Field Rock for 3 combats",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Vayne19",
+   "stats": {
+    "hp": 850,
+    "armor": 40,
+    "mr": 40,
+    "ad": 62,
+    "as": 0.8,
+    "range": 5
+   },
+   "ability": {
+    "name": "Darkest Hour",
+    "desc": "Passive: On cast or when hit, tumble and gain AP 50% Durability for 2 seconds. (4 second cooldown) Active: Gain demonic power, enhancing the next 3 attacks to deal AD 165/250/2000 physical damage + 1.5% of the target's max Health as true damage.",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "wukong",
+   "name": "Wukong",
+   "nameKo": "오공",
+   "cost": 4,
+   "traits": [
+    "Gu Feng"
+   ],
+   "role": "Attack Tank",
+   "effects": [
+    "Shred",
+    "Sunder",
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Allies deal 25000 damage while fielding Xayah",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Wukong19",
+   "stats": {
+    "hp": 1350,
+    "armor": 65,
+    "mr": 65,
+    "ad": 60,
+    "as": 0.65,
+    "range": 1
+   },
+   "ability": {
+    "name": "The Tricks of the Many Mythical Tricksters",
+    "desc": "Heal Health AP 508/608/2108 and send out 6 clones in a 2 Hex circle that quickly return. Clones steal 5 Armor and Magic Resist from enemies they pass through and deal AD 30/45/3000 physical damage. When they return, Wukong gains the stolen defenses.",
+    "manaStart": 40,
+    "manaCost": 100
+   }
+  },
+  {
+   "id": "xayah",
+   "name": "Xayah",
+   "nameKo": "자야",
+   "cost": 4,
+   "traits": [
+    "Gu Feng",
+    "Hitmaker"
+   ],
+   "role": "Attack Caster",
+   "effects": [
+    "Sunder"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Xayah19",
+   "stats": {
+    "hp": 850,
+    "armor": 40,
+    "mr": 40,
+    "ad": 55,
+    "as": 0.75,
+    "range": 4
+   },
+   "ability": {
+    "name": "Feathers Flying Like Leaves on the Wind",
+    "desc": "Summon 30 feathers that strike the target, each dealing AD AP 25/38/166 physical damage and reducing Armor by 1.",
+    "manaStart": 0,
+    "manaCost": 60
+   }
+  },
+  {
+   "id": "yasuo",
+   "name": "Yasuo",
+   "nameKo": "야스오",
+   "cost": 4,
+   "traits": [
+    "True Damage",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 7 - 6 unique star levels of True Damage or Slayer Champions",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Yasuo19",
+   "stats": {
+    "hp": 1100,
+    "armor": 65,
+    "mr": 65,
+    "ad": 60,
+    "as": 0.85,
+    "range": 1
+   },
+   "ability": {
+    "name": "Last Breath",
+    "desc": "Dash and thrust forward, dealing AD 165/250/1400 physical damage to enemies in a line. Every 3rd cast, knock up the target and deal AD 400/600/2500 physical damage. Then slam them down, dealing AD AP 210/315/1700 physical damage to enemies within 1 Hex.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "yone",
+   "name": "Yone",
+   "nameKo": "요네",
+   "cost": 4,
+   "traits": [
+    "Heartsteel",
+    "Slayer"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Yone19",
+   "stats": {
+    "hp": 1150,
+    "armor": 70,
+    "mr": 70,
+    "ad": 55,
+    "as": 0.85,
+    "range": 1
+   },
+   "ability": {
+    "name": "Two Sides",
+    "desc": "Passive: This ability scales Attack Damage or Ability Power, whichever is higher. Attacks deal AD 55/82/123 physical damage. Active: Rapidly strike the target and up to 2 nearby enemies 10 times, each dealing AD 35/55/400 physical damage. After the assault, unleash a massive slash that deals AD 175/265/1500 physical damage to target. Heartsteel Upgrade: Casts strike 2 more times and ignore 25%25% of Armor.",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "yorick",
+   "name": "Yorick",
+   "nameKo": "요릭",
+   "cost": 4,
+   "traits": [
+    "Pentakill",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Slow",
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Yorick19",
+   "stats": {
+    "hp": 1300,
+    "armor": 60,
+    "mr": 60,
+    "ad": 65,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Danse Macabre",
+    "desc": "Play an epic solo, restoring Health AP 544/629/2104 Health and creating a 2 Hex zone that deals AP 25/40/1250 magic damage each second to enemies. The final note deals AP 100/150/2400 damage to enemies within and 20% Slows them for 4 seconds. Slow: Reduce Attack Speed",
+    "manaStart": 50,
+    "manaCost": 100
+   }
+  },
+  {
+   "id": "yuumi",
+   "name": "Yuumi",
+   "nameKo": "유미",
+   "cost": 4,
+   "traits": [
+    "Illbeats",
+    "Encore"
+   ],
+   "role": "Magic Caster",
+   "effects": [
+    "Shred"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Yuumi19",
+   "stats": {
+    "hp": 850,
+    "armor": 40,
+    "mr": 40,
+    "ad": 30,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Girl, Put Your Records On (Your Head)",
+    "desc": "Throw a spinning disc that deals AP 185/280/1400 magic damage and stacks on the target's head, reducing their Magic Resist by 1 every second. When they have 5 discs, the stack topples over, dealing 40% of the stacked discs' total damage to the target and another 40% split among 4 nearby enemies. If an enemy dies with a disc, it passes to another enemy.",
+    "manaStart": 0,
+    "manaCost": 20
+   }
+  },
+  {
+   "id": "zac",
+   "name": "Zac",
+   "nameKo": "자크",
+   "cost": 4,
+   "traits": [
+    "Beach Pop",
+    "Juggernaut"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 7 - 5 unique Beach Pop or Juggernaut Champions",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Zac19",
+   "stats": {
+    "hp": 1300,
+    "armor": 60,
+    "mr": 60,
+    "ad": 65,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Cannonball!",
+    "desc": "Charge up for 2 seconds, gaining 15% Durability and healing for AP Health 631/681/2656. Then leap and crash on the target, dealing AP 250/375/3500 magic damage to adjacent enemies and briefly knocking them up.",
+    "manaStart": 60,
+    "manaCost": 110
+   }
+  },
+  {
+   "id": "akali-k-da",
+   "name": "Akali (K/DA)",
+   "nameKo": "아칼리 (K/DA)",
+   "cost": 5,
+   "traits": [
+    "K/DA"
+   ],
+   "role": "Attack Assassin",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "12 unique star levels of K/DA without True Damage Akali unlocked",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_AkaliKDA19",
+   "stats": {
+    "hp": 1200,
+    "armor": 60,
+    "mr": 60,
+    "ad": 60,
+    "as": 0.85,
+    "range": 1
+   },
+   "ability": {
+    "name": "Sk8er Gurl",
+    "desc": "Skateboard through the longest line of unpainted enemies, dealing AD AP 80/120/5999 physical damage to enemies hit and spray-painting them and any hexes along the path. Enemies covered in paint or standing in painted hexes are 10% Vulnerable. After every 3rd cast, ignite the paint, dealing AD AP 260/390/19496.75 physical damage to all enemies who are painted or are standing in a painted hex. Vulnerable: Increase Damage Taken",
+    "manaStart": 0,
+    "manaCost": 45
+   }
+  },
+  {
+   "id": "akali-true-damage",
+   "name": "Akali (True Damage)",
+   "nameKo": "아칼리 (True Damage)",
+   "cost": 5,
+   "traits": [
+    "True Damage",
+    "Freestyle"
+   ],
+   "role": "Magic Fighter",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Earn 350 True Damage Bling without K/DA Akali unlocked",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Akali_TrueDamage19",
+   "stats": {
+    "hp": 1200,
+    "armor": 65,
+    "mr": 65,
+    "ad": 50,
+    "as": 0.9,
+    "range": 1
+   },
+   "ability": {
+    "name": "Killin' like Domino",
+    "desc": "B-Side Passive: After every 4 takedowns, gain 1 Player Health. (0/4) Active: Rapidly slash through the current target, dealing AP 550/825/9999 magic damage, increased by 50% against Tanks. While casting, gain 25% Durability and become untargetable by attacks. Afterwards, blink over the target and throw a bomb that deals AP 620/930/9999 magic damage split amongst all enemies within 2 hexes.",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "aphelios",
+   "name": "Aphelios",
+   "nameKo": "아펠리오스",
+   "cost": 5,
+   "traits": [
+    "Heartsteel"
+   ],
+   "role": "Attack Marksman",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "2-star Alune or Yone",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Aphelios19",
+   "stats": {
+    "hp": 900,
+    "armor": 45,
+    "mr": 45,
+    "ad": 60,
+    "as": 0.8,
+    "range": 5
+   },
+   "ability": {
+    "name": "BANG BANG BANGERS",
+    "desc": "Passive: Gain a Chakram every 4 attacks, up to 15. Attacks deal AD 7/10/200 bonus physical damage for every Chakram equipped. After collecting 15, gain 30% Attack Damage and infinite range. Active: Fire bolts at the 3 nearest enemies that deal AD AP 340/510/3300 physical damage, then split into 16 bolts that deal AD AP 51/76.5/3300 physical damage to enemies they pass through. Gain 75% Attack Speed for 4 seconds. Heartsteel Upgrade: Start combat with 5 Chakrams equipped.",
+    "manaStart": 40,
+    "manaCost": 180
+   }
+  },
+  {
+   "id": "dr-mundo",
+   "name": "Dr. Mundo",
+   "nameKo": "문도 박사",
+   "cost": 5,
+   "traits": [
+    "Record Mogul",
+    "Manager"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_DrMundo19",
+   "stats": {
+    "hp": 1300,
+    "armor": 60,
+    "mr": 60,
+    "ad": 80,
+    "as": 0.6,
+    "range": 1
+   },
+   "ability": {
+    "name": "Big Business",
+    "desc": "Passive: While Dr. Mundo has 3000 max Health or more, he becomes Pumped Up, gaining 20% max Health and causing attacks to deal an additional Health 89/114/2300 magic damage. Active: Restore Health 480/530/4300 Health over 5 seconds and deal Health AP 25/29/102 magic damage each second to all enemies within 2 hexes.",
+    "manaStart": 20,
+    "manaCost": 80
+   }
+  },
+  {
+   "id": "gwen",
+   "name": "Gwen",
+   "nameKo": "그웬",
+   "cost": 5,
+   "traits": [
+    "Ionic Spark",
+    "Melodic Heart"
+   ],
+   "role": "Magic Fighter",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Ionic Spark fans cheer 250 times",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Gwen19",
+   "stats": {
+    "hp": 1200,
+    "armor": 60,
+    "mr": 60,
+    "ad": 10,
+    "as": 0.8,
+    "range": 2
+   },
+   "ability": {
+    "name": "Glimmer in the Night",
+    "desc": "Passive: Attacks deal AP 60/90/1000 bonus magic damage to the target and AP 22/35/500 to other enemies in a cone. Dash to new targets. Active: Summon a massive pair of scissors over the battlefield. After a short delay, snip a horizontal line on the target, dealing AP 90/135/4000 magic damage to all enemies hit + AP 830/1300/8000 split between them. If 1 or fewer enemies are hit, refund 50 Mana.",
+    "manaStart": 0,
+    "manaCost": 100
+   }
+  },
+  {
+   "id": "janna",
+   "name": "Janna",
+   "nameKo": "잔나",
+   "cost": 5,
+   "traits": [
+    "Windblessed",
+    "Gu Feng",
+    "Prodigy"
+   ],
+   "role": "Magic Caster",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Earn 25 interest while fielding Xayah",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Janna19",
+   "stats": {
+    "hp": 900,
+    "armor": 45,
+    "mr": 45,
+    "ad": 35,
+    "as": 0.85,
+    "range": 4
+   },
+   "ability": {
+    "name": "Hymn of the Heaven's Gale",
+    "desc": "Fire celestial dragons at up to 3 nearby enemies, each dealing AP 155/250/9999 magic damage. After 4 casts, the arena is enveloped by the Heaven's Gale, dealing AP 1800/2700/9000 magic damage to every enemy over 45 seconds.",
+    "manaStart": 0,
+    "manaCost": 45
+   }
+  },
+  {
+   "id": "lee-sin",
+   "name": "Lee Sin",
+   "nameKo": "리 신",
+   "cost": 5,
+   "traits": [
+    "Gu Feng"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Deal 40 player damage while fielding Xayah",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_LeeSin19",
+   "stats": {
+    "hp": 1200,
+    "armor": 70,
+    "mr": 70,
+    "ad": 60,
+    "as": 0.85,
+    "range": 1
+   },
+   "ability": {
+    "name": "Celestial Combo To Impress The Heavens",
+    "desc": "Unleash a devastating 2/2/99-part combo attack, starting from Dragon Slam and performing moves in sequence. Subsequent casts increase the length of the combo. Dragon Slam: Deal AD AP 190/300/10560 physical damage to the target. Other enemies within 2 hexes take 40% of the damage. Tempest Spin: Deal AD AP 256.5/405/14256 physical damage to the target, knocking them up for 1 second. Other enemies within 1 hex take 50% of the damage. Celestial Punch: Deal AD AP 475/750/26400 physical damage to the target and mark them. If they are already marked, the punch strikes their core, dealing 400% bonus true damage.",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "miss-fortune",
+   "name": "Miss Fortune",
+   "nameKo": "미스 포츈",
+   "cost": 5,
+   "traits": [
+    "8-Bit",
+    "Hitmaker"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_MissFortune19",
+   "stats": {
+    "hp": 900,
+    "armor": 45,
+    "mr": 45,
+    "ad": 80,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Pinball Wizard",
+    "desc": "Fire a pinball towards the target, dealing AD AP 155/235/2245 physical damage. After hitting an enemy, it continues bouncing until damaging enemies 12 times, reducing its damage by 30% each hit. (Minimum damage: 20%)",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "mordekaiser",
+   "name": "Mordekaiser",
+   "nameKo": "모데카이저",
+   "cost": 5,
+   "traits": [
+    "Pentakill"
+   ],
+   "role": "Magic Fighter",
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "10 unique star levels of Pentakill",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Mordekaiser19",
+   "stats": {
+    "hp": 1200,
+    "armor": 65,
+    "mr": 65,
+    "ad": 75,
+    "as": 0.5,
+    "range": 1
+   },
+   "ability": {
+    "name": "Hand of Doom",
+    "desc": "Briefly gain 40% Durability. Summon a claw that deals AP 100/150/800 magic damage in a massive line. The 4 closest enemies take 25% more damage and are pulled towards Mordekaiser. For the rest of combat, gain 20% Omnivamp, +1 Attack Range, and replace attacks with a slam that deals AP 300/480/3000 magic damage to the target and AP 70/105/1500 damage to other enemies within 2 hexes.",
+    "manaStart": 0,
+    "manaCost": 60
+   }
+  },
+  {
+   "id": "nidalee",
+   "name": "Nidalee",
+   "nameKo": "니달리",
+   "cost": 5,
+   "traits": [
+    "Mariachi",
+    "Choreographer"
+   ],
+   "role": "Magic Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Nidalee19",
+   "stats": {
+    "hp": 1200,
+    "armor": 65,
+    "mr": 65,
+    "ad": 50,
+    "as": 0.8,
+    "range": 6
+   },
+   "ability": {
+    "name": "Pounce Party/Dance of Life",
+    "desc": "Pounce Party: Pounce 4 times on enemies, dealing AP 125/185/1500 magic damage, increased by 40% each pounce. Dance of Life: Heal AP 325/500/2000. Hurl a javelin at the target, dealing AP 360/540/3000 magic damage and scattering 3 flowers around them. Flowers deal AP 80/120/500 magic damage to enemies in a 1 Hex radius after a brief delay. Casts Pounce Party in Cougar Form and Dance of Life in Human form.",
+    "manaStart": 20,
+    "manaCost": 45
+   }
+  },
+  {
+   "id": "nunu-and-willump",
+   "name": "Nunu & Willump",
+   "nameKo": "누누와 윌럼프",
+   "cost": 5,
+   "traits": [
+    "Disco",
+    "Frontman"
+   ],
+   "role": "Magic Specialist",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Nunu19",
+   "stats": {
+    "hp": 1200,
+    "armor": 60,
+    "mr": 60,
+    "ad": 15,
+    "as": 0.5,
+    "range": 1
+   },
+   "ability": {
+    "name": "It's the Time to Disco!",
+    "desc": "Passive: Gain 10 Mana Regen. Slowly roll around a Disco Ball, dealing AP 156/234/4500 magic damage to all enemies it passes through. Active: For the rest of combat, move faster and increase the size and damage of the Disco Ball by 30%.",
+    "manaStart": 20,
+    "manaCost": 75
+   }
+  },
+  {
+   "id": "pyke",
+   "name": "Pyke",
+   "nameKo": "파이크",
+   "cost": 5,
+   "traits": [
+    "Rock",
+    "Renegade"
+   ],
+   "role": "Attack Fighter",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 7 - Have 85 or more Gold at the end of combat",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Pyke19",
+   "stats": {
+    "hp": 1200,
+    "armor": 65,
+    "mr": 65,
+    "ad": 70,
+    "as": 0.9,
+    "range": 1
+   },
+   "ability": {
+    "name": "Execute Gon' Give it to Ya",
+    "desc": "Passive: Whenever an enemy drops below AP 10%/10%/93% max Health, instantly cast on them, then dash back to the current target. Active: Deal AD 320/515/4000 physical damage to the target and AD 130/215/800 to all other enemies in an X shape. Execute any enemies below AP 10%/10%/93% Health.",
+    "manaStart": 0,
+    "manaCost": 30
+   }
+  },
+  {
+   "id": "rell",
+   "name": "Rell",
+   "nameKo": "렐",
+   "cost": 5,
+   "traits": [
+    "R&B",
+    "Beat Master"
+   ],
+   "role": "Magic Tank",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Rell19",
+   "stats": {
+    "hp": 1300,
+    "armor": 65,
+    "mr": 65,
+    "ad": 50,
+    "as": 0.7,
+    "range": 1
+   },
+   "ability": {
+    "name": "Rhythm Blaster / Metal Pony Club",
+    "desc": "Rhythm Blaster: For 4 seconds, gain AP 600/725/2000 Shield and summon 3 speakers. Each second, they blast a wave of sound, dealing Armor MR 104/156/1950 magic damage to enemies hit. Metal Pony Club: Slam into a crowd of enemies, dealing Armor MR 124.8/187.2/39000 magic damage to the center enemy and Armor MR 187.2/280.8/39000 damage split among enemies within 2 hexes. Casts Rhythm Blaster while unmounted and Metal Pony Club while mounted.",
+    "manaStart": 30,
+    "manaCost": 100
+   }
+  },
+  {
+   "id": "taliyah",
+   "name": "Taliyah",
+   "nameKo": "탈리야",
+   "cost": 5,
+   "traits": [
+    "Beach Pop",
+    "Encore"
+   ],
+   "role": "Magic Caster",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "A Champion of each cost starts in a Beach Pop hex",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Taliyah19",
+   "stats": {
+    "hp": 950,
+    "armor": 50,
+    "mr": 50,
+    "ad": 30,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Crowd Surfing",
+    "desc": "Throw 3 rocks at the target, each dealing AP 200/300/2000 magic damage. Every 3rd cast, quickly reposition and surf in a line instead. Enemies hit take AP 160/240/2000 + AP 2%/3%/50% max Health magic damage and are briefly knocked up.",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "teemo",
+   "name": "Teemo",
+   "nameKo": "티모",
+   "cost": 5,
+   "traits": [
+    "Hyperpop",
+    "Hype Man"
+   ],
+   "role": "Magic Caster",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Collect 900 Hyperpop Hype",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Teemo19",
+   "stats": {
+    "hp": 900,
+    "armor": 45,
+    "mr": 45,
+    "ad": 55,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Going Viral",
+    "desc": "Passive: Attacks apply Viral, dealing AP 90/135/1337 magic damage over 15 seconds. Infected enemies become zombies on death, seeking out unaffected enemies and exploding, dealing AP 70/105/800 damage to adjacent enemies and applying Viral. Active: Launch a mushroom that applies Viral to enemies in a 3 hex radius and deals AP 530/800/13337 magic damage, reduced by 20% per hex away from the center.",
+    "manaStart": 0,
+    "manaCost": 100
+   }
+  },
+  {
+   "id": "twisted-fate",
+   "name": "Twisted Fate",
+   "nameKo": "트위스티드 페이트",
+   "cost": 5,
+   "traits": [
+    "Tango",
+    "Trickshot"
+   ],
+   "role": "Magic Marksman",
+   "effects": [
+    "Burn"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_TwistedFate19",
+   "stats": {
+    "hp": 900,
+    "armor": 45,
+    "mr": 45,
+    "ad": 30,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Wildcard Cortado",
+    "desc": "Passive: At Combat Start, draw a card for each champion in the shop. If your shop has refreshed this round, gain loot based on the cards drawn! 1 or 2 of a Kind: 1 Gold 3 of a Kind: Random champion 4 of a Kind: Item Component 5 of a Kind: Mystery Box! Active: The next 5 attacks gain 100% Attack Speed and are replaced with cards that deal AP 100/150/2000 magic damage to the target and AP 30/45/1000 magic damage to 2 nearby enemies.",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "vi",
+   "name": "Vi",
+   "nameKo": "바이",
+   "cost": 5,
+   "traits": [
+    "EDM",
+    "Juggernaut"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Vi19",
+   "stats": {
+    "hp": 1200,
+    "armor": 65,
+    "mr": 65,
+    "ad": 80,
+    "as": 0.9,
+    "range": 1
+   },
+   "ability": {
+    "name": "Drop the Beatdown",
+    "desc": "Summon 2 giant hologram fists. Gain AP 300/400/500 Shield for 2 seconds and grant AP 125/165/215 Shield to 2 nearby allies. Slam the target 5 times, each dealing AD 130/200/1000 physical damage to them and AD 35/55/400 damage to all other enemies within 2 hexes. EDM Upgrade: Slam one more time and heal 15% of damage dealt by this ability.",
+    "manaStart": 0,
+    "manaCost": 50
+   }
+  },
+  {
+   "id": "vladimir",
+   "name": "Vladimir",
+   "nameKo": "블라디미르",
+   "cost": 5,
+   "traits": [
+    "Classical",
+    "Arcanist"
+   ],
+   "role": "Magic Fighter",
+   "effects": [
+    "Healing"
+   ],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 8 - Only 1 Champion in the two front rows of the battlefield",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Vladimir19",
+   "stats": {
+    "hp": 1150,
+    "armor": 60,
+    "mr": 60,
+    "ad": 40,
+    "as": 0.75,
+    "range": 2
+   },
+   "ability": {
+    "name": "The Opera Phantom",
+    "desc": "Passive: Gain 30% Omnivamp. Debuffed enemies are Captivated. Active: Deal AP 120/180/999 magic damage to the 3 nearest enemies and Captivate them for 3 seconds. Every 5th cast, drop a chandelier on the board. It deals AP 380/600/9999 magic damage to all enemies, reduced by 10% per hex they are away from the epicenter. Debuffs: Burn, Wound, Shred, Sunder, Mana Reave, Weaken, Slow, Vunerable",
+    "manaStart": 0,
+    "manaCost": 40
+   }
+  },
+  {
+   "id": "zeri",
+   "name": "Zeri",
+   "nameKo": "제리",
+   "cost": 5,
+   "traits": [
+    "Goth",
+    "Swiftstriker"
+   ],
+   "role": "Attack Caster",
+   "effects": [],
+   "unlock": false,
+   "unlockCondition": null,
+   "unlockConditionStatus": null,
+   "status": "pbe",
+   "apiName": "DA_Zeri19",
+   "stats": {
+    "hp": 900,
+    "armor": 45,
+    "mr": 45,
+    "ad": 60,
+    "as": 0.8,
+    "range": 4
+   },
+   "ability": {
+    "name": "Lasers After Midnight",
+    "desc": "Quickly dash around the arena, aiming 6 lasers at the current target. Lasers fire in rapid succession, each dealing AD AP 165/250/1500 physical damage to enemies hit and ignoring 40% of their Armor.",
+    "manaStart": 0,
+    "manaCost": 150
+   }
+  },
+  {
+   "id": "baron-nashor",
+   "name": "Baron Nashor",
+   "nameKo": "내셔 남작",
+   "cost": 7,
+   "traits": [
+    "One Monster Band"
+   ],
+   "role": "Attack Fighter",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Collect all 5 members of Baron's ensemble. Deal 60000 damage with your strongest Malzahar",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_BaronNashor19",
+   "stats": {
+    "hp": 2500,
+    "armor": 80,
+    "mr": 80,
+    "ad": 140,
+    "as": 0.55,
+    "range": 2
+   },
+   "ability": {
+    "name": "Assemble the Ensemble",
+    "desc": "Summon an 8-man orchestra and a Riff Herald, knocking up all enemies for 1 seconds. Deal AD 550/825/2475 physical damage and AP 650/1000/3000 magic damage split among all enemies. Each minion attacks 4 times, with each attack dealing AD 33/50/250 physical damage.",
+    "manaStart": 80,
+    "manaCost": 120
+   }
+  },
+  {
+   "id": "rakan",
+   "name": "Rakan",
+   "nameKo": "라칸",
+   "cost": 7,
+   "traits": [
+    "Boy Band",
+    "Choreographer"
+   ],
+   "role": "Magic Assassin",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Win 4 combats in a row at Level 8+, Lose 3 combats in a row at Level 8+",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Rakan19",
+   "stats": {
+    "hp": 1450,
+    "armor": 80,
+    "mr": 80,
+    "ad": 65,
+    "as": 0.9,
+    "range": 2
+   },
+   "ability": {
+    "name": "Fly like a Peacock",
+    "desc": "Dash to a nearby group of enemies, then fling 8 feathers split amongst enemies within 1 hex, each dealing AP 100/180/2400 magic damage. The main Rakan hits enemies within 2 hexes and briefly knocks up them up.",
+    "manaStart": 0,
+    "manaCost": 55
+   }
+  },
+  {
+   "id": "smeech",
+   "name": "Smeech",
+   "nameKo": "스미치",
+   "cost": 7,
+   "traits": [
+    "Jazz",
+    "Slayer"
+   ],
+   "role": "Attack Specialist",
+   "effects": [],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 9 - Have 8 or more non-unique traits active",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Smeech19",
+   "stats": {
+    "hp": 1300,
+    "armor": 65,
+    "mr": 65,
+    "ad": 70,
+    "as": 0.9,
+    "range": 1
+   },
+   "ability": {
+    "name": "Upswing",
+    "desc": "Passive: Gain between 1 and 4 Beats per attack. Every 4 seconds, cast. Active: Gain AP 250/375/40000 Shield for 3 seconds and deal AD 100/150/4000 physical damage to all enemies within 2 hexes. Then strike the current target 4 times, each dealing AD 240/360/2600 physical damage + AD 12/18/350 per Beat. After unleashing 15 Beats, gain an emblem of a trait you don't have active and increase the number of Beats required. (Unleashed Beats: 0/15)",
+    "manaStart": 0,
+    "manaCost": 4
+   }
+  },
+  {
+   "id": "sona",
+   "name": "Sona",
+   "nameKo": "소나",
+   "cost": 7,
+   "traits": [
+    "Producer",
+    "Collab"
+   ],
+   "role": "Magic Specialist",
+   "effects": [
+    "CC"
+   ],
+   "unlock": true,
+   "unlockCondition": "Req. Lvl 10 - Collab Champions are inspired 15 times during player combat",
+   "unlockConditionStatus": "pbe",
+   "status": "pbe",
+   "apiName": "DA_Sona19",
+   "stats": {
+    "hp": 0,
+    "armor": 50,
+    "mr": 50,
+    "ad": 0,
+    "as": 0.8,
+    "range": 10
+   },
+   "ability": {
+    "name": "feat. Sona",
+    "desc": "Passive: Cannot attack, instead every 3 seconds, gain 31/31/101 Mana, deal AP 120/180/1000 magic damage to the 3 nearest enemies, and 2 allies gain AP 40/65/9999 Shield for 3 seconds. Sona is Unstoppable. Active: Unleash a sonic wave across the battlefield, dealing AP 1500/2400/9999999 magic damage split between all enemies and Stunning them for 2 seconds. Allies gain AP 250/450/99999 Shield split amongst allies for 5 seconds.",
+    "manaStart": 0,
+    "manaCost": 220
+   }
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "schemaVersion": 2,
+ "dataVersion": "19.0-preview.1",
+ "set": 19,
+ "setName": "Prismatic Tour",
+ "targetPatch": "19.2",
+ "currentDataPatch": "Set 19 Dev Drop (pre-PBE)",
+ "built": "2026-11-17",
+ "statusLegend": {
+  "live": "라이브 서버 패치로 검증됨",
+  "pbe": "PBE 데이터로 검증됨",
+  "preview": "Riot 사전 공개(Dev Drop) — 수치 미공개/변경 가능",
+  "carryover": "이전 세트(Set 18) 라이브 값 — Set 19 미확인",
+  "training-model": "이 앱의 단순화 모델",
+  "unverified": "신뢰 가능한 출처 없음"
+ },
+ "schedule": [
+  {
+   "patch": "18.6",
+   "date": "2026-11-04",
+   "what": "Set 18 마지막 정규 패치(라이브)",
+   "confirmed": true
+  },
+  {
+   "patch": "Dev Drop",
+   "date": "2026-11-15",
+   "what": "Set 19 챔피언 94 / 특성 47 / 증강 330 공개",
+   "confirmed": true
+  },
+  {
+   "patch": "PBE",
+   "date": "2026-11-17",
+   "what": "Set 19 PBE (추정, Riot 미발표)",
+   "confirmed": false
+  },
+  {
+   "patch": "19.1",
+   "date": "2026-12-02",
+   "what": "Set 19 라이브 출시",
+   "confirmed": true
+  },
+  {
+   "patch": "19.2",
+   "date": "2026-12-15",
+   "what": "첫 밸런스 패치 — 대회 기준 패치",
+   "confirmed": false
+  }
+ ],
+ "sources": [
+  {
+   "name": "TFT Ninja — Set 19 champions (Riot Dev Drop 2026-11-15)",
+   "url": "https://tft.ninja/sets/19/units",
+   "used": "champions"
+  },
+  {
+   "name": "TFT Ninja — Set 19 traits",
+   "url": "https://tft.ninja/sets/19/traits",
+   "used": "traits"
+  },
+  {
+   "name": "TFT Ninja — Set 19 augments (330)",
+   "url": "https://tft.ninja/sets/19/augments",
+   "used": "augments"
+  },
+  {
+   "name": "TFT Ninja — Set 19 release date & patch schedule",
+   "url": "https://tft.ninja/guides/news/set-19-release-date",
+   "used": "schedule"
+  },
+  {
+   "name": "CommunityDragon — TFT en_us/ko_kr (live 16.22 / Set 18)",
+   "url": "https://raw.communitydragon.org/latest/cdragon/tft/en_us.json",
+   "used": "items, Korean names"
+  },
+  {
+   "name": "CommunityDragon PBE (16.23) — Set 19 미포함(2026-11-17 확인)",
+   "url": "https://raw.communitydragon.org/pbe/cdragon/tft/en_us.json",
+   "used": "verification"
+  },
+  {
+   "name": "League of Legends Wiki — TFT:Gold, TFT:Experience",
+   "url": "https://wiki.leagueoflegends.com/en-us/TFT:Gold",
+   "used": "rules cross-check"
+  },
+  {
+   "name": "TFT Ninja — mechanics guides (Set 18)",
+   "url": "https://tft.ninja/guides/game-mechanics",
+   "used": "rules"
+  },
+  {
+   "name": "Blitz.gg — Set 19 champions/traits/unlocks",
+   "url": "https://blitz.gg/tft/articles/tft-set-19-champions-traits-unlocks",
+   "used": "cross-check"
+  }
+ ],
+ "changelog": [
+  {
+   "version": "19.0-preview.1",
+   "date": "2026-11-17",
+   "changes": [
+    "챔피언 94명: Dev Drop 원문과 대조 — v0.1.0 데이터와 코스트/특성/역할/해금 여부 100% 일치 확인",
+    "해금 조건 텍스트(36명) 추가, 한국어 챔피언명 93명 추가(CommunityDragon ko_kr 대조 90 + LoL 공식명 3, Locke는 미확인)",
+    "특성 47개: 설명/단계별 효과 원문 추가. True Damage 10단계 제거(원문에 없음, A/B 사이드 3/5)",
+    "Collab: 고유 특성(1) → 순환 특성(3/5)으로 수정, Pentakill 프리즘 7 단계 분리",
+    "K/DA: 유닛 수가 아닌 \"총 별 레벨\" 기준 집계로 수정",
+    "증강 20개 예시 → 330개 전체(실버 84/골드 137/프리즘 109) 원문 설명",
+    "상점 확률 수정: v0.1.0 값(출처 불명) → Set 18 patch 18.3 공개 값. 예: Lv7 16/30/43/10/1, Lv8 15/20/32/30/3",
+    "XP 표 수정: 8→9 80→68, 9→10 100→68 (Set 18 기준)",
+    "경제 규칙 수정: 연승 보너스 3-4:1 / 5:2 / 6+:3, 승리 +1, 스테이지별 기본 수입·피해 추가",
+    "아이템: 표준 조합표 55종(Set 18 라이브 CDragon) + Set 19 상징(조합법 미공개)"
+   ]
+  },
+  {
+   "version": "0.1.0",
+   "date": "2026-11-15",
+   "changes": [
+    "최초 사전 공개 스냅샷(챔피언 94, 특성 브레이크포인트, 증강 예시 20)"
+   ]
+  }
+ ]
+}

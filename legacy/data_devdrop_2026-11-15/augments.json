@@ -1,0 +1,4592 @@
+{
+ "meta": {
+  "set": 19,
+  "patch": "Dev Drop (pre-PBE)",
+  "source": [
+   "Riot Games Set 19 Dev Drop (2026-11-15), transcribed by TFT Ninja",
+   "https://tft.ninja/sets/19/augments"
+  ],
+  "updated": "2026-11-15",
+  "status": "preview",
+  "count": 330,
+  "note": "categories는 설명문 키워드 기반 자동 분류(training-model). 수치 미공개."
+ },
+ "augments": [
+  {
+   "id": "3-4-time",
+   "name": "3|4 Time",
+   "tier": "Silver",
+   "description": "Gain gold, player Health, and rerolls now, then gain a random champion after a delay.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat",
+    "units",
+    "hp"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "4-4-time",
+   "name": "4|4 Time",
+   "tier": "Silver",
+   "description": "Gain gold, player Health, and rerolls now, then gain a random champion after a delay.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat",
+    "units",
+    "hp"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "augmented-power",
+   "name": "Augmented Power",
+   "tier": "Silver",
+   "description": "Your next augment is one tier higher.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "backup-bows",
+   "name": "Backup Bows",
+   "tier": "Silver",
+   "description": "Gain a Recurve Bow. After your champions attack, gain additional Recurve Bows.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "band-of-thieves",
+   "name": "Band of Thieves",
+   "tier": "Silver",
+   "description": "Gain Thief's Gloves.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "beltsmith",
+   "name": "Beltsmith",
+   "tier": "Silver",
+   "description": "Gain random completed items that build from Giant's Belt.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "bite-marks",
+   "name": "Bite Marks",
+   "tier": "Silver",
+   "description": "Gain an Elise. Your strongest Elise becomes a Magic Assassin with a bite that she recasts on low Health enemies on kill.",
+   "kind": "hero",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "blind-box",
+   "name": "Blind Box",
+   "tier": "Silver",
+   "description": "Gain a random Gold Augment, but lose gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "boxing-lessons",
+   "name": "Boxing Lessons",
+   "tier": "Silver",
+   "description": "Your team gains Health for each ally that starts combat in the front row.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "branching-out",
+   "name": "Branching Out",
+   "tier": "Silver",
+   "description": "Gain a random Emblem.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "branching-out-plus",
+   "name": "Branching Out+",
+   "tier": "Silver",
+   "description": "Gain a random Emblem and a Reforger.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "bundle-o-shrooms-silver",
+   "name": "Bundle o' Shrooms",
+   "tier": "Silver",
+   "description": "Gain mushrooms; each grants either rerolls, XP, or Tactician Health. Mushrooms have a small chance to be huge and grant double loot.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "called-shot",
+   "name": "Called Shot",
+   "tier": "Silver",
+   "description": "Set your win streak and gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "capital-gains",
+   "name": "Capital Gains",
+   "tier": "Silver",
+   "description": "Store gold equal to the interest you earn. On a stage-round, gain a portion of the stored gold. Gain gold now.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "caretaker-s-ally",
+   "name": "Caretaker's Ally",
+   "tier": "Silver",
+   "description": "Gain a random 2-cost champion now. Gain the same one again every time you level up.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "carve-a-path",
+   "name": "Carve a Path",
+   "tier": "Silver",
+   "description": "Gain a B.F. Sword. After your champions deal physical damage, gain more.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "caster-apprentice",
+   "name": "Caster Apprentice",
+   "tier": "Silver",
+   "description": "Gain a Tear of the Goddess. After a set number of player combats, gain a Needlessly Large Rod.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "celestial-blessing",
+   "name": "Celestial Blessing",
+   "tier": "Silver",
+   "description": "Your team gains Omnivamp. Excess healing is converted into a shield, up to a maximum.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "champ-delivery",
+   "name": "Champ Delivery",
+   "tier": "Silver",
+   "description": "Gain champions, then gain more champions after a delay.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "champ-delivery-plus",
+   "name": "Champ Delivery+",
+   "tier": "Silver",
+   "description": "Gain champions, then gain more after a delay.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "champ-delivery-plus-plus",
+   "name": "Champ Delivery++",
+   "tier": "Silver",
+   "description": "Gain cost-based champions. After a delay, gain more.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cheat-code",
+   "name": "Cheat Code",
+   "tier": "Silver",
+   "description": "Now and at the start of each stage, get a new cheat code. The first time you perform that exact sequence of actions, gain a reward.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "component-buffet",
+   "name": "Component Buffet",
+   "tier": "Silver",
+   "description": "Whenever you would get a component, gain a component anvil instead. Gain a random component. The anvil offers 4 choices.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "corrosion",
+   "name": "Corrosion",
+   "tier": "Silver",
+   "description": "Enemies in the first two rows periodically lose Armor and Magic Resist.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "crafted-crafting",
+   "name": "Crafted Crafting",
+   "tier": "Silver",
+   "description": "Whenever you craft a completed item, you gain rerolls.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "crit-rune",
+   "name": "Crit Rune",
+   "tier": "Silver",
+   "description": "Gain gold. Your team gains Critical Strike Chance.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "crit-rune-plus",
+   "name": "Crit Rune+",
+   "tier": "Silver",
+   "description": "Gain gold. Your team gains Critical Strike Chance.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "dummify",
+   "name": "Dummify",
+   "tier": "Silver",
+   "description": "Lose all champions on your board and bench. Gain a Training Dummy with health based on their combined health; it gains additional health each stage. Gain a random non-tank 2-star 2-cost champion.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "electrocharge",
+   "name": "Electrocharge",
+   "tier": "Silver",
+   "description": "After an ally takes enough attacks, they deal magic damage to nearby enemies, with a cooldown between activations.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "expedition",
+   "name": "Expedition",
+   "tier": "Silver",
+   "description": "At the start of every round, lose the champion in the rightmost bench slot. After losing enough gold value in champions this way, gain a powerful reward. Gain a 3-cost champion now.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "extra-buckles",
+   "name": "Extra Buckles",
+   "tier": "Silver",
+   "description": "Gain a Giant's Belt. After your champions take damage, get more.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "feeling-lucky",
+   "name": "Feeling Lucky",
+   "tier": "Silver",
+   "description": "Gain gold, then flip a coin. If it lands heads, gain additional gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "feeling-lucky-plus",
+   "name": "Feeling Lucky+",
+   "tier": "Silver",
+   "description": "Gain gold, then flip a coin; if heads, gain additional gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "fighter-apprentice",
+   "name": "Fighter Apprentice",
+   "tier": "Silver",
+   "description": "Gain Sparring Gloves. After waiting through a set number of player combats, gain a Chain Vest.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "fighter-flight",
+   "name": "Fighter Flight",
+   "tier": "Silver",
+   "description": "Your Fighters and Assassins move faster and gain Attack Speed. Both bonuses are doubled while they are below the health threshold.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "find-your-center",
+   "name": "Find Your Center",
+   "tier": "Silver",
+   "description": "The champion that starts combat in the center of the front row gains Damage Amp and max Health.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "flowing-tears",
+   "name": "Flowing Tears",
+   "tier": "Silver",
+   "description": "Gain a Tear of the Goddess. After your champions spend Mana, gain more rewards.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "focused-fire",
+   "name": "Focused Fire",
+   "tier": "Silver",
+   "description": "Your team gains Attack Damage and gains more Attack Damage periodically.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "forge-a-friend",
+   "name": "Forge A Friend",
+   "tier": "Silver",
+   "description": "The next champion you buy is a star-ranked champion. Gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "future-focused",
+   "name": "Future Focused",
+   "tier": "Silver",
+   "description": "Your Tactician loses Health, then gains 4-cost champions and gold after a set number of player combats.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "glass-cannon",
+   "name": "Glass Cannon",
+   "tier": "Silver",
+   "description": "Allies that start combat in the back row begin combat at a Health level and gain Damage Amp.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "good-for-something",
+   "name": "Good For Something",
+   "tier": "Silver",
+   "description": "Champions that aren't holding items have a chance to drop gold when they die.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "group-hug",
+   "name": "Group Hug",
+   "tier": "Silver",
+   "description": "At combat start, allies grant Armor and Magic Resist to other adjacent allies. This effect stacks.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "healing-orbs",
+   "name": "Healing Orbs",
+   "tier": "Silver",
+   "description": "When an enemy dies, a nearby ally is healed.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "iron-assets",
+   "name": "Iron Assets",
+   "tier": "Silver",
+   "description": "Gain a component anvil and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "item-grab-bag",
+   "name": "Item Grab Bag",
+   "tier": "Silver",
+   "description": "Gain 1 random completed item.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "keeping-tempo",
+   "name": "Keeping Tempo",
+   "tier": "Silver",
+   "description": "After winning player combat, gain a free Shop reroll.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "kick-start",
+   "name": "Kick Start",
+   "tier": "Silver",
+   "description": "Gain a random champion and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "kingslayer",
+   "name": "Kingslayer",
+   "tier": "Silver",
+   "description": "After winning player combat, gain gold; if your opponent had more health than you, gain a different amount instead. You also gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "knowledge-download",
+   "name": "Knowledge Download",
+   "tier": "Silver",
+   "description": "Gain XP.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "late-game-specialist",
+   "name": "Late Game Specialist",
+   "tier": "Silver",
+   "description": "When you reach a level, gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "latent-forge",
+   "name": "Latent Forge",
+   "tier": "Silver",
+   "description": "Gain an Artifact Anvil after a set number of player combats.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "makeshift-armor",
+   "name": "Makeshift Armor",
+   "tier": "Silver",
+   "description": "Champions without items equipped gain Armor and Magic Resist.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "marksman-apprentice",
+   "name": "Marksman Apprentice",
+   "tier": "Silver",
+   "description": "Gain a Recurve Bow. After a set number of player combats, gain a B.F. Sword.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "missed-connections",
+   "name": "Missed Connections",
+   "tier": "Silver",
+   "description": "Gain a copy of each 1-cost champion.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "one-twos-three",
+   "name": "One Twos Three",
+   "tier": "Silver",
+   "description": "Gain 2 1-cost champions, 2 2-cost champions, and 1 3-cost champion.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "one-two-five",
+   "name": "One, Two, Five!",
+   "tier": "Silver",
+   "description": "Gain 1 random component, 2 gold, and 1 random 5-cost champion.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pandora-s-bench",
+   "name": "Pandora's Bench",
+   "tier": "Silver",
+   "description": "At the start of each round, champions in the rightmost bench slots transform into random champions of the same cost. Gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pandora-s-items",
+   "name": "Pandora's Items",
+   "tier": "Silver",
+   "description": "At the start of each round, items on your bench are randomized. Gain random component items.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "partial-ascension",
+   "name": "Partial Ascension",
+   "tier": "Silver",
+   "description": "Once combat has been underway for a while, your units gain Damage Amp.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "patience-is-a-virtue",
+   "name": "Patience Is A Virtue",
+   "tier": "Silver",
+   "description": "Gain rerolls now. Each round, gain a free reroll if you did not buy a champion last round.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "quick-streaks",
+   "name": "Quick Streaks",
+   "tier": "Silver",
+   "description": "You gain twice as much progress toward win and loss streaks. Gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "recombobulator",
+   "name": "Recombobulator",
+   "tier": "Silver",
+   "description": "Champions on your board permanently transform into random champions 1 cost tier higher, up to 5 cost. Gain Magnetic Removers and free rerolls.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "reunion-show",
+   "name": "Reunion Show",
+   "tier": "Silver",
+   "description": "Gain champions that all share a trait.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "rolling-for-days",
+   "name": "Rolling For Days",
+   "tier": "Silver",
+   "description": "Gain free Shop rerolls.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "silver-destiny",
+   "name": "Silver Destiny",
+   "tier": "Silver",
+   "description": "Gain a random Silver Augment and gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "silver-destiny-plus",
+   "name": "Silver Destiny+",
+   "tier": "Silver",
+   "description": "Gain a random Silver Augment and gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "silver-destiny-plus-plus",
+   "name": "Silver Destiny++",
+   "tier": "Silver",
+   "description": "Gain a random Silver Augment and gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "silver-spoon",
+   "name": "Silver Spoon",
+   "tier": "Silver",
+   "description": "Gain XP.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "slice-of-life",
+   "name": "Slice of Life",
+   "tier": "Silver",
+   "description": "Twice per stage, gain a random champion whose cost increases with the stage. This effect ends after you receive a champion at the maximum cost.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "slightly-magic-roll",
+   "name": "Slightly Magic Roll",
+   "tier": "Silver",
+   "description": "Roll a die and gain rewards based on the number rolled.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "small-grab-bag",
+   "name": "Small Grab Bag",
+   "tier": "Silver",
+   "description": "Gain random item components.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "staffsmith",
+   "name": "Staffsmith",
+   "tier": "Silver",
+   "description": "Gain random completed item(s) that build from Needlessly Large Rod.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "stats-on-stats",
+   "name": "Stats On Stats",
+   "tier": "Silver",
+   "description": "Gain stat-boosting consumables now and at regular intervals thereafter.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "strange-duet",
+   "name": "Strange Duet",
+   "tier": "Silver",
+   "description": "Allies that start combat isolated in pairs gain Durability and Damage Amp.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "swordsmith",
+   "name": "Swordsmith",
+   "tier": "Silver",
+   "description": "Gain random completed items that build from B.F. Sword.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "tank-apprentice",
+   "name": "Tank Apprentice",
+   "tier": "Silver",
+   "description": "Gain a Giant's Belt. After player combat, gain a Negatron Cloak.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "team-building",
+   "name": "Team Building",
+   "tier": "Silver",
+   "description": "Gain a Lesser Champion Duplicator, then gain another after a set number of player combats. It lets you copy a champion that costs 3 or less.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "the-drop",
+   "name": "The Drop",
+   "tier": "Silver",
+   "description": "After a delay in combat, your team heals for a portion of its max Health, and enemies take true damage based on their max Health.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "the-tower",
+   "name": "The Tower",
+   "tier": "Silver",
+   "description": "Gain a giant Training Dummy. At regular intervals, it zaps the nearest enemies, dealing true damage based on their max Health.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "twin-guardians",
+   "name": "Twin Guardians",
+   "tier": "Silver",
+   "description": "When your first row meets the exact ally-count condition, those allies gain Health, Armor, and Magic Resist.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "verticality",
+   "name": "Verticality",
+   "tier": "Silver",
+   "description": "Champions gain Attack Damage, Ability Power, Armor, and Magic Resist for each ally that shares a trait with them.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "world-tour",
+   "name": "World Tour",
+   "tier": "Silver",
+   "description": "Gain a completed item anvil after every set number of player combats.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "young-and-wild-and-free",
+   "name": "Young and Wild and Free",
+   "tier": "Silver",
+   "description": "You can always move freely on Carousel rounds and gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "advanced-loan",
+   "name": "Advanced Loan",
+   "tier": "Gold",
+   "description": "Gain Gold. Your next augment is one tier lower.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "advanced-loan-plus",
+   "name": "Advanced Loan+",
+   "tier": "Gold",
+   "description": "Gain Gold. Your next augment is one tier lower.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "aim-high",
+   "name": "Aim High",
+   "tier": "Gold",
+   "description": "For each of your first purchases of a unique unlockable 5-cost champion, gain a recommended item for that champion.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "all-that-shimmers",
+   "name": "All That Shimmers",
+   "tier": "Gold",
+   "description": "Choose a gold-generating Artifact. Gain a Magnetic Remover.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "all-that-shimmers-plus",
+   "name": "All That Shimmers+",
+   "tier": "Gold",
+   "description": "Choose a gold-generating Artifact. Gain a Magnetic Remover and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "arcane-viktor-y",
+   "name": "Arcane Viktor-y",
+   "tier": "Gold",
+   "description": "After an initial delay in combat, stun the enemy team; repeat this after another delay in combat.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "armed-and-generous",
+   "name": "Armed and Generous",
+   "tier": "Gold",
+   "description": "Gain a Hextech Gunblade. Your Gunblades' ally heal also applies to a second target.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "armor-stand",
+   "name": "Armor Stand",
+   "tier": "Gold",
+   "description": "Gain a Training Dummy with a Thief's Gloves. It always rolls Tank items.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "ascension",
+   "name": "Ascension",
+   "tier": "Gold",
+   "description": "After a delay in combat, your units gain Damage Amp.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "backline-blueprint",
+   "name": "Backline Blueprint",
+   "tier": "Gold",
+   "description": "Gain a 3-cost non-Tank champion and an Emblem that matches their class.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "battle-of-the-bands",
+   "name": "Battle of the Bands",
+   "tier": "Gold",
+   "description": "When you have enough active Bands, your team gains Attack Damage and Ability Power.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "beltsmith-ii",
+   "name": "Beltsmith II",
+   "tier": "Gold",
+   "description": "Gain 1 random completed item that builds from Giant's Belt now, and another in a later round.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "big-solo",
+   "name": "Big Solo",
+   "tier": "Gold",
+   "description": "Your Heartsteel Biases gain more of all active Heartsteel bonuses. Gain Heartsteel champions.",
+   "kind": "trait",
+   "categories": [
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Heartsteel"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "birthday-reunion",
+   "name": "Birthday Reunion",
+   "tier": "Gold",
+   "description": "Gain a random champion. At a later level, gain a random item component; at a subsequent level, gain another random champion.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "blind-box-ii",
+   "name": "Blind Box II",
+   "tier": "Gold",
+   "description": "Gain a random Prismatic Augment, but lose gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "bodyguard-training",
+   "name": "Bodyguard Training",
+   "tier": "Gold",
+   "description": "Allies gain Armor and Magic Resist, with the bonuses increasing per player level.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "bonus-gifts",
+   "name": "Bonus Gifts",
+   "tier": "Gold",
+   "description": "Start with gray loot orbs. Whenever you open a loot orb, you have a chance to gain gray loot orbs.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "bonus-gifts-plus",
+   "name": "Bonus Gifts+",
+   "tier": "Gold",
+   "description": "Whenever you open a loot orb, you may gain a gray loot orb. Start with gray loot orbs.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "booster-pack",
+   "name": "Booster Pack",
+   "tier": "Gold",
+   "description": "Gain random champions, including at least one guaranteed champion.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "booster-pack-plus",
+   "name": "Booster Pack+",
+   "tier": "Gold",
+   "description": "Gain random champions, including at least one champion of a guaranteed cost.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "booster-pack-plus-plus",
+   "name": "Booster Pack++",
+   "tier": "Gold",
+   "description": "Gain random champions, including at least one champion from a guaranteed cost tier.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "bundle-o-shrooms-gold",
+   "name": "Bundle o' Shrooms",
+   "tier": "Gold",
+   "description": "Gain mushrooms that each grant either a reroll, XP, or Tactician Health. Mushrooms have a small chance to be HUGE and grant double loot.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "calculated-loss",
+   "name": "Calculated Loss",
+   "tier": "Gold",
+   "description": "After losing your combat, gain gold and a free Shop reroll.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "capital-gains-ii",
+   "name": "Capital Gains II",
+   "tier": "Gold",
+   "description": "Store gold equal to the interest you earn. At a later stage and round, gain a percentage of the stored gold. Gain gold immediately.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "caretaker-s-favor",
+   "name": "Caretaker's Favor",
+   "tier": "Gold",
+   "description": "Gain a component anvil when you reach level 5, 6, 7, and 8. Component anvils offer 4 choices.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "celestial-blessing-ii",
+   "name": "Celestial Blessing II",
+   "tier": "Gold",
+   "description": "Your team gains Omnivamp, and excess healing converts into a shield up to a maximum.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "chalice-of-power",
+   "name": "Chalice of Power",
+   "tier": "Gold",
+   "description": "Gain a Chalice of Power, an item that grants Ability Power and Mana Regen to its holder and allies in the same row.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "challenger-s-grace",
+   "name": "Challenger's Grace",
+   "tier": "Gold",
+   "description": "At the start of combat, allies gain bonus Attack Speed temporarily. On takedown, they dash to their next target and gain this bonus again.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "champion-airdrop",
+   "name": "Champion Airdrop",
+   "tier": "Gold",
+   "description": "Gain champions, then gain more after a delay. After each airdrop, the delay and number of champions increase.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cheat-code-ii",
+   "name": "Cheat Code II",
+   "tier": "Gold",
+   "description": "Now and at the start of each stage, get a new cheat code. The first time you perform that exact sequence of actions, gain a reward.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "clear-mind",
+   "name": "Clear Mind",
+   "tier": "Gold",
+   "description": "If you have no champions on your bench at the end of player combat, gain XP.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cluttered-mind",
+   "name": "Cluttered Mind",
+   "tier": "Gold",
+   "description": "Gain champions now. If your bench is full at the end of player combat, gain XP.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cognitive-overload",
+   "name": "Cognitive Overload",
+   "tier": "Gold",
+   "description": "Gain gold, champions with star levels and costs, XP, and Shop rerolls.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "construct-a-companion",
+   "name": "Construct a Companion",
+   "tier": "Gold",
+   "description": "The next champion you buy is upgraded to a star level. Gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cooking-pot",
+   "name": "Cooking Pot",
+   "tier": "Gold",
+   "description": "At the start of each turn, allies holding a Frying Pan or Spatula item grant the nearest champion permanent Health. Gain a Frying Pan.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "counting-stars",
+   "name": "Counting Stars",
+   "tier": "Gold",
+   "description": "Gain gold. Each time you 3-star a champion, gain additional gold for each 3-star champion you have.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cry-me-a-river",
+   "name": "Cry Me A River",
+   "tier": "Gold",
+   "description": "Gain a Tear of the Goddess. Your team gains Mana Regen, which increases after a period in combat.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cybernetic-implants",
+   "name": "Cybernetic Implants",
+   "tier": "Gold",
+   "description": "Your champions holding an item gain Health and Attack Damage. Gain a B.F. Sword.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cybernetic-uplink",
+   "name": "Cybernetic Uplink",
+   "tier": "Gold",
+   "description": "Champions holding an item gain Health and Mana Regen. Gain a Tear of the Goddess.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "dance-party",
+   "name": "Dance Party",
+   "tier": "Gold",
+   "description": "When you win combat, each surviving champion has a chance to drop gold. This chance increases for each Choreographer you field. Gain 2 Choreographers.",
+   "kind": "trait",
+   "categories": [
+    "econ",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Choreographer"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "death-by-a-thousand-cuts",
+   "name": "Death by a Thousand Cuts",
+   "tier": "Gold",
+   "description": "After Swiftstriker attacks, gain a Completed Item Anvil and Gold. Gain a Ziggs and a Yunara.",
+   "kind": "trait",
+   "categories": [
+    "econ",
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Swiftstriker"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "deathbringer",
+   "name": "Deathbringer",
+   "tier": "Gold",
+   "description": "Every set of takedowns by Rock champions or the Infernal Idol permanently grants him Health, Attack Damage, and Ability Power. Gain 3 Rock champions.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Rock"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "dig-on-this",
+   "name": "Dig on This",
+   "tier": "Gold",
+   "description": "Your Jazz champions gain increased Health and Damage Amp from the Jazz trait. Gain a Lucian and a Galio.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Jazz"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "double-trouble",
+   "name": "Double Trouble",
+   "tier": "Gold",
+   "description": "When you field exactly 2 copies of a champion, both gain Attack Damage and Ability Power, plus Armor and Magic Resist. When you 3-star, gain a 2-star copy.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "duo-queue",
+   "name": "Duo Queue",
+   "tier": "Gold",
+   "description": "Gain 2 random 5-cost champions and 2 copies of a random component.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "early-learnings",
+   "name": "Early Learnings",
+   "tier": "Gold",
+   "description": "Your team gains Attack Damage and Ability Power, with the bonus increasing after each player combat. 1-cost champions gain double.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "electrocharge-ii",
+   "name": "Electrocharge II",
+   "tier": "Gold",
+   "description": "Whenever an ally has been attacked enough times, they deal magic damage to nearby enemies; the effect has a cooldown.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "epic-rolldown",
+   "name": "Epic Rolldown",
+   "tier": "Gold",
+   "description": "When you level up, gain Shop rerolls.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "epoch",
+   "name": "Epoch",
+   "tier": "Gold",
+   "description": "Gain XP and free rerolls now and at the start of every stage.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "epoch-plus",
+   "name": "Epoch+",
+   "tier": "Gold",
+   "description": "Gain XP and free rerolls now and at the start of every stage.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "espresso",
+   "name": "Espresso",
+   "tier": "Gold",
+   "description": "Gain a Recurve Bow. Your team gains Attack Speed, which increases after combat has been underway for a while.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "exclusive-customization",
+   "name": "Exclusive Customization",
+   "tier": "Gold",
+   "description": "Gain a Lucky Item Chest, a Magnetic Remover, and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "fighter-flight-ii",
+   "name": "Fighter Flight II",
+   "tier": "Gold",
+   "description": "Your Fighters and Assassins move faster and gain Attack Speed. Both bonuses are doubled while they are below a health threshold.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "forever-burning-brighter",
+   "name": "Forever Burning Brighter",
+   "tier": "Gold",
+   "description": "Your Ionic Spark champions gain Attack Damage and Ability Power; these bonuses permanently increase each time fans reach another gift milestone. Gain 3 Ionic Spark champions.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Ionic Spark"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "fourcing",
+   "name": "FOURcing",
+   "tier": "Gold",
+   "description": "Gain a random 4-cost champion. For each item equipped to that champion, your team gains health.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "frontline-foundation",
+   "name": "Frontline Foundation",
+   "tier": "Gold",
+   "description": "Gain a 2-star 1-cost Tank champion and an Emblem that matches their class.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "gain-21-gold",
+   "name": "Gain 21 Gold",
+   "tier": "Gold",
+   "description": "Gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "gain-21-gold-plus",
+   "name": "Gain 21 Gold+",
+   "tier": "Gold",
+   "description": "Gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "gathering-storm",
+   "name": "Gathering Storm",
+   "tier": "Gold",
+   "description": "Pentakill champions permanently gain Health each time the Pentakill trait executes an enemy. Gain 3 Pentakill champions.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Pentakill"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "gilded-steel",
+   "name": "Gilded Steel",
+   "tier": "Gold",
+   "description": "Gain two 5-cost champions. If you field at least one 5-cost champion, your 1- to 4-cost champions gain Durability.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "glass-cannon-ii",
+   "name": "Glass Cannon II",
+   "tier": "Gold",
+   "description": "Allies that start combat in the back row have their starting Health adjusted and gain Damage Amp.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "gold-destiny",
+   "name": "Gold Destiny",
+   "tier": "Gold",
+   "description": "Gain a random Gold Augment, along with gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "gold-destiny-plus",
+   "name": "Gold Destiny+",
+   "tier": "Gold",
+   "description": "Gain a random Gold Augment and gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "good-fourtune",
+   "name": "Good FOURtune",
+   "tier": "Gold",
+   "description": "Open a shop of 2-star 4-cost champions. You can buy only 1. Gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "group-hug-ii",
+   "name": "Group Hug II",
+   "tier": "Gold",
+   "description": "At combat start, allies grant Armor and Magic Resist to other adjacent allies. This effect stacks.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "hard-bargain",
+   "name": "Hard Bargain",
+   "tier": "Gold",
+   "description": "You cannot choose your Carousel rewards. Each Carousel round, gain additional player health and gold. If you do not pick a Carousel reward, you receive an unpicked champion and the item it carries.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items",
+    "combat",
+    "units",
+    "hp"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "healing-orbs-ii",
+   "name": "Healing Orbs II",
+   "tier": "Gold",
+   "description": "When an enemy dies, a nearby ally is healed.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "heart-of-steel",
+   "name": "Heart of Steel",
+   "tier": "Gold",
+   "description": "Steadfast Heart repeatedly gains permanent max Health as its holder survives combat.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "heroic-grab-bag",
+   "name": "Heroic Grab Bag",
+   "tier": "Gold",
+   "description": "Gain 2 Lesser Champion Duplicators and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "heroic-grab-bag-plus",
+   "name": "Heroic Grab Bag+",
+   "tier": "Gold",
+   "description": "Gain 2 Lesser Champion Duplicators and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "heroic-grab-bag-plus-plus",
+   "name": "Heroic Grab Bag++",
+   "tier": "Gold",
+   "description": "Gain 2 Lesser Champion Duplicators and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "high-rolling",
+   "name": "High Rolling",
+   "tier": "Gold",
+   "description": "Renegade kills have a chance to drop loot, scaling with Critical Strike Chance. The value of the loot given can also critically strike, granting even more loot. Gain a Qiyana.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Renegade"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "hustler",
+   "name": "Hustler",
+   "tier": "Gold",
+   "description": "You no longer gain interest (extra gold earned from saved gold), but gain gold at the start of every player combat round. Gain gold now.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "immortalized-in-theater",
+   "name": "Immortalized in Theater",
+   "tier": "Gold",
+   "description": "The first allies to die each combat become statues. When the statues die, they Captivate adjacent enemies. Gain a Katarina and a Renata Glasc.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "infinity-protection",
+   "name": "Infinity Protection",
+   "tier": "Gold",
+   "description": "Gain gold now, then gain an Infinity Force. Infinity Force gives allies in the same row a Health-based shield.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "investment-strategy",
+   "name": "Investment Strategy",
+   "tier": "Gold",
+   "description": "Your champions gain permanent max health for each interest you earn. Gain gold now.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "it-s-me-baby",
+   "name": "It's Me, Baby",
+   "tier": "Gold",
+   "description": "Gain a championship hex in the bottom-right corner. The champion in it gains Damage Amp and Attack Speed, and drops gold every set number of takedowns.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "knowledge-download-ii",
+   "name": "Knowledge Download II",
+   "tier": "Gold",
+   "description": "Gain XP.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "late-game-scaling",
+   "name": "Late Game Scaling",
+   "tier": "Gold",
+   "description": "Gain XP at the start of player combat rounds. Your 5-cost champions gain Health and Attack Speed.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "legion-of-threes",
+   "name": "Legion Of Threes",
+   "tier": "Gold",
+   "description": "Gain a random Emblem. Your 3-cost champions and all allies equipped with an Emblem gain Health and Attack Speed.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "light-up-the-sky",
+   "name": "Light up the Sky",
+   "tier": "Gold",
+   "description": "Periodically, the highest-Health enemies take magic damage based on their max Health, with additional damage for each Ionic Spark champion you have fielded. Gain 3 Ionic Spark champions.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Ionic Spark"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "magic-roll",
+   "name": "Magic Roll",
+   "tier": "Gold",
+   "description": "Roll 3 dice and gain rewards based on their total.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "makeshift-armor-ii",
+   "name": "Makeshift Armor II",
+   "tier": "Gold",
+   "description": "Champions without items equipped gain Armor and Magic Resist.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "max-build",
+   "name": "Max Build",
+   "tier": "Gold",
+   "description": "Gain free Shop rerolls. Upon reaching a level threshold, gain more free Shop rerolls and a Champion Duplicator.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "money-hungry",
+   "name": "Money Hungry",
+   "tier": "Gold",
+   "description": "Gain gold now, then gain gold at the start of every stage. Picking up gold makes your Tactician larger.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "money-hungry-plus",
+   "name": "Money Hungry+",
+   "tier": "Gold",
+   "description": "Gain gold now, then gain gold at the start of every stage. Picking up gold makes your Tactician larger.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "no-scout-no-pivot",
+   "name": "NO SCOUT NO PIVOT",
+   "tier": "Gold",
+   "description": "Champions that fight in player combat cannot be benched or sold. After player combat, your champions gain Health, Attack Damage, and Ability Power.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "our-hearts-aligned",
+   "name": "Our Hearts Aligned",
+   "tier": "Gold",
+   "description": "Whenever Ionic Spark champions collectively spend Mana, they each gain a temporary shield based on their max Health. Gain 3 Ionic Spark champions.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Ionic Spark"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pandora-s-items-ii-plus",
+   "name": "Pandora's Items II+",
+   "tier": "Gold",
+   "description": "At the start of each round, items on your bench are randomized. Gain random components and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "patient-study",
+   "name": "Patient Study",
+   "tier": "Gold",
+   "description": "After player combat, gain XP based on whether you won or lost.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pi-ata",
+   "name": "PiÃ±ata",
+   "tier": "Gold",
+   "description": "Gain a Training Dummy with Giant's Belts. Your Training Dummies drop 1 gold for every damage they take.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pilfer",
+   "name": "Pilfer",
+   "tier": "Gold",
+   "description": "Each round, gain a 1-star copy of the first champion you killed last combat. The first time the total gold value of champions gained this way reaches the threshold, gain Thief's Gloves.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "plot-armor",
+   "name": "Plot Armor",
+   "tier": "Gold",
+   "description": "Your team gains Armor and Magic Resist. After falling below a health threshold, these stats increase for the rest of combat.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "portable-forge",
+   "name": "Portable Forge",
+   "tier": "Gold",
+   "description": "Choose 1 of 4 Artifacts. Artifacts are more powerful items with a unique effect.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "promised-protection",
+   "name": "Promised Protection",
+   "tier": "Gold",
+   "description": "Gain a Protector's Vow, which grants its holder increased Mana from all sources and increased maximum Health.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "randuin-s-omen",
+   "name": "Randuin's Omen",
+   "tier": "Gold",
+   "description": "Gain a Randuin's Omen, which grants Armor and Magic Resist to its holder and nearby allies.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "rare-collection",
+   "name": "Rare Collection",
+   "tier": "Gold",
+   "description": "Your team gains Health and Attack Speed for each unique unlockable champion fielded.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "replication",
+   "name": "Replication",
+   "tier": "Gold",
+   "description": "Choose 1 of 3 components. Gain a copy of that component over the next few rounds.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "reroll-exe",
+   "name": "reroll.exe",
+   "tier": "Gold",
+   "description": "At the start of every stage, including this one, gain free rerolls, plus additional free rerolls based on your Hyperpop Hype. Gain a 2-star Ziggs.",
+   "kind": "trait",
+   "categories": [
+    "trait"
+   ],
+   "relatedTraits": [
+    "Hyperpop"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "reunion-show-ii",
+   "name": "Reunion Show II",
+   "tier": "Gold",
+   "description": "Gain champions, all of whom share a trait.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "rock-all-nite",
+   "name": "Rock All Nite",
+   "tier": "Gold",
+   "description": "Rock champions gain Attack Damage and Ability Power. For every interval the Infernal Idol remains alive, they gain more. Gain 3 Rock champions.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Rock"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "running-wild",
+   "name": "Running Wild",
+   "tier": "Gold",
+   "description": "At Combat Start, your strongest K/DA champions below the item threshold each receive a temporary recommended item and bonus Health. Gain a Neeko and a Lillia.",
+   "kind": "trait",
+   "categories": [
+    "items",
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "K/DA"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "sacrificial-dummy",
+   "name": "Sacrificial Dummy",
+   "tier": "Gold",
+   "description": "Gain a Training Dummy. While it lives, all damage your champions would take is redirected to it.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "salvage-bin",
+   "name": "Salvage Bin",
+   "tier": "Gold",
+   "description": "Gain 1 random completed item now, then gain 1 component after a set number of player combats. Selling champions breaks completed items into components, excluding Tactician's items and Emblems.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "salvage-bin-plus",
+   "name": "Salvage Bin+",
+   "tier": "Gold",
+   "description": "Gain 1 random completed item now, then gain 1 component after a set number of player combats. Selling champions breaks completed items into components, excluding Tactician's items and Emblems.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "seraphim-s-staff",
+   "name": "Seraphim's Staff",
+   "tier": "Gold",
+   "description": "Gain an Archangel's Staff. It grants its holder additional Mana Regen if they meet the Ability Power threshold.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "slammin",
+   "name": "Slammin'",
+   "tier": "Gold",
+   "description": "Gain gold. After each player combat, if there are no items on your bench other than consumables, gain XP.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "slammin-plus",
+   "name": "Slammin'+",
+   "tier": "Gold",
+   "description": "Gain gold and XP now. After each player combat, gain XP if there are no items on your bench other than consumables.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "small-squad",
+   "name": "Small Squad",
+   "tier": "Gold",
+   "description": "When you field a limited number of Heartsteel champions, increase their bonuses. Gain Heartsteel champions.",
+   "kind": "trait",
+   "categories": [
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Heartsteel"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "solo-leveling",
+   "name": "Solo Leveling",
+   "tier": "Gold",
+   "description": "For a limited number of upcoming combats, your team size is restricted, but the champion you field has massively increased stats. They gain XP for each kill. Afterward, gain item components.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "solo-plate",
+   "name": "Solo Plate",
+   "tier": "Gold",
+   "description": "Gain a Gargoyle Stoneplate. Allies holding a Gargoyle Stoneplate gain bonus Max Health if they start combat alone in their row.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "speedy-double-kill",
+   "name": "Speedy Double Kill",
+   "tier": "Gold",
+   "description": "Gain a Guinsoo's Rageblade. Gain gold after a threshold number of players are eliminated.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "spirit-of-redemption",
+   "name": "Spirit Of Redemption",
+   "tier": "Gold",
+   "description": "Gain a Spirit Visage. Periodically, it heals nearby allies based on their missing Health.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "spreading-roots",
+   "name": "Spreading Roots",
+   "tier": "Gold",
+   "description": "Gain a random Emblem. After a set number of combats, gain another.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "spreading-roots-plus",
+   "name": "Spreading Roots+",
+   "tier": "Gold",
+   "description": "Gain random Emblems and gold.",
+   "kind": "emblem",
+   "categories": [
+    "econ",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "staffsmith-ii",
+   "name": "Staffsmith II",
+   "tier": "Gold",
+   "description": "Gain a random completed item that builds from Needlessly Large Rod now, then gain another in a later round.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "stakeholder-management",
+   "name": "Stakeholder Management",
+   "tier": "Gold",
+   "description": "Gain 2 additional Manager hexes. Managers placed in Manager hexes gain max Health and an additional share of hex bonuses. Gain a Leona after a round-based delay.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Manager"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "stakeholder-management-plus",
+   "name": "Stakeholder Management+",
+   "tier": "Gold",
+   "description": "Gain 2 additional Manager hexes. Managers placed in Manager hexes gain max Health and increased hex bonuses. Gain a Leona.",
+   "kind": "trait",
+   "categories": [
+    "combat",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Manager"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "star-power",
+   "name": "Star Power",
+   "tier": "Gold",
+   "description": "When you 2-star a K/DA champion, gain a free K/DA champion. Gain a Lillia and a Neeko.",
+   "kind": "trait",
+   "categories": [
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "K/DA"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "stats-on-stats-ii",
+   "name": "Stats On Stats II",
+   "tier": "Gold",
+   "description": "Gain stat-boosting consumables now and again at regular intervals.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "strange-duet-ii",
+   "name": "Strange Duet II",
+   "tier": "Gold",
+   "description": "Allies who start combat isolated in pairs gain Durability and Damage Amp.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "submit-to-the-pit",
+   "name": "Submit to the Pit",
+   "tier": "Gold",
+   "description": "Allies gain Attack Damage and Ability Power each second they spend in the center 4 rows of the battlefield.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "swordsmith-ii",
+   "name": "Swordsmith II",
+   "tier": "Gold",
+   "description": "Gain a random completed item that builds from B.F. Sword now and another in a later round.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "the-drop-ii",
+   "name": "The Drop II",
+   "tier": "Gold",
+   "description": "After a delay in combat, your team heals for a portion of its maximum Health, and enemies take true damage based on their maximum Health.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "the-golden-dragon",
+   "name": "The Golden Dragon",
+   "tier": "Gold",
+   "description": "Gain a Mogul's Mail. Champions holding Mogul's Mail take up additional team slots but gain Health and Durability. Mogul's Mail grants gold as well as combat power.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "time-skip",
+   "name": "Time Skip",
+   "tier": "Gold",
+   "description": "Your Shop is disabled temporarily; afterward, you gain XP.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "tons-of-stats-gold",
+   "name": "Tons of Stats!",
+   "tier": "Gold",
+   "description": "Your team gains Health, Attack Damage, Ability Power, Armor, Magic Resist, Attack Speed, and Mana.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "trade-sector",
+   "name": "Trade Sector",
+   "tier": "Gold",
+   "description": "Gain a Shop reroll every round and gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "trade-sector-plus",
+   "name": "Trade Sector+",
+   "tier": "Gold",
+   "description": "Gain a Shop reroll every round and gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "u-r-f",
+   "name": "U.R.F",
+   "tier": "Gold",
+   "description": "Gain a Spatula. Champions holding Spatula or Frying Pan items gain Attack Speed and Mana Regen.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "verticality-ii",
+   "name": "Verticality II",
+   "tier": "Gold",
+   "description": "Champions gain Attack Damage, Ability Power, Armor, and Magic Resist for each ally that shares a trait with them.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "warpath",
+   "name": "Warpath",
+   "tier": "Gold",
+   "description": "Gain a 2-star 2-cost champion. After dealing player damage, gain a chest of high-cost champions and items.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "weight-the-worth",
+   "name": "Weight The Worth",
+   "tier": "Gold",
+   "description": "The first time you 3-star a champion, gain a copy of them each round for the rest of the game. 3-starring the same champion again grants additional copies. Gain a Lesser Champion Duplicator.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "worth-the-wait",
+   "name": "Worth the Wait",
+   "tier": "Gold",
+   "description": "Gain a random 1-cost champion. Gain another copy of them at the start of each round for the rest of the game.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "woven-magic",
+   "name": "Woven Magic",
+   "tier": "Gold",
+   "description": "Gain a random item component. As your champions spend Mana, gain additional components at recurring Mana-spent intervals, up to a maximum.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "zeke-s-herald",
+   "name": "Zeke's Herald",
+   "tier": "Gold",
+   "description": "Gain a Zeke's Herald, which grants Attack Speed to the holder and allies in the same row within its range.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "zz-rot-portal",
+   "name": "Zz'Rot Portal",
+   "tier": "Gold",
+   "description": "Gain a Zz'Rot Portal, an item which summons a large Voidspawn.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "arcanist-circlet",
+   "name": "Arcanist Circlet",
+   "tier": "Prismatic",
+   "description": "Gain an Arcanist Emblem, a Tear of the Goddess, and an Ahri.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Arcanist"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "arcanist-crown",
+   "name": "Arcanist Crown",
+   "tier": "Prismatic",
+   "description": "Gain an Arcanist Emblem, a Jeweled Gauntlet, and a Swain.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Arcanist"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "band-of-thieves-ii",
+   "name": "Band of Thieves II",
+   "tier": "Prismatic",
+   "description": "Gain Thief's Gloves, then gain another after a set number of player combats.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "band-of-thieves-ii-plus",
+   "name": "Band of Thieves II+",
+   "tier": "Prismatic",
+   "description": "Gain Thief's Gloves, then gain another after a set number of player combats.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "band-of-thieves-ii-plus-plus",
+   "name": "Band of Thieves II++",
+   "tier": "Prismatic",
+   "description": "Gain Thief's Gloves, then gain another after a set number of player combats.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "baron-s-lair",
+   "name": "Baron's Lair",
+   "tier": "Prismatic",
+   "description": "Gain a random Tank item. After a delay in combat, your team gains bonus Attack Damage and Ability Power every second for the rest of combat.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "beach-pop-circlet",
+   "name": "Beach Pop Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Beach Pop Emblem, a Sparring Gloves, and a Graves.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Beach Pop"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "beach-pop-crown",
+   "name": "Beach Pop Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Beach Pop Emblem, a Blue Buff, and a Syndra.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Beach Pop"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "belt-overflow",
+   "name": "Belt Overflow",
+   "tier": "Prismatic",
+   "description": "Gain Giant's Belts. Your Giant's Belts grant bonus Health.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "birthday-present",
+   "name": "Birthday Present",
+   "tier": "Prismatic",
+   "description": "Gain a 2-star champion and gold each time you level up. The champion's cost tier is below your level and capped at a maximum.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "booster-box",
+   "name": "Booster Box",
+   "tier": "Prismatic",
+   "description": "Gain a pack of champions now and at the start of upcoming stages. At least one holographic is guaranteed!",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "build-a-bud",
+   "name": "Build A Bud",
+   "tier": "Prismatic",
+   "description": "Gain a random champion and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "buried-treasures-iii",
+   "name": "Buried Treasures III",
+   "tier": "Prismatic",
+   "description": "Gain a random item component now and at the start of the next several rounds.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "call-to-chaos",
+   "name": "Call To Chaos",
+   "tier": "Prismatic",
+   "description": "Gain a powerful and random reward.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "celestial-blessing-iii",
+   "name": "Celestial Blessing III",
+   "tier": "Prismatic",
+   "description": "Your team gains Omnivamp. Excess healing is converted into a shield, up to a maximum shield size.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cheat-code-iii",
+   "name": "Cheat Code III",
+   "tier": "Prismatic",
+   "description": "Now and at the start of each stage, get a new cheat code. The first time you perform that exact sequence of actions, gain a reward.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "choreographer-circlet",
+   "name": "Choreographer Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Choreographer Emblem, a Giant's Belt, and a Garen.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Choreographer"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "choreographer-crown",
+   "name": "Choreographer Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Choreographer Emblem, an Adaptive Helm, and a Syndra.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Choreographer"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "classical-circlet",
+   "name": "Classical Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Classical Emblem, a B.F. Sword, and a Jhin.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Classical"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "classical-crown",
+   "name": "Classical Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Classical Emblem, a Spirit Visage, and a Nasus.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Classical"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cloning",
+   "name": "Cloning",
+   "tier": "Prismatic",
+   "description": "After each player combat, gain a copy of a random champion on your board. If your board has few unique champions, you may instead gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "comeback-story",
+   "name": "Comeback Story",
+   "tier": "Prismatic",
+   "description": "Your team gains Health and Attack Speed for each point of player Health you’re missing.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "hp"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "commerce-core",
+   "name": "Commerce Core",
+   "tier": "Prismatic",
+   "description": "Gain free Shop rerolls immediately and each round for the rest of the game.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "component-quest",
+   "name": "Component Quest",
+   "tier": "Prismatic",
+   "description": "Gain a random component and gold. The next 7 times you win a player combat, gain a different random component. Afterwards, gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "cursed-crown",
+   "name": "Cursed Crown",
+   "tier": "Prismatic",
+   "description": "Increase your maximum team size, but take double player damage when you lose a player combat.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "deadlier-blades",
+   "name": "Deadlier Blades",
+   "tier": "Prismatic",
+   "description": "Gain a Deathblade. Deathblades permanently gain Attack Damage each time their holders score a takedown.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "deadlier-caps",
+   "name": "Deadlier Caps",
+   "tier": "Prismatic",
+   "description": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps grant Mana Regen and permanently gain Ability Power whenever their holders score a takedown.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "duplicator-deal",
+   "name": "Duplicator Deal",
+   "tier": "Prismatic",
+   "description": "Gain Champion Duplicators. You can no longer 3-star champions.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "expected-unexpectedness",
+   "name": "Expected Unexpectedness",
+   "tier": "Prismatic",
+   "description": "Now and at the start of the next 2 stages, roll 3 dice. Gain various rewards based on their total.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "flexible",
+   "name": "Flexible",
+   "tier": "Prismatic",
+   "description": "Gain 1 random Emblem. At the start of every Stage, gain a random Emblem. Your team gains Health for each Emblem they are holding.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "combat",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "forged-in-strength",
+   "name": "Forged In Strength",
+   "tier": "Prismatic",
+   "description": "Gain a random Artifact. When you drop below a Health threshold, gain more random Artifacts, a random completed item, and random components.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "giant-and-mighty",
+   "name": "Giant and Mighty",
+   "tier": "Prismatic",
+   "description": "Your team becomes large, gaining Health and maximum Health.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "golden-gamble",
+   "name": "Golden Gamble",
+   "tier": "Prismatic",
+   "description": "Gain gold and flip a coin. If heads, gain a Radiant Lucky Item Chest. If tails, gain Completed Item anvils.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "golden-gamble-plus",
+   "name": "Golden Gamble+",
+   "tier": "Prismatic",
+   "description": "Gain gold and flip a coin. If heads, gain a Radiant Lucky Item Chest. If tails, gain Completed Item anvils.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "golden-gamble-plus-plus",
+   "name": "Golden Gamble++",
+   "tier": "Prismatic",
+   "description": "Gain gold and flip a coin. If heads, gain a Radiant Lucky Item Chest. If tails, gain Completed Item anvils.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "hard-commit",
+   "name": "Hard Commit",
+   "tier": "Prismatic",
+   "description": "Gain a random emblem. Now and at the start of each stage, gain a 1-star champion of that trait with a cost equal to the Stage (max 5) and 3 gold.",
+   "kind": "emblem",
+   "categories": [
+    "econ",
+    "items",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "heartsteel-circlet",
+   "name": "Heartsteel Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Heartsteel Emblem, a Sparring Gloves, and a Yone.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Heartsteel"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "heartsteel-crown",
+   "name": "Heartsteel Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Heartsteel Emblem, a Steadfast Heart, and a K'Sante.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Heartsteel"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "hedge-fund",
+   "name": "Hedge Fund",
+   "tier": "Prismatic",
+   "description": "Gain gold. Your maximum interest is increased to 10.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "hitmaker-circlet",
+   "name": "Hitmaker Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Hitmaker Emblem, a B.F. Sword, and a Xayah.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Hitmaker"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "hitmaker-crown",
+   "name": "Hitmaker Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Hitmaker Emblem, an Infinity Edge, and a Senna.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Hitmaker"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "hold-the-line",
+   "name": "Hold the Line",
+   "tier": "Prismatic",
+   "description": "Allies in your back 2 rows gain Ability Power and Attack Damage for each ally that starts combat in your front row.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "illbeats-circlet",
+   "name": "Illbeats Circlet",
+   "tier": "Prismatic",
+   "description": "Gain an Illbeats Emblem, a Tear Of The Goddess, and a Draven.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Illbeats"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "illbeats-crown",
+   "name": "Illbeats Crown",
+   "tier": "Prismatic",
+   "description": "Gain an Illbeats Emblem, a Gargoyle Stoneplate, and a Braum.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Illbeats"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "invested-plus",
+   "name": "Invested+",
+   "tier": "Prismatic",
+   "description": "Gain 26 gold. At the start of each round, gain 1 Shop reroll for every 10 gold above 50 (max 80 gold).",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "invested-plus-plus",
+   "name": "Invested++",
+   "tier": "Prismatic",
+   "description": "Gain 45 gold. At the start of each round, gain 1 Shop reroll for every 10 gold above 50 (max 80 gold).",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "investment-strategy-ii",
+   "name": "Investment Strategy II",
+   "tier": "Prismatic",
+   "description": "Your champions gain permanent max health per interest you earn. Your maximum interest increases, and you gain gold now.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "ionic-spark-circlet",
+   "name": "Ionic Spark Circlet",
+   "tier": "Prismatic",
+   "description": "Gain an Ionic Spark Emblem, a Needlessly Large Rod, and an Aurora.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Ionic Spark"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "ionic-spark-crown",
+   "name": "Ionic Spark Crown",
+   "tier": "Prismatic",
+   "description": "Gain an Ionic Spark Emblem, an Ionic Spark, and an Annie.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Ionic Spark"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "jazz-circlet",
+   "name": "Jazz Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Jazz Emblem, a Recurve Bow, and a Bard.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Jazz"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "jazz-crown",
+   "name": "Jazz Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Jazz Emblem, a Spear of Shojin, and a Lucian.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Jazz"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "k-da-circlet",
+   "name": "K/DA Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a K/DA Emblem, a Needlessly Large Rod, and a Leona.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "K/DA"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "k-da-crown",
+   "name": "K/DA Crown",
+   "tier": "Prismatic",
+   "description": "Gain a K/DA Emblem, a Guinsoo's Rageblade, and a Kai'Sa.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "K/DA"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "level-up",
+   "name": "Level Up!",
+   "tier": "Prismatic",
+   "description": "Whenever you buy XP, gain additional XP, and gain XP immediately.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "living-forge",
+   "name": "Living Forge",
+   "tier": "Prismatic",
+   "description": "Gain an Artifact Anvil now, then again at recurring player-combat intervals.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "lucky-gloves",
+   "name": "Lucky Gloves",
+   "tier": "Prismatic",
+   "description": "Thief's Gloves always give your champions ideal items. Gain Sparring Gloves and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "lucky-gloves-plus",
+   "name": "Lucky Gloves+",
+   "tier": "Prismatic",
+   "description": "Thief's Gloves will always give your champions ideal items. Gain Sparring Gloves now, then gain another after a set number of player combats.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "luxury-subscription",
+   "name": "Luxury Subscription",
+   "tier": "Prismatic",
+   "description": "Gain a package containing a champion and a 2-star champion, plus gold. At the start of each of the following stages, gain the package again.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "mad-science",
+   "name": "Mad Science",
+   "tier": "Prismatic",
+   "description": "Each ally randomly becomes either huge or tiny. Huge units gain max Health, Attack Damage, and Ability Power; tiny units gain Durability and Attack Speed.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "management-track",
+   "name": "Management Track",
+   "tier": "Prismatic",
+   "description": "Gain a Manager Emblem. When champions gain bonuses from Manager, you have a chance to gain gold. After collecting gold from the Manager trait, gain a 2-star Dr. Mundo and Warmog's Armor.",
+   "kind": "emblem",
+   "categories": [
+    "econ",
+    "items",
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Manager"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "manager-circlet",
+   "name": "Manager Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Manager Emblem, a Chain Vest, and a Leona.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Manager"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "min-max",
+   "name": "Min-Max",
+   "tier": "Prismatic",
+   "description": "Gain a Golden Item Remover, 4 random components, and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "money-monsoon",
+   "name": "Money Monsoon",
+   "tier": "Prismatic",
+   "description": "Gain gold now and every round for the rest of the game.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "nesting-anvils",
+   "name": "Nesting Anvils",
+   "tier": "Prismatic",
+   "description": "Gain an Artifact Anvil. Open it to gain a Component Anvil, then open that to gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "nesting-anvils-plus",
+   "name": "Nesting Anvils+",
+   "tier": "Prismatic",
+   "description": "Gain an Artifact Anvil. After opening it, gain a Component Anvil. After opening that, gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "one-buff-two-buff",
+   "name": "One Buff Two Buff",
+   "tier": "Prismatic",
+   "description": "Gain a Red Buff, a Blue Buff, and a Champion Duplicator.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pain-into-passion",
+   "name": "Pain into Passion",
+   "tier": "Prismatic",
+   "description": "On the A-Side, True Damage champions gain Attack Speed and Health for each Bling collected. On the B-Side, gain Gold after losing combat. Gain 3 True Damage champions.",
+   "kind": "trait",
+   "categories": [
+    "econ",
+    "combat",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "True Damage"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pandora-s-box",
+   "name": "Pandora's Box",
+   "tier": "Prismatic",
+   "description": "Champions on your board permanently transform into random champions 1 cost tier higher (max 5). Then reforge all of your items, gain a random gold augment, and gain a random completed item.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pandora-s-items-iii",
+   "name": "Pandora's Items III",
+   "tier": "Prismatic",
+   "description": "At the start of each round, items on your bench are randomized. Gain Radiant items.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pentakill-circlet",
+   "name": "Pentakill Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Pentakill Emblem, a Negatron Cloak, and a Yorick.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Pentakill"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "pentakill-crown",
+   "name": "Pentakill Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Pentakill Emblem, a Giant Slayer, and a Viego.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Pentakill",
+    "Slayer"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "prismatic-destiny",
+   "name": "Prismatic Destiny",
+   "tier": "Prismatic",
+   "description": "Gain a random Prismatic Augment and gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "prismatic-destiny-plus",
+   "name": "Prismatic Destiny+",
+   "tier": "Prismatic",
+   "description": "Gain a random Prismatic Augment and gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "prismatic-ticket",
+   "name": "Prismatic Ticket",
+   "tier": "Prismatic",
+   "description": "Each time your shop is rerolled, you may gain a free reroll.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "radiant-rascal",
+   "name": "Radiant Rascal",
+   "tier": "Prismatic",
+   "description": "Gain a Radiant Thief's Gloves item. This equips 2 random Radiant items every round.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "radiant-relics",
+   "name": "Radiant Relics",
+   "tier": "Prismatic",
+   "description": "Choose 1 of 5 Radiant Items. Gain a Magnetic Remover.",
+   "kind": "general",
+   "categories": [
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "renegade-circlet",
+   "name": "Renegade Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Renegade Emblem, a Sparring Gloves, and an Aurora.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Renegade"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "renegade-crown",
+   "name": "Renegade Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Renegade Emblem, a Hand of Justice, and a Qiyana.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Renegade"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "rock-circlet",
+   "name": "Rock Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Rock Emblem, a Needlessly Large Rod, and a Locke.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Rock"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "rock-crown",
+   "name": "Rock Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Rock Emblem, a Hand Of Justice, and a Camille.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Rock"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "royalties",
+   "name": "Royalties",
+   "tier": "Prismatic",
+   "description": "Gain a Tactician’s Crown. Gain gold every round for the rest of the game.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "shimmerscale-essence",
+   "name": "Shimmerscale Essence",
+   "tier": "Prismatic",
+   "description": "Gain a Gambler's Blade, then gain a Mogul's Mail after a set number of player combats.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "shopping-spree",
+   "name": "Shopping Spree",
+   "tier": "Prismatic",
+   "description": "When you level up, gain Shop refreshes based on your level. Gain gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "slayer-circlet",
+   "name": "Slayer Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Slayer Emblem, a Chain Vest, and a Yone.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Slayer"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "slayer-crown",
+   "name": "Slayer Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Slayer Emblem, a Titan's Resolve, and a Briar.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Slayer"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "soul-awakening",
+   "name": "Soul Awakening",
+   "tier": "Prismatic",
+   "description": "At combat start, your team gains Attack Damage and Ability Power each second. At max stacks, it deals bonus true damage.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "star-of-the-show",
+   "name": "Star of the Show",
+   "tier": "Prismatic",
+   "description": "Gain a non-Tank champion and an Emblem for one of their traits. At a later stage, gain more copies of that champion.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "strange-duet-iii",
+   "name": "Strange Duet III",
+   "tier": "Prismatic",
+   "description": "Allies that start combat isolated in pairs gain Durability and Damage Amp.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "sweet-treats",
+   "name": "Sweet Treats",
+   "tier": "Prismatic",
+   "description": "Gain an Artifact anvil. Your team gains Health for each item equipped to a champion.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "swiftstriker-circlet",
+   "name": "Swiftstriker Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a Swiftstriker Emblem, a Recurve Bow, and a Bard.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Swiftstriker"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "swiftstriker-crown",
+   "name": "Swiftstriker Crown",
+   "tier": "Prismatic",
+   "description": "Gain a Swiftstriker Emblem, a Hextech Gunblade, and a Bard.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Swiftstriker"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "sword-overflow",
+   "name": "Sword Overflow",
+   "tier": "Prismatic",
+   "description": "Gain BF Swords. Your BF Swords grant Attack Speed.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "tactician-s-kitchen",
+   "name": "Tactician's Kitchen",
+   "tier": "Prismatic",
+   "description": "Gain a random Emblem. After a round-based delay, gain a Tactician's Cape.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "the-golden-egg",
+   "name": "The Golden Egg",
+   "tier": "Prismatic",
+   "description": "Gain a golden egg that eventually hatches and grants a huge amount of loot. Winning player combat advances its hatch timer by one turn.",
+   "kind": "general",
+   "categories": [],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "the-immortal-journey",
+   "name": "The Immortal Journey",
+   "tier": "Prismatic",
+   "description": "Gain a Xayah, a Spear of Shojin, and gold.",
+   "kind": "general",
+   "categories": [
+    "econ"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "the-trait-tree",
+   "name": "The Trait Tree",
+   "tier": "Prismatic",
+   "description": "Gain random Emblems and gold.",
+   "kind": "emblem",
+   "categories": [
+    "econ",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "the-trait-tree-plus",
+   "name": "The Trait Tree+",
+   "tier": "Prismatic",
+   "description": "Gain random Emblems, a Reforger, and gold.",
+   "kind": "emblem",
+   "categories": [
+    "econ",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "three-steps-ahead",
+   "name": "Three Steps Ahead",
+   "tier": "Prismatic",
+   "description": "For each of your next player-combat losses, gain a 5-cost champion and components.",
+   "kind": "general",
+   "categories": [
+    "items",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "tons-of-stats-prismatic",
+   "name": "TONS of Stats!",
+   "tier": "Prismatic",
+   "description": "Your team gains Health, Attack Damage, Ability Power, Armor, Magic Resist, Attack Speed, and Mana.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "trait-ladder",
+   "name": "Trait Ladder",
+   "tier": "Prismatic",
+   "description": "Gain a random emblem. In a player combat, field non-unique traits to earn a reward; the trait requirement and reward size then increase.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "true-damage-circlet",
+   "name": "True Damage Circlet",
+   "tier": "Prismatic",
+   "description": "Gain a True Damage Emblem, a Giant's Belt, and an Ekko.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "True Damage"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "true-damage-crown",
+   "name": "True Damage Crown",
+   "tier": "Prismatic",
+   "description": "Gain a True Damage Emblem, an Infinity Edge, and a Senna.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "trait"
+   ],
+   "relatedTraits": [
+    "True Damage"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "unearthed-treasure",
+   "name": "Unearthed Treasure",
+   "tier": "Prismatic",
+   "description": "After player combat, each unique Beach Pop champion empowered by a Beach Pop instrument has a chance to uncover some loot! Gain a Taric, a Zoe, and a Renekton.",
+   "kind": "trait",
+   "categories": [
+    "units",
+    "trait"
+   ],
+   "relatedTraits": [
+    "Beach Pop"
+   ],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "upward-mobility",
+   "name": "Upward Mobility",
+   "tier": "Prismatic",
+   "description": "Buying XP costs less. Gain Health and Shop rerolls whenever you level up.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "urf-s-grab-bag",
+   "name": "Urf's Grab Bag",
+   "tier": "Prismatic",
+   "description": "Gain Spatula, random components, and gold.",
+   "kind": "general",
+   "categories": [
+    "econ",
+    "items"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "verticality-iii",
+   "name": "Verticality III",
+   "tier": "Prismatic",
+   "description": "Champions gain Attack Damage, Ability Power, Armor, and Magic Resist for each ally that shares a trait with them.",
+   "kind": "general",
+   "categories": [
+    "combat",
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "wand-overflow",
+   "name": "Wand Overflow",
+   "tier": "Prismatic",
+   "description": "Gain Needlessly Large Rods. Your Needlessly Large Rods grant Attack Speed.",
+   "kind": "general",
+   "categories": [
+    "combat"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "we-stick-together",
+   "name": "We Stick Together",
+   "tier": "Prismatic",
+   "description": "Gain an Emblem for a random trait and a completed item anvil. Allies with that trait gain Attack Speed.",
+   "kind": "emblem",
+   "categories": [
+    "items",
+    "combat",
+    "trait"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  },
+  {
+   "id": "worth-the-wait-ii",
+   "name": "Worth the Wait II",
+   "tier": "Prismatic",
+   "description": "Gain 2 copies of a random 2-cost champion. Gain another copy of them at the start of each round for the rest of the game.",
+   "kind": "general",
+   "categories": [
+    "units"
+   ],
+   "relatedTraits": [],
+   "numbers": null,
+   "status": "preview"
+  }
+ ]
+}

@@ -1,0 +1,876 @@
+{
+ "meta": {
+  "set": 19,
+  "patch": "16.22 live (Set 18) + Set 19 emblem names",
+  "source": [
+   "CommunityDragon raw.communitydragon.org/latest/cdragon/tft/{en_us,ko_kr}.json",
+   "Set 19 emblems: augment text in https://tft.ninja/sets/19/augments"
+  ],
+  "updated": "2026-11-17",
+  "status": "carryover",
+  "count": 66,
+  "note": "표준 아이템 조합표는 Set 18 라이브 기준. Set 19에서 교체/조정될 수 있음."
+ },
+ "items": [
+  {
+   "id": "b-f-sword",
+   "apiName": "TFT_Item_BFSword",
+   "name": "B.F. Sword",
+   "nameKo": "B.F. 대검",
+   "type": "component",
+   "recipe": null,
+   "stats": "공격력 +10%",
+   "description": "공격력 +10%",
+   "status": "carryover"
+  },
+  {
+   "id": "recurve-bow",
+   "apiName": "TFT_Item_RecurveBow",
+   "name": "Recurve Bow",
+   "nameKo": "곡궁",
+   "type": "component",
+   "recipe": null,
+   "stats": "공격 속도 +10%",
+   "description": "공격 속도 +10%",
+   "status": "carryover"
+  },
+  {
+   "id": "needlessly-large-rod",
+   "apiName": "TFT_Item_NeedlesslyLargeRod",
+   "name": "Needlessly Large Rod",
+   "nameKo": "쓸데없이 큰 지팡이",
+   "type": "component",
+   "recipe": null,
+   "stats": "주문력 +10",
+   "description": "주문력 +10",
+   "status": "carryover"
+  },
+  {
+   "id": "tear-of-the-goddess",
+   "apiName": "TFT_Item_TearOfTheGoddess",
+   "name": "Tear of the Goddess",
+   "nameKo": "여신의 눈물",
+   "type": "component",
+   "recipe": null,
+   "stats": "",
+   "description": "마나 재생 +1",
+   "status": "carryover"
+  },
+  {
+   "id": "chain-vest",
+   "apiName": "TFT_Item_ChainVest",
+   "name": "Chain Vest",
+   "nameKo": "쇠사슬 조끼",
+   "type": "component",
+   "recipe": null,
+   "stats": "방어력 +20",
+   "description": "방어력 +20",
+   "status": "carryover"
+  },
+  {
+   "id": "negatron-cloak",
+   "apiName": "TFT_Item_NegatronCloak",
+   "name": "Negatron Cloak",
+   "nameKo": "음전자 망토",
+   "type": "component",
+   "recipe": null,
+   "stats": "마법 저항력 +20",
+   "description": "마법 저항력 +20",
+   "status": "carryover"
+  },
+  {
+   "id": "giants-belt",
+   "apiName": "TFT_Item_GiantsBelt",
+   "name": "Giant's Belt",
+   "nameKo": "거인의 허리띠",
+   "type": "component",
+   "recipe": null,
+   "stats": "체력 +150",
+   "description": "체력 +150",
+   "status": "carryover"
+  },
+  {
+   "id": "sparring-gloves",
+   "apiName": "TFT_Item_SparringGloves",
+   "name": "Sparring Gloves",
+   "nameKo": "연습용 장갑",
+   "type": "component",
+   "recipe": null,
+   "stats": "치명타 확률 +20%",
+   "description": "치명타 확률 +20",
+   "status": "carryover"
+  },
+  {
+   "id": "spatula",
+   "apiName": "TFT_Item_Spatula",
+   "name": "Spatula",
+   "nameKo": "뒤집개",
+   "type": "component",
+   "recipe": null,
+   "stats": "",
+   "description": "무슨 쓸모가 있을 텐데...",
+   "status": "carryover"
+  },
+  {
+   "id": "frying-pan",
+   "apiName": "TFT_Item_FryingPan",
+   "name": "Frying Pan",
+   "nameKo": "프라이팬",
+   "type": "component",
+   "recipe": null,
+   "stats": "",
+   "description": "... 이게 여기에 있는 이유가 달리 있을까요?",
+   "status": "carryover"
+  },
+  {
+   "id": "sunfire-cape",
+   "apiName": "TFT_Item_RedBuff",
+   "name": "Sunfire Cape",
+   "nameKo": "태양불꽃 망토",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "giants-belt"
+   ],
+   "stats": "방어력 +20, 체력 +150",
+   "description": "최대 체력 8% 획득 2초마다 2칸 내에 있는 적 하나에게 10초 동안 불태우기를 1%, 상처를 33% 적용 불태우기: 매초 대상 최대 체력의 일정 비율만큼 고정 피해 상처: 체력 회복량 감소",
+   "status": "carryover"
+  },
+  {
+   "id": "blue-buff",
+   "apiName": "TFT_Item_BlueBuff",
+   "name": "Blue Buff",
+   "nameKo": "푸른 파수꾼",
+   "type": "completed",
+   "recipe": [
+    "tear-of-the-goddess",
+    "tear-of-the-goddess"
+   ],
+   "stats": "공격력 +15%, 주문력 +15",
+   "description": "모든 요소로부터 얻는 공격력 및 주문력 10% 증가",
+   "status": "carryover"
+  },
+  {
+   "id": "nashors-tooth",
+   "apiName": "TFT_Item_Leviathan",
+   "name": "Nashor's Tooth",
+   "nameKo": "내셔의 이빨",
+   "type": "completed",
+   "recipe": [
+    "recurve-bow",
+    "giants-belt"
+   ],
+   "stats": "주문력 +15, 공격 속도 +10%, 체력 +150, 치명타 확률 +20%",
+   "description": "기본 공격 시 추가 마나 2 획득. 치명타 적중 시 4 획득",
+   "status": "carryover"
+  },
+  {
+   "id": "spirit-visage",
+   "apiName": "TFT_Item_Redemption",
+   "name": "Spirit Visage",
+   "nameKo": "정령의 형상",
+   "type": "completed",
+   "recipe": [
+    "tear-of-the-goddess",
+    "giants-belt"
+   ],
+   "stats": "체력 +300",
+   "description": "매초 잃은 체력의 2%만큼 체력 회복",
+   "status": "carryover"
+  },
+  {
+   "id": "ionic-spark",
+   "apiName": "TFT_Item_IonicSpark",
+   "name": "Ionic Spark",
+   "nameKo": "이온 충격기",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "negatron-cloak"
+   ],
+   "stats": "주문력 +15, 마법 저항력 +35, 체력 +250",
+   "description": "2칸 내 적에게 파쇄 30% 적용. 해당 적은 스킬 사용 시 사용한 마나의 150%에 해당하는 마법 피해를 입음 파쇄: 마법 저항력 감소",
+   "status": "carryover"
+  },
+  {
+   "id": "crownguard",
+   "apiName": "TFT_Item_Crownguard",
+   "name": "Crownguard",
+   "nameKo": "크라운가드",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "chain-vest"
+   ],
+   "stats": "주문력 +20, 방어력 +20, 체력 +100",
+   "description": "전투 시작: 8초 동안 최대 체력의 25%에 해당하는 보호막 획득 보호막이 사라지면 주문력 25% 증가",
+   "status": "carryover"
+  },
+  {
+   "id": "deathblade",
+   "apiName": "TFT_Item_Deathblade",
+   "name": "Deathblade",
+   "nameKo": "죽음의 검",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "b-f-sword"
+   ],
+   "stats": "공격력 +55%, 피해 증폭 +10%",
+   "description": "이 검의 주인은 더없는 평화와 안정을 찾게 됩니다. 주인의 적들도 마찬가지고요.",
+   "status": "carryover"
+  },
+  {
+   "id": "protectors-vow",
+   "apiName": "TFT_Item_FrozenHeart",
+   "name": "Protector's Vow",
+   "nameKo": "수호자의 맹세",
+   "type": "completed",
+   "recipe": [
+    "tear-of-the-goddess",
+    "chain-vest"
+   ],
+   "stats": "방어력 +25, 마법 저항력 +25",
+   "description": "전투 시작: 마나 20 획득 체력이 40%일 때 마나 15 및 최대 체력의 20%에 해당하는 보호막 획득",
+   "status": "carryover"
+  },
+  {
+   "id": "steraks-gage",
+   "apiName": "TFT_Item_SteraksGage",
+   "name": "Sterak's Gage",
+   "nameKo": "스테락의 도전",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "giants-belt"
+   ],
+   "stats": "공격력 +45%, 체력 +300",
+   "description": "체력이 60%일 때, 장착 유닛 최대 체력의 40%에 해당하는 보호막 획득. 보호막은 4초에 걸쳐 빠르게 사라짐",
+   "status": "carryover"
+  },
+  {
+   "id": "dragons-claw",
+   "apiName": "TFT_Item_DragonsClaw",
+   "name": "Dragon's Claw",
+   "nameKo": "용의 발톱",
+   "type": "completed",
+   "recipe": [
+    "negatron-cloak",
+    "negatron-cloak"
+   ],
+   "stats": "마법 저항력 +60",
+   "description": "6%의 최대 체력 획득 2초마다 최대 체력의 2.5% 회복",
+   "status": "carryover"
+  },
+  {
+   "id": "bramble-vest",
+   "apiName": "TFT_Item_BrambleVest",
+   "name": "Bramble Vest",
+   "nameKo": "덤불 조끼",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "chain-vest"
+   ],
+   "stats": "방어력 +50",
+   "description": "6%의 최대 체력 획득 기본 공격으로 받는 피해 5% 감소. 기본 공격에 맞을 경우 인접한 모든 적에게 100의 마법 피해 재사용 대기시간: 2초",
+   "status": "carryover"
+  },
+  {
+   "id": "last-whisper",
+   "apiName": "TFT_Item_LastWhisper",
+   "name": "Last Whisper",
+   "nameKo": "최후의 속삭임",
+   "type": "completed",
+   "recipe": [
+    "recurve-bow",
+    "sparring-gloves"
+   ],
+   "stats": "공격력 +15%, 공격 속도 +20%, 치명타 확률 +20%",
+   "description": "기본 공격 및 스킬로 피해를 입힐 경우 3초 동안 대상에게 파열을 30% 적용 (중첩 불가) 파열: 방어력 감소",
+   "status": "carryover"
+  },
+  {
+   "id": "quicksilver",
+   "apiName": "TFT_Item_Quicksilver",
+   "name": "Quicksilver",
+   "nameKo": "수은",
+   "type": "completed",
+   "recipe": [
+    "sparring-gloves",
+    "negatron-cloak"
+   ],
+   "stats": "공격 속도 +15%, 마법 저항력 +20, 치명타 확률 +20%",
+   "description": "전투 시작: 18초 동안 군중 제어 효과에 면역 매초 공격 속도 3% 획득 (중첩 가능)",
+   "status": "carryover"
+  },
+  {
+   "id": "void-staff",
+   "apiName": "TFT_Item_StatikkShiv",
+   "name": "Void Staff",
+   "nameKo": "공허의 지팡이",
+   "type": "completed",
+   "recipe": [
+    "recurve-bow",
+    "tear-of-the-goddess"
+   ],
+   "stats": "주문력 +35, 공격 속도 +15%",
+   "description": "기본 공격 및 스킬로 피해를 입힐 경우 5초 동안 대상에게 파쇄를 30% 적용 (중첩 불가) 파쇄: 마법 저항력 감소",
+   "status": "carryover"
+  },
+  {
+   "id": "infinity-edge",
+   "apiName": "TFT_Item_InfinityEdge",
+   "name": "Infinity Edge",
+   "nameKo": "무한의 대검",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "sparring-gloves"
+   ],
+   "stats": "공격력 +35%, 치명타 확률 +35%",
+   "description": "정밀을 얻습니다.",
+   "status": "carryover"
+  },
+  {
+   "id": "thiefs-gloves",
+   "apiName": "TFT_Item_ThiefsGloves",
+   "name": "Thief's Gloves",
+   "nameKo": "도적의 장갑",
+   "type": "completed",
+   "recipe": [
+    "sparring-gloves",
+    "sparring-gloves"
+   ],
+   "stats": "체력 +150, 치명타 확률 +20%",
+   "description": "매 라운드: 무작위 아이템 2개 장착 [아이템 슬롯 3개 차지]",
+   "status": "carryover"
+  },
+  {
+   "id": "adaptive-helm",
+   "apiName": "TFT_Item_AdaptiveHelm",
+   "name": "Adaptive Helm",
+   "nameKo": "적응형 투구",
+   "type": "completed",
+   "recipe": [
+    "negatron-cloak",
+    "tear-of-the-goddess"
+   ],
+   "stats": "마법 저항력 +20",
+   "description": "모든 요소로부터 얻는 마나 15% 증가. 장착 시 역할군에 따라 추가 효과 획득 탱커, 전사: 방어력 및 마법 저항력 30 획득 기타 역할군: 공격력 및 주문력 10% 획득",
+   "status": "carryover"
+  },
+  {
+   "id": "warmogs-armor",
+   "apiName": "TFT_Item_WarmogsArmor",
+   "name": "Warmog's Armor",
+   "nameKo": "워모그의 갑옷",
+   "type": "completed",
+   "recipe": [
+    "giants-belt",
+    "giants-belt"
+   ],
+   "stats": "체력 +500",
+   "description": "최대 체력 18% 획득",
+   "status": "carryover"
+  },
+  {
+   "id": "strikers-flail",
+   "apiName": "TFT_Item_PowerGauntlet",
+   "name": "Striker's Flail",
+   "nameKo": "타격대의 철퇴",
+   "type": "completed",
+   "recipe": [
+    "giants-belt",
+    "sparring-gloves"
+   ],
+   "stats": "공격 속도 +10%, 체력 +150, 치명타 확률 +20%",
+   "description": "치명타 적중 시 5초 동안 피해 증폭 5% 획득 (최대 4회 중첩)",
+   "status": "carryover"
+  },
+  {
+   "id": "edge-of-night",
+   "apiName": "TFT_Item_GuardianAngel",
+   "name": "Edge of Night",
+   "nameKo": "밤의 끝자락",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "chain-vest"
+   ],
+   "stats": "공격력 +10%, 주문력 +10, 공격 속도 +15%, 방어력 +20",
+   "description": "체력이 60%일 때 잠시 대상으로 지정할 수 없게 되며 해로운 효과 제거 및 잃은 체력의 20% 회복",
+   "status": "carryover"
+  },
+  {
+   "id": "titans-resolve",
+   "apiName": "TFT_Item_TitansResolve",
+   "name": "Titan's Resolve",
+   "nameKo": "거인의 결의",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "recurve-bow"
+   ],
+   "stats": "공격 속도 +10%, 방어력 +20",
+   "description": "공격하거나 피해를 받으면 공격력 2%, 주문력 2% 증가 (최대 25회 중첩) 최대 중첩 시 피해 증폭 10% 획득 및 군중 제어 효과에 면역이 됨",
+   "status": "carryover"
+  },
+  {
+   "id": "bloodthirster",
+   "apiName": "TFT_Item_Bloodthirster",
+   "name": "Bloodthirster",
+   "nameKo": "피바라기",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "negatron-cloak"
+   ],
+   "stats": "공격력 +15%, 주문력 +15, 마법 저항력 +20",
+   "description": "전투당 한 번, 체력이 40%일 때 최대 체력의 25%에 해당하는 보호막 획득 후 최대 5초까지 유지",
+   "status": "carryover"
+  },
+  {
+   "id": "spear-of-shojin",
+   "apiName": "TFT_Item_SpearOfShojin",
+   "name": "Spear of Shojin",
+   "nameKo": "쇼진의 창",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "tear-of-the-goddess"
+   ],
+   "stats": "공격력 +15%, 주문력 +15",
+   "description": "기본 공격 시 추가 마나 5 획득",
+   "status": "carryover"
+  },
+  {
+   "id": "tacticians-crown",
+   "apiName": "TFT_Item_ForceOfNature",
+   "name": "Tactician's Crown",
+   "nameKo": "전략가의 왕관",
+   "type": "special",
+   "recipe": [
+    "spatula",
+    "spatula"
+   ],
+   "stats": "",
+   "description": "아군의 최대 팀 규모 +1 증가. 전투 승리 시 1골드를 획득할 확률 10% '...영웅의 심장...'",
+   "status": "carryover"
+  },
+  {
+   "id": "tacticians-cape",
+   "apiName": "TFT_Item_TacticiansRing",
+   "name": "Tactician's Cape",
+   "nameKo": "전략가의 망토",
+   "type": "special",
+   "recipe": [
+    "spatula",
+    "frying-pan"
+   ],
+   "stats": "",
+   "description": "아군의 최대 팀 규모 +1 증가. 전투 시작 시 10초 후 1골드를 획득할 확률 10% '...그리고 약간의 행운.'",
+   "status": "carryover"
+  },
+  {
+   "id": "morellonomicon",
+   "apiName": "TFT_Item_Morellonomicon",
+   "name": "Morellonomicon",
+   "nameKo": "모렐로노미콘",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "giants-belt"
+   ],
+   "stats": "주문력 +20, 체력 +150",
+   "description": "기본 공격 및 스킬로 피해를 입힐 경우 10초 동안 적에게 불태우기를 1%, 상처를 33% 적용 불태우기: 매초 대상 최대 체력의 일정 비율만큼 고정 피해 상처: 체력 회복량 감소",
+   "status": "carryover"
+  },
+  {
+   "id": "steadfast-heart",
+   "apiName": "TFT_Item_NightHarvester",
+   "name": "Steadfast Heart",
+   "nameKo": "굳건한 심장",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "sparring-gloves"
+   ],
+   "stats": "방어력 +20, 체력 +250, 치명타 확률 +20%",
+   "description": "내구력 5% 획득. 체력이 50% 이상일 때 대신 내구력 15% 획득",
+   "status": "carryover"
+  },
+  {
+   "id": "archangels-staff",
+   "apiName": "TFT_Item_ArchangelsStaff",
+   "name": "Archangel's Staff",
+   "nameKo": "대천사의 지팡이",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "tear-of-the-goddess"
+   ],
+   "stats": "주문력 +30",
+   "description": "전투 시작: 전투 중 5초마다 주문력 20% 증가",
+   "status": "carryover"
+  },
+  {
+   "id": "red-buff",
+   "apiName": "TFT_Item_RapidFireCannon",
+   "name": "Red Buff",
+   "nameKo": "붉은 덩굴정령",
+   "type": "completed",
+   "recipe": [
+    "recurve-bow",
+    "recurve-bow"
+   ],
+   "stats": "공격 속도 +45%, 피해 증폭 +6%",
+   "description": "기본 공격과 스킬이 5초 동안 적에게 불태우기를 1%, 상처를 33% 적용 불태우기: 매초 대상 최대 체력의 일정 비율만큼 고정 피해 상처: 체력 회복량 감소",
+   "status": "carryover"
+  },
+  {
+   "id": "jeweled-gauntlet",
+   "apiName": "TFT_Item_JeweledGauntlet",
+   "name": "Jeweled Gauntlet",
+   "nameKo": "보석 건틀릿",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "sparring-gloves"
+   ],
+   "stats": "주문력 +35, 치명타 확률 +35%",
+   "description": "정밀을 얻습니다.",
+   "status": "carryover"
+  },
+  {
+   "id": "hextech-gunblade",
+   "apiName": "TFT_Item_HextechGunblade",
+   "name": "Hextech Gunblade",
+   "nameKo": "마법공학 총검",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "needlessly-large-rod"
+   ],
+   "stats": "공격력 +20%, 주문력 +20",
+   "description": "입힌 피해량의 20%만큼 체력 비율이 가장 낮은 아군의 체력 회복 아군 체력 회복량:",
+   "status": "carryover"
+  },
+  {
+   "id": "rabadons-deathcap",
+   "apiName": "TFT_Item_RabadonsDeathcap",
+   "name": "Rabadon's Deathcap",
+   "nameKo": "라바돈의 죽음모자",
+   "type": "completed",
+   "recipe": [
+    "needlessly-large-rod",
+    "needlessly-large-rod"
+   ],
+   "stats": "주문력 +55, 피해 증폭 +15%",
+   "description": "평범해 보이지만 우주를 창조하거나 파괴할 수 있는 모자입니다.",
+   "status": "carryover"
+  },
+  {
+   "id": "krakens-fury",
+   "apiName": "TFT_Item_RunaansHurricane",
+   "name": "Kraken's Fury",
+   "nameKo": "크라켄의 분노",
+   "type": "completed",
+   "recipe": [
+    "negatron-cloak",
+    "recurve-bow"
+   ],
+   "stats": "공격력 +10%, 공격 속도 +10%, 마법 저항력 +20",
+   "description": "기본 공격 시 공격력 3.5% (최대 15회 중첩) 획득. 기본 공격 15회 후 공격 속도 15% 획득",
+   "status": "carryover"
+  },
+  {
+   "id": "evenshroud",
+   "apiName": "TFT_Item_SpectralGauntlet",
+   "name": "Evenshroud",
+   "nameKo": "저녁갑주",
+   "type": "completed",
+   "recipe": [
+    "negatron-cloak",
+    "giants-belt"
+   ],
+   "stats": "마법 저항력 +20, 체력 +250",
+   "description": "2칸 내에 있는 적 30% 파열 전투 시작 후 15초 동안 방어력과 마법 저항력 15 증가 파열: 방어력 감소",
+   "status": "carryover"
+  },
+  {
+   "id": "guinsoos-rageblade",
+   "apiName": "TFT_Item_GuinsoosRageblade",
+   "name": "Guinsoo's Rageblade",
+   "nameKo": "구인수의 격노검",
+   "type": "completed",
+   "recipe": [
+    "recurve-bow",
+    "needlessly-large-rod"
+   ],
+   "stats": "주문력 +10, 공격 속도 +10%",
+   "description": "매초 공격 속도 7% 획득 (중첩 가능)",
+   "status": "carryover"
+  },
+  {
+   "id": "giant-slayer",
+   "apiName": "TFT_Item_MadredsBloodrazor",
+   "name": "Giant Slayer",
+   "nameKo": "거인 학살자",
+   "type": "completed",
+   "recipe": [
+    "b-f-sword",
+    "recurve-bow"
+   ],
+   "stats": "공격력 +15%, 주문력 +15, 공격 속도 +15%",
+   "description": "탱커를 상대로 추가 피해 증폭 15% 획득",
+   "status": "carryover"
+  },
+  {
+   "id": "tacticians-shield",
+   "apiName": "TFT_Item_TacticiansScepter",
+   "name": "Tactician's Shield",
+   "nameKo": "전략가의 방패",
+   "type": "special",
+   "recipe": [
+    "frying-pan",
+    "frying-pan"
+   ],
+   "stats": "",
+   "description": "아군의 최대 팀 규모 +1 증가. 장착 유닛 사망 시 1골드를 획득할 확률 10% '철학자의 지혜가 깃들어 있습니다.'",
+   "status": "carryover"
+  },
+  {
+   "id": "gargoyle-stoneplate",
+   "apiName": "TFT_Item_GargoyleStoneplate",
+   "name": "Gargoyle Stoneplate",
+   "nameKo": "가고일 돌갑옷",
+   "type": "completed",
+   "recipe": [
+    "chain-vest",
+    "negatron-cloak"
+   ],
+   "stats": "방어력 +25, 마법 저항력 +25, 체력 +100",
+   "description": "적의 공격 대상이 되면 방어력이 10, 마법 저항력이 10 증가. 공격하는 적이 늘어나면 중첩되어 적용",
+   "status": "carryover"
+  },
+  {
+   "id": "hand-of-justice",
+   "apiName": "TFT_Item_UnstableConcoction",
+   "name": "Hand Of Justice",
+   "nameKo": "정의의 손길",
+   "type": "completed",
+   "recipe": [
+    "tear-of-the-goddess",
+    "sparring-gloves"
+   ],
+   "stats": "치명타 확률 +20%",
+   "description": "2가지 효과 획득:공격력 15%, 주문력 15%모든 피해 흡혈 12% 체력이 50%를 넘을 때 공격력 및 주문력 두 배로 증가. 체력이 50% 아래일 때 모든 피해 흡혈 두 배로 증가",
+   "status": "carryover"
+  },
+  {
+   "id": "arcanist-emblem",
+   "apiName": null,
+   "name": "Arcanist Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Arcanist",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Arcanist 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "beach-pop-emblem",
+   "apiName": null,
+   "name": "Beach Pop Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Beach Pop",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Beach Pop 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "choreographer-emblem",
+   "apiName": null,
+   "name": "Choreographer Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Choreographer",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Choreographer 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "classical-emblem",
+   "apiName": null,
+   "name": "Classical Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Classical",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Classical 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "heartsteel-emblem",
+   "apiName": null,
+   "name": "Heartsteel Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Heartsteel",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Heartsteel 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "hitmaker-emblem",
+   "apiName": null,
+   "name": "Hitmaker Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Hitmaker",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Hitmaker 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "illbeats-emblem",
+   "apiName": null,
+   "name": "Illbeats Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Illbeats",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Illbeats 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "ionic-spark-emblem",
+   "apiName": null,
+   "name": "Ionic Spark Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Ionic Spark",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Ionic Spark 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "jazz-emblem",
+   "apiName": null,
+   "name": "Jazz Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Jazz",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Jazz 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "k-da-emblem",
+   "apiName": null,
+   "name": "K/DA Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "K/DA",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 K/DA 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "manager-emblem",
+   "apiName": null,
+   "name": "Manager Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Manager",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Manager 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "pentakill-emblem",
+   "apiName": null,
+   "name": "Pentakill Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Pentakill",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Pentakill 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "renegade-emblem",
+   "apiName": null,
+   "name": "Renegade Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Renegade",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Renegade 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "rock-emblem",
+   "apiName": null,
+   "name": "Rock Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Rock",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Rock 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "slayer-emblem",
+   "apiName": null,
+   "name": "Slayer Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Slayer",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Slayer 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "swiftstriker-emblem",
+   "apiName": null,
+   "name": "Swiftstriker Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "Swiftstriker",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 Swiftstriker 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  },
+  {
+   "id": "true-damage-emblem",
+   "apiName": null,
+   "name": "True Damage Emblem",
+   "nameKo": null,
+   "type": "emblem",
+   "grantsTrait": "True Damage",
+   "recipe": null,
+   "stats": "",
+   "description": "장착한 챔피언이 True Damage 특성을 얻습니다. (조합법 미공개)",
+   "status": "preview"
+  }
+ ]
+}

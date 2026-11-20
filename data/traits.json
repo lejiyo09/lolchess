@@ -1,0 +1,1421 @@
+{
+ "meta": {
+  "set": 19,
+  "patch": "PBE 16.24 (Set 19, 2026-11-20)",
+  "source": [
+   "PBE 16.24 game data via Blitz.gg Set 19 pages (feed updated 2026-11-20)",
+   "https://blitz.gg/tft/set19"
+  ],
+  "updated": "2026-11-20",
+  "status": "pbe",
+  "count": 47,
+  "note": "단계 수치는 PBE 값. 라이브 전 변경 가능"
+ },
+ "traits": [
+  {
+   "id": "freestyle",
+   "name": "Freestyle",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores Player Health.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores Player Health."
+    }
+   ],
+   "champions": [
+    "Akali (True Damage)"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Akali_TrueDamage19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "country",
+   "name": "Country",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Combat Start: If your strongest Alistar has enough bonus Health, he gains Durability.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Combat Start: If your strongest Alistar has over 500 bonus Health, he gains 15% Durability. Current: ? Bonus Health"
+    }
+   ],
+   "champions": [
+    "Alistar"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Alistar19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "emo",
+   "name": "Emo",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Amumu gains bonus Armor and Magic Resist if he starts combat with no adjacent allies.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Amumu gains 25/40/55 Armor and Magic Resist if he starts combat with no adjacent allies."
+    }
+   ],
+   "champions": [
+    "Amumu"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Amumu19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "arcanist",
+   "name": "Arcanist",
+   "nameKo": "비전 마법사",
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Your team gains Ability Power, Arcanists gain more.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "AP 12%, AP 25% for Arcanists"
+    },
+    {
+     "min": 4,
+     "effect": "AP 18%, AP 50% for Arcanists"
+    },
+    {
+     "min": 6,
+     "effect": "AP 30%, AP 70% for Arcanists"
+    }
+   ],
+   "champions": [
+    "Ziggs",
+    "Zoe",
+    "Annie",
+    "Karthus",
+    "Swain",
+    "Mel",
+    "Vladimir"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Arcanist19",
+   "notes": []
+  },
+  {
+   "id": "one-monster-band",
+   "name": "One Monster Band",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "After the first time Baron Nashor casts, he envelops the board in song, stealing a portion of the Attack Damage, Ability Power, Attack Speed, and Critical Strike Chance from all enemies.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Baron Nashor takes up 2 team slots and is unstoppable. After the first time Baron Nashor casts, he envelops the board in song, stealing 5% Attack Damage, Ability Power, Attack Speed, and Critical Strike Chance from all enemies."
+    }
+   ],
+   "champions": [
+    "Baron Nashor"
+   ],
+   "status": "pbe",
+   "apiName": "DA_BaronNashor19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "bodyguard",
+   "name": "Bodyguard",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "class",
+   "description": "While at least one Bodyguard is alive, your team gains 15 Armor and Magic Resist. Bodyguards gain more.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Armor MR 22"
+    },
+    {
+     "min": 4,
+     "effect": "Armor MR 55"
+    },
+    {
+     "min": 6,
+     "effect": "Armor MR 105"
+    }
+   ],
+   "champions": [
+    "Kennen",
+    "Lillia",
+    "Jax",
+    "Nasus",
+    "K'Sante",
+    "Tibbers",
+    "Leona"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Bodyguard19",
+   "notes": []
+  },
+  {
+   "id": "choreographer",
+   "name": "Choreographer",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Allies who start in the front 2 rows gain Shield. All other allies gain Damage Amp. Choreographers gain double.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "150 Shield; Damage Amp 6%"
+    },
+    {
+     "min": 3,
+     "effect": "225 Shield; Damage Amp 10%"
+    },
+    {
+     "min": 4,
+     "effect": "375 Shield; Damage Amp 15%"
+    },
+    {
+     "min": 5,
+     "effect": "550 Shield; Damage Amp 20%"
+    }
+   ],
+   "champions": [
+    "Lulu",
+    "Renata Glasc",
+    "Syndra",
+    "Viego",
+    "Ahri",
+    "Garen",
+    "Nidalee",
+    "Rakan"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Choreographer19",
+   "notes": []
+  },
+  {
+   "id": "collab",
+   "name": "Collab",
+   "nameKo": null,
+   "type": "rotating",
+   "traitClass": "class",
+   "description": "Collab champions become inspired after taking or dealing damage 8 times, gaining Attack Damage and Ability Power. Every 7 inspirations during player combat, gain copies of Collab champions. (?/7) Each game a different set of champions gain the Collab trait!",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "AD AP 8%"
+    },
+    {
+     "min": 5,
+     "effect": "AD AP 20%"
+    }
+   ],
+   "champions": [
+    "Sona"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Collab19",
+   "notes": []
+  },
+  {
+   "id": "rock",
+   "name": "Rock",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "The Infernal Idol grows stronger based on the star level of your Rock champions.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "Summon the Infernal Idol."
+    },
+    {
+     "min": 4,
+     "effect": "He heals for 10% of damage dealt by Rock champions."
+    },
+    {
+     "min": 5,
+     "effect": "On cast, he fires a massive blast through the most enemies!"
+    },
+    {
+     "min": 7,
+     "effect": "Every 3 seconds he lives, 2 bolts blast nearby enemies, repeating 15% of damage dealt by Rock champions as magic damage."
+    }
+   ],
+   "champions": [
+    "Olaf",
+    "Varus",
+    "Camille",
+    "Swain",
+    "Locke",
+    "Vayne",
+    "Pyke"
+   ],
+   "status": "pbe",
+   "apiName": "DA_DemonVision19",
+   "notes": [
+    "Infernal Idol 강도는 Rock 챔피언 별 레벨에 비례(설명). 단계 활성은 유닛 수로 계산 — PBE에서 확인 필요."
+   ]
+  },
+  {
+   "id": "record-mogul",
+   "name": "Record Mogul",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "The Record Contract is returned when the Recording Artist is sold or benched.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Gain a Record Contract now and every 4 rounds. Contracted champions gain 5% Damage Amp and their kills grant Dr. Mundo 25 permanent Health. Total Health: 25 Next Contract: ?/4 The Record Contract is returned when the Recording Artist is sold or benched."
+    }
+   ],
+   "champions": [
+    "Dr. Mundo"
+   ],
+   "status": "pbe",
+   "apiName": "DA_DrMundo19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "edm",
+   "name": "EDM",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "EDM Abilities become harder, better, faster, and stronger.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "EDM Abilities become harder, better, faster, and stronger."
+    }
+   ],
+   "champions": [
+    "Jax",
+    "Vi"
+   ],
+   "status": "pbe",
+   "apiName": "DA_EDM19",
+   "notes": []
+  },
+  {
+   "id": "encore",
+   "name": "Encore",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "class",
+   "description": "When Encore champions fire projectiles with their abilities, they fire an extra one with reduced effectiveness.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "25% effectiveness"
+    },
+    {
+     "min": 4,
+     "effect": "50% effectiveness"
+    }
+   ],
+   "champions": [
+    "Neeko",
+    "Varus",
+    "Ezreal",
+    "Lucian",
+    "Jhin",
+    "Yuumi",
+    "Taliyah"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Encore19",
+   "notes": []
+  },
+  {
+   "id": "frontman",
+   "name": "Frontman",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Your team gains 100 Health. Frontmen gain more, which increases after the first time they cast.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Health 15%, increased to Health 25%"
+    },
+    {
+     "min": 4,
+     "effect": "Health 22%, increased to Health 40%"
+    },
+    {
+     "min": 6,
+     "effect": "Health 35%, increased to Health 60%"
+    }
+   ],
+   "champions": [
+    "Elise",
+    "Kobuko",
+    "Sett",
+    "Illaoi",
+    "Renekton",
+    "Galio",
+    "Swain",
+    "Shyvana",
+    "Thresh",
+    "Nunu & Willump"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Frontman19",
+   "notes": []
+  },
+  {
+   "id": "synthwave",
+   "name": "Synthwave",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "At a Health threshold, gain a temporary Shield equal to a portion of Healing and Shielding received this combat.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "At 35% Health, gain Shield for 6 seconds equal to 50% of Healing and Shielding received this combat."
+    }
+   ],
+   "champions": [
+    "Garen"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Garen19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "hyperpop",
+   "name": "Hyperpop",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "Hyperpop champions gain Health and Attack Speed. After player combat, they generate 3/6/12/40 Hype based on their star level + 1 Hype per takedown. Each time you hit a new Hype Level, gain special rewards! At higher trait tiers, gain more Hype!",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Health 100, Attack Speed 10%"
+    },
+    {
+     "min": 3,
+     "effect": "Health 175, Attack Speed 15%, 1.5x Hype"
+    },
+    {
+     "min": 4,
+     "effect": "Health 250, Attack Speed 25%, 3x Hype"
+    },
+    {
+     "min": 5,
+     "effect": "Health 400, Attack Speed 40%, 3.5x Hype"
+    }
+   ],
+   "champions": [
+    "Kobuko",
+    "Ziggs",
+    "Lulu",
+    "Tristana",
+    "Teemo"
+   ],
+   "status": "pbe",
+   "apiName": "DA_GlitterBomb19",
+   "notes": []
+  },
+  {
+   "id": "melodic-heart",
+   "name": "Melodic Heart",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "For the opening moments of combat, your strongest Gwen is surrounded by Mist and cannot be targeted by attacks. Allies gain Durability while within the Mist.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "For the first 12 seconds of combat, your strongest Gwen is surrounded by Mist and cannot be targeted by attacks. Allies gain 10% Durability while within the Mist."
+    }
+   ],
+   "champions": [
+    "Gwen"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Gwen19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "heartsteel",
+   "name": "Heartsteel",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "Sett: Health 75 Kayn: AD 7% Ezreal: Crit Chance 10% K'Sante: Armor MR 8 Alune: AP 7% Yone: Omnivamp 5% Aphelios: Attack Speed 6% Emblem: Durability 3% Sona: 5% increased Healing/Shielding",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Heartsteel members grant your team bonuses."
+    },
+    {
+     "min": 3,
+     "effect": "Choose a Bias, empowering their Ability."
+    },
+    {
+     "min": 5,
+     "effect": "Choose a 2nd Bias."
+    },
+    {
+     "min": 7,
+     "effect": "Heartsteel champions gain an additional 150% of active Heartsteel bonuses."
+    }
+   ],
+   "champions": [
+    "Kayn",
+    "Sett",
+    "Ezreal",
+    "K'Sante",
+    "Alune",
+    "Yone",
+    "Aphelios"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Heartsteel19",
+   "notes": [],
+   "prismatic": {
+    "min": 7,
+    "effect": "Heartsteel champions gain an additional 150% of active Heartsteel bonuses. Prismatic: Buckle up—HEARTSTEEL IS BACK!",
+    "requires": "Prismatic Tour augment quest"
+   },
+   "prismaticEligible": true
+  },
+  {
+   "id": "gu-feng",
+   "name": "Gu Feng",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "Gu Feng champions gain stats, scaling with your player level.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "2% AD AP and 2 Armor MR per level."
+    },
+    {
+     "min": 3,
+     "effect": "and 2% Health per level."
+    },
+    {
+     "min": 4,
+     "effect": "Choose between two Scrolls that can be equipped by Gu Feng champions. One of the Scrolls opens a dangerous path to Level 11."
+    }
+   ],
+   "champions": [
+    "Wukong",
+    "Xayah",
+    "Janna",
+    "Lee Sin"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Heavenscale19",
+   "notes": [
+    "4단계: 두 두루마리 중 하나를 선택, 하나는 레벨 11 경로를 연다(설명)."
+   ]
+  },
+  {
+   "id": "hitmaker",
+   "name": "Hitmaker",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Hitmakers gain 12% Attack Damage. The Hitmakers with the most items become Big Shots, gaining even more Attack Damage.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "1 Big Shot, AD 20%"
+    },
+    {
+     "min": 4,
+     "effect": "2 Big Shots, AD 35%"
+    }
+   ],
+   "champions": [
+    "Lucian",
+    "Tristana",
+    "Senna",
+    "Jinx",
+    "Xayah",
+    "Miss Fortune"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Hitmaker19",
+   "notes": []
+  },
+  {
+   "id": "illbeats",
+   "name": "Illbeats",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "Open the Illbeats Mixer to allocate Decibels. Illbeats champions receive different stats based on your mix. Your team gains 50% of the mix.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "10 Decibels"
+    },
+    {
+     "min": 3,
+     "effect": "14 Decibels"
+    },
+    {
+     "min": 4,
+     "effect": "18 Decibels. The mix is 50% stronger."
+    }
+   ],
+   "champions": [
+    "Illaoi",
+    "Braum",
+    "Draven",
+    "Yuumi"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Illbeats19",
+   "notes": []
+  },
+  {
+   "id": "ionic-spark",
+   "name": "Ionic Spark",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "Fans cheer on Ionic Spark members with gifts every 4 seconds. Ionic Spark members gain Health. Next Delivery: 0 player combats",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "Health 100; Letters that restore 2% Health and grant Attack Speed 7%"
+    },
+    {
+     "min": 5,
+     "effect": "Health 250; Personalized gifts that grant AD 25% or AP 25%"
+    },
+    {
+     "min": 7,
+     "effect": "Health 550; Every 2 player combats, gain gold and a consumable!"
+    },
+    {
+     "min": 10,
+     "effect": "Fans rush the stage!"
+    }
+   ],
+   "champions": [
+    "Elise",
+    "Yunara",
+    "Annie",
+    "Lux",
+    "Briar",
+    "Tibbers",
+    "Aurora",
+    "Jinx",
+    "Shyvana",
+    "Gwen"
+   ],
+   "status": "pbe",
+   "apiName": "DA_IonicSpark19",
+   "notes": [],
+   "prismaticEligible": true
+  },
+  {
+   "id": "windblessed",
+   "name": "Windblessed",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Combat Start: Your strongest Janna releases a tornado that travels forward, knocking up enemies in its path.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Combat Start: Your strongest Janna releases a tornado that travels forward, knocking up enemies in its path for 1.25/1.75/99 seconds."
+    }
+   ],
+   "champions": [
+    "Janna"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Janna19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "jazz",
+   "name": "Jazz",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "For each active trait (except uniques), your team gains bonus Health and Damage Amp.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "1.5% Health, 1% Damage Amp"
+    },
+    {
+     "min": 3,
+     "effect": "2.5% Health, 1.5% Damage Amp"
+    },
+    {
+     "min": 4,
+     "effect": "3.5% Health, 2% Damage Amp"
+    }
+   ],
+   "champions": [
+    "Lucian",
+    "Bard",
+    "Galio",
+    "Smeech"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Jazz19",
+   "notes": []
+  },
+  {
+   "id": "juggernaut",
+   "name": "Juggernaut",
+   "nameKo": "전쟁기계",
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Juggernauts gain Durability, increasing based on their missing Health.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Durability 15% to Durability 25%"
+    },
+    {
+     "min": 4,
+     "effect": "Durability 25% to Durability 35%"
+    },
+    {
+     "min": 6,
+     "effect": "Durability 35% to Durability 48%"
+    }
+   ],
+   "champions": [
+    "Olaf",
+    "Taric",
+    "Annie",
+    "Gragas",
+    "Braum",
+    "Ekko",
+    "Yorick",
+    "Zac",
+    "Vi"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Juggernaut19",
+   "notes": []
+  },
+  {
+   "id": "k-da",
+   "name": "K/DA",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "K/DA champions release new songs based on their total star level. At Combat Start and after 8 seconds, they gain power for each of their songs.",
+   "countMode": "stars",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "POP/STARS: 10% reduced max Mana."
+    },
+    {
+     "min": 5,
+     "effect": "DRUM GO DUM: 12% Health Shield for 8 seconds."
+    },
+    {
+     "min": 7,
+     "effect": "VILLAIN: 60% Attack Speed that decays over 8 seconds."
+    },
+    {
+     "min": 10,
+     "effect": "I'LL SHOW YOU: Boost all previous effects by 1.25."
+    },
+    {
+     "min": 13,
+     "effect": "WATCH ME: Stun all enemies for 1 second."
+    },
+    {
+     "min": 15,
+     "effect": "FIRESTARTER: Enemies take 12% max Health magic damage over 8 seconds."
+    },
+    {
+     "min": 21,
+     "effect": "GIRLS: K/DA members ascend to 4-star."
+    }
+   ],
+   "champions": [
+    "Lillia",
+    "Neeko",
+    "Gragas",
+    "Evelynn",
+    "Kai'Sa",
+    "Ahri",
+    "Leona",
+    "Akali (K/DA)"
+   ],
+   "status": "pbe",
+   "apiName": "DA_KDA19",
+   "notes": [],
+   "prismaticEligible": true
+  },
+  {
+   "id": "composer",
+   "name": "Composer",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "For each one you have, your team gains bonus Ability Power. Malzahar gains double. If he has dealt enough damage and you have all 5 instruments, Malzahar writes his masterpiece, unlocking Baron Nashor.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Mystical Instruments can appear in your shop. There is one of each rarity. For each one you have, your team gains 3% Ability Power. Malzahar gains double. If he has dealt 60000 damage and you have all 5 instruments, Malzahar writes his masterpiece, unlocking Baron Nashor."
+    }
+   ],
+   "champions": [
+    "Malzahar"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Malzahar19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "manager",
+   "name": "Manager",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Gain a Spotlight Hex. The ally who starts combat in it gains bonuses at Combat Start and every 5 seconds.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "AD AP 6%"
+    },
+    {
+     "min": 3,
+     "effect": "AND 8 Mana"
+    },
+    {
+     "min": 4,
+     "effect": "AND they drop 1 Gold! (Total: ?)"
+    }
+   ],
+   "champions": [
+    "Alune",
+    "Leona",
+    "Dr. Mundo"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Manager19",
+   "notes": []
+  },
+  {
+   "id": "8-bit",
+   "name": "8-Bit",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Keep score of your team's damage dealt, with Miss Fortune’s damage contributing triple. When you beat a high score, get a prize.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Keep score of your team's damage dealt, with Miss Fortune’s damage contributing triple. When you beat a high score, get a prize. Current Score: ? High Scores: 50000 80000 125000 175000 275000 500000 700000 1000000"
+    }
+   ],
+   "champions": [
+    "Miss Fortune"
+   ],
+   "status": "pbe",
+   "apiName": "DA_MissFortune19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "slayer",
+   "name": "Slayer",
+   "nameKo": "학살자",
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Slayers gain Attack Speed and Omnivamp, which increases up to 100%, based on their missing Health.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Attack Speed 20%, Omnivamp 8%"
+    },
+    {
+     "min": 4,
+     "effect": "Attack Speed 40%, Omnivamp 10%"
+    },
+    {
+     "min": 6,
+     "effect": "Attack Speed 65%, Omnivamp 12%"
+    }
+   ],
+   "champions": [
+    "Katarina",
+    "Kayn",
+    "Camille",
+    "Briar",
+    "Viego",
+    "Yasuo",
+    "Yone",
+    "Smeech"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Mosher19",
+   "notes": []
+  },
+  {
+   "id": "mariachi",
+   "name": "Mariachi",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Whenever she drops below a Health threshold, she leaps away and transforms back to Human form.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "When Nidalee casts her Ability while above 75% Health, she transforms into Cougar Form and casts Pounce Party. Otherwise, she casts Dance of Life. Whenever she drops below 50% Health, she leaps away and transforms back to Human form."
+    }
+   ],
+   "champions": [
+    "Nidalee"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Nidalee19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "disco",
+   "name": "Disco",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Enter Disco Fever after casting enough times, granting your team Attack Speed.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Your team heals for 0.8% max Health per second. Enter Disco Fever after casting 6 times, granting your team 125% Attack Speed."
+    }
+   ],
+   "champions": [
+    "Nunu & Willump"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Nunu19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "beach-pop",
+   "name": "Beach Pop",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "Gain placeable instruments that empower adjacent allies. Empowered allies regenerate 2% Health every 3 seconds. Empowered Beach Pop champions gain Attack Speed and also regenerate Mana every 3 seconds.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "1 Instrument; Attack Speed 25%, Mana 5"
+    },
+    {
+     "min": 5,
+     "effect": "2 Instruments; Attack Speed 40%, Mana 8"
+    },
+    {
+     "min": 7,
+     "effect": "AND every 10 seconds, an ocean breeze heals Beach Pop champions for Health 20% and grants them Mana 40"
+    }
+   ],
+   "champions": [
+    "Taric",
+    "Zoe",
+    "Ashe",
+    "Renekton",
+    "Syndra",
+    "Graves",
+    "Zac",
+    "Taliyah"
+   ],
+   "status": "pbe",
+   "apiName": "DA_OceanSong19",
+   "notes": []
+  },
+  {
+   "id": "pentakill",
+   "name": "Pentakill",
+   "nameKo": "펜타킬",
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "Pentakill members gain Attack Damage and Ability Power. The first few enemies to drop below 10% Health are executed and summon an allied ghoul in their place.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "15% AD AP, 2 enemies"
+    },
+    {
+     "min": 5,
+     "effect": "30% AD AP, 3 enemies"
+    },
+    {
+     "min": 7,
+     "effect": "35% AD AP, 4 enemies. The first enemy to die summons the Iron Maiden instead. / 35% AD AP. MOSH PIT!!!!!!!"
+    }
+   ],
+   "champions": [
+    "Gnar",
+    "Olaf",
+    "Karthus",
+    "Viego",
+    "Kayle",
+    "Yorick",
+    "Mordekaiser"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Pentakill19",
+   "notes": [],
+   "prismaticEligible": true
+  },
+  {
+   "id": "prodigy",
+   "name": "Prodigy",
+   "nameKo": "신동",
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Your team gains 1 Mana Regen. Prodigies gain more.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Mana Regen 2"
+    },
+    {
+     "min": 3,
+     "effect": "Mana Regen 3"
+    },
+    {
+     "min": 4,
+     "effect": "Mana Regen 5"
+    },
+    {
+     "min": 5,
+     "effect": "Mana Regen 6; The lowest Health ally heals for 10% of damage dealt by Prodigies' abilties."
+    }
+   ],
+   "champions": [
+    "Neeko",
+    "Lux",
+    "Ekko",
+    "Malzahar",
+    "Alune",
+    "Janna"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Prodigy19",
+   "notes": []
+  },
+  {
+   "id": "boy-band",
+   "name": "Boy Band",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Rakan is accompanied by placeable clones that have a portion of his max Health, deal damage, and copy his Completed and Radiant items.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Rakan is accompanied by 2 placeable clones that have 50% of his max Health, deal 30% damage, and copy his Completed, Radiant, and Emblem items."
+    }
+   ],
+   "champions": [
+    "Rakan"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Rakan19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "beat-master",
+   "name": "Beat Master",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "While mounted, her max Mana is reduced and every 3rd attack deals a portion of her total Armor and Magic Resist as magic damage in a line.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "At 50% max Health, Rell mounts up and fully heals over 2 seconds. While mounted, her max Mana is reduced by 40 and every 3rd attack deals 70/105/500% of her total Armor and Magic Resist as magic damage in a line."
+    }
+   ],
+   "champions": [
+    "Rell"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Rell19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "renegade",
+   "name": "Renegade",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Renegades gain Precision, Critical Strike Chance, and Critical Strike Damage.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Crit Chance 15%, Crit Damage 12%"
+    },
+    {
+     "min": 3,
+     "effect": "Crit Chance 20%, Crit Damage 18%"
+    },
+    {
+     "min": 4,
+     "effect": "Crit Chance 25%, Crit Damage 22%"
+    },
+    {
+     "min": 5,
+     "effect": "Crit Chance 35%, Crit Damage 25% Additionally, Renegades gain 10% Durability."
+    }
+   ],
+   "champions": [
+    "Qiyana",
+    "Samira",
+    "Evelynn",
+    "Aurora",
+    "Graves",
+    "Pyke"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Renegade19",
+   "notes": []
+  },
+  {
+   "id": "r-and-b",
+   "name": "R&B",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "Your team takes less damage from abilities. / Your strongest Mel and Rell are soul-linked. A portion of damage Mel takes is redirected to Rell. Rell heals for a portion of damage dealt by Mel.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Your team takes 6% less damage from abilities."
+    },
+    {
+     "min": 2,
+     "effect": "Your strongest Mel and Rell are soul-linked. 70% of damage Mel takes is redirected to Rell. Rell heals for 20% of damage dealt by Mel."
+    }
+   ],
+   "champions": [
+    "Mel",
+    "Rell"
+   ],
+   "status": "pbe",
+   "apiName": "DA_RnB19",
+   "notes": []
+  },
+  {
+   "id": "indie",
+   "name": "Indie",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "When you 3-star a champion, she becomes a Rising Star, upgrading her Ability and granting you a special subscriber reward. After 3-starring enough champions, she becomes a Superstar!",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "After combat, Seraphine attracts new followers, granting you a random champion. When you 3-star a champion, she becomes a Rising Star, upgrading her Ability and granting you a special subscriber reward. After 3-starring 4 champions, she becomes a Superstar!"
+    }
+   ],
+   "champions": [
+    "Seraphine"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Seraphine19_IndieTrait",
+   "notes": []
+  },
+  {
+   "id": "producer",
+   "name": "Producer",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Sona converts all bonus Attack Damage and Attack Speed into Ability Power.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "When Sona is fielded, choose a band to feature, gaining their trait. Sona converts all bonus Attack Damage and Attack Speed into Ability Power."
+    }
+   ],
+   "champions": [
+    "Sona"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Sona19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "swiftstriker",
+   "name": "Swiftstriker",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Your team gains 10% Attack Speed. Swiftstrikers gain more every 2 seconds, up to 5 times.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Attack Speed 5% per stack"
+    },
+    {
+     "min": 3,
+     "effect": "Attack Speed 7% per stack"
+    },
+    {
+     "min": 4,
+     "effect": "Attack Speed 13% per stack"
+    },
+    {
+     "min": 5,
+     "effect": "Attack Speed 20% per stack"
+    }
+   ],
+   "champions": [
+    "Yunara",
+    "Ziggs",
+    "Ashe",
+    "Jax",
+    "Bard",
+    "Kayle",
+    "Locke",
+    "Zeri"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Swiftstriker19",
+   "notes": []
+  },
+  {
+   "id": "hype-man",
+   "name": "Hype Man",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Whenever a Hyperpop champion deals enough damage or takes enough damage, store an extra Hyperpop Hype.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Whenever a Hyperpop champion deals 2500 damage or takes 2500 damage, store an extra Hyperpop Hype. Hype Stored This Combat: ?"
+    }
+   ],
+   "champions": [
+    "Teemo"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Teemo19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "trickshot",
+   "name": "Trickshot",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "class",
+   "description": "Trickshots' attacks and Abilities ricochet. Each ricochet deals a percentage of the previous bounce's damage.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "1 richochet; 22% of previous damage"
+    },
+    {
+     "min": 3,
+     "effect": "1 richochet; 33% of previous damage"
+    },
+    {
+     "min": 4,
+     "effect": "2 richochets; 33% of previous damage"
+    }
+   ],
+   "champions": [
+    "Gnar",
+    "Samira",
+    "Draven",
+    "Kai'Sa",
+    "Vayne",
+    "Twisted Fate"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Trickshot19",
+   "notes": []
+  },
+  {
+   "id": "true-damage",
+   "name": "True Damage",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "While on the A-Side, earn Bling for winning player combat. On the B-Side, earn Bling for losing. Every 4 rounds, choose to convert Bling into rewards or Keep Rising.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 3,
+     "effect": "A-Side: Win True Damage members deal 18% bonus true damage. Gain 2 Bling on kill + 15 if you win combat. / B-Side: Lose After losing, gain 14 Bling + 6 per consecutive loss on the B-Side. If you win, lose 50% of your Bling."
+    },
+    {
+     "min": 5,
+     "effect": "30% true damage. 4 Bling on kill + 20 if you win combat. / Each round after combat, heal 2 player Health and gain 2 XP."
+    }
+   ],
+   "champions": [
+    "Kennen",
+    "Qiyana",
+    "Ekko",
+    "Senna",
+    "Yasuo",
+    "Akali (True Damage)"
+   ],
+   "status": "pbe",
+   "apiName": "DA_TrueDamage19",
+   "notes": [],
+   "prismatic": {
+    "min": 5,
+    "effect": "67% true damage. 10 Bling on kill + 30 if you win combat. Prismatic: KNOW MY NAME blasts from the record player! True Damage members deal 99% bonus true damage and earn double the bling. / Each round after combat, heal 2 player Health and gain 2 XP. Prismatic: GIANTS blasts from the record player! True Damage members deal 99% bonus true damage and drop gold on kill.",
+    "requires": "Prismatic Tour augment quest"
+   },
+   "prismaticEligible": true,
+   "sides": {
+    "A": [
+     "A-Side: Win True Damage members deal 18% bonus true damage. Gain 2 Bling on kill + 15 if you win combat.",
+     "30% true damage. 4 Bling on kill + 20 if you win combat."
+    ],
+    "B": [
+     "B-Side: Lose After losing, gain 14 Bling + 6 per consecutive loss on the B-Side. If you win, lose 50% of your Bling.",
+     "Each round after combat, heal 2 player Health and gain 2 XP."
+    ]
+   }
+  },
+  {
+   "id": "tango",
+   "name": "Tango",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "Twisted Fate marks the nearest ally as his Tango Partner. They ignite with passion, gaining 15% Attack Speed. Their damage 1% Burns and 33% Wounds enemies for 3 seconds. Burn: Deals a percent of the target’s max Health as true damage every second. Wound: Reduces healing received."
+    }
+   ],
+   "champions": [
+    "Twisted Fate"
+   ],
+   "status": "pbe",
+   "apiName": "DA_TwistedFate19_UniqueTrait",
+   "notes": []
+  },
+  {
+   "id": "classical",
+   "name": "Classical",
+   "nameKo": null,
+   "type": "trait",
+   "traitClass": "origin",
+   "description": "Classical champions Captivate enemies in unique ways. They gain Damage Amp, increased by 1% every 6 seconds an enemy is Captivated.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 2,
+     "effect": "Damage Amp 8%; the Captivated deal 10% reduced damage."
+    },
+    {
+     "min": 4,
+     "effect": "Damage Amp 20%; the Captivated throw roses on death, healing a Classical champion for Health 10%"
+    },
+    {
+     "min": 6,
+     "effect": "Damage Amp 35%; the Captivated have a 15% chance to join your bench on death."
+    }
+   ],
+   "champions": [
+    "Katarina",
+    "Nasus",
+    "Renata Glasc",
+    "Samira",
+    "Jhin",
+    "Thresh",
+    "Vladimir"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Virtuosos19",
+   "notes": []
+  },
+  {
+   "id": "goth",
+   "name": "Goth",
+   "nameKo": null,
+   "type": "unique",
+   "traitClass": "origin",
+   "description": "The first time your strongest Zeri damages an enemy each combat, vampiric bats steal some Attack Damage from them, bringing it back to her.",
+   "countMode": "units",
+   "tiers": [
+    {
+     "min": 1,
+     "effect": "The first time your strongest Zeri damages an enemy each combat, vampiric bats steal 8% Attack Damage from them, bringing it back to her."
+    }
+   ],
+   "champions": [
+    "Zeri"
+   ],
+   "status": "pbe",
+   "apiName": "DA_Zeri19_UniqueTrait",
+   "notes": []
+  }
+ ]
+}

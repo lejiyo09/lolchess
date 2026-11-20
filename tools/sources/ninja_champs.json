@@ -1,0 +1,1323 @@
+[
+ {
+  "slug": "elise",
+  "name": "Elise",
+  "cost": 1,
+  "traits": [
+   "Ionic Spark",
+   "Frontman"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "CC",
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "gnar",
+  "name": "Gnar",
+  "cost": 1,
+  "traits": [
+   "Pentakill",
+   "Trickshot"
+  ],
+  "role": "Attack Specialist",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "katarina",
+  "name": "Katarina",
+  "cost": 1,
+  "traits": [
+   "Classical",
+   "Slayer"
+  ],
+  "role": "Magic Fighter",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "kayn",
+  "name": "Kayn",
+  "cost": 1,
+  "traits": [
+   "Heartsteel",
+   "Slayer"
+  ],
+  "role": "Attack Fighter",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "kennen",
+  "name": "Kennen",
+  "cost": 1,
+  "traits": [
+   "True Damage",
+   "Bodyguard"
+  ],
+  "role": "Magic Tank",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "kobuko",
+  "name": "Kobuko",
+  "cost": 1,
+  "traits": [
+   "Hyperpop",
+   "Frontman"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": true,
+  "unlockCondition": "Reach the required star level on Ziggs and equip the required number of items to him."
+ },
+ {
+  "slug": "lillia",
+  "name": "Lillia",
+  "cost": 1,
+  "traits": [
+   "K/DA",
+   "Bodyguard"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "neeko",
+  "name": "Neeko",
+  "cost": 1,
+  "traits": [
+   "K/DA",
+   "Encore",
+   "Prodigy"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "olaf",
+  "name": "Olaf",
+  "cost": 1,
+  "traits": [
+   "Pentakill",
+   "Rock",
+   "Juggernaut"
+  ],
+  "role": "Attack Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "sett",
+  "name": "Sett",
+  "cost": 1,
+  "traits": [
+   "Heartsteel",
+   "Frontman"
+  ],
+  "role": "Attack Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "taric",
+  "name": "Taric",
+  "cost": 1,
+  "traits": [
+   "Beach Pop",
+   "Juggernaut"
+  ],
+  "role": "Magic Tank",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "varus",
+  "name": "Varus",
+  "cost": 1,
+  "traits": [
+   "Rock",
+   "Encore"
+  ],
+  "role": "Attack Caster",
+  "effects": [
+   "Slow"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "yunara",
+  "name": "Yunara",
+  "cost": 1,
+  "traits": [
+   "Ionic Spark",
+   "Swiftstriker"
+  ],
+  "role": "Attack Marksman",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "ziggs",
+  "name": "Ziggs",
+  "cost": 1,
+  "traits": [
+   "Hyperpop",
+   "Arcanist",
+   "Swiftstriker"
+  ],
+  "role": "Magic Marksman",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "zoe",
+  "name": "Zoe",
+  "cost": 1,
+  "traits": [
+   "Beach Pop",
+   "Arcanist"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "annie",
+  "name": "Annie",
+  "cost": 2,
+  "traits": [
+   "Ionic Spark",
+   "Arcanist",
+   "Juggernaut"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Burn"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "ashe",
+  "name": "Ashe",
+  "cost": 2,
+  "traits": [
+   "Beach Pop",
+   "Swiftstriker"
+  ],
+  "role": "Attack Marksman",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Equip the required number of items to a Beach Pop champion."
+ },
+ {
+  "slug": "camille",
+  "name": "Camille",
+  "cost": 2,
+  "traits": [
+   "Rock",
+   "Slayer"
+  ],
+  "role": "Attack Fighter",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "ezreal",
+  "name": "Ezreal",
+  "cost": 2,
+  "traits": [
+   "Heartsteel",
+   "Encore"
+  ],
+  "role": "Attack Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "gragas",
+  "name": "Gragas",
+  "cost": 2,
+  "traits": [
+   "K/DA",
+   "Juggernaut"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "illaoi",
+  "name": "Illaoi",
+  "cost": 2,
+  "traits": [
+   "Illbeats",
+   "Frontman"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "jax",
+  "name": "Jax",
+  "cost": 2,
+  "traits": [
+   "EDM",
+   "Bodyguard",
+   "Swiftstriker"
+  ],
+  "role": "Magic Fighter",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "karthus",
+  "name": "Karthus",
+  "cost": 2,
+  "traits": [
+   "Pentakill",
+   "Arcanist"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "lucian",
+  "name": "Lucian",
+  "cost": 2,
+  "traits": [
+   "Jazz",
+   "Hitmaker",
+   "Encore"
+  ],
+  "role": "Attack Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "lulu",
+  "name": "Lulu",
+  "cost": 2,
+  "traits": [
+   "Hyperpop",
+   "Choreographer"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Have your Hyperpop champions cast the required number of times with the trait active."
+ },
+ {
+  "slug": "lux",
+  "name": "Lux",
+  "cost": 2,
+  "traits": [
+   "Ionic Spark",
+   "Prodigy"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "nasus",
+  "name": "Nasus",
+  "cost": 2,
+  "traits": [
+   "Classical",
+   "Bodyguard"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": true,
+  "unlockCondition": "Equip the required number of items to a Classical champion."
+ },
+ {
+  "slug": "qiyana",
+  "name": "Qiyana",
+  "cost": 2,
+  "traits": [
+   "True Damage",
+   "Renegade"
+  ],
+  "role": "Attack Fighter",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "renata-glasc",
+  "name": "Renata Glasc",
+  "cost": 2,
+  "traits": [
+   "Classical",
+   "Choreographer"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Equip the required number of items to a Classical or Choreographer champion."
+ },
+ {
+  "slug": "renekton",
+  "name": "Renekton",
+  "cost": 2,
+  "traits": [
+   "Beach Pop",
+   "Frontman"
+  ],
+  "role": "Attack Tank",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "samira",
+  "name": "Samira",
+  "cost": 2,
+  "traits": [
+   "Classical",
+   "Renegade",
+   "Trickshot"
+  ],
+  "role": "Attack Caster",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Equip the required number of items to a Classical, Renegade, or Trickshot champion."
+ },
+ {
+  "slug": "seraphine",
+  "name": "Seraphine",
+  "cost": 2,
+  "traits": [
+   "Indie"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Reroll the required number of times before the Stage 2 Carousel."
+ },
+ {
+  "slug": "tristana",
+  "name": "Tristana",
+  "cost": 2,
+  "traits": [
+   "Hyperpop",
+   "Hitmaker"
+  ],
+  "role": "Attack Caster",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Get the required number of kills with Hyperpop active."
+ },
+ {
+  "slug": "amumu",
+  "name": "Amumu",
+  "cost": 3,
+  "traits": [
+   "Emo"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "CC",
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "bard",
+  "name": "Bard",
+  "cost": 3,
+  "traits": [
+   "Jazz",
+   "Swiftstriker"
+  ],
+  "role": "Magic Marksman",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "braum",
+  "name": "Braum",
+  "cost": 3,
+  "traits": [
+   "Illbeats",
+   "Juggernaut"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "CC"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "briar",
+  "name": "Briar",
+  "cost": 3,
+  "traits": [
+   "Ionic Spark",
+   "Slayer"
+  ],
+  "role": "Attack Assassin",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "draven",
+  "name": "Draven",
+  "cost": 3,
+  "traits": [
+   "Illbeats",
+   "Trickshot"
+  ],
+  "role": "Attack Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "ekko",
+  "name": "Ekko",
+  "cost": 3,
+  "traits": [
+   "True Damage",
+   "Juggernaut",
+   "Prodigy"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "evelynn",
+  "name": "Evelynn",
+  "cost": 3,
+  "traits": [
+   "K/DA",
+   "Renegade"
+  ],
+  "role": "Magic Fighter",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Field the required number of K/DA or Renegade champions."
+ },
+ {
+  "slug": "galio",
+  "name": "Galio",
+  "cost": 3,
+  "traits": [
+   "Jazz",
+   "Frontman"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "CC"
+  ],
+  "unlock": true,
+  "unlockCondition": "Have the required number of Bodyguard, Juggernaut, or Frontman traits active."
+ },
+ {
+  "slug": "k-sante",
+  "name": "K'Sante",
+  "cost": 3,
+  "traits": [
+   "Heartsteel",
+   "Bodyguard"
+  ],
+  "role": "Attack Tank",
+  "effects": [
+   "CC"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "kai-sa",
+  "name": "Kai'Sa",
+  "cost": 3,
+  "traits": [
+   "K/DA",
+   "Trickshot"
+  ],
+  "role": "Attack Marksman",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "malzahar",
+  "name": "Malzahar",
+  "cost": 3,
+  "traits": [
+   "Composer",
+   "Prodigy"
+  ],
+  "role": "Magic Caster",
+  "effects": [
+   "Shred"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "senna",
+  "name": "Senna",
+  "cost": 3,
+  "traits": [
+   "True Damage",
+   "Hitmaker"
+  ],
+  "role": "Attack Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "swain",
+  "name": "Swain",
+  "cost": 3,
+  "traits": [
+   "Rock",
+   "Arcanist",
+   "Frontman"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "syndra",
+  "name": "Syndra",
+  "cost": 3,
+  "traits": [
+   "Beach Pop",
+   "Choreographer"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Field the required number of unique star levels of Beach Pop or Choreographer."
+ },
+ {
+  "slug": "tibbers",
+  "name": "Tibbers",
+  "cost": 3,
+  "traits": [
+   "Ionic Spark",
+   "Bodyguard"
+  ],
+  "role": "Attack Tank",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Reach the required star level on Annie and equip the required number of items to her."
+ },
+ {
+  "slug": "viego",
+  "name": "Viego",
+  "cost": 3,
+  "traits": [
+   "Pentakill",
+   "Choreographer",
+   "Slayer"
+  ],
+  "role": "Attack Fighter",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "ahri",
+  "name": "Ahri",
+  "cost": 4,
+  "traits": [
+   "K/DA",
+   "Choreographer"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "alistar",
+  "name": "Alistar",
+  "cost": 4,
+  "traits": [
+   "Country"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "CC",
+   "Healing"
+  ],
+  "unlock": true,
+  "unlockCondition": "A Chain Vest equipped to a Caster or Marksman."
+ },
+ {
+  "slug": "alune",
+  "name": "Alune",
+  "cost": 4,
+  "traits": [
+   "Heartsteel",
+   "Manager",
+   "Prodigy"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Field the required number of unique Heartsteel or Prodigy champions."
+ },
+ {
+  "slug": "aurora",
+  "name": "Aurora",
+  "cost": 4,
+  "traits": [
+   "Ionic Spark",
+   "Renegade"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "garen",
+  "name": "Garen",
+  "cost": 4,
+  "traits": [
+   "Synthwave",
+   "Choreographer"
+  ],
+  "role": "Attack Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "graves",
+  "name": "Graves",
+  "cost": 4,
+  "traits": [
+   "Beach Pop",
+   "Renegade"
+  ],
+  "role": "Attack Fighter",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "jhin",
+  "name": "Jhin",
+  "cost": 4,
+  "traits": [
+   "Classical",
+   "Encore"
+  ],
+  "role": "Attack Specialist",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "jinx",
+  "name": "Jinx",
+  "cost": 4,
+  "traits": [
+   "Ionic Spark",
+   "Hitmaker"
+  ],
+  "role": "Attack Marksman",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Equip the required number of items to an Ionic Spark or Hitmaker champion."
+ },
+ {
+  "slug": "kayle",
+  "name": "Kayle",
+  "cost": 4,
+  "traits": [
+   "Pentakill",
+   "Swiftstriker"
+  ],
+  "role": "Magic Marksman",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Field the required number of unique Pentakill or Swiftstriker champions."
+ },
+ {
+  "slug": "leona",
+  "name": "Leona",
+  "cost": 4,
+  "traits": [
+   "K/DA",
+   "Bodyguard",
+   "Manager"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Shred"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "locke",
+  "name": "Locke",
+  "cost": 4,
+  "traits": [
+   "Rock",
+   "Swiftstriker"
+  ],
+  "role": "Magic Assassin",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "mel",
+  "name": "Mel",
+  "cost": 4,
+  "traits": [
+   "R&B",
+   "Arcanist"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "shyvana",
+  "name": "Shyvana",
+  "cost": 4,
+  "traits": [
+   "Ionic Spark",
+   "Frontman"
+  ],
+  "role": "Magic Tank",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "thresh",
+  "name": "Thresh",
+  "cost": 4,
+  "traits": [
+   "Classical",
+   "Frontman"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": true,
+  "unlockCondition": "Have enemies spend the required number of seconds Captivated by Classical."
+ },
+ {
+  "slug": "vayne",
+  "name": "Vayne",
+  "cost": 4,
+  "traits": [
+   "Rock",
+   "Trickshot"
+  ],
+  "role": "Attack Marksman",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Field Rock for the required number of combats."
+ },
+ {
+  "slug": "wukong",
+  "name": "Wukong",
+  "cost": 4,
+  "traits": [
+   "Gu Feng"
+  ],
+  "role": "Attack Tank",
+  "effects": [
+   "Shred",
+   "Sunder",
+   "Healing"
+  ],
+  "unlock": true,
+  "unlockCondition": "Have allies deal the required damage while fielding Xayah."
+ },
+ {
+  "slug": "xayah",
+  "name": "Xayah",
+  "cost": 4,
+  "traits": [
+   "Gu Feng",
+   "Hitmaker"
+  ],
+  "role": "Attack Caster",
+  "effects": [
+   "Sunder"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "yasuo",
+  "name": "Yasuo",
+  "cost": 4,
+  "traits": [
+   "True Damage",
+   "Slayer"
+  ],
+  "role": "Attack Fighter",
+  "effects": [
+   "CC"
+  ],
+  "unlock": true,
+  "unlockCondition": "Field the required number of star levels of True Damage and Slayer champions."
+ },
+ {
+  "slug": "yone",
+  "name": "Yone",
+  "cost": 4,
+  "traits": [
+   "Heartsteel",
+   "Slayer"
+  ],
+  "role": "Attack Fighter",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "yorick",
+  "name": "Yorick",
+  "cost": 4,
+  "traits": [
+   "Pentakill",
+   "Juggernaut"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Slow",
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "yuumi",
+  "name": "Yuumi",
+  "cost": 4,
+  "traits": [
+   "Illbeats",
+   "Encore"
+  ],
+  "role": "Magic Caster",
+  "effects": [
+   "Shred"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "zac",
+  "name": "Zac",
+  "cost": 4,
+  "traits": [
+   "Beach Pop",
+   "Juggernaut"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "CC",
+   "Healing"
+  ],
+  "unlock": true,
+  "unlockCondition": "Field the required number of unique Beach Pop or Juggernaut champions."
+ },
+ {
+  "slug": "akali-k-da",
+  "name": "Akali (K/DA)",
+  "cost": 5,
+  "traits": [
+   "K/DA"
+  ],
+  "role": "Attack Assassin",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Field the required number of unique star levels of K/DA without True Damage Akali unlocked."
+ },
+ {
+  "slug": "akali-true-damage",
+  "name": "Akali (True Damage)",
+  "cost": 5,
+  "traits": [
+   "True Damage",
+   "Freestyle"
+  ],
+  "role": "Magic Fighter",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Earn the required True Damage Bling without K/DA Akali unlocked."
+ },
+ {
+  "slug": "aphelios",
+  "name": "Aphelios",
+  "cost": 5,
+  "traits": [
+   "Heartsteel"
+  ],
+  "role": "Attack Marksman",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Reach the required star level on Alune or Yone."
+ },
+ {
+  "slug": "dr-mundo",
+  "name": "Dr. Mundo",
+  "cost": 5,
+  "traits": [
+   "Record Mogul",
+   "Manager"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "gwen",
+  "name": "Gwen",
+  "cost": 5,
+  "traits": [
+   "Ionic Spark",
+   "Melodic Heart"
+  ],
+  "role": "Magic Fighter",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Have Ionic Spark fans cheer the required number of times."
+ },
+ {
+  "slug": "janna",
+  "name": "Janna",
+  "cost": 5,
+  "traits": [
+   "Gu Feng",
+   "Windblessed",
+   "Prodigy"
+  ],
+  "role": "Magic Caster",
+  "effects": [
+   "CC"
+  ],
+  "unlock": true,
+  "unlockCondition": "Earn the required interest while fielding Xayah."
+ },
+ {
+  "slug": "lee-sin",
+  "name": "Lee Sin",
+  "cost": 5,
+  "traits": [
+   "Gu Feng"
+  ],
+  "role": "Attack Fighter",
+  "effects": [
+   "CC"
+  ],
+  "unlock": true,
+  "unlockCondition": "Deal the required player damage while fielding Xayah."
+ },
+ {
+  "slug": "miss-fortune",
+  "name": "Miss Fortune",
+  "cost": 5,
+  "traits": [
+   "8-Bit",
+   "Hitmaker"
+  ],
+  "role": "Attack Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "mordekaiser",
+  "name": "Mordekaiser",
+  "cost": 5,
+  "traits": [
+   "Pentakill"
+  ],
+  "role": "Magic Fighter",
+  "effects": [
+   "CC",
+   "Healing"
+  ],
+  "unlock": true,
+  "unlockCondition": "Field the required number of unique star levels of Pentakill."
+ },
+ {
+  "slug": "nidalee",
+  "name": "Nidalee",
+  "cost": 5,
+  "traits": [
+   "Mariachi",
+   "Choreographer"
+  ],
+  "role": "Magic Fighter",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "nunu-and-willump",
+  "name": "Nunu & Willump",
+  "cost": 5,
+  "traits": [
+   "Disco",
+   "Frontman"
+  ],
+  "role": "Magic Specialist",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "pyke",
+  "name": "Pyke",
+  "cost": 5,
+  "traits": [
+   "Rock",
+   "Renegade"
+  ],
+  "role": "Attack Fighter",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Have at least the required amount of gold at the end of combat."
+ },
+ {
+  "slug": "rell",
+  "name": "Rell",
+  "cost": 5,
+  "traits": [
+   "R&B",
+   "Beat Master"
+  ],
+  "role": "Magic Tank",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "taliyah",
+  "name": "Taliyah",
+  "cost": 5,
+  "traits": [
+   "Beach Pop",
+   "Encore"
+  ],
+  "role": "Magic Caster",
+  "effects": [
+   "CC"
+  ],
+  "unlock": true,
+  "unlockCondition": "Start a champion of each cost in a Beach Pop hex."
+ },
+ {
+  "slug": "teemo",
+  "name": "Teemo",
+  "cost": 5,
+  "traits": [
+   "Hyperpop",
+   "Hype Man"
+  ],
+  "role": "Magic Caster",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Collect the required amount of Hyperpop Hype."
+ },
+ {
+  "slug": "twisted-fate",
+  "name": "Twisted Fate",
+  "cost": 5,
+  "traits": [
+   "Tango",
+   "Trickshot"
+  ],
+  "role": "Magic Marksman",
+  "effects": [
+   "Burn"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "vi",
+  "name": "Vi",
+  "cost": 5,
+  "traits": [
+   "EDM",
+   "Juggernaut"
+  ],
+  "role": "Attack Fighter",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "vladimir",
+  "name": "Vladimir",
+  "cost": 5,
+  "traits": [
+   "Classical",
+   "Arcanist"
+  ],
+  "role": "Magic Fighter",
+  "effects": [
+   "Healing"
+  ],
+  "unlock": true,
+  "unlockCondition": "Field only the specified number of champions in the two front rows of the battlefield."
+ },
+ {
+  "slug": "zeri",
+  "name": "Zeri",
+  "cost": 5,
+  "traits": [
+   "Goth",
+   "Swiftstriker"
+  ],
+  "role": "Attack Caster",
+  "effects": [],
+  "unlock": false,
+  "unlockCondition": null
+ },
+ {
+  "slug": "baron-nashor",
+  "name": "Baron Nashor",
+  "cost": 7,
+  "traits": [
+   "One Monster Band"
+  ],
+  "role": "Attack Fighter",
+  "effects": [
+   "CC"
+  ],
+  "unlock": true,
+  "unlockCondition": "Collect all members of Baron's ensemble."
+ },
+ {
+  "slug": "rakan",
+  "name": "Rakan",
+  "cost": 7,
+  "traits": [
+   "Boy Band"
+  ],
+  "role": "Magic Assassin",
+  "effects": [
+   "CC"
+  ],
+  "unlock": true,
+  "unlockCondition": "At Level 8+, win or lose the required number of consecutive combats."
+ },
+ {
+  "slug": "smeech",
+  "name": "Smeech",
+  "cost": 7,
+  "traits": [
+   "Jazz",
+   "Slayer"
+  ],
+  "role": "Attack Specialist",
+  "effects": [],
+  "unlock": true,
+  "unlockCondition": "Have at least the required number of non-unique traits active."
+ },
+ {
+  "slug": "sona",
+  "name": "Sona",
+  "cost": 7,
+  "traits": [
+   "Producer",
+   "Collab"
+  ],
+  "role": "Magic Specialist",
+  "effects": [
+   "CC"
+  ],
+  "unlock": true,
+  "unlockCondition": "Inspire Collab champions the required number of times."
+ }
+]
