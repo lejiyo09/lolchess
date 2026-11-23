@@ -1,7 +1,7 @@
 {
  "meta": {
   "set": 19,
-  "patch": "PBE 16.24 (Set 19, 2026-11-20)",
+  "patch": "PBE 16.24 (Set 19, 2026-11-20 16:44 UTC)",
   "source": [
    "PBE 16.24 game data via Blitz.gg Set 19 pages (feed updated 2026-11-20)",
    "https://blitz.gg/tft/set19"
@@ -1054,7 +1054,7 @@
    "type": "artifact",
    "recipe": null,
    "stats": "",
-   "description": "Reduce the holder's max Mana by 10. Subsequent spellcasts reduce max Mana by 5%, to a minimum of 15.",
+   "description": "The holder's Abilities cost 10 less Mana to cast. Subsequent casts make the Ability cost 5% less, to a minimum of 15.",
    "status": "pbe"
   },
   {

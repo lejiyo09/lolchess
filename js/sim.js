@@ -348,7 +348,6 @@
       <div class="col" style="gap:12px">
         <div class="panel"><h3>행동</h3>
           <div class="row"><button class="primary" id="sFight" ${s.phase !== 'planning' ? 'disabled' : ''}>${type === 'pve' ? 'PvE 전투' : '전투 시작'} ▶</button></div>
-          <div class="row" style="margin-top:6px"><button id="sRoll" ${s.phase !== 'planning' ? 'disabled' : ''}>새로고침 ${R.rerollCost ?? 2}G</button><button id="sXp" ${s.phase !== 'planning' ? 'disabled' : ''}>XP 구매 ${R.xpBuyCost ?? 4}G</button><button id="sLock" class="${s.locked ? 'on' : ''}">${s.locked ? '🔒 잠김' : '🔓 잠금'}</button></div>
           <div class="divider"></div>
           <div class="tiny">이번 라운드 종료 예상 수입(지출 없음 가정): 기본 ${E.passiveIncome(s.stage, s.round + 1 > E.roundsInStage(s.stage) ? 1 : s.round + 1)} + 이자 ${nextInterest} + 연속 ${E.streakGold(s.streak + (s.streak >= 0 ? 1 : -1))}(결과에 따라)</div>
           <div class="tiny" style="margin-top:4px">훈련용 전투력: 내 보드 <b>${me.p.toFixed(1)}</b> · 이 라운드 표준 상대 <b>${typ.p.toFixed(1)}</b> (Lv${typ.units} 기준)</div>
@@ -371,7 +370,7 @@
           <div class="board" id="sBoard"></div><div class="bench" id="sBench"></div>
           <div class="divider"></div>
           <div class="row between"><b class="small">아이템 (${s.items.length})</b><span class="tiny">${selItem != null ? '<b class="gold-t">아이템 선택됨 → 유닛 클릭 / 다른 재료 클릭 시 조합</b>' : '클릭 선택 후 유닛 클릭, 또는 드래그'}</span></div>
-          <div class="itembench" id="sItems" style="margin-top:4px">${s.items.map((i, k) => { const it = TL.data.item(i); return `<span class="itm ${it?.type} ${selItem === k ? 'sel' : ''}" draggable="true" data-item="${i}" data-from="sim" data-idx="${k}" title="${TL.esc((it?.description || '') + (it?.recipe ? '\n조합: ' + it.recipe.map(r => TL.data.item(r)?.nameKo).join(' + ') : ''))}">${TL.esc(it?.nameKo || it?.name || i)}</span>`; }).join('') || '<span class="tiny">없음</span>'}</div>
+          <div class="itembench" id="sItems" style="margin-top:4px">${s.items.map((i, k) => { const it = TL.data.item(i); return `<span class="itm icon ${it?.type} ${selItem === k ? 'sel' : ''}" draggable="true" data-item="${i}" data-from="sim" data-idx="${k}" title="${TL.esc((it?.nameKo || it?.name || '') + '\n' + (it?.description || '') + (it?.recipe ? '\n조합: ' + it.recipe.map(r => TL.data.item(r)?.nameKo).join(' + ') : ''))}">${TL.ui.item(i)}<span class="iname">${TL.esc(it?.nameKo || it?.name || i)}</span></span>`; }).join('') || '<span class="tiny">없음</span>'}</div>
           <div id="sSel" style="margin-top:8px"></div>
         </div>
       </div>
@@ -398,13 +397,23 @@
   function phaseHTML() {
     const s = S();
     if (s.phase === 'over') return `<div class="panel"><h3>게임 종료 — <span class="gold-t">${s.placement}위</span></h3><div class="row"><button class="primary" id="sReview2">복기 보기</button><button id="sNew2">새 게임</button></div></div>`;
-    if (s.phase === 'carousel') return `<div class="panel"><h3>${rid()} 회전초밥 <span class="pill st st-training-model">구성: training-model</span></h3><div class="shop" style="grid-template-columns:repeat(3,minmax(0,1fr))">${s.carousel.map((o, i) => { const c = TL.data.champ(o.champ), it = TL.data.item(o.item); return `<button class="card cost-${c.cost}" data-car="${i}"><span class="nm">${TL.esc(TL.data.name(c))}</span><span class="tr">${c.traits.join(' · ')}</span><span class="pr"><span>${'●'.repeat(c.cost)}</span><span class="${it?.type === 'completed' ? 'gold-t' : ''}">${TL.esc(it?.nameKo || it?.name)}</span></span></button>`; }).join('')}</div><div class="tiny" style="margin-top:6px">실제 회전초밥 순서는 체력 낮은 순(1-1은 동시) — 여기서는 원하는 1명을 고르는 연습만 해.</div></div>`;
+    if (s.phase === 'carousel') return `<div class="panel"><h3>${rid()} 회전초밥 <span class="pill st st-training-model">구성: training-model</span></h3><div class="shop" style="grid-template-columns:repeat(3,minmax(0,1fr))">${s.carousel.map((o, i) => { const c = TL.data.champ(o.champ), it = TL.data.item(o.item); return shopCard(c, { attr: `data-car="${i}"`, extra: `<span class="own" style="display:flex;align-items:center;gap:3px">${TL.ui.item(o.item)}${TL.esc(it?.nameKo || it?.name || '')}</span>`, noCoin: true }); }).join('')}</div><div class="tiny" style="margin-top:6px">실제 회전초밥 순서는 체력 낮은 순(1-1은 동시) — 여기서는 원하는 1명을 고르는 연습만 해.</div></div>`;
     if (s.phase === 'augment') {
       if (!s.augOffer.length) return `<div class="panel"><h3>${rid()} 증강 선택</h3><div class="tiny" style="margin-bottom:6px">증강 등급 출현 확률은 공개되지 않아 직접 고르거나 무작위(동일 확률)로 뽑아. (training-model)</div><div class="row">${['Silver', 'Gold', 'Prismatic'].map(t => `<button class="sm" data-augt="${t}"><span class="tier-${t}">${t}</span></button>`).join('')}<button class="sm" data-augt="">무작위</button></div></div>`;
       return `<div class="panel"><h3>${rid()} 증강 선택 · <span class="tier-${s.augTier}">${s.augTier}</span> <button class="xs" id="sAugRe" ${s.augRerolled ? 'disabled' : ''}>선택지 새로고침(1회, 훈련용)</button></h3><div class="grid g3">${s.augOffer.map(id => { const a = TL.data.aug(id); return `<button class="aug ${a.tier}" data-aug="${id}"><span class="an">${TL.esc(a.name)}</span><span class="tiny">${TL.esc(a.description)}</span><span class="chips">${a.categories.map(c => `<span class="chip">${c}</span>`).join('')}${a.relatedTraits.map(t => `<span class="chip">${TL.esc(t)}</span>`).join('')}</span></button>`; }).join('')}</div><textarea id="sAugReason" rows="2" style="margin-top:8px" placeholder="선택 이유 (현재 체력/골드/보드/아이템 관점)"></textarea><div class="tiny">증강 연구실에서 같은 선택지를 상황별로 비교할 수 있어. 설명은 현재 데이터(${TL.esc(TL.data.bundle().augments.meta.patch)}) 원문(영문). 이 라운드에 등장 가능한 증강만 제시(데이터에 등장 라운드가 있을 때).</div></div>`;
     }
     const s2 = S();
-    return `<div class="panel" id="sShopPanel"><h3>상점 <span class="tiny">Lv${s2.level} 확률: ${E.oddsRow(s2.level).map((p, i) => `<span class="cost-${i + 1}" style="color:var(--cc)">${p}%</span>`).join(' / ')}</span></h3><div class="shop">${s2.shop.map((id, i) => { if (!id) return '<div class="card empty"></div>'; const c = TL.data.champ(id); const own = ownedCopies(id); return `<button class="card cost-${c.cost} ${own ? 'owned' : ''}" data-buy="${i}" ${s2.gold < c.cost ? 'style="opacity:.55"' : ''}><span class="nm">${TL.esc(TL.data.name(c))}</span><span class="tr">${c.traits.join(' · ')}</span><span class="pr"><span>${c.cost}G</span><span class="tiny">${own ? `보유 ${own}` : ''} · 풀 ${s2.pool[id]}</span></span></button>`; }).join('')}</div></div>`;
+    const R2 = TL.data.rules(); const need = E.xpToNext(s2.level);
+    return `<div class="panel" id="sShopPanel"><h3>상점 <span class="row"><span class="tiny">Lv${s2.level} 확률 ${E.oddsRow(s2.level).map((p, i) => `<span class="cost-${i + 1}" style="color:var(--cc);font-weight:700">${p}%</span>`).join(' · ')}</span>${TL.ui.coin(s2.gold)}</span></h3>
+      <div class="shopbar"><div class="sb-left">
+        <button class="sb-btn" id="sXp" ${s2.phase !== 'planning' ? 'disabled' : ''}><span>XP 구매<small>F · Lv${s2.level} ${need ? s2.xp + '/' + need : 'MAX'}</small></span>${TL.ui.coin(R2.xpBuyCost ?? 4)}</button>
+        <button class="sb-btn" id="sRoll" ${s2.phase !== 'planning' ? 'disabled' : ''}><span>새로고침<small>D</small></span>${TL.ui.coin(R2.rerollCost ?? 2)}</button>
+        <button class="sb-btn ${s2.locked ? 'on' : ''}" id="sLock"><span>${s2.locked ? '🔒 잠김' : '🔓 잠금'}<small>다음 라운드 유지</small></span></button>
+      </div><div class="shop">${s2.shop.map((id, i) => { if (!id) return '<div class="card empty"></div>'; const c = TL.data.champ(id); const own = ownedCopies(id); return shopCard(c, { attr: `data-buy="${i}" ${s2.gold < c.cost ? 'style="opacity:.5;filter:grayscale(.5)"' : ''}`, extra: `${own ? `<span class="own">보유 ${own}</span>` : ''}<span class="pool">풀 ${s2.pool[id]}</span>` }); }).join('')}</div></div></div>`;
+  }
+  function shopCard(c, o = {}) {
+    const art = TL.img.champ(c.id);
+    return `<button class="card cost-${c.cost}" ${o.attr || ''}>${art ? `<img class="cd-art" src="${art}" alt="" draggable="false">` : ''}<span class="cd-traits">${c.traits.map(t => `<span class="tl">${TL.ui.trait(t, 'none', 'xs')}${TL.esc(t)}</span>`).join('')}</span>${o.extra || ''}<span class="cd-bot"><span class="nm">${TL.esc(TL.data.name(c))}</span>${o.noCoin ? '' : TL.ui.coin(c.cost)}</span></button>`;
   }
   function calcHTML() {
     const s = S(); const opts = TL.data.champs().filter(c => c.cost <= 5 && (!c.unlock || s.unlocked[c.id]));

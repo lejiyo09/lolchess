@@ -1,7 +1,7 @@
 {
  "meta": {
   "set": 19,
-  "patch": "PBE 16.24 (Set 19, 2026-11-20)",
+  "patch": "PBE 16.24 (Set 19, 2026-11-20 16:44 UTC)",
   "source": [
    "PBE 16.24 game data via Blitz.gg Set 19 pages (feed updated 2026-11-20)",
    "https://blitz.gg/tft/set19"
@@ -23,7 +23,7 @@
    "tiers": [
     {
      "min": 1,
-     "effect": "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores Player Health."
+     "effect": "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores player health."
     }
    ],
    "champions": [
@@ -44,7 +44,7 @@
    "tiers": [
     {
      "min": 1,
-     "effect": "Combat Start: If your strongest Alistar has over 500 bonus Health, he gains 15% Durability. Current: ? Bonus Health"
+     "effect": "Combat start: If your strongest Alistar has over 500 bonus Health, he gains 15% Durability. Current: ? Bonus Health"
     }
    ],
    "champions": [
@@ -94,7 +94,7 @@
     },
     {
      "min": 6,
-     "effect": "AP 30%, AP 70% for Arcanists"
+     "effect": "AP 30%, AP 75% for Arcanists"
     }
    ],
    "champions": [
@@ -254,7 +254,7 @@
     },
     {
      "min": 7,
-     "effect": "Every 3 seconds he lives, 2 bolts blast nearby enemies, repeating 15% of damage dealt by Rock champions as magic damage."
+     "effect": "Every 3 seconds he lives, 2 bolts blast nearby enemies, repeating 18% of damage dealt by Rock champions as magic damage."
     }
    ],
    "champions": [
@@ -321,7 +321,7 @@
    "nameKo": null,
    "type": "trait",
    "traitClass": "class",
-   "description": "When Encore champions fire projectiles with their abilities, they fire an extra one with reduced effectiveness.",
+   "description": "When Encore champions fire projectiles with their Abilities, they fire an extra one with reduced effectiveness.",
    "countMode": "units",
    "tiers": [
     {
@@ -420,15 +420,15 @@
     },
     {
      "min": 3,
-     "effect": "Health 175, Attack Speed 15%, 1.5x Hype"
+     "effect": "Health 150, Attack Speed 15%, 1.5x Hype"
     },
     {
      "min": 4,
-     "effect": "Health 250, Attack Speed 25%, 3x Hype"
+     "effect": "Health 200, Attack Speed 20%, 2.5x Hype"
     },
     {
      "min": 5,
-     "effect": "Health 400, Attack Speed 40%, 3.5x Hype"
+     "effect": "Health 350, Attack Speed 33%, 3x Hype"
     }
    ],
    "champions": [
@@ -486,7 +486,7 @@
     },
     {
      "min": 7,
-     "effect": "Heartsteel champions gain an additional 150% of active Heartsteel bonuses."
+     "effect": "Heartsteel champions gain an additional 120% of active Heartsteel bonuses."
     }
    ],
    "champions": [
@@ -503,7 +503,7 @@
    "notes": [],
    "prismatic": {
     "min": 7,
-    "effect": "Heartsteel champions gain an additional 150% of active Heartsteel bonuses. Prismatic: Buckle up—HEARTSTEEL IS BACK!",
+    "effect": "Heartsteel champions gain an additional 120% of active Heartsteel bonuses. Prismatic: Buckle up—HEARTSTEEL IS BACK!",
     "requires": "Prismatic Tour augment quest"
    },
    "prismaticEligible": true
@@ -557,7 +557,7 @@
     },
     {
      "min": 4,
-     "effect": "2 Big Shots, AD 35%"
+     "effect": "2 Big Shots, AD 40%"
     }
    ],
    "champions": [
@@ -587,11 +587,11 @@
     },
     {
      "min": 3,
-     "effect": "14 Decibels"
+     "effect": "15 Decibels"
     },
     {
      "min": 4,
-     "effect": "18 Decibels. The mix is 50% stronger."
+     "effect": "18 Decibels. The mix is 65% stronger."
     }
    ],
    "champions": [
@@ -619,11 +619,11 @@
     },
     {
      "min": 5,
-     "effect": "Health 250; Personalized gifts that grant AD 25% or AP 25%"
+     "effect": "Health 225; Personalized gifts that grant AD 22% or AP 22%"
     },
     {
      "min": 7,
-     "effect": "Health 550; Every 2 player combats, gain gold and a consumable!"
+     "effect": "Health 450; Every 2 player combats, gain gold and a consumable!"
     },
     {
      "min": 10,
@@ -711,11 +711,11 @@
    "tiers": [
     {
      "min": 2,
-     "effect": "Durability 15% to Durability 25%"
+     "effect": "Durability 18% to Durability 25%"
     },
     {
      "min": 4,
-     "effect": "Durability 25% to Durability 35%"
+     "effect": "Durability 28% to Durability 35%"
     },
     {
      "min": 6,
@@ -743,12 +743,12 @@
    "nameKo": null,
    "type": "trait",
    "traitClass": "origin",
-   "description": "K/DA champions release new songs based on their total star level. At Combat Start and after 8 seconds, they gain power for each of their songs.",
+   "description": "K/DA champions release new songs based on their total star level. At combat start and after 8 seconds, they gain power for each of their songs.",
    "countMode": "stars",
    "tiers": [
     {
      "min": 3,
-     "effect": "POP/STARS: 10% reduced max Mana."
+     "effect": "POP/STARS: Abilities cost 10% less Mana."
     },
     {
      "min": 5,
@@ -756,7 +756,7 @@
     },
     {
      "min": 7,
-     "effect": "VILLAIN: 60% Attack Speed that decays over 8 seconds."
+     "effect": "VILLAIN: 45% Attack Speed that decays over 8 seconds."
     },
     {
      "min": 10,
@@ -801,7 +801,7 @@
    "tiers": [
     {
      "min": 1,
-     "effect": "Mystical Instruments can appear in your shop. There is one of each rarity. For each one you have, your team gains 3% Ability Power. Malzahar gains double. If he has dealt 60000 damage and you have all 5 instruments, Malzahar writes his masterpiece, unlocking Baron Nashor."
+     "effect": "Mystical Instruments can appear in your Shop. There is one of each rarity. For each one you have, your team gains 3% Ability Power. Malzahar gains double. If he has dealt 60000 damage and you have all 5 instruments, Malzahar writes his masterpiece, unlocking Baron Nashor."
     }
    ],
    "champions": [
@@ -817,7 +817,7 @@
    "nameKo": null,
    "type": "trait",
    "traitClass": "class",
-   "description": "Gain a Spotlight Hex. The ally who starts combat in it gains bonuses at Combat Start and every 5 seconds.",
+   "description": "Gain a spotlight hex. The ally standing in it gains bonuses at combat start and every 5 seconds.",
    "countMode": "units",
    "tiers": [
     {
@@ -1062,7 +1062,7 @@
    "tiers": [
     {
      "min": 1,
-     "effect": "Rakan is accompanied by 2 placeable clones that have 50% of his max Health, deal 30% damage, and copy his Completed, Radiant, and Emblem items."
+     "effect": "Rakan is accompanied by 2 placeable clones that have 50% of his max Health, deal 30% damage, and copy his completed, Radiant, and Emblem items."
     }
    ],
    "champions": [
@@ -1083,7 +1083,7 @@
    "tiers": [
     {
      "min": 1,
-     "effect": "At 50% max Health, Rell mounts up and fully heals over 2 seconds. While mounted, her max Mana is reduced by 40 and every 3rd attack deals 70/105/500% of her total Armor and Magic Resist as magic damage in a line."
+     "effect": "At 50% Health, Rell mounts up and fully heals over 2 seconds. While mounted, her max Mana is reduced by 40 and every 3rd attack deals 70/105/500% of her total Armor and Magic Resist as magic damage in a line."
     }
    ],
    "champions": [
@@ -1142,7 +1142,7 @@
    "tiers": [
     {
      "min": 1,
-     "effect": "Your team takes 6% less damage from abilities."
+     "effect": "Your team takes 6% less damage from Abilities."
     },
     {
      "min": 2,

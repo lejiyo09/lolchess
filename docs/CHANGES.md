@@ -52,3 +52,11 @@
 - `data/*.json`을 PBE 16.24 게임 데이터로 갱신(`19.0-pbe.20261120`). 상세: `docs/DATA_VERIFICATION.md` 5절.
 - 새 도구: `tools/update_from_cdragon.py`(CommunityDragon 반영 시), `tools/update_from_blitz_pbe.py`(이번 갱신), `tests/data_check.js`(데이터 무관 점검), 앱 로직 테스트는 고정 fixture(`tests/fixtures/bundle.devdrop.js`)로 실행.
 - 화면: 팀 빌더 유닛 패널에 스탯·마나·스킬·Hero 형태 표시, 특성 목록에 단계 효과 수치, 아이템 탭(유물/찬란한/지원) 추가, 증강 카드에 등장 라운드 칩, 시뮬레이터 증강 선택지를 해당 라운드 등장 가능 증강으로 제한, 데이터 상태 문구를 데이터 메타에서 자동 표시.
+
+## 6. v2.2.0 — 2026-11-23 (인게임 UI · 메타 덱 · PBE 재갱신)
+
+- 인게임 스타일 UI: 챔피언 초상화(코스트 색 테두리), 초상화 헥스 타일 + 별·아이템 아이콘, 3D 기울임 보드(설정에서 끄기 가능), 초상화 대기석, 인게임식 상점 바(XP·새로고침·잠금 + 초상화 카드·골드 코인), 특성 트래커 배지(브론즈/실버/골드/프리즘 + 아이콘), 아이템 아이콘, 등급별 증강 카드.
+- 새 메뉴 Meta Comps(PBE 메타 덱 65개) + 대시보드 "PBE 메타 TOP 5"·"PBE 밸런스 변경".
+- PBE 데이터 재갱신(11-20 16:44 빌드) + 밸런스 변경 자동 비교(`tools/update_from_blitz_pbe.py --prev`).
+- 도구: `tools/build_meta_comps.py`, `tools/build_bundle.py`(번들 + 아트 목록). 서비스 워커가 아트 268개를 사전 캐시(오프라인에서도 그림 표시).
+- 테스트: 기능 95/95, 데이터 점검 22/22(메타 덱 검증 포함), PWA 11/11.

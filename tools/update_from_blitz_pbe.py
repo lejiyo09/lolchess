@@ -49,12 +49,20 @@ def main():
     ap.add_argument('--src', default=os.path.join(ROOT, 'tools/sources/blitz_pbe_16.24_set19.json'))
     ap.add_argument('--base', default=os.path.join(ROOT, 'legacy/data_devdrop_2026-11-15'), help='curated data to merge from')
     ap.add_argument('--out', default=os.path.join(ROOT, 'data'))
+    ap.add_argument('--prev', default=os.path.join(ROOT, 'data'), help='previous data dir for patch-to-patch balance diff')
     a = ap.parse_args()
     src = json.load(open(a.src, encoding='utf8'))
     F = src['feeds']; U, T, I, A, UL, R = F['units'], F['traits'], F['items'], F['augments'], F['unlockables'], F['champion-roles']
     pinfo = src['patchInfo']['data'][0]; upd = pinfo['updated_at'][0]
     pbe_patch = pinfo['display_patch']; pbe_date = f'{upd[0]:04d}-{upd[1]:02d}-{upd[2]:02d}'
-    PATCH = f'PBE {pbe_patch} (Set 19, {pbe_date})'
+    hm = pinfo['updated_at'][1] if len(pinfo['updated_at']) > 1 else [0, 0]
+    pbe_stamp = f"{pbe_date.replace('-', '')}-{hm[0]:02d}{hm[1]:02d}"
+    prevdata = {}
+    for f in ('champions', 'traits', 'augments'):
+        fp = os.path.join(a.prev, f + '.json')
+        if os.path.exists(fp):
+            prevdata[f] = json.load(open(fp, encoding='utf8'))
+    PATCH = f'PBE {pbe_patch} (Set 19, {pbe_date} {hm[0]:02d}:{hm[1]:02d} UTC)'
     old = {f: json.load(open(os.path.join(a.base, f + '.json'), encoding='utf8')) for f in ['patch-info', 'champions', 'traits', 'items', 'augments', 'shop-odds', 'game-rules']}
     o_ch = {c['name']: c for c in old['champions']['champions']}
     o_tr = {t['name']: t for t in old['traits']['traits']}
@@ -222,12 +230,47 @@ def main():
                          'numbers': 'in-description', 'status': status, 'apiName': k})
             if prev and prev.get('tier') != TIER[tier_key]:
                 log.append(f"증강 등급 변경 {v['name']}: {prev.get('tier')} → {TIER[tier_key]}")
+    # ---------- patch-to-patch balance diff vs previous data (PBE → PBE) ----------
+    bal = []
+    if prevdata.get('champions', {}).get('meta', {}).get('status') == 'pbe':
+        pt = {t['name']: t for t in prevdata['traits']['traits']}
+        for t in traits:
+            p0 = pt.get(t['name'])
+            if not p0: continue
+            for x, y in zip(p0['tiers'], t['tiers']):
+                if re.findall(r'[0-9][0-9/.%]*x?', x['effect']) != re.findall(r'[0-9][0-9/.%]*x?', y['effect']):
+                    bal.append(f"[특성] {t['name']} ({y['min']}): {x['effect']} → {y['effect']}")
+        pc = {c['name']: c for c in prevdata['champions']['champions']}
+        for c in champs:
+            p0 = pc.get(c['name'])
+            if not p0: continue
+            for k2, v2 in (c.get('stats') or {}).items():
+                v1 = (p0.get('stats') or {}).get(k2)
+                if v1 is not None and v1 != v2: bal.append(f"[챔피언] {c['name']} {k2}: {v1} → {v2}")
+            if (p0.get('ability') or {}).get('manaCost') not in (None, (c.get('ability') or {}).get('manaCost')):
+                bal.append(f"[챔피언] {c['name']} 마나: {p0['ability']['manaCost']} → {c['ability']['manaCost']}")
+            n1 = re.findall(r'[0-9][0-9/.%]*', (p0.get('ability') or {}).get('desc') or ''); n2 = re.findall(r'[0-9][0-9/.%]*', (c.get('ability') or {}).get('desc') or '')
+            if n1 != n2:
+                d2 = ', '.join(f'{x}→{y}' for x, y in zip(n1, n2) if x != y)
+                bal.append(f"[챔피언] {c['name']} 스킬 수치: " + (d2[:160] if d2 else '설명 문구/항목 변경'))
+            if p0.get('unlockCondition') and (p0.get('unlockCondition') or '').lower() != (c.get('unlockCondition') or '').lower():
+                bal.append(f"[해금] {c['name']}: {p0['unlockCondition']} → {c['unlockCondition']}")
+        pa = {x.get('apiName') or x['name']: x for x in prevdata['augments']['augments']}
+        for x in augs:
+            p0 = pa.get(x['apiName'])
+            if p0 and re.findall(r'[0-9][0-9/.%]*', p0['description']) != re.findall(r'[0-9][0-9/.%]*', x['description']):
+                bal.append(f"[증강] {x['name']}: {p0['description']} → {x['description']}")
+            if p0 and p0['tier'] != x['tier']: bal.append(f"[증강] {x['name']} 등급 {p0['tier']} → {x['tier']}")
+        na = {x['apiName']: x['name'] for x in augs}
+        bal += [f'[증강] 신규 {na[k]}' for k in sorted(set(na) - set(pa))] + [f"[증강] 삭제 {pa[k]['name']}" for k in sorted(set(pa) - set(na))]
+        prev_ver = json.load(open(os.path.join(a.prev, 'patch-info.json'), encoding='utf8')).get('dataVersion') if os.path.exists(os.path.join(a.prev, 'patch-info.json')) else '?'
+        log.insert(0, f'PBE 밸런스 변경 (이전 {prev_ver} 대비): {len(bal)}건')
     an_new = {x['name'] for x in augs}; an_old = {x['name'] for x in old['augments']['augments']}
     log.append(f'증강: Dev Drop {len(an_old)} → PBE {len(augs)} (신규 {len(an_new - an_old)}, PBE에 없음 {len(an_old - an_new)}, 일반 모드 제외/카탈로그 제외 {len(excluded)})')
 
     # ---------- patch info ----------
     pi = old['patch-info']
-    ver = f"19.0-pbe.{pbe_date.replace('-', '')}"
+    ver = f'19.0-pbe.{pbe_stamp}'
     pi.update({'dataVersion': ver, 'currentDataPatch': PATCH, 'built': TODAY})
     for s in pi['schedule']:
         if s['patch'] == 'PBE':
@@ -236,7 +279,8 @@ def main():
                f'챔피언 {len(champs)} · 특성 {len(traits)} · 증강 {len(augs)} · 아이템 {len(items)}',
                '추가된 수치: 특성 단계별 수치, 챔피언 스탯·마나·스킬 수치, 증강 수치(설명 내), 해금 조건 수치, 상징 조합법, 증강 등장 라운드',
                '상점 확률 / XP / 경제 규칙: 출처 없음 → carryover 유지'] + log[:60]
-    pi['changelog'] = [{'version': ver, 'date': TODAY, 'changes': summary}] + [c for c in pi['changelog'] if c['version'] != ver]
+    pi['balanceChanges'] = {'version': ver, 'since': (json.load(open(os.path.join(a.prev, 'patch-info.json'), encoding='utf8')).get('dataVersion') if os.path.exists(os.path.join(a.prev, 'patch-info.json')) else None), 'changes': bal} if bal else pi.get('balanceChanges')
+    pi['changelog'] = [{'version': ver, 'date': TODAY, 'changes': summary + bal[:80]}] + [c for c in pi['changelog'] if c['version'] != ver]
     s0 = {'name': f'PBE {pbe_patch} 게임 데이터 — Blitz.gg Set 19 (내장 데이터)', 'url': 'https://blitz.gg/tft/set19', 'used': 'champions, traits, items, augments, unlocks (status: pbe)'}
     pi['sources'] = [s0] + [s for s in pi['sources'] if s['url'] != s0['url']]
     meta = lambda n, note: {'set': 19, 'patch': PATCH, 'source': srcref, 'updated': pbe_date, 'status': status, 'count': n, 'note': note}

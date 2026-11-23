@@ -19,6 +19,7 @@
       if (o.meta && Array.isArray(o.items)) return 'items';
       if (o.meta && Array.isArray(o.augments)) return 'augments';
       if (o.odds && o.poolSize) return 'shop-odds';
+      if (o.meta && Array.isArray(o.comps)) return 'meta-comps';
       if (o.xpToNext && o.stageDamage) return 'game-rules';
       return 'unknown';
     },
@@ -63,7 +64,7 @@
       if (kind === 'bundle') { cand = o; touched = true; labels.push(f.name + ' (전체 번들)'); }
       else if (kind === 'legacy') { cand = TL.convert.legacy(o); touched = true; labels.push(f.name + ' (v0.1.0 데이터셋)'); }
       else if (kind === 'cdragon') { await cdragonDialog(o, f.name); return; }
-      else if (['patch-info', 'champions', 'traits', 'items', 'augments', 'shop-odds', 'game-rules'].includes(kind)) { cand[kind] = o; touched = true; labels.push(`${f.name} (${kind})`); }
+      else if (['patch-info', 'champions', 'traits', 'items', 'augments', 'shop-odds', 'game-rules', 'meta-comps'].includes(kind)) { cand[kind] = o; touched = true; labels.push(`${f.name} (${kind})`); }
       else if (kind === 'state') { TL.toast('앱 기록 백업 파일이야 — 아래 "앱 기록 복원"을 사용해.', 'err'); }
       else TL.toast(`${f.name}: 알 수 없는 형식`, 'err');
     }
@@ -101,6 +102,7 @@
     const el = TL.$('#view-settings'); const b = TL.data.bundle(); const p = b['patch-info']; const s = TL.state.settings;
     const v = TL.data.validate(b);
     const rows = [['patch-info', p.dataVersion, p.currentDataPatch, '-', p.built, '-'], ...TL.DATA_FILES.slice(1).map(f => { const m = b[f].meta || {}; const n = (b[f][f] || b[f].champions || b[f].traits || b[f].items || b[f].augments || []).length || (f === 'shop-odds' ? Object.keys(b[f].odds || {}).length + ' 레벨' : f === 'game-rules' ? Object.keys(b[f]).length - 1 + ' 항목' : ''); return [f, n, m.patch, Array.isArray(m.source) ? m.source.join(' · ') : m.source, m.updated, m.status]; })];
+    const MC = TL.data.meta(); if (MC) rows.push(['meta-comps', MC.comps.length + ' 조합', MC.meta.scope, (MC.meta.source || []).join(' · '), MC.meta.computedAt, MC.meta.status]);
     el.innerHTML = `<div class="view-head"><div><h2>Data &amp; Settings <span class="muted small">데이터 · 설정</span></h2><p>패치가 바뀌면 data/*.json만 교체하면 돼. 앱 안에서 가져오기/검증/복구/백업까지 처리할 수 있어.</p></div><div class="row">${TL.data.isOverridden() ? '<span class="pill cyan">사용자 데이터 사용 중</span>' : '<span class="pill">내장 데이터</span>'}<span class="pill ${v.errors.length ? 'red' : 'green'}">검증 ${v.errors.length ? '오류 ' + v.errors.length : '통과'} · 경고 ${v.warnings.length}</span></div></div>
     <div class="notice" style="margin-bottom:12px"><b>대회 기준 패치 19.2는 2026-12-15 예정이라 아직 존재하지 않아.</b> 현재 챔피언·특성·증강·아이템 기준: <b>${TL.esc(p.currentDataPatch)}</b> (${TL.statusPill(b.champions.meta.status)}). 상점 확률·XP·경제 규칙은 ${TL.esc(b['shop-odds'].meta.patch)} 값(${TL.statusPill(b['shop-odds'].meta.status)})이야. 19.1(12-02)과 19.2 패치 노트가 나오면 반드시 교체·재검증해.</div>
     <div class="split">
@@ -112,7 +114,7 @@
         <div class="panel"><h3>데이터 가져오기 / 내보내기</h3>
           <div class="tiny" style="margin-bottom:6px">지원 형식: ① 전체 번들(내보내기 파일) ② 개별 파일(champions.json 등, 여러 개 동시 선택 가능) ③ v0.1.0 데이터셋(tft-set19-dataset.json) ④ CommunityDragon <code>cdragon/tft/en_us.json</code> (약 24MB, PBE/라이브 반영 후 사용)</div>
           <div class="row"><button class="primary sm" id="dImportBtn">JSON 가져오기…</button><input type="file" id="dImport" accept="application/json,.json" multiple hidden/><button class="sm" id="dExportAll">전체 번들 내보내기</button></div>
-          <div class="row" style="margin-top:6px">${TL.DATA_FILES.map(f => `<button class="xs" data-exp="${f}">${f}.json</button>`).join('')}</div>
+          <div class="row" style="margin-top:6px">${[...TL.DATA_FILES, ...(TL.data.meta() ? ['meta-comps'] : [])].map(f => `<button class="xs" data-exp="${f}">${f}.json</button>`).join('')}</div>
           <div class="tiny" style="margin-top:6px">데이터 원본 링크: <a href="https://raw.communitydragon.org/pbe/cdragon/tft/en_us.json" target="_blank" rel="noopener">CDragon PBE</a> · <a href="https://raw.communitydragon.org/latest/cdragon/tft/en_us.json" target="_blank" rel="noopener">CDragon Live</a> · <a href="https://teamfighttactics.leagueoflegends.com/ko-kr/news/game-updates/" target="_blank" rel="noopener">Riot 패치 노트</a> · <a href="https://wiki.leagueoflegends.com/en-us/TFT:Gold" target="_blank" rel="noopener">LoL Wiki</a> · <a href="https://namu.wiki/w/%EC%A0%84%EB%9E%B5%EC%A0%81%20%ED%8C%80%20%EC%A0%84%ED%88%AC" target="_blank" rel="noopener">나무위키</a></div>
         </div>
         <div class="panel"><h3>백업 (IndexedDB) <button class="xs" id="bkNow">지금 기록 백업</button></h3><div id="bkList" class="tiny">불러오는 중…</div></div>
@@ -129,6 +131,7 @@
           <div class="field" style="margin-top:6px"><label>대회 이름</label><input id="stEvent" value="${TL.esc(s.eventName)}"/></div>
           <div class="field" style="margin-top:6px"><label>대회 날짜</label><input type="date" id="stDate" value="${TL.esc(s.eventDate)}"/></div>
           <div class="field" style="margin-top:6px"><label>기본 패치 표기</label><input id="stPatch" value="${TL.esc(s.defaultPatch)}"/></div>
+          <label class="row" style="margin-top:8px;color:var(--text)"><input type="checkbox" id="st3d" ${s.board3d !== false ? 'checked' : ''}/> 인게임 스타일 3D 기울임 보드 (끄면 평면 — 저사양 기기용)</label>
           <label class="row" style="margin-top:8px;color:var(--text)"><input type="checkbox" id="stKo" ${s.showKo ? 'checked' : ''}/> 한국어 챔피언 이름 표시 (CommunityDragon ko_kr 확인분)</label>
           <div class="row" style="margin-top:8px"><button class="primary sm" id="stSave">설정 저장</button></div>
         </div>
@@ -163,9 +166,9 @@
     TL.$('#dImportBtn').onclick = () => TL.$('#dImport').click();
     TL.$('#dImport').onchange = e => { const fs = [...e.target.files]; e.target.value = ''; if (fs.length) handleFiles(fs); };
     TL.$('#dExportAll').onclick = () => TL.download(`tft19-data-bundle-${TL.data.patch().dataVersion}.json`, TL.data.bundle());
-    TL.$$('[data-exp]').forEach(b => b.onclick = () => TL.download(b.dataset.exp + '.json', TL.data.bundle()[b.dataset.exp]));
+    TL.$$('[data-exp]').forEach(b => b.onclick = () => TL.download(b.dataset.exp + '.json', b.dataset.exp === 'meta-comps' ? TL.data.meta() : TL.data.bundle()[b.dataset.exp]));
     TL.$('#bkNow').onclick = async () => { await TL.idb.addBackup({ id: TL.uid('bk'), kind: 'state', created: new Date().toISOString(), note: '수동 백업', data: TL.clone(TL.state) }); await TL.idb.pruneBackups('state', 10); renderBackups(); TL.toast('백업 완료', 'ok'); };
-    TL.$('#stSave').onclick = () => { s.playerName = TL.$('#stName').value.trim() || '나'; s.eventName = TL.$('#stEvent').value.trim(); s.eventDate = TL.$('#stDate').value || s.eventDate; s.defaultPatch = TL.$('#stPatch').value.trim() || '19.2'; s.showKo = TL.$('#stKo').checked; TL.save(); TL.refreshHeader(); TL.toast('설정 저장', 'ok'); render(); };
+    TL.$('#stSave').onclick = () => { s.playerName = TL.$('#stName').value.trim() || '나'; s.eventName = TL.$('#stEvent').value.trim(); s.eventDate = TL.$('#stDate').value || s.eventDate; s.defaultPatch = TL.$('#stPatch').value.trim() || '19.2'; s.showKo = TL.$('#stKo').checked; s.board3d = TL.$('#st3d').checked; TL.save(); TL.refreshHeader(); TL.toast('설정 저장', 'ok'); render(); };
     const savePresets = () => { s.scorePresets.forEach(pr => { pr.name = TL.$(`[data-pn="${pr.id}"]`)?.value || pr.name; pr.map = TL.$$(`[data-pv="${pr.id}"]`).sort((a, b) => a.dataset.pi - b.dataset.pi).map(i => Number(i.value)); }); const bad = s.scorePresets.find(pr => pr.map.length !== 8 || pr.map.some(x => !Number.isFinite(x))); if (bad) { TL.toast('점수는 1~8위 모두 숫자로 입력해.', 'err'); return false; } const r = TL.$('input[name="preset"]:checked'); if (r) s.activePreset = r.value; TL.save(); return true; };
     TL.$('#pSave').onclick = () => { if (savePresets()) { TL.toast('점수표 저장 (기록 점수 자동 재계산)', 'ok'); render(); } };
     TL.$('#pAdd').onclick = () => { savePresets(); s.scorePresets.push({ id: TL.uid('p'), name: '새 점수표', map: [8, 7, 6, 5, 4, 3, 2, 1] }); TL.save(); render(); };

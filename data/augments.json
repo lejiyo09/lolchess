@@ -1,7 +1,7 @@
 {
  "meta": {
   "set": 19,
-  "patch": "PBE 16.24 (Set 19, 2026-11-20)",
+  "patch": "PBE 16.24 (Set 19, 2026-11-20 16:44 UTC)",
   "source": [
    "PBE 16.24 game data via Blitz.gg Set 19 pages (feed updated 2026-11-20)",
    "https://blitz.gg/tft/set19"
@@ -218,7 +218,7 @@
    "id": "bundle-o-shrooms-gold",
    "name": "Bundle o' Shrooms",
    "tier": "Silver",
-   "description": "Gain 6 mushrooms, which each grant either 1 reroll, 2 XP, or 3 Tactician Health. Mushrooms have a small chance to be HUGE and grant double loot",
+   "description": "Gain 6 mushrooms, which each grant either 1 reroll, 2 XP, or 3 Tactician Health. Mushrooms have a small chance to be HUGE and grant double loot.",
    "kind": "general",
    "categories": [
     "combat",
@@ -1018,7 +1018,7 @@
    "id": "hes-electric",
    "name": "He's Electric",
    "tier": "Silver",
-   "description": "Gain a Kennen. Your strongest Kennen becomes a Magic Assassin who permanently adds True Damage to his spell on kills.",
+   "description": "Gain a Kennen. Your strongest Kennen becomes a Magic Assassin who permanently adds True Damage to his Ability on kills.",
    "kind": "hero",
    "categories": [],
    "relatedTraits": [
@@ -1415,9 +1415,10 @@
    "id": "reunion-show",
    "name": "Reunion Show",
    "tier": "Silver",
-   "description": "Gain 10g of champions that all share a trait.",
+   "description": "Gain 10 gold of champions that all share a trait.",
    "kind": "general",
    "categories": [
+    "econ",
     "units"
    ],
    "relatedTraits": [],
@@ -1630,7 +1631,7 @@
    "id": "stand-united",
    "name": "Stand United",
    "tier": "Silver",
-   "description": "Your units gain 1.5% Attack Damage and 1.5% Ability Power for each non-unique Trait active across your team.",
+   "description": "Your team gains 1.5% Attack Damage and 1.5% Ability Power for each active non-unique trait.",
    "kind": "general",
    "categories": [
     "combat"
@@ -2496,7 +2497,7 @@
    "id": "bundle-o-shrooms-ii",
    "name": "Bundle o' Shrooms II",
    "tier": "Gold",
-   "description": "Gain 11 mushrooms, which each grant either 1 reroll, 2 XP, or 3 Tactician Health. Mushrooms have a small chance to be HUGE and grant double loot",
+   "description": "Gain 11 mushrooms, which each grant either 1 reroll, 2 XP, or 3 Tactician Health. Mushrooms have a small chance to be HUGE and grant double loot.",
    "kind": "general",
    "categories": [
     "combat",
@@ -2847,7 +2848,7 @@
    "id": "counting-stars",
    "name": "Counting Stars",
    "tier": "Gold",
-   "description": "Gain 5 gold. Each time you 3-star a champion, gain 5 gold for each 3-star you have.",
+   "description": "Gain 8 gold. Each time you 3-star a champion, gain 4 gold for each 3-star you have.",
    "kind": "general",
    "categories": [
     "econ",
@@ -3698,7 +3699,7 @@
    "id": "dig-on-this",
    "name": "Dig on This",
    "tier": "Gold",
-   "description": "Your Jazz champions gain 150% increased Health and Damage Amp from the Jazz trait. Gain a Lucian and a Galio.",
+   "description": "Your Jazz champions gain 100% increased Health and Damage Amp from the Jazz trait. Gain a Lucian and a Galio.",
    "kind": "trait",
    "categories": [
     "combat",
@@ -4291,9 +4292,10 @@
    "id": "reunion-show-ii",
    "name": "Reunion Show II",
    "tier": "Gold",
-   "description": "Gain 16g of champions that all share a trait.",
+   "description": "Gain 16 gold of champions that all share a trait.",
    "kind": "general",
    "categories": [
+    "econ",
     "units"
    ],
    "relatedTraits": [],
@@ -5272,7 +5274,7 @@
    "id": "illbeats-crown",
    "name": "Illbeats Crown",
    "tier": "Prismatic",
-   "description": "Gain an Illbeats Emblem, a Gargoyle Stoneplate, and a Braum.",
+   "description": "Gain an Illbeats Emblem, a Spear of Shojin, and a Draven.",
    "kind": "emblem",
    "categories": [
     "items",
@@ -5319,7 +5321,7 @@
    "id": "ionic-spark-crown",
    "name": "Ionic Spark Crown",
    "tier": "Prismatic",
-   "description": "Gain an Ionic Spark Emblem, an Ionic Spark, and an Annie.",
+   "description": "Gain an Ionic Spark Emblem, a Negatron Cloak, and an Elise.",
    "kind": "emblem",
    "categories": [
     "items",
@@ -5417,7 +5419,7 @@
    "id": "jazz-crown",
    "name": "Jazz Crown",
    "tier": "Prismatic",
-   "description": "Gain a Jazz Emblem, a Spear of Shojin, and a Lucian.",
+   "description": "Gain a Jazz Emblem, a Spirit Visage, and a Galio.",
    "kind": "emblem",
    "categories": [
     "items",
@@ -5464,7 +5466,7 @@
    "id": "k-da-crown",
    "name": "K/DA Crown",
    "tier": "Prismatic",
-   "description": "Gain a K/DA Emblem, a Guinsoo's Rageblade, and a Kai'Sa.",
+   "description": "Gain a K/DA Emblem, a Needlessly Large Rod, and a Neeko.",
    "kind": "emblem",
    "categories": [
     "items",
@@ -5558,7 +5560,7 @@
    "id": "slayer-crown",
    "name": "Slayer Crown",
    "tier": "Prismatic",
-   "description": "Gain a Slayer Emblem, a Titan's Resolve, and a Briar.",
+   "description": "Gain a Slayer Emblem, a Titan's Resolve, and a Camille.",
    "kind": "emblem",
    "categories": [
     "items",
@@ -5652,15 +5654,14 @@
    "id": "pentakill-crown",
    "name": "Pentakill Crown",
    "tier": "Prismatic",
-   "description": "Gain a Pentakill Emblem, a Giant Slayer, and a Viego.",
+   "description": "Gain a Pentakill Emblem, a Recurve Bow, and a Gnar.",
    "kind": "emblem",
    "categories": [
     "items",
     "trait"
    ],
    "relatedTraits": [
-    "Pentakill",
-    "Slayer"
+    "Pentakill"
    ],
    "rounds": [
     "2-1"
@@ -5819,7 +5820,7 @@
    "id": "swiftstriker-crown",
    "name": "Swiftstriker Crown",
    "tier": "Prismatic",
-   "description": "Gain a Swiftstriker Emblem, a Hextech Gunblade, and a Bard.",
+   "description": "Gain a Swiftstriker Emblem, a Rabadon's Deathcap, and a Bard.",
    "kind": "emblem",
    "categories": [
     "items",
@@ -5938,7 +5939,7 @@
    "id": "classical-crown",
    "name": "Classical Crown",
    "tier": "Prismatic",
-   "description": "Gain a Classical Emblem, a Spirit Visage, and a Nasus.",
+   "description": "Gain a Classical Emblem, a Gargoyle Stoneplate, and a Nasus.",
    "kind": "emblem",
    "categories": [
     "items",
@@ -7086,7 +7087,7 @@
    "id": "partners-united-iii",
    "name": "Partners United III",
    "tier": "Prismatic",
-   "description": "Your units gain 2.5 Armor and Magic Resist for each non-Unique trait active in your team and your partner's team (counting duplicates).",
+   "description": "Your team gains 2.5 Armor and Magic Resist for each non-unique trait you and your partner have active (counting duplicates).",
    "kind": "general",
    "categories": [
     "combat"

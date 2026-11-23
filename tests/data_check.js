@@ -30,6 +30,19 @@ const { chromium } = require('playwright'); const path = require('path');
   ok('상점 후보 챔피언 존재', await p.evaluate(() => TL.data.champs().some(c => c.cost <= 5 && !c.unlock)));
   await p.evaluate(() => TL.go('augments')); await p.click('#aRoll'); ok('증강 선택지 생성', (await p.$$('[data-pickaug]')).length === 3);
   await p.evaluate(() => TL.go('drill')); await p.click('[data-mode="gen"]'); await p.waitForTimeout(300); ok('상황 생성기 동작', (await p.$$('[data-gans]')).length >= 3);
+  // meta comps (optional data file)
+  const mc = await p.evaluate(() => { const M = TL.data.meta(); if (!M) return null; const badU = [], badI = []; M.comps.forEach(c => c.units.forEach(u => { if (!TL.data.champ(u.champ)) badU.push(u.champ); u.items.forEach(i => { if (!TL.data.item(i)) badI.push(i); }); })); return { n: M.comps.length, badU, badI }; });
+  if (mc) {
+    ok('메타 덱: 유닛·아이템 ID 모두 데이터와 일치', !mc.badU.length && !mc.badI.length, `${mc.n}개 · 불일치 유닛 ${mc.badU.slice(0, 5)} 아이템 ${mc.badI.slice(0, 5)}`);
+    await p.evaluate(() => TL.go('meta')); await p.waitForTimeout(150);
+    const cards = (await p.$$('.mc')).length; ok('메타 덱 메뉴 렌더', cards > 0, cards + ' cards');
+    await p.selectOption('#mTier', 'S'); await p.waitForTimeout(150);
+    ok('메타 덱 등급 필터', await p.evaluate(() => [...document.querySelectorAll('.mc-tier')].every(e => e.textContent.trim() === 'S')));
+    await p.click('[data-open]'); await p.waitForTimeout(100); ok('메타 덱 상세 열기', (await p.$$('.mc-detail')).length === 1);
+    await p.click('[data-load]'); await p.click('#modalFoot button:has-text("불러오기")'); await p.waitForTimeout(300);
+    ok('메타 덱 → 팀 빌더 불러오기', await p.evaluate(() => TL.current === 'builder' && TL.state.builder.board.length >= 5 && new Set(TL.state.builder.board.map(u => u.pos)).size === TL.state.builder.board.length));
+  }
+  ok('챔피언 초상화 에셋 (현재 데이터 전체)', await p.evaluate(() => TL.data.champs().every(c => TL.img.champ(c.id))));
   ok('JS 오류 없음', !errs.length, errs.slice(0, 3).join(' | '));
   console.log(`\n${res.filter(Boolean).length}/${res.length} passed`); await b.close(); process.exit(res.every(Boolean) ? 0 : 1);
 })();

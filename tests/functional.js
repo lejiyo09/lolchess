@@ -8,7 +8,7 @@ const os = require('os');
 const APP = (() => {
   if (process.env.USE_FIXTURE === '0') return path.resolve(__dirname, '..');
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'tftlab-'));
-  for (const f of ['index.html', 'css', 'js', 'legacy']) fs.cpSync(path.resolve(__dirname, '..', f), path.join(dir, f), { recursive: true });
+  for (const f of ['index.html', 'css', 'js', 'legacy', 'assets']) fs.cpSync(path.resolve(__dirname, '..', f), path.join(dir, f), { recursive: true });
   fs.mkdirSync(path.join(dir, 'data')); fs.copyFileSync(path.resolve(__dirname, 'fixtures/bundle.devdrop.js'), path.join(dir, 'data/bundle.js'));
   return dir;
 })();

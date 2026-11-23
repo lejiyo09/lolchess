@@ -122,7 +122,7 @@
       <div class="row" style="margin-top:8px"><button class="sm" id="buDown">★−</button><span class="pill gold">${'★'.repeat(u.star)}</span><button class="sm" id="buUp">★+</button>
         <button class="sm ${u.role === 'carry' ? 'on' : ''}" id="buCarry">⚔ 핵심 딜러</button><button class="sm ${u.role === 'tank' ? 'on' : ''}" id="buTank">🛡 핵심 탱커</button>
         <button class="sm" id="buBench">${onBoard ? '대기석으로' : '보드로'}</button><button class="sm danger" id="buDel">제거</button></div>
-      <div class="row" style="margin-top:8px">${(u.items || []).map((i, k) => { const it = TL.data.item(i); return `<span class="itm ${it?.type}" title="${TL.esc(it?.description || '')}">${TL.esc(it?.nameKo || it?.name || i)} <button class="xs ghost" data-unequip="${k}" title="해제">✕</button></span>`; }).join('') || '<span class="tiny">아이템 없음 (최대 3개)</span>'}</div>`;
+      <div class="row" style="margin-top:8px">${(u.items || []).map((i, k) => { const it = TL.data.item(i); return `<span class="itm icon ${it?.type}" title="${TL.esc(it?.description || '')}">${TL.ui.item(i)}<span class="iname">${TL.esc(it?.nameKo || it?.name || i)}</span> <button class="xs ghost" data-unequip="${k}" title="해제">✕</button></span>`; }).join('') || '<span class="tiny">아이템 없음 (최대 3개)</span>'}</div>`;
   }
 
   function bind(traits) {

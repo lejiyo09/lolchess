@@ -1,6 +1,6 @@
 # Set 19 데이터 검증 보고서
 
-> **최신 상태 (2026-11-20)**: PBE 16.24 데이터 반영 — 아래 5절 참고.
+> **최신 상태 (2026-11-23)**: PBE 16.24 (11-20 16:44 UTC 빌드) + PBE 메타 덱 — 아래 5·6절 참고.
 
 - 검증일: **2026-11-17** · 데이터 버전 `19.0-preview.1`
 - 원칙: 고증 우선. 확인되지 않은 값은 채우지 않고 `unverified`/`carryover`로 표시. 존재하지 않는 챔피언·특성·아이템·효과를 만들지 않음.
@@ -99,3 +99,12 @@ CommunityDragon 확인 결과(2026-11-17): `pbe` = 16.23(Set 18까지), `latest`
 - **그대로인 것**: 상점 확률·풀 크기·XP·경제 규칙(Set 18 carryover — 출처 없음). 한국어 이름은 기존 CDragon ko_kr 매칭 유지(챔피언 93, 아이템 47). Set 19 특성·증강의 공식 한국어 명칭은 여전히 미확인.
 - **이전 데이터 백업**: `legacy/data_devdrop_2026-11-15/`.
 - **다음 단계**: CommunityDragon이 TFTSet19를 내보내면 `python3 tools/update_from_cdragon.py`로 교차 검증. 19.1(12-02) 패치 노트로 상점 확률·경제 규칙 확인.
+
+## 6. PBE 재갱신 + 메타 덱 (2026-11-23) — 데이터 `19.0-pbe.20261120-1644`
+
+- **CommunityDragon 재확인**: `pbe` 16.24.8407700(11-20 22:47 내보내기)에도 Set 19 없음. 원시 게임 에셋 폴더(characters, traiticons, items)에도 Set 19 파일 없음.
+- **PBE 게임 데이터 재수집**: Blitz.gg 공개 페이지 내장 데이터가 11-20 04:01 → **11-20 16:44 UTC** 빌드로 갱신됨. 스냅샷 `tools/sources/blitz_pbe_16.24_set19_20261120b.json`.
+- **PBE → PBE 밸런스 변경 45건** (`patch-info.json` → `balanceChanges`, 대시보드 표시). 주요: Hyperpop·Ionic Spark·Heartsteel 7·K/DA 7 하향, Arcanist 6·Rock 7·Hitmaker·Illbeats·Juggernaut 상향, Rell 체력 1300→1400, Viego 공격력 60→55, 챔피언 스킬 수치 다수, 증강 Counting Stars·Dig on This 조정. 대소문자·문구만 바뀐 항목은 제외.
+- **메타 덱**: tft.ninja PBE comps — 최근 1일 579.6k 판, 65개 조합(기본 표시 34), 집계 2026-11-23 01:45 UTC. 전체 기간(2.8M 판, 113개)과 비교값 포함. 스냅샷 `tools/sources/tftninja_pbe_comps_20261123.json`, 변환기 `tools/build_meta_comps.py`. 이 데이터는 **플레이 통계**이며 PBE(실험적 플레이) 특성상 라이브 메타와 다를 수 있음.
+- **롤체지지(lolchess.gg)**: 네트워크 허용 후에도 CloudFront가 자동 요청을 403으로 차단 → 사이트 의도를 존중해 우회하지 않음. 유튜브 영상 내용은 자동 수집 대상이 아님.
+- **게임 아트**: 챔피언 초상화 94·특성 아이콘 47(tft.ninja의 Set 19 이미지), 아이템 아이콘 127(CommunityDragon 게임 파일, 64px WebP 변환). Set 19 상징 18개는 해당 특성 아이콘으로 표시.

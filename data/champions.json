@@ -1,7 +1,7 @@
 {
  "meta": {
   "set": 19,
-  "patch": "PBE 16.24 (Set 19, 2026-11-20)",
+  "patch": "PBE 16.24 (Set 19, 2026-11-20 16:44 UTC)",
   "source": [
    "PBE 16.24 game data via Blitz.gg Set 19 pages (feed updated 2026-11-20)",
    "https://blitz.gg/tft/set19"
@@ -173,7 +173,7 @@
    },
    "ability": {
     "name": "Electric Shock",
-    "desc": "Passive: Reduce all incoming damage by AP 12/15/19. Every second, zap adjacent enemies, dealing AP 12/18/30 magic damage.",
+    "desc": "Passive: Reduce all incoming damage by AP 13/16/21. Every second, zap adjacent enemies, dealing AP 12/18/30 magic damage.",
     "manaStart": 0,
     "manaCost": 0
    },
@@ -214,7 +214,7 @@
    },
    "ability": {
     "name": "Pump It Up!",
-    "desc": "Passive: Your strongest Kobuko gains bonus Health equal to 85% of your Hyperpop Hype. (Current Health: 0) Active: Amp Up for 8 seconds, healing Health AP 57/67/92 each second.",
+    "desc": "Passive: Your strongest Kobuko gains bonus Health equal to 85% of your Hyperpop Hype. (Current Health: 0) Active: Amp Up for 8 seconds, healing Health AP 42/52/67 each second.",
     "manaStart": 40,
     "manaCost": 90
    }
@@ -247,7 +247,7 @@
    },
    "ability": {
     "name": "We Love You K/DA",
-    "desc": "Heal AP 280/350/550 Health and strike the target, dealing AP 120/180/270 magic damage to enemies in a 1 Hex circle and 10% Weakening them for 5 seconds. Weaken: Reduce Damage Dealt",
+    "desc": "Heal AP 280/350/550 Health and strike the target, dealing AP 120/180/270 magic damage to enemies in a 1 hex radius and 10% Weakening them for 5 seconds. Weaken: reduce Damage Amp",
     "manaStart": 40,
     "manaCost": 100
    },
@@ -287,7 +287,7 @@
    },
    "ability": {
     "name": "K/DA Fan Club",
-    "desc": "Convene the K/DA fan club, throwing 3 confetti streams at target that each deal AP 75/115/175 magic damage. If they kill, permanently gain 1% Ability Power. Current Bonus: 0 Ability Power",
+    "desc": "Convene the K/DA fan club, throwing 3 confetti streams at the target that each deal AP 70/105/155 magic damage. If they kill, permanently gain 1% Ability Power. Current Bonus: 0 Ability Power",
     "manaStart": 0,
     "manaCost": 40
    }
@@ -434,7 +434,7 @@
    },
    "ability": {
     "name": "One Thousand Arrows",
-    "desc": "Fire a hail of arrows, dealing AD AP 260/390/590 physical damage to the target and AD AP 130/195/295 damage to adjacent enemies. 20% Slow them for 4 seconds. Slow: Reduce Attack Speed",
+    "desc": "Fire a hail of arrows, dealing AD AP 275/415/620 physical damage to the target and AD AP 137.5/207.5/310 damage to adjacent enemies. 20% Slow them for 4 seconds. Slow: Reduce Attack Speed",
     "manaStart": 30,
     "manaCost": 70
    }
@@ -528,7 +528,7 @@
    },
    "ability": {
     "name": "Paddle Ball",
-    "desc": "Fire a paddle ball backwards and redirect it towards the farthest enemy, dealing AP 450/675/1000 magic damage to the first enemy hit. If they die, the ball ricochets, dealing excess damage to the next enemy hit.",
+    "desc": "Fire a paddle ball backwards and redirect it towards the farthest enemy, dealing AP 450/675/1100 magic damage to the first enemy hit. If they die, the ball ricochets, dealing excess damage to the next enemy hit.",
     "manaStart": 15,
     "manaCost": 90
    }
@@ -562,7 +562,7 @@
    },
    "ability": {
     "name": "We DID Start the Fire",
-    "desc": "Gain AP 350/425/600 Shield for 4 seconds. Unleash a cone of fire, dealing AP 80/120/180 magic damage to enemies. 1% Burn and Wound them for 4 seconds.",
+    "desc": "Gain AP 350/400/550 Shield for 4 seconds. Unleash a cone of fire, dealing AP 80/120/180 magic damage to enemies. 1% Burn and Wound them for 4 seconds.",
     "manaStart": 20,
     "manaCost": 80
    },
@@ -587,7 +587,7 @@
    "role": "Attack Marksman",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "A Beach Pop Champion with 2 items",
+   "unlockCondition": "A Beach Pop champion with 2 items",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Ashe19",
@@ -632,7 +632,7 @@
    },
    "ability": {
     "name": "Hookshot Through the Heart",
-    "desc": "Passive: When the target dies, hookshot to the next one and deal AD 90/135/210 physical damage to them. Active: Do a sweeping kick, dealing AD AP 260/390/600 physical damage in a cone.",
+    "desc": "Passive: When the target dies, hookshot to the next one and deal AD 90/135/210 physical damage to them. Active: Do a sweeping kick, dealing AD AP 240/360/585 physical damage in a cone.",
     "manaStart": 0,
     "manaCost": 40
    }
@@ -843,7 +843,7 @@
    "role": "Magic Caster",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "Have your Hyperpop Champions cast 10 times with the trait active",
+   "unlockCondition": "Have your Hyperpop champions cast 10 times with the trait active",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Lulu19",
@@ -1042,7 +1042,7 @@
    "role": "Attack Caster",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "2 items on a Classical, Renegade, or Trickshot Champion",
+   "unlockCondition": "2 items on a Classical, Renegade, or Trickshot champion",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Samira19",
@@ -1103,7 +1103,7 @@
    "role": "Attack Caster",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "Get 5 kills with Hyperpop Active",
+   "unlockCondition": "Get 5 kills with Hyperpop active",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Tristana19",
@@ -1180,8 +1180,8 @@
     "range": 4
    },
    "ability": {
-    "name": "Come Chime with Me",
-    "desc": "Passive: Gain the Horn of the Traveler. While equipped, casts generate XP and attacks grant bonus Mana. Active: Summon a wave of meeps that deal AP 210/315/505 magic damage to enemies hit, reduced by 30% for each one it passes through.",
+    "name": "Come Chime With Me",
+    "desc": "Passive: Gain the Horn of the Traveler. While equipped, casts generate XP and attacks grant bonus Mana. Active: Summon a wave of meeps that deal AP 210/315/505 magic damage to enemies hit, reduced by 30% for each one it passes through (minimum 30%).",
     "manaStart": 20,
     "manaCost": 80
    }
@@ -1247,7 +1247,7 @@
    },
    "ability": {
     "name": "Snack Attack",
-    "desc": "Heal AP 100/150/200 and kick a snack at the furthest enemy within 3 hexes. Dash toward it, dealing AD 100/150/240 physical damage in a 1 hex area. Then chow down, gaining 200% Attack Speed for the next 3 attacks and replacing them with slashes that deal AD 100/150/240 physical damage.",
+    "desc": "Heal AP 100/150/200 and kick a snack at the furthest enemy within 3 hexes. Dash toward it, dealing AD 95/145/230 physical damage in a 1 hex area. Then chow down, gaining 200% Attack Speed for the next 3 attacks and replacing them with slashes that deal AD 80/120/190 physical damage.",
     "manaStart": 0,
     "manaCost": 30
    }
@@ -1312,7 +1312,7 @@
    },
    "ability": {
     "name": "Turn Back Time",
-    "desc": "Passive: Rewind 30% of damage taken over 4 seconds. Active: Instantly heal all damage being rewinded + AP 150/180/250 Health. Then whack the current target for AP 230/345/675 magic damage.",
+    "desc": "Passive: Rewind 30% of damage taken over 4 seconds. Active: Instantly heal all damage being rewinded + AP 125/150/200 Health. Then whack the current target for AP 230/345/675 magic damage.",
     "manaStart": 30,
     "manaCost": 120
    }
@@ -1329,7 +1329,7 @@
    "role": "Magic Fighter",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "3 unique K/DA or Renegade Champions",
+   "unlockCondition": "3 unique K/DA or Renegade champions",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Evelynn19",
@@ -1343,7 +1343,7 @@
    },
    "ability": {
     "name": "Villainous",
-    "desc": "Passive: At combat start, teleport behind the current target, then become enshrouded for 15 seconds. While enshrouded, become untargetable to attacks and gain 50% Durability if at least 3 other allies are alive. Active: Deal AP 280/420/700 magic damage to the current target and AP 120/180/300 magic damage to other enemies in a semicircle. Ignore 40% of enemy Magic Resist.",
+    "desc": "Passive: At combat start, teleport behind the current target, then become enshrouded for 15 seconds. While enshrouded, become untargetable to attacks and gain 50% Durability if at least 3 other allies are alive. Active: Deal AP 230/345/550 magic damage to the current target and AP 90/135/215 magic damage to other enemies in a semicircle. Ignore 40% of enemy Magic Resist.",
     "manaStart": 0,
     "manaCost": 40
    }
@@ -1473,7 +1473,7 @@
    },
    "ability": {
     "name": "Forbidden Cacophony",
-    "desc": "Fire a beam at the target for 2 seconds, dealing AP 325/485/815 magic damage. The energy rhythmically explodes 4 times, 30% Shredding enemies in a 1 hex area for 4 seconds, and dealing AP 40/60/110 magic damage each time. Shred: Reduce Magic Resist",
+    "desc": "Fire a beam at the target for 2 seconds, dealing AP 260/390/625 magic damage. The energy rhythmically explodes 4 times, 30% Shredding enemies in a 1 hex area for 4 seconds, and dealing AP 36/54/86 magic damage each time. Shred: reduce Magic Resist",
     "manaStart": 0,
     "manaCost": 50
    }
@@ -1586,7 +1586,7 @@
    "role": "Attack Tank",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "2-star Annie with 1 item",
+   "unlockCondition": "2-star Annie holding 1 item",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Tibbers19",
@@ -1626,13 +1626,13 @@
     "hp": 850,
     "armor": 55,
     "mr": 55,
-    "ad": 60,
+    "ad": 55,
     "as": 0.8,
     "range": 1
    },
    "ability": {
     "name": "Singled Out",
-    "desc": "Summon 10 swords around the target. After a brief delay, impale them, dealing AD AP 37/56/89 physical damage per sword. Every 8 takedowns, gain a permanent sword. (Current Takedowns: 0)",
+    "desc": "Summon 10 swords around the target. After a brief delay, impale them, dealing AD AP 31/47/74 physical damage per sword. Every 8 takedowns, gain a permanent sword. (Current Takedowns: 0)",
     "manaStart": 0,
     "manaCost": 40
    }
@@ -1696,7 +1696,7 @@
    },
    "ability": {
     "name": "Blue Cow Crying in the Rain",
-    "desc": "Heal AP 265/300/2000, increased by up to 100% based on missing Health. Then slam the target, knocking up enemies within 3 hexes of them for 1.5 seconds and dealing AP 100/150/2500 magic damage to all enemies hit.",
+    "desc": "Heal AP 285/320/2000, increased by up to 100% based on missing Health. Then slam the target, knocking up enemies within 3 hexes of them for 1.5 seconds and dealing AP 100/150/2500 magic damage to all enemies hit.",
     "manaStart": 70,
     "manaCost": 155
    }
@@ -1714,7 +1714,7 @@
    "role": "Magic Caster",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "Req. Lvl 7 - 4 unique Heartsteel or Prodigy Champions",
+   "unlockCondition": "Req. Lvl 7 - 4 unique Heartsteel or Prodigy champions",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Alune19",
@@ -1759,7 +1759,7 @@
    },
    "ability": {
     "name": "Between Worlds Apart",
-    "desc": "Blink away and fire a blast through the best line. The blast deals AP 275/415/2000 magic damage to the 2 highest Health enemies, and AP 90/135/1500 magic damage to the rest. Then, blink back.",
+    "desc": "Blink away and fire a blast through the best line. The blast deals AP 300/450/2000 magic damage to the 2 highest Health enemies, and AP 90/135/1500 magic damage to the rest. Then, blink back.",
     "manaStart": 0,
     "manaCost": 60
    }
@@ -1871,7 +1871,7 @@
    "role": "Attack Marksman",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "Req. Lvl 7 - 3 items on an Ionic Spark or Hitmaker Champion",
+   "unlockCondition": "Req. Lvl 7 - 3 items on an Ionic Spark or Hitmaker champion",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Jinx19",
@@ -1902,7 +1902,7 @@
    "role": "Magic Marksman",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "Req. Lvl 7 - 4 unique Pentakill or Swiftstriker Champions",
+   "unlockCondition": "Req. Lvl 7 - 4 unique Pentakill or Swiftstriker champions",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Kayle19",
@@ -2043,7 +2043,7 @@
    },
    "ability": {
     "name": "Dragon Force",
-    "desc": "Passive: At 70% Health, transform into Dragon Form. While transformed, gain 300 max Health, 150% Attack Speed, and every 3rd attacks deals AP 100/150/3000 bonus magic damage in a 1 hex area. Active: Gain Health AP 360/410/1010 Shield for 4 seconds.",
+    "desc": "Passive: At 70% Health, transform into Dragon Form. While transformed, gain 250 max Health, 150% Attack Speed, and every 3rd attacks deals AP 100/150/3000 bonus magic damage in a 1 hex area. Active: Gain Health AP 360/410/1010 Shield for 4 seconds.",
     "manaStart": 40,
     "manaCost": 100
    }
@@ -2062,7 +2062,7 @@
     "Healing"
    ],
    "unlock": true,
-   "unlockCondition": "Have enemies spend 275 seconds Captivated by Classical",
+   "unlockCondition": "Enemies spend 275 seconds Captivated by Classical",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Thresh19",
@@ -2193,7 +2193,7 @@
     "CC"
    ],
    "unlock": true,
-   "unlockCondition": "Req. Lvl 7 - 6 unique star levels of True Damage or Slayer Champions",
+   "unlockCondition": "Req. Lvl 7 - 6 unique star levels of True Damage or Slayer champions",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Yasuo19",
@@ -2207,7 +2207,7 @@
    },
    "ability": {
     "name": "Last Breath",
-    "desc": "Dash and thrust forward, dealing AD 165/250/1400 physical damage to enemies in a line. Every 3rd cast, knock up the target and deal AD 400/600/2500 physical damage. Then slam them down, dealing AD AP 210/315/1700 physical damage to enemies within 1 Hex.",
+    "desc": "Dash and thrust forward, dealing AD 180/270/1400 physical damage to enemies in a line. Every 3rd cast, knock up the target and deal AD 400/600/2500 physical damage. Then slam them down, dealing AD AP 210/315/1700 physical damage to enemies within 1 Hex.",
     "manaStart": 0,
     "manaCost": 30
    }
@@ -2325,7 +2325,7 @@
     "Healing"
    ],
    "unlock": true,
-   "unlockCondition": "Req. Lvl 7 - 5 unique Beach Pop or Juggernaut Champions",
+   "unlockCondition": "Req. Lvl 7 - 5 unique Beach Pop or Juggernaut champions",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Zac19",
@@ -2399,7 +2399,7 @@
     "range": 1
    },
    "ability": {
-    "name": "Killin' like Domino",
+    "name": "Killin' Like Domino",
     "desc": "B-Side Passive: After every 4 takedowns, gain 1 Player Health. (0/4) Active: Rapidly slash through the current target, dealing AP 550/825/9999 magic damage, increased by 50% against Tanks. While casting, gain 25% Durability and become untargetable by attacks. Afterwards, blink over the target and throw a bomb that deals AP 620/930/9999 magic damage split amongst all enemies within 2 hexes.",
     "manaStart": 0,
     "manaCost": 50
@@ -2463,7 +2463,7 @@
    },
    "ability": {
     "name": "Big Business",
-    "desc": "Passive: While Dr. Mundo has 3000 max Health or more, he becomes Pumped Up, gaining 20% max Health and causing attacks to deal an additional Health 89/114/2300 magic damage. Active: Restore Health 480/530/4300 Health over 5 seconds and deal Health AP 25/29/102 magic damage each second to all enemies within 2 hexes.",
+    "desc": "Passive: While Dr. Mundo has 3000 max Health or more, he becomes Pumped Up, gaining 20% max Health and causing attacks to deal an additional Health 89/114/2300 magic damage. Active: Restore Health 555/605/4300 Health over 5 seconds and deal Health AP 25/29/102 magic damage each second to all enemies within 2 hexes.",
     "manaStart": 20,
     "manaCost": 80
    }
@@ -2690,7 +2690,7 @@
    },
    "ability": {
     "name": "It's the Time to Disco!",
-    "desc": "Passive: Gain 10 Mana Regen. Slowly roll around a Disco Ball, dealing AP 156/234/4500 magic damage to all enemies it passes through. Active: For the rest of combat, move faster and increase the size and damage of the Disco Ball by 30%.",
+    "desc": "Passive: Gain 10 Mana Regen. Slowly roll around a disco ball, dealing AP 156/234/4500 magic damage to all enemies it passes through. Active: For the rest of combat, move faster and increase the size and damage of the disco ball by 30%.",
     "manaStart": 20,
     "manaCost": 75
    }
@@ -2707,7 +2707,7 @@
    "role": "Attack Fighter",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "Req. Lvl 7 - Have 85 or more Gold at the end of combat",
+   "unlockCondition": "Req. Lvl 7 - Have 85 or more gold at the end of combat",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Pyke19",
@@ -2721,7 +2721,7 @@
    },
    "ability": {
     "name": "Execute Gon' Give it to Ya",
-    "desc": "Passive: Whenever an enemy drops below AP 10%/10%/93% max Health, instantly cast on them, then dash back to the current target. Active: Deal AD 320/515/4000 physical damage to the target and AD 130/215/800 to all other enemies in an X shape. Execute any enemies below AP 10%/10%/93% Health.",
+    "desc": "Passive: Whenever an enemy drops below AP 10%/10%/93% max Health, instantly cast on them, then dash back to the current target. Active: Deal AD 320/515/4000 physical damage to the target and AD 100/150/800 to all other enemies in an X shape. Execute any enemies below AP 10%/10%/93% Health.",
     "manaStart": 0,
     "manaCost": 30
    }
@@ -2745,7 +2745,7 @@
    "status": "pbe",
    "apiName": "DA_Rell19",
    "stats": {
-    "hp": 1300,
+    "hp": 1400,
     "armor": 65,
     "mr": 65,
     "ad": 50,
@@ -2754,8 +2754,8 @@
    },
    "ability": {
     "name": "Rhythm Blaster / Metal Pony Club",
-    "desc": "Rhythm Blaster: For 4 seconds, gain AP 600/725/2000 Shield and summon 3 speakers. Each second, they blast a wave of sound, dealing Armor MR 104/156/1950 magic damage to enemies hit. Metal Pony Club: Slam into a crowd of enemies, dealing Armor MR 124.8/187.2/39000 magic damage to the center enemy and Armor MR 187.2/280.8/39000 damage split among enemies within 2 hexes. Casts Rhythm Blaster while unmounted and Metal Pony Club while mounted.",
-    "manaStart": 30,
+    "desc": "Rhythm Blaster: For 4 seconds, gain AP 650/800/2000 Shield and summon 3 speakers. Each second, they blast a wave of sound, dealing Armor MR 104/156/1950 magic damage to enemies hit. Metal Pony Club: Slam into a crowd of enemies, dealing Armor MR 124.8/187.2/39000 magic damage to the center enemy and Armor MR 187.2/280.8/39000 damage split among enemies within 2 hexes. Casts Rhythm Blaster while unmounted and Metal Pony Club while mounted.",
+    "manaStart": 40,
     "manaCost": 100
    }
   },
@@ -2773,7 +2773,7 @@
     "CC"
    ],
    "unlock": true,
-   "unlockCondition": "A Champion of each cost starts in a Beach Pop hex",
+   "unlockCondition": "A champion of each cost starts in a Beach Pop hex",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Taliyah19",
@@ -2851,7 +2851,7 @@
    },
    "ability": {
     "name": "Wildcard Cortado",
-    "desc": "Passive: At Combat Start, draw a card for each champion in the shop. If your shop has refreshed this round, gain loot based on the cards drawn! 1 or 2 of a Kind: 1 Gold 3 of a Kind: Random champion 4 of a Kind: Item Component 5 of a Kind: Mystery Box! Active: The next 5 attacks gain 100% Attack Speed and are replaced with cards that deal AP 100/150/2000 magic damage to the target and AP 30/45/1000 magic damage to 2 nearby enemies.",
+    "desc": "Passive: At Combat Start, draw a card for each champion in the shop. If your shop has refreshed this round, gain loot based on the cards drawn! 1 or 2 of a Kind: 1 Gold 3 of a Kind: Random champion 4 of a Kind: Mystery Box 5 of a Kind: Royale Mystery Box! Active: The next 5 attacks gain 100% Attack Speed and are replaced with cards that deal AP 100/150/2000 magic damage to the target and AP 30/45/1000 magic damage to 2 nearby enemies.",
     "manaStart": 0,
     "manaCost": 50
    }
@@ -2903,7 +2903,7 @@
     "Healing"
    ],
    "unlock": true,
-   "unlockCondition": "Req. Lvl 8 - Only 1 Champion in the two front rows of the battlefield",
+   "unlockCondition": "Req. Lvl 8 - Only 1 champion in the 2 front rows of the battlefield",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Vladimir19",
@@ -2948,7 +2948,7 @@
    },
    "ability": {
     "name": "Lasers After Midnight",
-    "desc": "Quickly dash around the arena, aiming 6 lasers at the current target. Lasers fire in rapid succession, each dealing AD AP 165/250/1500 physical damage to enemies hit and ignoring 40% of their Armor.",
+    "desc": "Quickly dash around the arena, aiming 6 lasers at the current target. Lasers fire in rapid succession, each dealing AD AP 175/260/1500 physical damage to enemies hit and ignoring 40% of their Armor.",
     "manaStart": 0,
     "manaCost": 150
    }
@@ -2980,7 +2980,7 @@
    },
    "ability": {
     "name": "Assemble the Ensemble",
-    "desc": "Summon an 8-man orchestra and a Riff Herald, knocking up all enemies for 1 seconds. Deal AD 550/825/2475 physical damage and AP 650/1000/3000 magic damage split among all enemies. Each minion attacks 4 times, with each attack dealing AD 33/50/250 physical damage.",
+    "desc": "Summon an 8-man orchestra and a Riff Herald, knocking up all enemies for 1 seconds. Deal AD 550/825/2475 physical damage and AP 650/1000/3000 magic damage split among all enemies. Each minion attacks 4 times, with each attack dealing AD 30/48/250 physical damage.",
     "manaStart": 80,
     "manaCost": 120
    }
@@ -3013,7 +3013,7 @@
    },
    "ability": {
     "name": "Fly like a Peacock",
-    "desc": "Dash to a nearby group of enemies, then fling 8 feathers split amongst enemies within 1 hex, each dealing AP 100/180/2400 magic damage. The main Rakan hits enemies within 2 hexes and briefly knocks up them up.",
+    "desc": "Dash to a nearby group of enemies, then fling 8 feathers split amongst enemies within 1 hex, each dealing AP 115/190/2400 magic damage. The main Rakan hits enemies within 2 hexes and briefly knocks up them up.",
     "manaStart": 0,
     "manaCost": 55
    }
@@ -3030,7 +3030,7 @@
    "role": "Attack Specialist",
    "effects": [],
    "unlock": true,
-   "unlockCondition": "Req. Lvl 9 - Have 8 or more non-unique traits active",
+   "unlockCondition": "Req. Lvl 9 - Activate 8 or more non-unique traits",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Smeech19",
@@ -3063,7 +3063,7 @@
     "CC"
    ],
    "unlock": true,
-   "unlockCondition": "Req. Lvl 10 - Collab Champions are inspired 15 times during player combat",
+   "unlockCondition": "Req. Lvl 10 - Collab champions are inspired 15 times during player combat",
    "unlockConditionStatus": "pbe",
    "status": "pbe",
    "apiName": "DA_Sona19",

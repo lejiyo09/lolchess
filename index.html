@@ -26,12 +26,13 @@
   <nav class="side" id="nav" aria-label="주요 메뉴">
     <button data-view="dashboard" class="active"><span class="n">1</span><span class="t">Dashboard<small>대시보드</small></span></button>
     <button data-view="builder"><span class="n">2</span><span class="t">Team Builder<small>덱 구성 연구실</small></span></button>
-    <button data-view="sim"><span class="n">3</span><span class="t">Game Simulator<small>운영 시뮬레이터</small></span></button>
-    <button data-view="augments"><span class="n">4</span><span class="t">Augment Lab<small>증강체 연구실</small></span></button>
-    <button data-view="scout"><span class="n">5</span><span class="t">Scouting<small>정찰 · 배치 훈련</small></span></button>
-    <button data-view="drill"><span class="n">6</span><span class="t">Decision Training<small>판단력 훈련</small></span></button>
-    <button data-view="records"><span class="n">7</span><span class="t">Tournament Records<small>대회 · 스크림 기록</small></span></button>
-    <button data-view="settings"><span class="n">8</span><span class="t">Data &amp; Settings<small>데이터 · 설정</small></span></button>
+    <button data-view="meta"><span class="n">3</span><span class="t">Meta Comps<small>PBE 메타 덱</small></span></button>
+    <button data-view="sim"><span class="n">4</span><span class="t">Game Simulator<small>운영 시뮬레이터</small></span></button>
+    <button data-view="augments"><span class="n">5</span><span class="t">Augment Lab<small>증강체 연구실</small></span></button>
+    <button data-view="scout"><span class="n">6</span><span class="t">Scouting<small>정찰 · 배치 훈련</small></span></button>
+    <button data-view="drill"><span class="n">7</span><span class="t">Decision Training<small>판단력 훈련</small></span></button>
+    <button data-view="records"><span class="n">8</span><span class="t">Tournament Records<small>대회 · 스크림 기록</small></span></button>
+    <button data-view="settings"><span class="n">9</span><span class="t">Data &amp; Settings<small>데이터 · 설정</small></span></button>
     <div class="navfoot" id="navFoot"></div>
   </nav>
   <main id="main">
@@ -39,6 +40,7 @@
     <div id="bootMsg" class="notice blue">데이터를 불러오는 중…</div>
     <section id="view-dashboard" class="view active"></section>
     <section id="view-builder" class="view"></section>
+    <section id="view-meta" class="view"></section>
     <section id="view-sim" class="view"></section>
     <section id="view-augments" class="view"></section>
     <section id="view-scout" class="view"></section>
@@ -53,9 +55,11 @@
 </div>
 <div id="toasts" aria-live="polite"></div>
 <script src="data/bundle.js"></script>
+<script src="assets/index.js"></script>
 <script src="js/core.js"></script>
 <script src="js/dashboard.js"></script>
 <script src="js/builder.js"></script>
+<script src="js/meta.js"></script>
 <script src="js/sim.js"></script>
 <script src="js/augments.js"></script>
 <script src="js/scout.js"></script>

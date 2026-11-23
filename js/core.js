@@ -3,7 +3,7 @@
 'use strict';
 window.TL = window.TL || {};
 (function (TL) {
-  const APP_VERSION = '2.1.0';
+  const APP_VERSION = '2.2.0';
   TL.APP_VERSION = APP_VERSION;
   TL.THIEF = 'thiefs-gloves';
   TL.views = TL.views || {};
@@ -29,6 +29,38 @@ window.TL = window.TL || {};
   };
   TL.readFile = file => new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = () => rej(r.error); r.readAsText(file); });
   TL.statusPill = st => `<span class="pill st st-${TL.esc(st)}" title="${TL.esc((TL.data && TL.data.statusLegend()[st]) || st)}">${TL.esc(st)}</span>`;
+
+  /* ---------------- game art (bundled assets; graceful text fallback) ---------------- */
+  const ASSET_SETS = {};
+  const assetHas = (kind, id) => { const A = window.TFT_ASSETS || {}; if (!ASSET_SETS[kind]) ASSET_SETS[kind] = new Set(A[kind] || []); return ASSET_SETS[kind].has(id); };
+  TL.img = {
+    champ(id) { return assetHas('champions', id) ? `assets/champions/${id}.webp` : null; },
+    traitByName(name) { const t = TL.data.trait(name); return t && assetHas('traits', t.id) ? `assets/traits/${t.id}.svg` : null; },
+    item(id) {
+      const it = TL.data.item(id); if (!it) return null;
+      if (it.type === 'emblem' && it.grantsTrait) return TL.img.traitByName(it.grantsTrait);
+      return assetHas('items', id) ? `assets/items/${id}.webp` : null;
+    },
+  };
+  TL.ui = {
+    // champion portrait: <img> with cost frame; falls back to initials when no art
+    champ(c, cls = '') {
+      if (!c) return `<span class="cp ${cls}">?</span>`;
+      const src = TL.img.champ(c.id);
+      return src ? `<img class="cp cost-${c.cost} ${cls}" src="${src}" alt="${TL.esc(c.name)}" loading="lazy" draggable="false">` : `<span class="cp cpf cost-${c.cost} ${cls}">${TL.esc((TL.data.name(c) || '?').slice(0, 2))}</span>`;
+    },
+    item(id, cls = '') {
+      const it = TL.data.item(id); const src = TL.img.item(id); const tip = it ? (it.nameKo || it.name) : id;
+      if (!src) return `<span class="ii iif ${cls} ${it?.type || ''}" title="${TL.esc(tip)}">${TL.esc((tip || '?').slice(0, 2))}</span>`;
+      return `<img class="ii ${cls} ${it?.type || ''}" src="${src}" alt="${TL.esc(tip)}" title="${TL.esc(tip)}" loading="lazy" draggable="false">`;
+    },
+    trait(name, style = 'none', cls = '') {
+      const src = TL.img.traitByName(name);
+      return `<span class="ti t-${style} ${cls}" title="${TL.esc(name)}">${src ? `<img src="${src}" alt="" draggable="false">` : `<b>${TL.esc(name.slice(0, 2))}</b>`}</span>`;
+    },
+    stars(n) { return `<span class="stars s${n}">${'★'.repeat(n || 1)}</span>`; },
+    coin(n) { return `<span class="coin"><i></i>${n}</span>`; },
+  };
 
   /* ---------------- toast & modal ---------------- */
   TL.toast = (msg, kind = '') => {
@@ -113,7 +145,7 @@ window.TL = window.TL || {};
   const KEY = 'tftLab19.v2', LEGACY_KEY = 'tftLab19';
   TL.defaultState = () => ({
     version: 2,
-    settings: { eventDate: '2026-12-20', eventName: 'TFT 대회 (Set 19)', playerName: '나', showKo: true, scorePresets: [{ id: 'std', name: '기본 8-1', map: [8, 7, 6, 5, 4, 3, 2, 1] }], activePreset: 'std', defaultPatch: '19.2', lastAutoBackup: null },
+    settings: { board3d: true, eventDate: '2026-12-20', eventName: 'TFT 대회 (Set 19)', playerName: '나', showKo: true, scorePresets: [{ id: 'std', name: '기본 8-1', map: [8, 7, 6, 5, 4, 3, 2, 1] }], activePreset: 'std', defaultPatch: '19.2', lastAutoBackup: null },
     checklist: [
       { t: 'Set 19 핵심 조합 2개 이상 연구 (팀 빌더에 저장)', d: false },
       { t: '각 조합의 대체 캐리/전환 경로 정리', d: false },
@@ -209,6 +241,7 @@ window.TL = window.TL || {};
       D.idx = idx;
     },
     bundle: () => D.bundle, base: () => D.base, isOverridden: () => D.overridden,
+    meta: () => (D.bundle && D.bundle['meta-comps']) || (D.base && D.base['meta-comps']) || null,
     patch: () => D.bundle['patch-info'],
     statusLegend: () => (D.bundle ? D.bundle['patch-info'].statusLegend : {}) || {},
     champs: () => D.bundle.champions.champions,
@@ -381,10 +414,12 @@ window.TL = window.TL || {};
     },
     traitsHTML(list, compact = false) {
       if (!list.length) return '<div class="empty">보드에 챔피언을 배치하면 특성이 집계돼.</div>';
+      // in-game style trait tracker: hex badge (tier colour) with trait icon, count, breakpoint chain
       return '<div class="traits">' + list.map(x => {
         const t = x.trait, ko = t?.nameKo && TL.state.settings.showKo ? ` <span class="tiny">${TL.esc(t.nameKo)}</span>` : '';
         const tip = t ? `${t.description}\n` + t.tiers.map(r => `(${r.min}) ${r.effect}`).join('\n') + (t.notes?.length ? '\n※ ' + t.notes.join('\n※ ') : '') : '데이터에 없는 특성';
-        return `<div class="trait t-${x.style} ${x.active < 0 ? 'inactive' : ''}" title="${TL.esc(tip)}"><div class="badge">${x.count}</div><div><div class="tn">${TL.esc(x.name)}${ko}${x.mode === 'stars' ? '<span class="pill xs" title="총 별 레벨로 집계">★합</span>' : ''}${t?.type === 'unique' ? '<span class="tiny">고유</span>' : ''}</div>${compact ? '' : `<div class="bps">${x.tiers.map((m, i) => `<span class="${i <= x.active ? 'hit' : ''} ${m === x.next ? 'next' : ''}">${m}</span>`).join('')}${x.next ? `<span class="tiny" style="background:none">다음까지 ${x.next - x.count}</span>` : ''}</div>${(() => { const r = t && (x.active >= 0 ? t.tiers[x.active] : t.tiers[0]); return r && r.effect ? `<div class="tiny" style="margin-top:1px;${x.active < 0 ? 'opacity:.7' : ''}">${x.active >= 0 ? '' : '(' + r.min + ') '}${TL.esc(r.effect.length > 90 ? r.effect.slice(0, 90) + '…' : r.effect)}</div>` : ''; })()}`}</div></div>`;
+        const eff = (() => { const r = t && (x.active >= 0 ? t.tiers[x.active] : t.tiers[0]); return r && r.effect ? `<div class="teff">${x.active >= 0 ? '' : '(' + r.min + ') '}${TL.esc(r.effect.length > 90 ? r.effect.slice(0, 90) + '…' : r.effect)}</div>` : ''; })();
+        return `<div class="trait t-${x.style} ${x.active < 0 ? 'inactive' : ''}" title="${TL.esc(tip)}">${TL.ui.trait(x.name, x.style, 'badge')}<div class="tbody"><div class="tn"><span class="tcount">${x.count}</span>${TL.esc(x.name)}${ko}${x.mode === 'stars' ? '<span class="pill xs" title="총 별 레벨로 집계">★합</span>' : ''}${t?.type === 'unique' ? '<span class="tiny">고유</span>' : ''}</div>${compact ? '' : `<div class="bps">${x.tiers.map((m, i) => `<span class="${i <= x.active ? 'hit' : ''} ${m === x.next ? 'next' : ''}">${m}</span>`).join('<i>›</i>')}${x.next ? `<span class="tiny" style="background:none">+${x.next - x.count}</span>` : ''}</div>${eff}`}</div></div>`;
       }).join('') + '</div>';
     },
     sellValue(cost, star) {
@@ -449,15 +484,17 @@ window.TL = window.TL || {};
           const pos = r * cols + c; const u = units.find(x => x.pos === pos); const ch = u && TL.data.champ(u.champ);
           const hl = opts.highlight?.[pos] || ''; const sel = u && opts.selected === u.id ? 'sel' : '';
           const mark = u && opts.marks?.[u.id];
-          const items = u ? (u.items || []).map(i => { const it = TL.data.item(i); return `<i class="${it?.type === 'component' ? 'cmp' : it?.type === 'emblem' ? 'emb' : ''}" title="${TL.esc(it ? (it.nameKo || it.name) : i)}"></i>`; }).join('') : '';
+          const items = u ? (u.items || []).map(i => TL.ui.item(i)).join('') : '';
+          const art = u && TL.img.champ(u.champ);
           html += `<button type="button" class="hex ${u ? 'occ cost-' + ch?.cost : 'empty'} ${hl} ${sel}" data-pos="${pos}" ${u ? `data-uid="${u.id}" draggable="${opts.mini ? 'false' : 'true'}"` : ''} title="${u ? TL.esc((ch ? ch.name + (ch.nameKo ? ' / ' + ch.nameKo : '') + ' · ' + ch.cost + '코스트 · ' + ch.traits.join(', ') : '?') + ((u.items || []).length ? '\n아이템: ' + u.items.map(i => TL.data.item(i)?.nameKo || TL.data.item(i)?.name || i).join(', ') : '')) : `${r + 1}행 ${c + 1}열`}">`
-            + (u ? `${mark ? `<span class="role">${mark === 'carry' ? '⚔' : '🛡'}</span>` : ''}<span class="hn">${TL.esc(TL.data.name(ch))}</span><span class="hs">${'★'.repeat(u.star || 1)}</span><span class="hi">${items}</span>` : `<span class="pos">${r + 1}-${c + 1}</span>`)
+            + (u ? `<span class="hx-in">${art ? `<img class="hx-art" src="${art}" alt="" draggable="false" loading="lazy">` : ''}<span class="hx-shade"></span>${mark ? `<span class="role">${mark === 'carry' ? '⚔' : '🛡'}</span>` : ''}<span class="hs">${'★'.repeat(u.star || 1)}</span><span class="hn">${TL.esc(TL.data.name(ch))}</span>${items ? `<span class="hi">${items}</span>` : ''}</span>` : `<span class="pos">${r + 1}-${c + 1}</span>`)
             + '</button>';
         }
         if (!lead) html += '<span class="hexrow-spacer"></span>';
       });
       el.innerHTML = html;
       el.classList.toggle('enemy', !!opts.enemy);
+      el.classList.toggle('tilt', !opts.mini && TL.state?.settings?.board3d !== false);
       if (opts.mini) return;
       TL.$$('.hex', el).forEach(h => {
         const pos = +h.dataset.pos;
@@ -470,7 +507,7 @@ window.TL = window.TL || {};
       });
     },
     renderBench(el, bench, opts = {}) {
-      el.innerHTML = bench.map((u, i) => { const ch = u && TL.data.champ(u.champ); return `<div class="slot ${u ? 'occ cost-' + ch?.cost : ''} ${u && opts.selected === u.id ? 'sel' : ''}" data-slot="${i}" ${u ? `data-uid="${u.id}" draggable="true" title="${TL.esc(ch?.name + ' · ' + ch?.traits.join(', '))}"` : ''} tabindex="0">${u ? `<span class="hn">${TL.esc(TL.data.name(ch))}</span><span class="hs">${'★'.repeat(u.star)}${u.items?.length ? ' · ' + u.items.length + '템' : ''}</span>` : `<span class="dim">${i + 1}</span>`}</div>`; }).join('');
+      el.innerHTML = bench.map((u, i) => { const ch = u && TL.data.champ(u.champ); const art = u && TL.img.champ(u.champ); return `<div class="slot ${u ? 'occ cost-' + ch?.cost : ''} ${u && opts.selected === u.id ? 'sel' : ''}" data-slot="${i}" ${u ? `data-uid="${u.id}" draggable="true" title="${TL.esc(ch?.name + ' · ' + ch?.traits.join(', '))}"` : ''} tabindex="0">${u ? `${art ? `<img class="sl-art" src="${art}" alt="" draggable="false" loading="lazy">` : ''}<span class="hs">${'★'.repeat(u.star)}</span><span class="hn">${TL.esc(TL.data.name(ch))}</span>${u.items?.length ? `<span class="hi">${u.items.map(x => TL.ui.item(x)).join('')}</span>` : ''}` : `<span class="dim">${i + 1}</span>`}</div>`; }).join('');
       TL.$$('.slot', el).forEach(s => {
         const i = +s.dataset.slot;
         s.onclick = () => opts.onClick && opts.onClick(i, s.dataset.uid || null);
@@ -506,7 +543,7 @@ window.TL = window.TL || {};
     },
     cardsHTML(list, opts = {}) {
       if (!list.length) return '<div class="empty" style="grid-column:1/-1">검색 결과 없음</div>';
-      return list.map(c => { const locked = c.unlock && !(opts.unlocked || {})[c.id]; return `<div class="ch cost-${c.cost} ${locked && opts.dimLocked ? 'locked' : ''} ${opts.sel === c.id ? 'sel' : ''}" draggable="true" data-champ="${c.id}" tabindex="0" title="${TL.esc(c.name + ' · ' + c.role + (c.unlock ? '\n해금 조건: ' + (c.unlockCondition || '미공개') : ''))}"><span class="cs">${c.cost}</span><span class="nm">${TL.esc(c.name)}</span>${c.nameKo && TL.state.settings.showKo ? `<span class="ko">${TL.esc(c.nameKo)}</span>` : ''}<span class="tr">${c.traits.map(TL.esc).join(' · ')}</span>${c.unlock ? `<span class="lk">${(opts.unlocked || {})[c.id] ? '🔓 해금됨' : '🔒 해금형'}</span>` : ''}</div>`; }).join('');
+      return list.map(c => { const locked = c.unlock && !(opts.unlocked || {})[c.id]; return `<div class="ch cost-${c.cost} ${locked && opts.dimLocked ? 'locked' : ''} ${opts.sel === c.id ? 'sel' : ''}" draggable="true" data-champ="${c.id}" tabindex="0" title="${TL.esc(c.name + ' · ' + c.role + (c.unlock ? '\n해금 조건: ' + (c.unlockCondition || '미공개') : ''))}">${TL.ui.champ(c, 'ch-art')}<span class="ch-body"><span class="nm">${TL.esc(TL.data.name(c))}</span><span class="tr">${c.traits.map(t => TL.ui.trait(t, 'none', 'xs') + `<em>${TL.esc(t)}</em>`).join('')}</span></span><span class="cs">${c.cost}</span>${c.unlock ? `<span class="lk" title="${(opts.unlocked || {})[c.id] ? '해금됨' : '해금형'}">${(opts.unlocked || {})[c.id] ? '🔓' : '🔒'}</span>` : ''}</div>`; }).join('');
     },
     bind(host, onPick) {
       TL.$$('[data-champ]', host).forEach(el => {
@@ -521,7 +558,7 @@ window.TL = window.TL || {};
   TL.itemsUI = {
     paletteHTML(filter = 'component') {
       const list = TL.data.items().filter(i => filter === 'all' || i.type === filter);
-      return list.map(i => `<span class="itm ${i.type}" draggable="true" data-item="${i.id}" tabindex="0" title="${TL.esc((i.nameKo ? i.nameKo + ' / ' : '') + i.name + (i.recipe ? '\n조합: ' + i.recipe.map(r => TL.data.item(r)?.nameKo || r).join(' + ') : '') + (i.stats ? '\n' + i.stats : '') + (i.description ? '\n' + i.description : '') + '\n상태: ' + i.status)}">${TL.esc(i.nameKo || i.name)}</span>`).join('');
+      return list.map(i => `<span class="itm icon ${i.type}" draggable="true" data-item="${i.id}" tabindex="0" title="${TL.esc((i.nameKo ? i.nameKo + ' / ' : '') + i.name + (i.recipe ? '\n조합: ' + i.recipe.map(r => TL.data.item(r)?.nameKo || r).join(' + ') : '') + (i.stats ? '\n' + i.stats : '') + (i.description ? '\n' + i.description : '') + '\n상태: ' + i.status)}">${TL.ui.item(i.id)}<span class="iname">${TL.esc(i.nameKo || i.name)}</span></span>`).join('');
     },
     bind(host, onPick) {
       TL.$$('[data-item]', host).forEach(el => {
