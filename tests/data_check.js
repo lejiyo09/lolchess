@@ -20,7 +20,8 @@ const { chromium } = require('playwright'); const path = require('path');
   for (let i = 0; i < 80; i++) {
     const ph = await p.evaluate(() => TL.state.sim.phase); if (ph === 'over') break;
     if (ph === 'carousel') await p.click('[data-car="0"]');
-    else if (ph === 'augment') { await p.click('[data-augt=""]'); await p.click('[data-aug]'); }
+    else if (ph === 'encounter') await p.click('#sEncGo');
+    else if (ph === 'augment') { if (!(await p.$('[data-aug]'))) await p.click('[data-augt=""]'); await p.click('[data-aug]'); }
     else { await p.evaluate(() => { const s = TL.state.sim; s.shop.forEach((c, k) => { if (c && s.gold >= 10) TL.views.sim._api.buy(k); }); }); await p.click('#sFight'); }
     await p.waitForTimeout(15);
   }

@@ -283,13 +283,16 @@ def main():
     pi['changelog'] = [{'version': ver, 'date': TODAY, 'changes': summary + bal[:80]}] + [c for c in pi['changelog'] if c['version'] != ver]
     s0 = {'name': f'PBE {pbe_patch} 게임 데이터 — Blitz.gg Set 19 (내장 데이터)', 'url': 'https://blitz.gg/tft/set19', 'used': 'champions, traits, items, augments, unlocks (status: pbe)'}
     pi['sources'] = [s0] + [s for s in pi['sources'] if s['url'] != s0['url']]
+    def keep(f):  # rules files are not in this feed: keep the current data/ version (e.g. tftflow-verified), else the base
+        fp = os.path.join(a.prev, f + '.json')
+        return json.load(open(fp, encoding='utf8')) if os.path.exists(fp) else old[f]
     meta = lambda n, note: {'set': 19, 'patch': PATCH, 'source': srcref, 'updated': pbe_date, 'status': status, 'count': n, 'note': note}
     out = {'patch-info': pi,
            'champions': {'meta': meta(len(champs), '한국어 이름·효과 태그는 이전 데이터(CDragon ko_kr / Dev Drop)에서 유지. heroVariant = Hero 증강 형태'), 'champions': champs},
            'traits': {'meta': meta(len(traits), '단계 수치는 PBE 값. 라이브 전 변경 가능'), 'traits': traits},
            'augments': {'meta': meta(len(augs), 'categories = Riot 태그 + 설명 키워드. rounds = Riot RoundVariant(Early 2-1 / Mid 3-2 / Late 4-2)'), 'augments': augs},
            'items': {'meta': meta(len(items), 'Set 19 PBE 아이템 목록. 한국어 이름은 이름이 같은 Set 18 아이템에서 유지'), 'items': items},
-           'shop-odds': old['shop-odds'], 'game-rules': old['game-rules']}
+           'shop-odds': keep('shop-odds'), 'game-rules': keep('game-rules')}
     os.makedirs(a.out, exist_ok=True)
     for f, obj in out.items():
         json.dump(obj, open(os.path.join(a.out, f + '.json'), 'w', encoding='utf8'), ensure_ascii=False, indent=1)

@@ -1,0 +1,1023 @@
+{
+ "source": "tftflow.com Set 19 tables (pages marked \"Last Updated: Patch 19.1\"; PBE data)",
+ "fetched": "2026-11-23",
+ "urls": [
+  "https://tftflow.com/tables/set19/encounter-odds",
+  "https://tftflow.com/tables/set19/augment-odds",
+  "https://tftflow.com/tables/set19/carousel-odds",
+  "https://tftflow.com/tables/set19/shop-odds-pool-size-xp-table",
+  "https://tftflow.com/tables/set19/player-damage-calculator",
+  "https://tftflow.com/tables/set19/gold-subscription",
+  "https://tftflow.com/tables/set19/beat-drop"
+ ],
+ "encounters": [
+  {
+   "name": "Augment Crescendo",
+   "odds": 5.93,
+   "description": "Malzahar changes augments this game to be silver, gold, then prismatic tier."
+  },
+  {
+   "name": "Cheaper Levels",
+   "odds": 5.93,
+   "description": "Janna modifies each level to cost 2 XP less."
+  },
+  {
+   "name": "Golden Gala",
+   "odds": 5.93,
+   "description": "Mel changes all augments to gold tier this game."
+  },
+  {
+   "name": "Scouting Party",
+   "odds": 5.93,
+   "description": "Gain +1 Augment rerolls this game."
+  },
+  {
+   "name": "Completed Item Anvil",
+   "odds": 4.44,
+   "description": "Ekko grants you a completed item anvil."
+  },
+  {
+   "name": "Component Anvils",
+   "odds": 4.44,
+   "description": "Jinx gives you two component anvils."
+  },
+  {
+   "name": "Gold Subscription",
+   "odds": 4.44,
+   "description": "Illaoi grants you gold at the start of every stage."
+  },
+  {
+   "name": "Golden Finale",
+   "odds": 4.44,
+   "description": "Rell turns the last augment to gold this game."
+  },
+  {
+   "name": "Golden Prelude",
+   "odds": 4.44,
+   "description": "Ahri changes the first augment to be gold this game."
+  },
+  {
+   "name": "Gwen's Gifts",
+   "odds": 4.44,
+   "description": "After the first 2 carousels, Gwen gifts players a component and a special pair of scissors."
+  },
+  {
+   "name": "Item Forge",
+   "odds": 4.44,
+   "description": "On Stage 3-3, all players gain 2 random completed items and 2 Reforgers."
+  },
+  {
+   "name": "Reroll Subscription",
+   "odds": 4.44,
+   "description": "Teemo grants you free Shop rerolls every stage."
+  },
+  {
+   "name": "Scuttle Party",
+   "odds": 4.44,
+   "description": "The stage is overrun with crabs that drop bonus loot!"
+  },
+  {
+   "name": "2 Cost Start",
+   "odds": 3.7,
+   "description": "Start with a random 2-cost champion this game."
+  },
+  {
+   "name": "3 Cost Start",
+   "odds": 3.7,
+   "description": "Start with a random 3-cost champion this game."
+  },
+  {
+   "name": "Upgraded Start",
+   "odds": 3.7,
+   "description": "Kobuko upgrades your starting champion to 2-star."
+  },
+  {
+   "name": "Beat Drop",
+   "odds": 2.96,
+   "description": "Braum drops you powerful loot at 40 player health."
+  },
+  {
+   "name": "Emblem Ensemble",
+   "odds": 2.96,
+   "description": "Smeech begins your journey with 3 random emblems."
+  },
+  {
+   "name": "Prismatic Finale",
+   "odds": 2.96,
+   "description": "Nunu & Willump make the final augment round prismatic!"
+  },
+  {
+   "name": "Prismatic Opener",
+   "odds": 2.96,
+   "description": "Akali changes the first augment to prismatic this game."
+  },
+  {
+   "name": "Prismatic Party",
+   "odds": 2.96,
+   "description": "Rakan changes all augments to prismatic tier this game."
+  },
+  {
+   "name": "Star Attraction",
+   "odds": 2.96,
+   "description": "Gain a 5-cost champion holding a recommended item that cannot be fielded until Stage 4-6."
+  },
+  {
+   "name": "Superstar",
+   "odds": 2.96,
+   "description": "Gain another copy of your starting champion every 2 combats."
+  },
+  {
+   "name": "Lucky Treasure",
+   "odds": 2.22,
+   "description": "On Stage 3-5, all players gain a Radiant Lucky Item Chest."
+  },
+  {
+   "name": "Prismatic Tour",
+   "odds": 2.22,
+   "description": "All augments offered this game will be prismatic tier. Gain 3 different 1-cost Prismatic Tour members."
+  }
+ ],
+ "augmentTierSequences": [
+  {
+   "t": [
+    "Gold",
+    "Gold",
+    "Gold"
+   ],
+   "w": 22
+  },
+  {
+   "t": [
+    "Gold",
+    "Silver",
+    "Gold"
+   ],
+   "w": 18
+  },
+  {
+   "t": [
+    "Silver",
+    "Gold",
+    "Gold"
+   ],
+   "w": 12
+  },
+  {
+   "t": [
+    "Gold",
+    "Gold",
+    "Prismatic"
+   ],
+   "w": 12
+  },
+  {
+   "t": [
+    "Gold",
+    "Prismatic",
+    "Gold"
+   ],
+   "w": 10
+  },
+  {
+   "t": [
+    "Gold",
+    "Prismatic",
+    "Silver"
+   ],
+   "w": 6
+  },
+  {
+   "t": [
+    "Silver",
+    "Silver",
+    "Gold"
+   ],
+   "w": 5
+  },
+  {
+   "t": [
+    "Silver",
+    "Silver",
+    "Prismatic"
+   ],
+   "w": 5
+  },
+  {
+   "t": [
+    "Silver",
+    "Gold",
+    "Prismatic"
+   ],
+   "w": 5
+  },
+  {
+   "t": [
+    "Prismatic",
+    "Silver",
+    "Gold"
+   ],
+   "w": 4
+  },
+  {
+   "t": [
+    "Gold",
+    "Silver",
+    "Prismatic"
+   ],
+   "w": 2
+  },
+  {
+   "t": [
+    "Prismatic",
+    "Gold",
+    "Gold"
+   ],
+   "w": 2
+  },
+  {
+   "t": [
+    "Prismatic",
+    "Prismatic",
+    "Prismatic"
+   ],
+   "w": 1
+  },
+  {
+   "t": [
+    "Prismatic",
+    "Silver",
+    "Prismatic"
+   ],
+   "w": 1
+  },
+  {
+   "t": [
+    "Silver",
+    "Prismatic",
+    "Prismatic"
+   ],
+   "w": 1
+  },
+  {
+   "t": [
+    "Gold",
+    "Prismatic",
+    "Prismatic"
+   ],
+   "w": 1
+  },
+  {
+   "t": [
+    "Prismatic",
+    "Gold",
+    "Prismatic"
+   ],
+   "w": 1
+  },
+  {
+   "t": [
+    "Prismatic",
+    "Prismatic",
+    "Gold"
+   ],
+   "w": 1
+  }
+ ],
+ "carousel": {
+  "2": {
+   "size": [
+    [
+     9,
+     85.0
+    ],
+    [
+     11,
+     12.0
+    ],
+    [
+     13,
+     3.0
+    ]
+   ],
+   "champions": [
+    [
+     "Stage 2 Normal",
+     92.0
+    ],
+    [
+     "Twos And Threes",
+     5.0
+    ],
+    [
+     "All Threes",
+     3.0
+    ],
+    [
+     "All Twos",
+     0.0
+    ]
+   ],
+   "items": [
+    [
+     "Opening",
+     82.0
+    ],
+    [
+     "One Of All",
+     15.0
+    ],
+    [
+     "Spats And Random",
+     3.0
+    ]
+   ]
+  },
+  "3": {
+   "size": [
+    [
+     9,
+     60.0
+    ],
+    [
+     11,
+     37.0
+    ],
+    [
+     13,
+     3.0
+    ]
+   ],
+   "champions": [
+    [
+     "Stage 3 Normal",
+     90.48
+    ],
+    [
+     "All Threes",
+     9.52
+    ],
+    [
+     "Threes And Fours",
+     0.0
+    ]
+   ],
+   "items": [
+    [
+     "Opening",
+     82.0
+    ],
+    [
+     "One Of All",
+     15.0
+    ],
+    [
+     "Spats And Random",
+     3.0
+    ]
+   ]
+  },
+  "4": {
+   "size": [
+    [
+     9,
+     85.0
+    ],
+    [
+     11,
+     12.0
+    ],
+    [
+     13,
+     3.0
+    ]
+   ],
+   "champions": [
+    [
+     "Stage 4 Normal",
+     80.0
+    ],
+    [
+     "More Fives",
+     10.0
+    ],
+    [
+     "Fours And Fives",
+     5.0
+    ],
+    [
+     "All Fours",
+     5.0
+    ]
+   ],
+   "items": [
+    [
+     "Opening",
+     82.0
+    ],
+    [
+     "One Of All",
+     15.0
+    ],
+    [
+     "Spats And Random",
+     3.0
+    ]
+   ]
+  },
+  "5": {
+   "size": [
+    [
+     9,
+     95.0
+    ],
+    [
+     13,
+     5.0
+    ]
+   ],
+   "champions": [
+    [
+     "Stage 5 Normal",
+     80.0
+    ],
+    [
+     "More Fives",
+     10.0
+    ],
+    [
+     "Fours And Fives",
+     5.0
+    ],
+    [
+     "All Fours",
+     5.0
+    ]
+   ],
+   "items": [
+    [
+     "All Random Full",
+     25.4
+    ],
+    [
+     "Completed Unbuilt",
+     25.0
+    ],
+    [
+     "Completed And 2 Emblems",
+     15.0
+    ],
+    [
+     "Completed And 3 Emblems",
+     10.0
+    ],
+    [
+     "Sword Full",
+     3.0
+    ],
+    [
+     "Vest Full",
+     3.0
+    ],
+    [
+     "Belt Full",
+     3.0
+    ],
+    [
+     "Bow Full",
+     3.0
+    ],
+    [
+     "Cloak Full",
+     3.0
+    ],
+    [
+     "Tear Full",
+     3.0
+    ],
+    [
+     "Gloves Full",
+     3.0
+    ],
+    [
+     "Rod Full",
+     3.0
+    ],
+    [
+     "All Tactician Items",
+     0.6
+    ]
+   ]
+  },
+  "6": {
+   "size": [
+    [
+     9,
+     95.0
+    ],
+    [
+     13,
+     5.0
+    ]
+   ],
+   "champions": [
+    [
+     "Stage 5 Normal",
+     80.0
+    ],
+    [
+     "More Fives",
+     10.0
+    ],
+    [
+     "Fours And Fives",
+     5.0
+    ],
+    [
+     "All Fours",
+     5.0
+    ]
+   ],
+   "items": [
+    [
+     "Half Full Half Comp",
+     50.0
+    ],
+    [
+     "Completed Unbuilt",
+     25.0
+    ],
+    [
+     "Completed And 2 Emblems",
+     15.0
+    ],
+    [
+     "Completed And 3 Emblems",
+     10.0
+    ]
+   ]
+  },
+  "7": {
+   "size": [
+    [
+     9,
+     100.0
+    ]
+   ],
+   "champions": [
+    [
+     "Stage 5 Normal",
+     80.0
+    ],
+    [
+     "More Fives",
+     10.0
+    ],
+    [
+     "Fours And Fives",
+     5.0
+    ],
+    [
+     "All Fours",
+     5.0
+    ]
+   ],
+   "items": [
+    [
+     "Half Full Half Comp",
+     50.0
+    ],
+    [
+     "Completed Unbuilt",
+     25.0
+    ],
+    [
+     "Completed And 2 Emblems",
+     15.0
+    ],
+    [
+     "Completed And 3 Emblems",
+     10.0
+    ]
+   ]
+  }
+ },
+ "shopOdds": {
+  "1": [
+   100.0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "2": [
+   100.0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "3": [
+   75.0,
+   25.0,
+   0,
+   0,
+   0
+  ],
+  "4": [
+   55.0,
+   30.0,
+   15.0,
+   0,
+   0
+  ],
+  "5": [
+   45.0,
+   33.0,
+   20.0,
+   2.0,
+   0
+  ],
+  "6": [
+   30.0,
+   40.0,
+   25.0,
+   5.0,
+   0
+  ],
+  "7": [
+   16.0,
+   30.0,
+   43.0,
+   10.0,
+   1.0
+  ],
+  "8": [
+   15.0,
+   20.0,
+   32.0,
+   30.0,
+   3.0
+  ],
+  "9": [
+   10.0,
+   17.0,
+   25.0,
+   33.0,
+   15.0
+  ],
+  "10": [
+   5.0,
+   10.0,
+   20.0,
+   40.0,
+   25.0
+  ],
+  "11": [
+   1.0,
+   2.0,
+   12.0,
+   50.0,
+   35.0
+  ]
+ },
+ "pool": {
+  "1": {
+   "bag": 30,
+   "unique": 15,
+   "total": 450
+  },
+  "2": {
+   "bag": 25,
+   "unique": 18,
+   "total": 450
+  },
+  "3": {
+   "bag": 18,
+   "unique": 16,
+   "total": 288
+  },
+  "4": {
+   "bag": 10,
+   "unique": 22,
+   "total": 220
+  },
+  "5": {
+   "bag": 9,
+   "unique": 19,
+   "total": 171
+  },
+  "7": {
+   "bag": 9,
+   "unique": 4,
+   "total": 36
+  }
+ },
+ "xpToNext": {
+  "1": 2,
+  "2": 2,
+  "3": 6,
+  "4": 10,
+  "5": 20,
+  "6": 36,
+  "7": 60,
+  "8": 68,
+  "9": 68
+ },
+ "stageDamage": {
+  "2": 2,
+  "3": 6,
+  "4": 7,
+  "5": 10,
+  "6": 12,
+  "7": 17,
+  "8": 150
+ },
+ "goldSubscription": [
+  {
+   "odds": 15.0,
+   "byStage": [
+    0,
+    1,
+    1,
+    2,
+    2,
+    3,
+    3,
+    4
+   ]
+  },
+  {
+   "odds": 35.0,
+   "byStage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "odds": 25.0,
+   "byStage": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16
+   ]
+  },
+  {
+   "odds": 23.0,
+   "byStage": [
+    3,
+    6,
+    9,
+    12,
+    15,
+    18,
+    21,
+    24
+   ]
+  },
+  {
+   "odds": 0.0,
+   "byStage": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40
+   ]
+  },
+  {
+   "odds": 2.0,
+   "byStage": [
+    8,
+    16,
+    24,
+    32,
+    40,
+    48,
+    56,
+    64
+   ]
+  }
+ ],
+ "beatDrop": {
+  "standard": {
+   "chance": 82,
+   "rolls": [
+    [
+     16.4,
+     [
+      [
+       "gold",
+       25
+      ]
+     ]
+    ],
+    [
+     12.3,
+     [
+      [
+       "thiefs-gloves",
+       1
+      ],
+      [
+       "gold",
+       5
+      ]
+     ]
+    ],
+    [
+     12.3,
+     [
+      [
+       "component-anvil",
+       2
+      ],
+      [
+       "gold",
+       3
+      ]
+     ]
+    ],
+    [
+     8.2,
+     [
+      [
+       "spatula",
+       1
+      ],
+      [
+       "gold",
+       10
+      ]
+     ]
+    ],
+    [
+     8.2,
+     [
+      [
+       "frying-pan",
+       1
+      ],
+      [
+       "gold",
+       10
+      ]
+     ]
+    ],
+    [
+     8.2,
+     [
+      [
+       "completed-anvil",
+       1
+      ],
+      [
+       "component-anvil",
+       1
+      ]
+     ]
+    ],
+    [
+     8.2,
+     [
+      [
+       "unique-4cost",
+       4
+      ],
+      [
+       "gold",
+       4
+      ]
+     ]
+    ],
+    [
+     8.2,
+     [
+      [
+       "gold",
+       10
+      ],
+      [
+       "random-5cost",
+       2
+      ]
+     ]
+    ]
+   ]
+  },
+  "high": {
+   "chance": 18,
+   "rolls": [
+    [
+     5.4,
+     [
+      [
+       "gold",
+       40
+      ]
+     ]
+    ],
+    [
+     2.7,
+     [
+      [
+       "thiefs-gloves",
+       2
+      ]
+     ]
+    ],
+    [
+     2.7,
+     [
+      [
+       "completed-anvil",
+       2
+      ],
+      [
+       "gold",
+       4
+      ]
+     ]
+    ],
+    [
+     2.7,
+     [
+      [
+       "component-anvil",
+       2
+      ],
+      [
+       "gold",
+       17
+      ]
+     ]
+    ],
+    [
+     1.8,
+     [
+      [
+       "gold",
+       20
+      ],
+      [
+       "unique-5cost",
+       2
+      ]
+     ]
+    ],
+    [
+     0.9,
+     [
+      [
+       "random-radiant",
+       1
+      ],
+      [
+       "gold",
+       5
+      ]
+     ]
+    ],
+    [
+     0.9,
+     [
+      [
+       "tacticians-crown",
+       1
+      ],
+      [
+       "gold",
+       5
+      ]
+     ]
+    ],
+    [
+     0.9,
+     [
+      [
+       "radiant-thiefs-gloves",
+       1
+      ],
+      [
+       "gold",
+       3
+      ]
+     ]
+    ]
+   ]
+  }
+ }
+}

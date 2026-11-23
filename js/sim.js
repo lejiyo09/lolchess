@@ -31,14 +31,16 @@
     const pool = {}; TL.data.champs().forEach(c => { const p = E.poolSize(c.cost); pool[c.id] = p == null ? 0 : p; });
     TL.state.sim = {
       id: TL.uid('g'), startedAt: new Date().toISOString(), dataVersion: TL.data.patch().dataVersion,
-      stage: 1, round: 1, phase: 'carousel', hp: R.startingHp || 100, gold: 0, level: 1, xp: 0, streak: 0, lastResult: null,
+      stage: 1, round: 1, phase: 'carousel', enc: null, augPlan: [null, null, null], augRerollsMax: 1, augRerolls: 0, freeRerolls: 0, hp: R.startingHp || 100, gold: 0, level: 1, xp: 0, streak: 0, lastResult: null,
       shop: [null, null, null, null, null], locked: false, board: [], bench: Array(R.benchSize || 9).fill(null), items: [],
       augments: [], augOffer: [], augRerolled: false, pool, botsHeld: {}, bots: BOT_NAMES.map(n => ({ name: n, hp: 100, alive: true })),
       unlocked: {}, guaranteed: [], carousel: [], history: [], log: [], decisions: [], levelLog: [{ level: 1, r: '1-1' }],
       stats: { rollGold: 0, rolls: 0, xpGold: 0, xpBuys: 0, buys: 0, sells: 0, interest: 0, streakGold: 0, winGold: 0, passive: 0, damage: 0, wins: 0, losses: 0, goldStarts: [] },
       combatMode: opts.combatMode || 'auto', contest: { champ: null, players: 0 }, placement: null, roundStart: null, pendingCheckpoint: null,
     };
+    const enc = startEncounter(opts.encounter);
     if (opts.scenario) applyScenario(opts.scenario);
+    else if (hasStage1Encounter()) { TL.state.sim.phase = 'encounter'; applyEncounterStart(enc); log(`게임 시작 — 1-1 조우자: ${enc ? enc.name + (enc.host ? ' (' + enc.host + ')' : '') : '없음'}`, 'sys'); }
     else { genCarousel(); log('게임 시작 — 1-1 회전초밥(공유 드래프트): 챔피언 1명을 고르세요.', 'sys'); }
     TL.save();
   }
@@ -57,7 +59,7 @@
     for (let i = 0; i < Math.max(2, s.stage * 2 - 1); i++) s.items.push(TL.pick(comps).id);
     botsTick(true);
     s.phase = 'planning'; startPlanning(true);
-    log(`시나리오 시작: ${rid()} · 체력 ${s.hp} · ${s.gold}G · Lv${s.level} (보드/아이템은 무작위 생성)`, 'sys');
+    log(`시나리오 시작: ${rid()} · 체력 ${s.hp} · ${s.gold}G · Lv${s.level} (보드/아이템은 무작위 생성)${encOf() ? ' · 조우자 ' + encOf().name : ''}`, 'sys');
   }
   function pickPos(c) {
     const used = new Set(S().board.map(u => u.pos));
@@ -66,6 +68,94 @@
     return 0;
   }
   function rollTier(odds) { let r = Math.random() * 100, acc = 0; for (let i = 0; i < odds.length; i++) { acc += odds[i]; if (r < acc) return i + 1; } return 1; }
+
+  /* ---------- Opening Encounter (1-1) — data/encounters.json + game-rules (Set 19 PBE tables) ---------- */
+  const rid10 = () => S().stage * 10 + S().round; // compare rounds like 46 = 4-6
+  function weighted(list, wf) { const tot = TL.sum(list.map(wf)); let r = Math.random() * tot; for (const x of list) { r -= wf(x); if (r < 0) return x; } return list[list.length - 1]; }
+  const encOf = () => (S().enc ? TL.data.encounters().find(e => e.id === S().enc.id) : null);
+  const effOf = () => (encOf() || {}).effect || {};
+  function hasStage1Encounter() { return (TL.data.rules().rounds?.stage1 || [])[0] === 'encounter'; }
+  function augPlan(enc) {
+    const seqs = TL.data.rules().augmentTierSequences;
+    let plan = seqs && seqs.length ? weighted(seqs, x => x.w).t.slice() : [null, null, null];
+    const ov = enc?.effect?.tiers; if (ov) plan = plan.map((t, i) => ov[i] || t);
+    return plan;
+  }
+  const comps = () => TL.data.items().filter(i => i.type === 'component' && !['spatula', 'frying-pan'].includes(i.id));
+  function grantChamp(cid, star = 1, extra = {}) {
+    const s = S(); const free = benchFree(); const c = TL.data.champ(cid); if (!c) return null;
+    if (free < 0) { log(`대기석이 가득 차서 ${c.name} 지급을 건너뜀`, 'sys'); return null; }
+    const u = { id: TL.uid('u'), champ: cid, star, items: [], ...extra }; s.bench[free] = u; s.pool[cid] = Math.max(0, (s.pool[cid] || 0) - E.copies(star)); return u;
+  }
+  const randChamp = (cost, filter = () => true) => { const s = S(); const l = TL.data.champs().filter(c => c.cost === cost && !c.unlock && (s.pool[c.id] || 0) > 0 && filter(c)); return l.length ? TL.pick(l) : null; };
+  function grantItems(list, why) {
+    const s = S(); const got = [];
+    const pickOf = kind => {
+      if (kind === 'component' || kind === 'component-anvil') return TL.pick(comps()).id;
+      if (kind === 'completed' || kind === 'completed-anvil') return TL.pick(TL.data.items().filter(i => i.type === 'completed' && i.id !== TL.THIEF)).id;
+      if (kind === 'emblem') return (TL.pick(TL.data.items().filter(i => i.type === 'emblem')) || {}).id;
+      if (kind === 'radiant' || kind === 'random-radiant') return (TL.pick(TL.data.items().filter(i => i.type === 'radiant')) || {}).id;
+      if (kind === 'radiant-thiefs-gloves') return (TL.data.items().find(i => /thief/i.test(i.name) && i.type === 'radiant') || {}).id;
+      return TL.data.item(kind) ? kind : null;
+    };
+    list.forEach(([kind, n]) => {
+      if (kind === 'gold') { s.gold += n; got.push(`${n}G`); return; }
+      if (/^(unique|random)-(\d)cost$/.test(kind)) { const cost = +kind.match(/(\d)cost/)[1]; const seen = new Set(); for (let k = 0; k < n; k++) { const c = randChamp(cost, x => !kind.startsWith('unique') || !seen.has(x.id)); if (c && grantChamp(c.id)) { seen.add(c.id); got.push(c.name); } } return; }
+      for (let k = 0; k < n; k++) { const id = pickOf(kind); if (id) { s.items.push(id); got.push(TL.data.item(id)?.nameKo || id); } }
+    });
+    if (got.length) log(`${why}: ${got.join(', ')}`, 'item');
+    merge(); return got;
+  }
+  function startEncounter(choice) {
+    const s = S(); const all = TL.data.encounters();
+    const enc = (choice && choice !== 'random' && all.find(e => e.id === choice)) || (all.length ? weighted(all, e => e.odds) : null);
+    const R = TL.data.rules();
+    s.enc = { id: enc?.id || null, combats: 0, carousels: 0, beatDone: false, granted: [] };
+    s.augPlan = augPlan(enc);
+    s.augRerollsMax = 1 + ((enc?.effect?.type === 'augment-rerolls') ? (enc.effect.extra || 1) : 0);
+    if (enc?.effect?.type === 'gold-subscription' && R.goldSubscription) s.enc.goldRow = weighted(R.goldSubscription, r => r.odds).byStage;
+    return enc;
+  }
+  function applyEncounterStart(enc) {
+    const s = S(); const eff = enc?.effect || {};
+    // starting champion: random 1-cost by default (inferred from "your starting champion" encounter text)
+    if (eff.type !== 'prismatic-tour') {
+      const c = randChamp(eff.type === 'starting-champion' && eff.cost ? eff.cost : 1);
+      const u = c && grantChamp(c.id, eff.type === 'starting-champion' && eff.star ? eff.star : 1);
+      if (u) { s.enc.startingChamp = c.id; s.enc.granted.push(`시작 챔피언 ${TL.data.name(c)}${u.star > 1 ? ' ' + u.star + '성' : ''}`); }
+    } else {
+      const seen = new Set();
+      for (let k = 0; k < (eff.units || 3); k++) { const c = randChamp(1, x => x.traits.some(t => (eff.bands || []).includes(t)) && !seen.has(x.id)); if (c && grantChamp(c.id)) { seen.add(c.id); s.enc.granted.push(TL.data.name(c)); } }
+      s.enc.startingChamp = [...seen][0] || null;
+    }
+    if (eff.type === 'grant' && eff.at === 'start') s.enc.granted.push(...grantItems(eff.items, `조우자 ${enc.name}`));
+    if (eff.type === 'star-attraction') {
+      const c = randChamp(eff.cost || 5); const it = TL.pick(TL.data.items().filter(i => i.type === 'completed' && i.id !== TL.THIEF));
+      if (c) { const u = grantChamp(c.id, 1, { lockedUntil: eff.fieldableFrom || '4-6' }); if (u) { u.items = [it.id]; s.enc.granted.push(`${TL.data.name(c)} + ${it.nameKo || it.name} (${eff.fieldableFrom} 전 배치 불가)`); } }
+    }
+    if (s.enc.goldRow) { s.gold += s.enc.goldRow[0] || 0; if (s.enc.goldRow[0]) s.enc.granted.push(`Stage 1 골드 +${s.enc.goldRow[0]}`); }
+  }
+  function stageStartEffects() { // called at x-1 planning
+    const s = S(); const eff = effOf();
+    if (s.enc?.goldRow) { const g = s.enc.goldRow[Math.min(s.stage, s.enc.goldRow.length) - 1] || 0; if (g) { s.gold += g; log(`조우자 Gold Subscription: Stage ${s.stage} +${g}G`, 'gold'); } }
+    if (eff.type === 'reroll-subscription') { const n = eff.count || 2; s.freeRerolls = (s.freeRerolls || 0) + n; log(`조우자 Reroll Subscription: 무료 새로고침 +${n}${eff.count ? '' : ' (횟수 미공개 · 훈련값)'}`, 'roll'); }
+  }
+  function roundEffects() { // called at every planning start
+    const s = S(); const eff = effOf(); const r = rid();
+    if (eff.type === 'grant' && eff.at === r) grantItems(eff.items, `조우자 ${encOf().name} (${r})`);
+  }
+  function combatTick() { // every combat (PvE or PvP)
+    const s = S(); const eff = effOf(); if (!s.enc) return; s.enc.combats++;
+    if (eff.type === 'superstar' && s.enc.startingChamp && s.enc.combats % (eff.every || 2) === 0) { if (grantChamp(s.enc.startingChamp)) { log(`조우자 Superstar: ${TL.data.name(TL.data.champ(s.enc.startingChamp))} 복사본 +1`, 'item'); merge(); } }
+  }
+  function beatDropCheck() {
+    const s = S(); const eff = effOf(); const R = TL.data.rules();
+    if (eff.type !== 'beat-drop' || s.enc.beatDone || s.hp > (eff.hp || 40) || s.hp <= 0 || !R.beatDrop) return;
+    s.enc.beatDone = true;
+    const q = Math.random() * 100 < R.beatDrop.high.chance ? 'high' : 'standard'; const roll = weighted(R.beatDrop[q].rolls, x => x[0]);
+    grantItems(roll[1], `조우자 Beat Drop (체력 ${eff.hp || 40} 이하 · ${q === 'high' ? '고품질' : '일반'})`);
+  }
+  function xpNeed(level) { const n = E.xpToNext(level); if (n == null) return null; const ch = effOf().type === 'cheaper-levels' ? (effOf().xp || 2) : 0; return Math.max(0, n - ch); }
 
   /* ---------- shop ---------- */
   function drawChamp(level, excludeCounts = {}) {
@@ -86,6 +176,7 @@
   function reroll() {
     const s = S(); if (s.phase !== 'planning') return;
     const cost = TL.data.rules().rerollCost ?? 2;
+    if (s.freeRerolls > 0) { s.freeRerolls--; s.stats.rolls++; s.locked = false; refreshShop(); log(`무료 새로고침 (남은 ${s.freeRerolls})`, 'roll'); TL.save(); render(); return; }
     if (s.gold < cost) return TL.toast(`골드 부족 (새로고침 ${cost}G)`, 'err');
     s.gold -= cost; s.stats.rollGold += cost; s.stats.rolls++; s.locked = false; refreshShop(); log(`새로고침 −${cost}G`, 'roll'); TL.save(); render();
   }
@@ -94,11 +185,11 @@
     const R = TL.data.rules(); const cost = R.xpBuyCost ?? 4;
     if (s.level >= (R.maxLevelByXp || 10)) return TL.toast('XP로 올릴 수 있는 최대 레벨이야.', 'err');
     if (s.gold < cost) return TL.toast(`골드 부족 (XP 구매 ${cost}G)`, 'err');
-    s.gold -= cost; s.stats.xpGold += cost; s.stats.xpBuys++; addXp(R.xpPerBuy ?? 4); log(`XP 구매 +${R.xpPerBuy ?? 4} −${cost}G → Lv${s.level} (${s.xp}/${E.xpToNext(s.level) ?? '-'})`, 'xp'); TL.save(); render();
+    s.gold -= cost; s.stats.xpGold += cost; s.stats.xpBuys++; addXp(R.xpPerBuy ?? 4); log(`XP 구매 +${R.xpPerBuy ?? 4} −${cost}G → Lv${s.level} (${s.xp}/${xpNeed(s.level) ?? '-'})`, 'xp'); TL.save(); render();
   }
   function addXp(n) {
     const s = S(); const R = TL.data.rules(); s.xp += n;
-    while (s.level < (R.maxLevelByXp || 10)) { const need = E.xpToNext(s.level); if (need == null || s.xp < need) break; s.xp -= need; s.level++; s.levelLog.push({ level: s.level, r: rid() }); log(`레벨 업 → Lv${s.level}`, 'lvl'); }
+    while (s.level < (R.maxLevelByXp || 10)) { const need = xpNeed(s.level); if (need == null || s.xp < need) break; s.xp -= need; s.level++; s.levelLog.push({ level: s.level, r: rid() }); log(`레벨 업 → Lv${s.level}`, 'lvl'); }
     if (s.level >= (R.maxLevelByXp || 10)) s.xp = 0;
   }
   function benchFree() { return S().bench.findIndex(x => !x); }
@@ -144,6 +235,7 @@
   function moveUnit(uid, target) {
     const s = S(); const u = findU(uid); if (!u) return; const onBoard = s.board.includes(u);
     if (target.zone === 'board') {
+      if (u.lockedUntil && !s.board.includes(u)) { const [a, b] = u.lockedUntil.split('-').map(Number); if (rid10() < a * 10 + b) return TL.toast(`조우자 Star Attraction: ${u.lockedUntil}부터 배치할 수 있어.`, 'err'); }
       const occ = s.board.find(x => x.pos === target.pos);
       if (onBoard) { if (occ && occ !== u) occ.pos = u.pos; u.pos = target.pos; }
       else { const si = s.bench.indexOf(u); if (occ) { s.bench[si] = occ; s.board.splice(s.board.indexOf(occ), 1); delete occ.pos; } else { if (s.board.length >= cap()) return TL.toast(`배치 인원 초과 (Lv${s.level} → ${cap()}명)`, 'err'); s.bench[si] = null; } u.pos = target.pos; s.board.push(u); }
@@ -176,9 +268,11 @@
   function startPlanning(skipIncome) {
     const s = S(); s.phase = 'planning';
     if (!skipIncome) income();
+    if (!skipIncome && s.round === 1 && s.stage >= 2) stageStartEffects();
+    if (!skipIncome) roundEffects();
     s.stats.goldStarts.push({ r: rid(), g: s.gold });
     if (!s.locked) refreshShop(); else log('상점 잠금 유지', 'sys');
-    if (E.isAugmentRound(s.stage, s.round) && !s.augments.some(a => a.at === rid())) { s.phase = 'augment'; s.augOffer = []; s.augRerolled = false; }
+    if (E.isAugmentRound(s.stage, s.round) && !s.augments.some(a => a.at === rid())) { s.phase = 'augment'; s.augOffer = []; s.augRerolled = false; s.augRerolls = 0; const idx = (TL.data.rules().augmentRounds || []).indexOf(rid()); const planned = (s.augPlan || [])[idx]; if (planned) genAugOffer(planned); }
     checkpoint();
     s.roundStart = null; s.roundStart = TL.clone({ ...s, roundStart: null, log: [], history: [] });
   }
@@ -202,7 +296,8 @@
     const comps = TL.data.items().filter(i => i.type === 'component' && !['spatula', 'frying-pan'].includes(i.id));
     const done = TL.data.items().filter(i => i.type === 'completed' && i.id !== TL.THIEF);
     const list = shopPool().filter(c => costs.includes(c.cost) && (s.pool[c.id] || 0) > 0);
-    s.carousel = TL.shuffle(list).slice(0, 9).map(c => ({ champ: c.id, item: (st >= 5 && Math.random() < 0.5 ? TL.pick(done) : TL.pick(comps)).id }));
+    const cr = (TL.data.rules().carousel || {})[String(Math.min(st, 7))]; const size = cr && cr.size ? weighted(cr.size, x => x[1])[0] : 9;
+    s.carousel = TL.shuffle(list).slice(0, size).map(c => ({ champ: c.id, item: (st >= 5 && Math.random() < 0.5 ? TL.pick(done) : TL.pick(comps)).id }));
   }
   function pickCarousel(i) {
     const s = S(); const o = s.carousel[i]; if (!o) return;
@@ -210,6 +305,7 @@
     if (free >= 0) s.bench[free] = u; s.pool[o.champ] = Math.max(0, (s.pool[o.champ] || 0) - 1); s.items.push(o.item);
     log(`회전초밥: ${TL.data.champ(o.champ).name} + ${TL.data.item(o.item)?.nameKo || o.item}`, 'item'); merge();
     s.history.push({ r: rid(), type: 'carousel' });
+    if (s.enc) { s.enc.carousels = (s.enc.carousels || 0) + 1; const eff = effOf(); if (eff.type === 'after-carousels' && s.enc.carousels <= (eff.count || 2)) grantItems(eff.items, `조우자 ${encOf().name} (${s.enc.carousels}번째 회전초밥 후)${eff.note ? ' — ' + eff.note : ''}`); }
     if (TL.data.rules().carouselGivesXp && !(s.stage === 1 && s.round === 1)) addXp(TL.data.rules().passiveXpPerRound ?? 2);
     nextRound();
   }
@@ -219,6 +315,7 @@
     let got = [], gold = 0;
     if (s.stage === 1) { got.push(TL.pick(comps).id); gold = TL.rand(3); }
     else { const n = s.stage <= 4 ? 2 : 1; for (let k = 0; k < n; k++) got.push(TL.pick(comps).id); if (s.stage >= 5) got.push(TL.pick(done).id); gold = TL.rand(s.stage * 2 + 1); }
+    if (effOf().type === 'pve-bonus') got.push(TL.pick(comps).id);
     s.items.push(...got); s.gold += gold;
     log(`PvE 전리품(훈련 모델): ${got.map(i => TL.data.item(i)?.nameKo || i).join(', ')}${gold ? ' + ' + gold + 'G' : ''}`, 'item');
   }
@@ -239,7 +336,7 @@
     const s = S(); if (s.phase !== 'planning') return;
     const type = E.roundType(s.stage, s.round);
     if (s.board.length > cap()) return TL.toast('배치 인원 초과 상태로는 전투를 시작할 수 없어.', 'err');
-    if (type === 'pve') { lootPvE(); s.history.push({ r: rid(), type: 'pve', result: 'pve' }); log('PvE 라운드 승리 처리(연속 기록 유지)', 'sys'); return endRound(); }
+    if (type === 'pve') { lootPvE(); s.history.push({ r: rid(), type: 'pve', result: 'pve' }); log('PvE 라운드 승리 처리(연속 기록 유지)', 'sys'); combatTick(); return endRound(); }
     if (type === 'pvp') {
       const tr = E.traits(s.board); const me = power(s.board, tr); const typ = typicalOpp(s.stage, s.round);
       const mult = TL.clamp(1 + (Math.random() + Math.random() + Math.random() - 1.5) * 0.25, 0.7, 1.35); const opp = typ.p * mult;
@@ -262,6 +359,7 @@
     s.history.push({ r: rid(), type: 'pvp', result: win ? 'win' : 'loss', dmg, me: +info.me.toFixed(1), opp: +info.opp.toFixed(1), p: +info.pWin.toFixed(2), gold: s.gold, level: s.level, hp: s.hp });
     log(win ? `PvP 승리 (추정 승률 ${(info.pWin * 100).toFixed(0)}%) · ${s.streak}연승` : `PvP 패배 −${dmg} (기본 ${E.stageDamage(s.stage)} + 생존 ${surv}) · ${-s.streak}연패 · 체력 ${s.hp}`, win ? 'win' : 'loss');
     botsCombat();
+    beatDropCheck(); combatTick();
     endRound();
   }
   function botsCombat() {
@@ -310,7 +408,8 @@
   /* ---------- augments ---------- */
   function genAugOffer(tier) {
     const s = S(); const owned = new Set(s.augments.map(a => a.id));
-    const t = tier || TL.pick(['Silver', 'Gold', 'Prismatic']);
+    const idx = (TL.data.rules().augmentRounds || []).indexOf(rid());
+    const t = tier || (s.augPlan || [])[idx] || TL.pick(['Silver', 'Gold', 'Prismatic']);
     const r = rid(); const pool = TL.data.augs().filter(a => a.tier === t && !owned.has(a.id)); const byRound = pool.filter(a => !(a.rounds && a.rounds.length) || a.rounds.includes(r));
     s.augTier = t; s.augOffer = TL.shuffle(byRound.length >= 3 ? byRound : pool).slice(0, 3).map(a => a.id);
   }
@@ -327,17 +426,17 @@
     const el = TL.$('#view-sim');
     if (!S()) return renderStart(el);
     const s = S(); const R = TL.data.rules();
-    const need = E.xpToNext(s.level); const tr = E.traits(s.board); const type = E.roundType(s.stage, s.round);
+    const need = xpNeed(s.level); const tr = E.traits(s.board); const type = E.roundType(s.stage, s.round);
     const nextInterest = E.interest(s.gold); const toNextThreshold = s.gold >= 50 ? 0 : 10 - (s.gold % 10);
     const me = power(s.board, tr), typ = typicalOpp(s.stage, s.round);
     el.innerHTML = `
     <div class="view-head"><div><h2>Game Simulator <span class="muted small">운영 시뮬레이터</span></h2><p>단축키: <span class="kbd">D</span> 새로고침 · <span class="kbd">F</span> XP 구매 · <span class="kbd">E</span> 선택 유닛 판매 · <span class="kbd">Space</span> 전투/다음 · 우클릭 = 판매</p></div>
       <div class="row"><span class="pill">${s.combatMode === 'auto' ? '전투: 자동 추정' : '전투: 수동 입력'}</span><button class="sm" id="sMode">모드 전환</button><button class="sm" id="sRestart">라운드 시작으로 되돌리기</button><button class="sm danger" id="sNew">새 게임</button></div></div>
-    <div class="notice purple tiny" style="margin-bottom:10px"><b>실제 규칙 적용</b>: 수입·이자·연속 보너스·XP 표·상점 확률·풀 크기·판매가·스테이지 피해·라운드 구조·증강 라운드·3장 합성·아이템 조합표 (출처: game-rules/shop-odds — <b>Set 18 라이브 값, Set 19 미확인</b>). <b>훈련용 모델</b>: 전투 결과 추정, 상대 7명(봇), PvE 전리품, 회전초밥 구성, 증강 등급, 다른 플레이어의 풀 사용량.</div>
+    <div class="notice purple tiny" style="margin-bottom:10px"><b>실제 규칙 적용 (${TL.esc(TL.data.rules().meta?.patch || '')})</b>: 1-1 조우자·증강 등급 순서·스테이지 피해·XP 표·상점 확률·풀 크기(7코 포함)·회전초밥 크기·조우자 효과표(Gold Subscription·Beat Drop) — Set 19 PBE 표 / 수입·이자·연속 보너스·판매가 — Set 18 값 유지. <b>훈련용 모델</b>: 전투 결과 추정, 상대 7명(봇), PvE 전리품, 회전초밥 챔피언 구성, 시작 챔피언 선정(무작위 1코스트, 추론), 다른 플레이어의 풀 사용량.</div>
     <div class="hud">
-      <div class="kpi"><span>라운드</span><b class="gold-t">${rid()}</b><small>${({ pvp: 'PvP', pve: 'PvE', carousel: '회전초밥' })[type]}${E.isAugmentRound(s.stage, s.round) ? ' · 증강' : ''}</small></div>
+      <div class="kpi"><span>라운드</span><b class="gold-t">${rid()}</b><small>${({ pvp: 'PvP', pve: 'PvE', carousel: '회전초밥', encounter: '조우자' })[type] || type}${E.isAugmentRound(s.stage, s.round) ? ' · 증강' : ''}</small></div>
       <div class="kpi"><span>체력</span><b class="${s.hp <= 30 ? 'red-t' : ''}">${s.hp}</b><small>패배 피해 ${E.stageDamage(s.stage)}+α</small></div>
-      <div class="kpi"><span>골드</span><b class="gold-t">${s.gold}G</b><small>이자 ${nextInterest}${toNextThreshold && s.gold < 50 ? ` · +${toNextThreshold}G→다음 구간` : ' (최대)'}</small></div>
+      <div class="kpi"><span>골드</span><b class="gold-t">${s.gold}G</b><small>${s.freeRerolls ? `무료 새로고침 ${s.freeRerolls} · ` : ''}이자 ${nextInterest}${toNextThreshold && s.gold < 50 ? ` · +${toNextThreshold}G→다음 구간` : ' (최대)'}</small></div>
       <div class="kpi"><span>레벨</span><b>Lv${s.level}</b><div class="xpbar"><i style="width:${need ? Math.min(100, s.xp / need * 100) : 100}%"></i></div><small>${need ? `${s.xp}/${need} XP · 필요 ${Math.ceil((need - s.xp) / (R.xpPerBuy || 4)) * (R.xpBuyCost || 4)}G` : '최대'}</small></div>
       <div class="kpi"><span>연속</span><b class="${s.streak > 0 ? 'green-t' : s.streak < 0 ? 'red-t' : ''}">${s.streak > 0 ? s.streak + '연승' : s.streak < 0 ? -s.streak + '연패' : '-'}</b><small>보너스 ${E.streakGold(s.streak)}G</small></div>
       <div class="kpi"><span>배치</span><b class="${s.board.length > cap() ? 'red-t' : ''}">${s.board.length}/${cap()}</b><small>대기석 ${s.bench.filter(Boolean).length}/${s.bench.length}</small></div>
@@ -375,6 +474,7 @@
         </div>
       </div>
       <div class="col" style="gap:12px">
+        ${s.phase !== 'encounter' && encOf() ? encounterHTML(false) : ''}
         <div class="panel"><h3>특성</h3>${E.traitsHTML(tr, false)}</div>
         <div class="panel"><h3>증강 (${s.augments.length})</h3>${s.augments.map(a => `<div class="tiny"><b class="tier-${a.tier}">${TL.esc(a.name)}</b> · ${a.at}${a.reason ? ' — ' + TL.esc(a.reason) : ''}</div>`).join('') || '<div class="tiny">아직 없음 (2-1 / 3-2 / 4-2)</div>'}
           <details><summary>수동 보정 (증강·특성 효과 반영)</summary><div class="tiny" style="margin:4px 0">증강/특성 효과(설명의 수치 참고)를 직접 반영. 모든 보정은 로그에 "수동"으로 기록돼.</div>
@@ -390,17 +490,18 @@
     const s = S(); const out = [];
     for (let st = Math.max(1, s.stage - 1); st <= s.stage + 1; st++) for (let r = 1; r <= E.roundsInStage(st); r++) {
       const id = `${st}-${r}`; const h = s.history.find(x => x.r === id); const cur = st === s.stage && r === s.round;
-      const t = E.roundType(st, r); out.push(`<span class="${cur ? 'cur' : ''} ${h ? 'done ' + (h.result === 'win' ? 'w' : h.result === 'loss' ? 'l' : '') : ''}" title="${t}${E.isAugmentRound(st, r) ? ' + 증강' : ''}">${id}${t === 'carousel' ? '🎠' : t === 'pve' ? '👾' : ''}${E.isAugmentRound(st, r) ? '✦' : ''}${h?.result === 'win' ? '✓' : h?.result === 'loss' ? '✗' : ''}</span>`);
+      const t = E.roundType(st, r); out.push(`<span class="${cur ? 'cur' : ''} ${h ? 'done ' + (h.result === 'win' ? 'w' : h.result === 'loss' ? 'l' : '') : ''}" title="${t}${E.isAugmentRound(st, r) ? ' + 증강' : ''}">${id}${t === 'carousel' ? '🎠' : t === 'pve' ? '👾' : t === 'encounter' ? '🎭' : ''}${E.isAugmentRound(st, r) ? '✦' : ''}${h?.result === 'win' ? '✓' : h?.result === 'loss' ? '✗' : ''}</span>`);
     }
     return out.join('');
   }
   function phaseHTML() {
     const s = S();
     if (s.phase === 'over') return `<div class="panel"><h3>게임 종료 — <span class="gold-t">${s.placement}위</span></h3><div class="row"><button class="primary" id="sReview2">복기 보기</button><button id="sNew2">새 게임</button></div></div>`;
+    if (s.phase === 'encounter') return encounterHTML(true);
     if (s.phase === 'carousel') return `<div class="panel"><h3>${rid()} 회전초밥 <span class="pill st st-training-model">구성: training-model</span></h3><div class="shop" style="grid-template-columns:repeat(3,minmax(0,1fr))">${s.carousel.map((o, i) => { const c = TL.data.champ(o.champ), it = TL.data.item(o.item); return shopCard(c, { attr: `data-car="${i}"`, extra: `<span class="own" style="display:flex;align-items:center;gap:3px">${TL.ui.item(o.item)}${TL.esc(it?.nameKo || it?.name || '')}</span>`, noCoin: true }); }).join('')}</div><div class="tiny" style="margin-top:6px">실제 회전초밥 순서는 체력 낮은 순(1-1은 동시) — 여기서는 원하는 1명을 고르는 연습만 해.</div></div>`;
     if (s.phase === 'augment') {
       if (!s.augOffer.length) return `<div class="panel"><h3>${rid()} 증강 선택</h3><div class="tiny" style="margin-bottom:6px">증강 등급 출현 확률은 공개되지 않아 직접 고르거나 무작위(동일 확률)로 뽑아. (training-model)</div><div class="row">${['Silver', 'Gold', 'Prismatic'].map(t => `<button class="sm" data-augt="${t}"><span class="tier-${t}">${t}</span></button>`).join('')}<button class="sm" data-augt="">무작위</button></div></div>`;
-      return `<div class="panel"><h3>${rid()} 증강 선택 · <span class="tier-${s.augTier}">${s.augTier}</span> <button class="xs" id="sAugRe" ${s.augRerolled ? 'disabled' : ''}>선택지 새로고침(1회, 훈련용)</button></h3><div class="grid g3">${s.augOffer.map(id => { const a = TL.data.aug(id); return `<button class="aug ${a.tier}" data-aug="${id}"><span class="an">${TL.esc(a.name)}</span><span class="tiny">${TL.esc(a.description)}</span><span class="chips">${a.categories.map(c => `<span class="chip">${c}</span>`).join('')}${a.relatedTraits.map(t => `<span class="chip">${TL.esc(t)}</span>`).join('')}</span></button>`; }).join('')}</div><textarea id="sAugReason" rows="2" style="margin-top:8px" placeholder="선택 이유 (현재 체력/골드/보드/아이템 관점)"></textarea><div class="tiny">증강 연구실에서 같은 선택지를 상황별로 비교할 수 있어. 설명은 현재 데이터(${TL.esc(TL.data.bundle().augments.meta.patch)}) 원문(영문). 이 라운드에 등장 가능한 증강만 제시(데이터에 등장 라운드가 있을 때).</div></div>`;
+      return `<div class="panel"><h3>${rid()} 증강 선택 · <span class="tier-${s.augTier}">${s.augTier}</span> <span class="row"><span class="tiny">등급 순서 ${(s.augPlan || []).map(t => t ? `<span class="tier-${t}">${t[0]}</span>` : '?').join('→')}</span><button class="xs" id="sAugRe" ${(s.augRerolls || 0) >= (s.augRerollsMax || 1) ? 'disabled' : ''}>선택지 새로고침 (${(s.augRerollsMax || 1) - (s.augRerolls || 0)}회 남음)</button></span></h3><div class="grid g3">${s.augOffer.map(id => { const a = TL.data.aug(id); return `<button class="aug ${a.tier}" data-aug="${id}"><span class="an">${TL.esc(a.name)}</span><span class="tiny">${TL.esc(a.description)}</span><span class="chips">${a.categories.map(c => `<span class="chip">${c}</span>`).join('')}${a.relatedTraits.map(t => `<span class="chip">${TL.esc(t)}</span>`).join('')}</span></button>`; }).join('')}</div><textarea id="sAugReason" rows="2" style="margin-top:8px" placeholder="선택 이유 (현재 체력/골드/보드/아이템 관점)"></textarea><div class="tiny">증강 연구실에서 같은 선택지를 상황별로 비교할 수 있어. 설명은 현재 데이터(${TL.esc(TL.data.bundle().augments.meta.patch)}) 원문(영문). 이 라운드에 등장 가능한 증강만 제시(데이터에 등장 라운드가 있을 때).</div></div>`;
     }
     const s2 = S();
     const R2 = TL.data.rules(); const need = E.xpToNext(s2.level);
@@ -410,6 +511,18 @@
         <button class="sb-btn" id="sRoll" ${s2.phase !== 'planning' ? 'disabled' : ''}><span>새로고침<small>D</small></span>${TL.ui.coin(R2.rerollCost ?? 2)}</button>
         <button class="sb-btn ${s2.locked ? 'on' : ''}" id="sLock"><span>${s2.locked ? '🔒 잠김' : '🔓 잠금'}<small>다음 라운드 유지</small></span></button>
       </div><div class="shop">${s2.shop.map((id, i) => { if (!id) return '<div class="card empty"></div>'; const c = TL.data.champ(id); const own = ownedCopies(id); return shopCard(c, { attr: `data-buy="${i}" ${s2.gold < c.cost ? 'style="opacity:.5;filter:grayscale(.5)"' : ''}`, extra: `${own ? `<span class="own">보유 ${own}</span>` : ''}<span class="pool">풀 ${s2.pool[id]}</span>` }); }).join('')}</div></div></div>`;
+  }
+  function encounterHTML(full) {
+    const s = S(); const e = encOf(); const meta = TL.data.encountersMeta();
+    if (!e) return full ? `<div class="panel"><h3>1-1 조우자</h3><div class="tiny">조우자 데이터가 없어.</div><button class="primary" id="sEncGo">1-2로 진행 ▶</button></div>` : '';
+    const host = e.hostChamp && TL.data.champ(e.hostChamp);
+    return `<div class="panel enc-card"><h3>${full ? '1-1 조우자 (Opening Encounter)' : '이번 판 조우자'} ${TL.statusPill(e.status || 'pbe')}</h3>
+      <div class="row nw" style="gap:12px;align-items:flex-start">${host ? TL.ui.champ(host, 'enc-host') : `<span class="cp cpf enc-host">${TL.esc((e.host || '?').slice(0, 2))}</span>`}
+        <div><div class="mc-name">${TL.esc(e.name)}</div><div class="tiny">${TL.esc(e.host || '진행자 없음')} · 등장 확률 ${e.odds}%</div><div class="small" style="margin-top:4px">${TL.esc(e.description)}</div>
+        ${e.effect?.note ? `<div class="tiny gold-t" style="margin-top:3px">※ ${TL.esc(e.effect.note)}</div>` : ''}
+        ${full && s.enc?.granted?.length ? `<div class="notice green tiny" style="margin-top:6px">받은 것: ${s.enc.granted.map(TL.esc).join(' · ')}</div>` : ''}
+        <div class="tiny" style="margin-top:4px">증강 등급 순서(2-1/3-2/4-2): ${(s.augPlan || []).map(t => t ? `<b class="tier-${t}">${t}</b>` : '?').join(' → ')}</div></div></div>
+      ${full ? `<div class="tiny" style="margin-top:8px">${TL.esc(meta?.note || '')}</div><div class="row" style="margin-top:8px"><button class="primary" id="sEncGo">1-2로 진행 ▶</button></div>` : ''}</div>`;
   }
   function shopCard(c, o = {}) {
     const art = TL.img.champ(c.id);
@@ -445,7 +558,8 @@
     TL.$$('[data-car]').forEach(b => b.onclick = () => pickCarousel(+b.dataset.car));
     TL.$$('[data-buy]').forEach(b => b.onclick = () => buy(+b.dataset.buy));
     TL.$$('[data-augt]').forEach(b => b.onclick = () => { genAugOffer(b.dataset.augt || null); TL.save(); render(); });
-    q('#sAugRe', () => { s.augRerolled = true; genAugOffer(s.augTier); TL.save(); render(); });
+    q('#sAugRe', () => { s.augRerolls = (s.augRerolls || 0) + 1; genAugOffer(s.augTier); TL.save(); render(); });
+    q('#sEncGo', () => { s.history.push({ r: rid(), type: 'encounter' }); log('1-1 종료 → 1-2', 'sys'); nextRound(); });
     TL.$$('[data-aug]').forEach(b => b.onclick = () => pickAug(b.dataset.aug, TL.$('#sAugReason')?.value || ''));
     const shopPanel = TL.$('#sShopPanel'); if (shopPanel) { shopPanel.ondragover = e => e.preventDefault(); shopPanel.ondrop = e => { let d; try { d = JSON.parse(e.dataTransfer.getData('text/plain')); } catch (x) { return; } if (d.kind === 'unit') sell(d.uid); }; }
     const click = zone => (p, uid) => {
@@ -473,11 +587,12 @@
   function renderStart(el) {
     const hist = TL.state.simHistory;
     const avg = hist.length ? (TL.sum(hist.map(h => h.placement)) / hist.length).toFixed(2) : '-';
-    el.innerHTML = `<div class="view-head"><div><h2>Game Simulator <span class="muted small">운영 시뮬레이터</span></h2><p>1-1부터 끝까지 라운드를 진행하며 골드·레벨·리롤·배치·아이템·증강 판단을 연습해.</p></div></div>
+    el.innerHTML = `<div class="view-head"><div><h2>Game Simulator <span class="muted small">운영 시뮬레이터</span></h2><p>1-1 조우자부터 끝까지 라운드를 진행하며 골드·레벨·리롤·배치·아이템·증강 판단을 연습해. (Set 19: 1-1 회전초밥 없음 — 조우자 + 시작 챔피언)</p></div></div>
     <div class="grid g2">
       <div class="panel"><h3>새 게임</h3>
-        <div class="field"><label>전투 결과 처리</label><select id="ngMode"><option value="auto">자동 추정 (훈련용 전투력 모델)</option><option value="manual">수동 입력 (매 PvP마다 승/패 직접 입력)</option></select></div>
-        <div class="row" style="margin-top:8px"><button class="primary" id="ngStart">1-1부터 시작</button></div>
+        <div class="field"><label>1-1 조우자 (Set 19 PBE 표 ${TL.data.encounters().length}종)</label><select id="ngEnc"><option value="random">무작위 (실제 등장 확률)</option>${TL.data.encounters().map(e => `<option value="${e.id}">${TL.esc(e.name)}${e.host ? ' — ' + TL.esc(e.host) : ''} (${e.odds}%)</option>`).join('')}</select></div>
+        <div class="field" style="margin-top:6px"><label>전투 결과 처리</label><select id="ngMode"><option value="auto">자동 추정 (훈련용 전투력 모델)</option><option value="manual">수동 입력 (매 PvP마다 승/패 직접 입력)</option></select></div>
+        <div class="row" style="margin-top:8px"><button class="primary" id="ngStart">1-1 조우자부터 시작</button></div>
         <div class="divider"></div>
         <h4>상황 시나리오로 시작</h4><div class="tiny">특정 상황(예: 4-1, 체력 35, 50G, Lv7)을 반복 연습. 보드/아이템은 해당 레벨의 실제 상점 확률로 무작위 생성.</div>
         <div class="fgrid" style="margin-top:6px"><div class="field"><label>스테이지</label><input type="number" id="scS" value="4" min="2" max="7"/></div><div class="field"><label>라운드</label><input type="number" id="scR" value="1" min="1" max="7"/></div><div class="field"><label>체력</label><input type="number" id="scH" value="35" min="1" max="100"/></div><div class="field"><label>골드</label><input type="number" id="scG" value="50" min="0" max="200"/></div><div class="field"><label>레벨</label><input type="number" id="scL" value="7" min="2" max="10"/></div><div class="field"><label>XP</label><input type="number" id="scX" value="0" min="0" max="80"/></div><div class="field"><label>연속(+승/−패)</label><input type="number" id="scK" value="0" min="-12" max="12"/></div></div>
@@ -487,8 +602,8 @@
         <div class="scroll" style="max-height:420px">${hist.length ? `<table class="table"><thead><tr><th>날짜</th><th>순위</th><th>종료</th><th>Lv</th><th>특성</th><th>리롤/XP 지출</th><th>이자 합</th></tr></thead><tbody>${hist.map(h => `<tr><td>${TL.fmtDate(h.date)}</td><td><b class="${h.placement <= 4 ? 'green-t' : 'red-t'}">${h.placement}</b></td><td>${h.end}</td><td>${h.level}</td><td class="tiny">${TL.esc(h.traits.join(', '))}</td><td>${h.stats.rollGold}G / ${h.stats.xpGold}G</td><td>${h.stats.interest}G</td></tr>`).join('')}</tbody></table>` : '<div class="empty">아직 완료한 게임이 없어.</div>'}</div>
       </div>
     </div>`;
-    TL.$('#ngStart').onclick = () => { newGame({ combatMode: TL.$('#ngMode').value }); render(); };
-    TL.$('#scStart').onclick = () => { const sc = { stage: TL.clamp(+TL.$('#scS').value, 2, 7), round: TL.clamp(+TL.$('#scR').value, 1, 7), hp: TL.clamp(+TL.$('#scH').value, 1, 100), gold: TL.clamp(+TL.$('#scG').value, 0, 300), level: TL.clamp(+TL.$('#scL').value, 2, 10), xp: TL.clamp(+TL.$('#scX').value, 0, 80), streak: TL.clamp(+TL.$('#scK').value, -12, 12) }; if (E.roundType(sc.stage, sc.round) === 'carousel') sc.round++; newGame({ combatMode: TL.$('#ngMode').value, scenario: sc }); render(); };
+    TL.$('#ngStart').onclick = () => { newGame({ combatMode: TL.$('#ngMode').value, encounter: TL.$('#ngEnc').value }); render(); };
+    TL.$('#scStart').onclick = () => { const sc = { stage: TL.clamp(+TL.$('#scS').value, 2, 7), round: TL.clamp(+TL.$('#scR').value, 1, 7), hp: TL.clamp(+TL.$('#scH').value, 1, 100), gold: TL.clamp(+TL.$('#scG').value, 0, 300), level: TL.clamp(+TL.$('#scL').value, 2, 10), xp: TL.clamp(+TL.$('#scX').value, 0, 80), streak: TL.clamp(+TL.$('#scK').value, -12, 12) }; if (E.roundType(sc.stage, sc.round) === 'carousel') sc.round++; newGame({ combatMode: TL.$('#ngMode').value, scenario: sc, encounter: TL.$('#ngEnc').value }); render(); };
     TL.$$('[data-preset]').forEach(b => b.onclick = () => { const [st, r, h, g, l, x, k] = JSON.parse(b.dataset.preset); TL.$('#scS').value = st; TL.$('#scR').value = r; TL.$('#scH').value = h; TL.$('#scG').value = g; TL.$('#scL').value = l; TL.$('#scX').value = x; TL.$('#scK').value = k; });
   }
   function review() {

@@ -2,14 +2,14 @@
    Drives the real UI over file:// (same as double-clicking index.html). */
 const { chromium } = require('playwright');
 const path = require('path'); const fs = require('fs');
-// App-logic tests run on a frozen fixture (Dev Drop data) so they stay deterministic when data/ is updated from PBE/live.
+// App-logic tests run on a frozen fixture (snapshot of data/ incl. Set 19 PBE rules) so they stay deterministic when data/ is updated from PBE/live.
 // USE_FIXTURE=0 runs them against the current data/. The current data itself is checked by tests/data_check.js.
 const os = require('os');
 const APP = (() => {
   if (process.env.USE_FIXTURE === '0') return path.resolve(__dirname, '..');
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'tftlab-'));
   for (const f of ['index.html', 'css', 'js', 'legacy', 'assets']) fs.cpSync(path.resolve(__dirname, '..', f), path.join(dir, f), { recursive: true });
-  fs.mkdirSync(path.join(dir, 'data')); fs.copyFileSync(path.resolve(__dirname, 'fixtures/bundle.devdrop.js'), path.join(dir, 'data/bundle.js'));
+  fs.mkdirSync(path.join(dir, 'data')); fs.copyFileSync(path.resolve(__dirname, 'fixtures/bundle.fixture.js'), path.join(dir, 'data/bundle.js'));
   return dir;
 })();
 const URL = 'file://' + path.join(APP, 'index.html');
@@ -40,7 +40,7 @@ const modalBtn = async label => { await page.click(`#modalFoot button:has-text("
   /* ---------- 1. data validation ---------- */
   const val = await S(() => { const v = TL.data.validate(TL.data.bundle()); const b = TL.data.bundle(); return { e: v.errors, w: v.warnings.length, ch: b.champions.champions.length, tr: b.traits.traits.length, au: b.augments.augments.length, it: b.items.items.length, metaOk: TL.DATA_FILES.slice(1).every(f => ['set', 'patch', 'source', 'updated', 'status'].every(k => b[f].meta && b[f].meta[k] !== undefined)) }; });
   ok('내장 데이터 검증 오류 0', val.e.length === 0, val.e.join('; '));
-  ok('데이터 규모 (챔피언 94/특성 47/증강 330)', val.ch === 94 && val.tr === 47 && val.au === 330, JSON.stringify(val));
+  ok('데이터 규모 (챔피언 94/특성 47/증강 330+)', val.ch === 94 && val.tr === 47 && val.au >= 330, JSON.stringify(val));
   ok('모든 데이터 파일 meta(set/patch/source/updated/status)', val.metaOk);
   const dataFacts = await S(() => ({ kda: TL.data.trait('K/DA').countMode, td: TL.data.trait('True Damage').tiers.map(t => t.min), collab: TL.data.trait('Collab').type, odds8: TL.data.odds().odds['8'].join('/'), xp8: TL.data.rules().xpToNext['8'], ie: TL.data.combine('b-f-sword', 'sparring-gloves')?.name, kr: TL.data.combine('recurve-bow', 'negatron-cloak')?.name }));
   ok('데이터 고증 포인트 (K/DA 별합, True Damage 3/5, Collab 순환, Lv8 확률, XP, 조합법)', dataFacts.kda === 'stars' && dataFacts.td.join() === '3,5' && dataFacts.collab === 'rotating' && dataFacts.odds8 === '15/20/32/30/3' && dataFacts.xp8 === 68 && dataFacts.ie === 'Infinity Edge' && dataFacts.kr === "Kraken's Fury", JSON.stringify(dataFacts));
@@ -162,19 +162,22 @@ const modalBtn = async label => { await page.click(`#modalFoot button:has-text("
 
   /* ---------- 3. Game Simulator ---------- */
   await go('sim');
+  await page.selectOption('#ngEnc', 'golden-gala');
   await page.click('#ngStart'); await page.waitForTimeout(150);
-  let sm = await S(() => ({ ph: TL.state.sim.phase, r: TL.state.sim.stage + '-' + TL.state.sim.round, car: TL.state.sim.carousel.length }));
-  ok('새 게임 1-1 회전초밥', sm.ph === 'carousel' && sm.r === '1-1' && sm.car === 9, JSON.stringify(sm));
-  await page.click('[data-car="0"]'); await page.waitForTimeout(100);
+  let sm = await S(() => ({ ph: TL.state.sim.phase, r: TL.state.sim.stage + '-' + TL.state.sim.round, enc: TL.state.sim.enc?.id, plan: TL.state.sim.augPlan, bench: TL.state.sim.bench.filter(Boolean).map(u => TL.data.champ(u.champ).cost) }));
+  ok('새 게임 1-1 조우자 (회전초밥 없음) + 시작 챔피언(1코스트)', sm.ph === 'encounter' && sm.r === '1-1' && sm.enc === 'golden-gala' && sm.bench.length === 1 && sm.bench[0] === 1, JSON.stringify(sm));
+  ok('조우자 효과: Golden Gala → 증강 등급 순서 골드×3', JSON.stringify(sm.plan) === '["Gold","Gold","Gold"]', JSON.stringify(sm.plan));
+  ok('조우자 화면 표시 (진행자 초상화·설명)', (await page.innerText('#view-sim')).includes('Golden Gala') && (await page.$$('.enc-card img.cp')).length >= 1);
+  await page.click('#sEncGo'); await page.waitForTimeout(100);
   sm = await S(() => ({ r: TL.state.sim.stage + '-' + TL.state.sim.round, g: TL.state.sim.gold, bench: TL.state.sim.bench.filter(Boolean).length, items: TL.state.sim.items.length, lv: TL.state.sim.level }));
-  ok('회전초밥 선택 → 1-2, 기본 수입 2G (규칙)', sm.r === '1-2' && sm.g === 2 && sm.bench === 1 && sm.items === 1 && sm.lv === 1, JSON.stringify(sm));
+  ok('1-1 → 1-2, 기본 수입 2G (규칙)', sm.r === '1-2' && sm.g === 2 && sm.bench === 1 && sm.items === 0 && sm.lv === 1, JSON.stringify(sm));
   // round progression through stage 1 (PvE)
   for (let i = 0; i < 3; i++) { await page.click('#sFight'); await page.waitForTimeout(80); }
   sm = await S(() => ({ r: TL.state.sim.stage + '-' + TL.state.sim.round, lv: TL.state.sim.level, xp: TL.state.sim.xp, ph: TL.state.sim.phase, items: TL.state.sim.items.length }));
   ok('라운드 진행 1-2→2-1 + 패시브 XP (2-1에 Lv3 2/6)', sm.r === '2-1' && sm.lv === 3 && sm.xp === 2, JSON.stringify(sm));
   ok('2-1 증강 라운드 진입', sm.ph === 'augment');
-  ok('PvE 전리품 지급(훈련 모델)', sm.items >= 4, 'items=' + sm.items);
-  await page.click('[data-augt="Gold"]'); await page.waitForTimeout(80);
+  ok('PvE 전리품 지급(훈련 모델)', sm.items >= 3, 'items=' + sm.items);
+  ok('증강 선택지 자동 제시 (미리 정해진 등급 순서)', (await page.$$('[data-aug]')).length === 3 && (await S(() => TL.state.sim.augTier)) === 'Gold');
   await page.fill('#sAugReason', '테스트 이유');
   const augId = await page.getAttribute('[data-aug]', 'data-aug');
   await page.click(`[data-aug="${augId}"]`); await page.waitForTimeout(100);
@@ -228,7 +231,7 @@ const modalBtn = async label => { await page.click(`#modalFoot button:has-text("
   // 3-1 win: streak 6 → +3, interest 4 (47G), passive 5 (3-2), win +1 = 13
   ok('라운드 수입 계산 (기본5 + 이자4 + 6연승3 + 승리1 = 13)', inc.after - inc.before === 13 && inc.r === '3-2' && inc.streak === 6, JSON.stringify(inc));
   const dmg = await S(() => { const s = TL.state.sim; s.phase = s.phase === 'augment' ? 'planning' : s.phase; s.stage = 4; s.round = 3; s.hp = 60; s.streak = 2; s.gold = 10; TL.views.sim._api.resolvePvp(false, 5, { me: 1, opp: 1, pWin: .5 }); return { hp: TL.state.sim.hp, streak: TL.state.sim.streak }; });
-  ok('패배 피해 (4스테이지 기본 8 + 생존 5 = 13), 연승 → 연패 전환', dmg.hp === 47 && dmg.streak === -1, JSON.stringify(dmg));
+  ok('패배 피해 (Set 19: 4스테이지 기본 7 + 생존 5 = 12), 연승 → 연패 전환', dmg.hp === 48 && dmg.streak === -1, JSON.stringify(dmg));
   // carousel at x-4
   sm = await S(() => ({ ph: TL.state.sim.phase, r: TL.state.sim.stage + '-' + TL.state.sim.round }));
   ok('4-4 회전초밥 라운드 진입', sm.ph === 'carousel' && sm.r === '4-4', JSON.stringify(sm));
@@ -238,7 +241,7 @@ const modalBtn = async label => { await page.click(`#modalFoot button:has-text("
   await page.click('#sFight'); await page.waitForTimeout(100);
   await page.fill('#mSurv', '3'); await modalBtn('패배');
   sm = await S(() => TL.state.sim.history.at(-1));
-  ok('수동 전투 결과 입력 (패배, 생존 3 → 8+3=11 피해)', sm.result === 'loss' && sm.dmg === 11, JSON.stringify(sm));
+  ok('수동 전투 결과 입력 (패배, 생존 3 → 7+3=10 피해)', sm.result === 'loss' && sm.dmg === 10, JSON.stringify(sm));
   // round-start rewind
   const g0 = await S(() => TL.state.sim.gold);
   await S(() => { TL.state.sim.gold += 0; }); await page.click('#sRoll').catch(() => { });
@@ -248,7 +251,7 @@ const modalBtn = async label => { await page.click(`#modalFoot button:has-text("
   await S(() => { TL.state.sim.combatMode = 'auto'; TL.state.sim.hp = 3; TL.views.sim.render(); });
   for (let i = 0; i < 40 && (await S(() => TL.state.sim.phase)) !== 'over'; i++) {
     const ph = await S(() => TL.state.sim.phase);
-    if (ph === 'carousel') await page.click('[data-car="0"]'); else if (ph === 'augment') { await page.click('[data-augt=""]'); await page.click('[data-aug]'); } else await page.click('#sFight');
+    if (ph === 'carousel') await page.click('[data-car="0"]'); else if (ph === 'encounter') await page.click('#sEncGo'); else if (ph === 'augment') { if (!(await page.$('[data-aug]'))) await page.click('[data-augt=""]'); await page.click('[data-aug]'); } else await page.click('#sFight');
     await page.waitForTimeout(40);
   }
   sm = await S(() => ({ ph: TL.state.sim.phase, pl: TL.state.sim.placement, hist: TL.state.simHistory.length }));
@@ -277,10 +280,10 @@ const modalBtn = async label => { await page.click(`#modalFoot button:has-text("
   ok('상황별 효율 변화 (경제 증강: 2-1/체력100 > 4-2/체력25)', ev[0] > ev[1], JSON.stringify(ev));
   await page.click('[data-atab="db"]'); await page.waitForTimeout(100);
   n = await page.$$eval('#aBody .aug', e => e.length);
-  ok('증강 전체 데이터베이스 330개 표시', n === 330, 'n=' + n);
+  const augN = await S(() => TL.data.augs().length); ok(`증강 전체 데이터베이스 ${augN}개 표시`, n === augN, 'n=' + n);
   await page.selectOption('#dTier', 'Prismatic'); await page.waitForTimeout(150);
   n = await page.$$eval('#aBody .aug', e => e.length);
-  ok('등급별 분류 (Prismatic 109)', n === 109, 'n=' + n);
+  const prN = await S(() => TL.data.augs().filter(a => a.tier === 'Prismatic').length); ok(`등급별 분류 (Prismatic ${prN})`, n === prN, 'n=' + n);
   await page.click('#aBody [data-note]'); await page.fill('#nR', 'Rock 7'); await page.fill('#nM', '체력 높을 때'); await modalBtn('저장');
   ok('추천 조합/상황 메모 저장', (await S(() => Object.values(TL.state.augLab.notes)[0]?.rec)) === 'Rock 7');
   await page.click('#aBody [data-cmpadd]'); await page.click('[data-atab="compare"]'); await page.waitForTimeout(80);

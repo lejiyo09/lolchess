@@ -6,7 +6,7 @@ import json, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, 'data')
 REQUIRED = ['patch-info', 'champions', 'traits', 'items', 'augments', 'shop-odds', 'game-rules']
-OPTIONAL = ['meta-comps']
+OPTIONAL = ['meta-comps', 'encounters']
 out = {}
 for f in REQUIRED + OPTIONAL:
     p = os.path.join(DATA, f + '.json')

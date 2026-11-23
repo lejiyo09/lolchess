@@ -1,0 +1,422 @@
+{
+ "meta": {
+  "set": 19,
+  "patch": "19.1 (PBE)",
+  "source": [
+   "tftflow.com Set 19 tables (pages marked \"Last Updated: Patch 19.1\"; PBE data)",
+   "https://tftflow.com/tables/set19"
+  ],
+  "updated": "2026-11-23",
+  "status": "pbe",
+  "count": 25,
+  "note": "게임 시작(1-1)에 조우자 1명이 무작위로 등장해 그 판 전체 규칙을 바꿈. Set 19 표에는 \"조우자 없음\" 항목이 없음(합계 99.94%). Set 19에는 1-1 회전초밥이 없음(회전초밥 표가 Stage 2부터).",
+  "oddsSum": 99.94
+ },
+ "encounters": [
+  {
+   "id": "augment-crescendo",
+   "name": "Augment Crescendo",
+   "odds": 5.93,
+   "description": "Malzahar changes augments this game to be silver, gold, then prismatic tier.",
+   "host": "Malzahar",
+   "hostChamp": "malzahar",
+   "effect": {
+    "type": "augment-tiers",
+    "tiers": [
+     "Silver",
+     "Gold",
+     "Prismatic"
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "cheaper-levels",
+   "name": "Cheaper Levels",
+   "odds": 5.93,
+   "description": "Janna modifies each level to cost 2 XP less.",
+   "host": "Janna",
+   "hostChamp": "janna",
+   "effect": {
+    "type": "cheaper-levels",
+    "xp": 2
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "golden-gala",
+   "name": "Golden Gala",
+   "odds": 5.93,
+   "description": "Mel changes all augments to gold tier this game.",
+   "host": "Mel",
+   "hostChamp": "mel",
+   "effect": {
+    "type": "augment-tiers",
+    "tiers": [
+     "Gold",
+     "Gold",
+     "Gold"
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "scouting-party",
+   "name": "Scouting Party",
+   "odds": 5.93,
+   "description": "Gain +1 Augment rerolls this game.",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "augment-rerolls",
+    "extra": 1
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "completed-item-anvil",
+   "name": "Completed Item Anvil",
+   "odds": 4.44,
+   "description": "Ekko grants you a completed item anvil.",
+   "host": "Ekko",
+   "hostChamp": "ekko",
+   "effect": {
+    "type": "grant",
+    "at": "start",
+    "items": [
+     [
+      "completed",
+      1
+     ]
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "component-anvils",
+   "name": "Component Anvils",
+   "odds": 4.44,
+   "description": "Jinx gives you two component anvils.",
+   "host": "Jinx",
+   "hostChamp": "jinx",
+   "effect": {
+    "type": "grant",
+    "at": "start",
+    "items": [
+     [
+      "component",
+      2
+     ]
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "gold-subscription",
+   "name": "Gold Subscription",
+   "odds": 4.44,
+   "description": "Illaoi grants you gold at the start of every stage.",
+   "host": "Illaoi",
+   "hostChamp": "illaoi",
+   "effect": {
+    "type": "gold-subscription"
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "golden-finale",
+   "name": "Golden Finale",
+   "odds": 4.44,
+   "description": "Rell turns the last augment to gold this game.",
+   "host": "Rell",
+   "hostChamp": "rell",
+   "effect": {
+    "type": "augment-tiers",
+    "tiers": [
+     null,
+     null,
+     "Gold"
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "golden-prelude",
+   "name": "Golden Prelude",
+   "odds": 4.44,
+   "description": "Ahri changes the first augment to be gold this game.",
+   "host": "Ahri",
+   "hostChamp": "ahri",
+   "effect": {
+    "type": "augment-tiers",
+    "tiers": [
+     "Gold",
+     null,
+     null
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "gwens-gifts",
+   "name": "Gwen's Gifts",
+   "odds": 4.44,
+   "description": "After the first 2 carousels, Gwen gifts players a component and a special pair of scissors.",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "after-carousels",
+    "count": 2,
+    "items": [
+     [
+      "component",
+      1
+     ]
+    ],
+    "note": "특수 가위(아이템 제거) 포함 — 시뮬레이터는 재료만 지급"
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "item-forge",
+   "name": "Item Forge",
+   "odds": 4.44,
+   "description": "On Stage 3-3, all players gain 2 random completed items and 2 Reforgers.",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "grant",
+    "at": "3-3",
+    "items": [
+     [
+      "completed",
+      2
+     ]
+    ],
+    "note": "재조합기 2개 포함 — 시뮬레이터는 완성 아이템만 지급"
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "reroll-subscription",
+   "name": "Reroll Subscription",
+   "odds": 4.44,
+   "description": "Teemo grants you free Shop rerolls every stage.",
+   "host": "Teemo",
+   "hostChamp": "teemo",
+   "effect": {
+    "type": "reroll-subscription",
+    "count": null,
+    "note": "스테이지당 무료 새로고침 횟수 미공개 → 시뮬레이터 훈련값 2회"
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "scuttle-party",
+   "name": "Scuttle Party",
+   "odds": 4.44,
+   "description": "The stage is overrun with crabs that drop bonus loot!",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "pve-bonus",
+    "note": "추가 전리품 게 — 정확한 보상 미공개 → 시뮬레이터 PvE마다 재료 +1(훈련값)"
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "2-cost-start",
+   "name": "2 Cost Start",
+   "odds": 3.7,
+   "description": "Start with a random 2-cost champion this game.",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "starting-champion",
+    "cost": 2
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "3-cost-start",
+   "name": "3 Cost Start",
+   "odds": 3.7,
+   "description": "Start with a random 3-cost champion this game.",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "starting-champion",
+    "cost": 3
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "upgraded-start",
+   "name": "Upgraded Start",
+   "odds": 3.7,
+   "description": "Kobuko upgrades your starting champion to 2-star.",
+   "host": "Kobuko",
+   "hostChamp": "kobuko",
+   "effect": {
+    "type": "starting-champion",
+    "star": 2
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "beat-drop",
+   "name": "Beat Drop",
+   "odds": 2.96,
+   "description": "Braum drops you powerful loot at 40 player health.",
+   "host": "Braum",
+   "hostChamp": "braum",
+   "effect": {
+    "type": "beat-drop",
+    "hp": 40
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "emblem-ensemble",
+   "name": "Emblem Ensemble",
+   "odds": 2.96,
+   "description": "Smeech begins your journey with 3 random emblems.",
+   "host": "Smeech",
+   "hostChamp": "smeech",
+   "effect": {
+    "type": "grant",
+    "at": "start",
+    "items": [
+     [
+      "emblem",
+      3
+     ]
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "prismatic-finale",
+   "name": "Prismatic Finale",
+   "odds": 2.96,
+   "description": "Nunu & Willump make the final augment round prismatic!",
+   "host": "Nunu & Willump",
+   "hostChamp": "nunu-and-willump",
+   "effect": {
+    "type": "augment-tiers",
+    "tiers": [
+     null,
+     null,
+     "Prismatic"
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "prismatic-opener",
+   "name": "Prismatic Opener",
+   "odds": 2.96,
+   "description": "Akali changes the first augment to prismatic this game.",
+   "host": "Akali",
+   "hostChamp": null,
+   "effect": {
+    "type": "augment-tiers",
+    "tiers": [
+     "Prismatic",
+     null,
+     null
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "prismatic-party",
+   "name": "Prismatic Party",
+   "odds": 2.96,
+   "description": "Rakan changes all augments to prismatic tier this game.",
+   "host": "Rakan",
+   "hostChamp": "rakan",
+   "effect": {
+    "type": "augment-tiers",
+    "tiers": [
+     "Prismatic",
+     "Prismatic",
+     "Prismatic"
+    ]
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "star-attraction",
+   "name": "Star Attraction",
+   "odds": 2.96,
+   "description": "Gain a 5-cost champion holding a recommended item that cannot be fielded until Stage 4-6.",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "star-attraction",
+    "cost": 5,
+    "fieldableFrom": "4-6"
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "superstar",
+   "name": "Superstar",
+   "odds": 2.96,
+   "description": "Gain another copy of your starting champion every 2 combats.",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "superstar",
+    "every": 2
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "lucky-treasure",
+   "name": "Lucky Treasure",
+   "odds": 2.22,
+   "description": "On Stage 3-5, all players gain a Radiant Lucky Item Chest.",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "grant",
+    "at": "3-5",
+    "items": [
+     [
+      "radiant",
+      1
+     ]
+    ],
+    "note": "Radiant Lucky Item Chest 내용 미공개 → 시뮬레이터 무작위 찬란한 아이템 1개"
+   },
+   "status": "pbe"
+  },
+  {
+   "id": "prismatic-tour",
+   "name": "Prismatic Tour",
+   "odds": 2.22,
+   "description": "All augments offered this game will be prismatic tier. Gain 3 different 1-cost Prismatic Tour members.",
+   "host": null,
+   "hostChamp": null,
+   "effect": {
+    "type": "prismatic-tour",
+    "tiers": [
+     "Prismatic",
+     "Prismatic",
+     "Prismatic"
+    ],
+    "units": 3,
+    "bands": [
+     "Pentakill",
+     "Ionic Spark",
+     "True Damage",
+     "Heartsteel",
+     "K/DA"
+    ]
+   },
+   "status": "pbe"
+  }
+ ]
+}

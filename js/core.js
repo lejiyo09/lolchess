@@ -3,7 +3,7 @@
 'use strict';
 window.TL = window.TL || {};
 (function (TL) {
-  const APP_VERSION = '2.2.0';
+  const APP_VERSION = '2.3.0';
   TL.APP_VERSION = APP_VERSION;
   TL.THIEF = 'thiefs-gloves';
   TL.views = TL.views || {};
@@ -242,6 +242,8 @@ window.TL = window.TL || {};
     },
     bundle: () => D.bundle, base: () => D.base, isOverridden: () => D.overridden,
     meta: () => (D.bundle && D.bundle['meta-comps']) || (D.base && D.base['meta-comps']) || null,
+    encounters: () => ((D.bundle && D.bundle.encounters) || (D.base && D.base.encounters) || { encounters: [] }).encounters,
+    encountersMeta: () => ((D.bundle && D.bundle.encounters) || (D.base && D.base.encounters) || {}).meta || null,
     patch: () => D.bundle['patch-info'],
     statusLegend: () => (D.bundle ? D.bundle['patch-info'].statusLegend : {}) || {},
     champs: () => D.bundle.champions.champions,

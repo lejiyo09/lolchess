@@ -7,7 +7,7 @@
 - GitHub Pages에 그대로 올려도 동작 (서비스 워커로 첫 방문 후 오프라인 캐시)
 - 기록은 브라우저 localStorage, 데이터셋 교체본과 백업은 IndexedDB에 저장
 
-> ⚠️ **데이터 상태 (2026-11-23 기준)** — 챔피언·특성·증강·아이템: **PBE 16.24 게임 데이터 (2026-11-20 16:44 UTC 빌드)**, 이전 PBE 빌드 대비 밸런스 변경 45건 반영. 메타 덱: **tft.ninja PBE 통계 (최근 1일 579.6k 판, 2026-11-23 01:45 UTC 집계)**. 상점 확률·XP·경제 규칙은 아직 Set 18 값(`carryover`). 대회 기준 19.2는 2026-12-15 예정. CommunityDragon에는 아직 Set 19가 없음. 롤체지지(lolchess.gg)는 자동 접속을 차단(CloudFront 403)해 사용하지 못함. 자세한 내용: [`docs/DATA_VERIFICATION.md`](docs/DATA_VERIFICATION.md)
+> ⚠️ **데이터 상태 (2026-11-23 기준)** — 챔피언·특성·증강·아이템: **PBE 16.24 게임 데이터 (2026-11-20 16:44 UTC 빌드)**. 게임 규칙: **Set 19 PBE 표(tftflow.com, "Patch 19.1")** — 1-1은 회전초밥이 아니라 **조우자(Opening Encounter, 25종)** + 시작 챔피언, 스테이지 피해 2/6/7/10/12/17(8+는 150), 7→8 XP 60, 증강 등급 순서표, 상점 확률·풀(7코스트 9장). 기본 수입·이자·연속 보너스·판매가만 Set 18 값(`carryover`). 메타 덱: tft.ninja PBE 통계. 대회 기준 19.2는 2026-12-15 예정. 자세한 내용: [`docs/DATA_VERIFICATION.md`](docs/DATA_VERIFICATION.md)
 
 ## 실행
 
@@ -34,7 +34,7 @@
 | 1 | **Dashboard** | 대회 D-day, 데이터 검증 상태, 패치 일정, 훈련 지표, 체크리스트, 권장 루틴 |
 | 2 | **Team Builder** | 7×4 헥스 보드, 드래그 앤 드롭(로스터→보드/대기석, 보드↔대기석, 스왑), 대기석 9칸, 별 1~3, 아이템 장착/해제·재료 자동 조합·상징 규칙, 레벨별 배치 인원 제한(전략가 아이템 +1), 특성 단계 시각화(브론즈/실버/골드/프리즘), 코스트·특성·해금 필터, 한/영 검색, 해금 상태 관리, Collab 지정, 조합 저장/불러오기/덮어쓰기/복제, 장단점·핵심 아이템 메모, 딜러/탱커 지정, 최대 3개 조합 비교, 배치 변경 전후 비교, PNG 이미지 내보내기, 조합 JSON |
 | 3 | **Meta Comps** | PBE 메타 덱 65개(tft.ninja, 최근 1일 57.9만 판): 등급 S/A/B, 평균 등수·TOP4·1등률·픽률, ★★★ 목표·캐리 아이템·우선순위, 특성, 핵심/유연 유닛, 모을 재료, 레벨별 보드, 변형, 전환 후보, 팀 빌더로 불러오기 |
-| 4 | **Game Simulator** | 1-1부터 라운드 진행(회전초밥·PvE·PvP·증강 2-1/3-2/4-2), 체력·레벨·XP·골드·연승/연패·상점·대기석·아이템·증강 관리, XP 구매/리롤/구매/판매/잠금/배치/아이템 조합, 3장 자동 합성, 공유 풀(7명 봇), 해금 처리(다음 상점 보장), 경쟁 시나리오, 롤다운 확률 계산기(몬테카를로), 판단 포인트 메모, 상황 시나리오 시작, 라운드 시작으로 되돌리기, 복기(레벨 타이밍 vs 가이드), 단축키 D/F/E/Space |
+| 4 | **Game Simulator** | **1-1 조우자**(25종, 실제 등장 확률 또는 직접 선택) + 시작 챔피언 → 라운드 진행(PvE·PvP·x-4 회전초밥·증강 2-1/3-2/4-2, 증강 등급 순서는 게임 시작 시 확률표로 결정), 조우자 효과 자동 적용(Gold Subscription·Beat Drop 표, Superstar, Star Attraction, Item Forge 등), 체력·레벨·XP·골드·연승/연패·상점·대기석·아이템·증강 관리, XP 구매/리롤/구매/판매/잠금/배치/아이템 조합, 3장 자동 합성, 공유 풀(7명 봇), 해금 처리(다음 상점 보장), 경쟁 시나리오, 롤다운 확률 계산기(몬테카를로), 판단 포인트 메모, 상황 시나리오 시작, 라운드 시작으로 되돌리기, 복기(레벨 타이밍 vs 가이드), 단축키 D/F/E/Space |
 | 5 | **Augment Lab** | 증강 330개 전체 DB(등급·종류·분류·관련 특성 필터), 현재 상황(라운드·체력·골드·레벨·연속·운영 방향·내 보드 특성) 기반 적합도 비교, 3지선다 선택 연습(먼저 고르고 근거 공개), 증강별 추천 조합/상황 메모/개인 평가, 선택 기록·통계·CSV |
 | 6 | **Scouting** | 로비 상대 최대 7명 보드·조합·아이템·메모, 실제 대면 방향(180° 회전) 표시, 내 보드(팀 빌더에서 가져오기), 암살자·광역·딜러 보호 체크(위험 점수·위험 칸 강조), 배치안 A/B 저장·비교, 경쟁 챔피언 장수 계산 |
 | 7 | **Decision Training** | 17개 상황 문제(선택지별 0~3점 합리성·해설·기회비용, 복수 정답 허용, 이유 작성·핵심 근거 자기 점검), 실제 데이터로 확률을 계산하는 상황 생성기, 분야별 점수 |
@@ -71,6 +71,10 @@ python3 tools/update_from_blitz_pbe.py --src tools/sources/<새 스냅샷>.json
 
 ```bash
 python3 tools/build_meta_comps.py --src tools/sources/<새 tft.ninja 스냅샷>.json
+```
+
+```bash
+python3 tools/apply_tftflow_set19.py
 ```
 
 ```bash
@@ -131,6 +135,10 @@ node tests/pwa.js
 ```
 
 ```bash
+node tests/encounters.js
+```
+
+```bash
 node tests/data_check.js
 ```
 
@@ -145,6 +153,7 @@ node tests/data_check.js
 
 ## 출처
 
+- Set 19 규칙 표(조우자·증강 등급·회전초밥·상점 확률·풀·XP·피해·Gold Subscription·Beat Drop): tftflow.com — https://tftflow.com/tables/set19
 - PBE 메타 덱 통계: tft.ninja PBE comps — https://tft.ninja/comps?e=pbe
 - PBE 게임 데이터: Blitz.gg Set 19 공개 페이지 내장 데이터 — https://blitz.gg/tft/set19
 - 게임 아트: 챔피언 초상화·특성 아이콘(tft.ninja 제공 Set 19 이미지), 아이템 아이콘(CommunityDragon 게임 파일). 모든 게임 아트의 권리는 Riot Games에 있습니다.

@@ -76,17 +76,24 @@
     TL.$$('[data-atab]').forEach(b => b.onclick = () => { tab = b.dataset.atab; render(); });
     ({ practice, compare, db, history })[tab](TL.$('#aBody'), traits);
   }
+  // marginal tier odds for an augment round from the Set 19 sequence table (game-rules.augmentTierSequences)
+  function tierOdds(stage) {
+    const seqs = TL.data.rules().augmentTierSequences; const idx = (TL.data.rules().augmentRounds || ['2-1', '3-2', '4-2']).indexOf(stage);
+    if (!seqs || idx < 0) return null; const tot = TL.sum(seqs.map(x => x.w)); const o = { Silver: 0, Gold: 0, Prismatic: 0 };
+    seqs.forEach(x => { o[x.t[idx]] = (o[x.t[idx]] || 0) + x.w / tot; }); return o;
+  }
+  function tierByOdds(stage) { const o = tierOdds(stage); if (!o) return TL.pick(['Silver', 'Gold', 'Prismatic']); let r = Math.random(); for (const [k, v] of Object.entries(o)) { r -= v; if (r < 0) return k; } return 'Gold'; }
   function practice(host, traits) {
     const a = A(); const ctx = a.ctx;
     const offer = a.offer.map(id => TL.data.aug(id)).filter(Boolean);
-    host.innerHTML = `<div class="panel"><h3>3개 선택지 연습 <span class="row"><select id="aTier">${['Silver', 'Gold', 'Prismatic', 'random'].map(t => `<option value="${t}" ${ctx.tier === t ? 'selected' : ''}>${t === 'random' ? '무작위 등급' : t}</option>`).join('')}</select><button class="sm primary" id="aRoll">선택지 뽑기</button><label class="row tiny"><input type="checkbox" id="aReveal" ${revealed ? 'checked' : ''}/> 적합도 미리 보기</label></span></h3>
+    host.innerHTML = `<div class="panel"><h3>3개 선택지 연습 <span class="row"><select id="aTier">${['Silver', 'Gold', 'Prismatic', 'random'].map(t => `<option value="${t}" ${ctx.tier === t ? 'selected' : ''}>${t === 'random' ? '실제 확률로 등급' : t}</option>`).join('')}</select>${(() => { const o = tierOdds(ctx.stage); return o ? `<span class="tiny">${ctx.stage} 등급 확률: ${Object.entries(o).map(([k, v]) => `<span class="tier-${k}">${k[0]} ${(v * 100).toFixed(1)}%</span>`).join(' · ')}</span>` : ''; })()}<button class="sm primary" id="aRoll">선택지 뽑기</button><label class="row tiny"><input type="checkbox" id="aReveal" ${revealed ? 'checked' : ''}/> 적합도 미리 보기</label></span></h3>
       ${offer.length ? `<div class="grid g3">${offer.map(x => augCard(x, revealed || a.picked ? evaluate(x, ctx, traits) : null, { click: true, sel: a.picked === x.id, actions: true })).join('')}</div>
       <textarea id="aReason" rows="2" style="margin-top:8px" placeholder="선택 이유: 체력/골드/레벨/보드/아이템 관점 + 포기한 선택지의 기회비용">${TL.esc(a._reason || '')}</textarea>
       <div class="row between" style="margin-top:6px"><span class="tiny">${a.picked ? `선택: <b class="gold-t">${TL.esc(TL.data.aug(a.picked)?.name)}</b> — 아래 버튼으로 기록` : '카드를 클릭해 선택 → 적합도 비교가 공개돼.'}</span><button class="sm gold" id="aSave" ${a.picked ? '' : 'disabled'}>선택 기록</button></div>` : '<div class="empty">"선택지 뽑기"를 눌러 시작해. (같은 등급 3개)</div>'}
     </div>`;
     TL.$('#aTier').onchange = e => { ctx.tier = e.target.value; TL.save(); };
     TL.$('#aReveal').onchange = e => { revealed = e.target.checked; render(); };
-    TL.$('#aRoll').onclick = () => { const t = ctx.tier === 'random' ? TL.pick(['Silver', 'Gold', 'Prismatic']) : ctx.tier; a.offer = TL.shuffle(TL.data.augs().filter(x => x.tier === t)).slice(0, 3).map(x => x.id); a.picked = null; a._reason = ''; TL.save(); render(); };
+    TL.$('#aRoll').onclick = () => { const t = ctx.tier === 'random' ? tierByOdds(ctx.stage) : ctx.tier; a.offer = TL.shuffle(TL.data.augs().filter(x => x.tier === t)).slice(0, 3).map(x => x.id); a.picked = null; a._reason = ''; TL.save(); render(); };
     TL.$$('[data-pickaug]', host).forEach(c => c.onclick = e => { if (e.target.closest('button')) return; a.picked = c.dataset.pickaug; a._reason = TL.$('#aReason')?.value || a._reason; TL.save(); render(); });
     const r = TL.$('#aReason'); if (r) r.oninput = () => { a._reason = r.value; };
     const sv = TL.$('#aSave'); if (sv) sv.onclick = () => {

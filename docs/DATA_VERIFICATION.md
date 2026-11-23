@@ -1,6 +1,6 @@
 # Set 19 데이터 검증 보고서
 
-> **최신 상태 (2026-11-23)**: PBE 16.24 (11-20 16:44 UTC 빌드) + PBE 메타 덱 — 아래 5·6절 참고.
+> **최신 상태 (2026-11-23)**: PBE 16.24 (11-20 16:44 UTC 빌드) + PBE 메타 덱 + Set 19 규칙 표(1-1 조우자) — 아래 5·6·7절 참고.
 
 - 검증일: **2026-11-17** · 데이터 버전 `19.0-preview.1`
 - 원칙: 고증 우선. 확인되지 않은 값은 채우지 않고 `unverified`/`carryover`로 표시. 존재하지 않는 챔피언·특성·아이템·효과를 만들지 않음.
@@ -108,3 +108,31 @@ CommunityDragon 확인 결과(2026-11-17): `pbe` = 16.23(Set 18까지), `latest`
 - **메타 덱**: tft.ninja PBE comps — 최근 1일 579.6k 판, 65개 조합(기본 표시 34), 집계 2026-11-23 01:45 UTC. 전체 기간(2.8M 판, 113개)과 비교값 포함. 스냅샷 `tools/sources/tftninja_pbe_comps_20261123.json`, 변환기 `tools/build_meta_comps.py`. 이 데이터는 **플레이 통계**이며 PBE(실험적 플레이) 특성상 라이브 메타와 다를 수 있음.
 - **롤체지지(lolchess.gg)**: 네트워크 허용 후에도 CloudFront가 자동 요청을 403으로 차단 → 사이트 의도를 존중해 우회하지 않음. 유튜브 영상 내용은 자동 수집 대상이 아님.
 - **게임 아트**: 챔피언 초상화 94·특성 아이콘 47(tft.ninja의 Set 19 이미지), 아이템 아이콘 127(CommunityDragon 게임 파일, 64px WebP 변환). Set 19 상징 18개는 해당 특성 아이콘으로 표시.
+
+## 7. 1-1 조우자(Opening Encounter) 고증 + Set 19 규칙 표 (2026-11-23)
+
+**결론: Set 19에는 1-1 회전초밥이 없다.** 1-1에서 조우자 1명이 무작위로 등장해 그 판 전체 규칙을 바꾸고, 각 플레이어는 시작 챔피언을 받는다.
+
+| 근거 | 내용 |
+|---|---|
+| tftflow Set 19 회전초밥 표 ("Patch 19.1") | 회전초밥 표가 **Stage 2~7**만 있음 (Stage 1 없음). 크기 9/11/13명 확률, 챔피언·아이템 배열 확률 |
+| tftflow Set 19 조우자 표 | **25종**, 확률 합 99.94%, "조우자 없음" 항목 없음 |
+| 조우자 문구 | "Kobuko upgrades **your starting champion** to 2-star", "Gain another copy of **your starting champion**", "Start with a random 2-cost champion" → 시작 챔피언이 존재하며 기본은 1코스트로 추론 |
+| PBE 게임 데이터(Blitz) | 해금 조건 "Reroll 4 times before **Stage 2 Carousel**" → 첫 회전초밥이 Stage 2 |
+| Riot 18.1 패치 노트 | Opening Encounter 시스템(풀 변경)과 회전초밥 복귀 확인 (Set 18) |
+| 위키·tft.ninja 일반 가이드 | 아직 "1-1 공유 드래프트"로 서술 → **구버전 설명**으로 판단 |
+
+반박된 정보: 일부 사이트의 "Set 19에서 회전초밥 보상을 고를 수 없고 체력 6·골드 8을 준다"는 **증강 설명**("You cannot choose your Carousel rewards…")을 시스템 변경으로 오해한 것. "Favor" 역시 증강 이름(Caretaker's Favor)일 뿐 시스템이 아님.
+
+**함께 갱신된 Set 19 규칙 (tftflow Set 19 표)**
+- 스테이지 피해: 2 / **6** / **7** / 10 / 12 / 17, Stage 8+ **150** (이전 데이터는 Set 18의 2/5/8/10/12/17)
+- XP: 7→8 **60** (이전 56은 Set 18 tft.ninja 값) · 1→2, 2→3 = 2 확인
+- 증강 등급: 게임 시작 시 3라운드 등급 조합 하나를 가중치로 결정(18개 조합, 총 109). 첫 증강 골드 65.1% · 실버 25.7% · 프리즘 9.2%
+- 상점 확률: Set 18과 동일, 레벨 1 = 1코스트 100% 확인 · 풀: 1코 30 / 2코 25 / 3코 18 / 4코 10 / 5코 9 / **7코 9**
+- 조우자 표: Gold Subscription 스테이지별 골드 표, Beat Drop 보상 표(일반 82% / 고품질 18%)
+
+**시뮬레이터 적용 범위**
+- 자동 적용: 시작 챔피언(1/2/3코스트·2성), Prismatic Tour 밴드 1코스트 3명, 증강 등급 조우자 전부, Scouting Party, Cheaper Levels, 시작 지급(상징 3·재료 2·완성 1), Gold Subscription(표), Item Forge(3-3), Lucky Treasure(3-5), Gwen's Gifts(처음 2회 회전초밥 후), Beat Drop(체력 40, 표), Superstar(전투 2회마다), Star Attraction(4-6 전 배치 불가), Scuttle Party.
+- 미공개라 훈련값/단순화: 시작 챔피언 선정 규칙(무작위 1코스트), Reroll Subscription 무료 횟수(2회), Lucky Treasure 상자 내용(무작위 찬란한 1), 모루(anvil)의 선택지(무작위 지급), Gwen의 가위·Item Forge의 재조합기(미구현), 회전초밥 "Normal" 배열의 코스트 구성, 기본 수입·이자·연속 보너스(Set 18 값).
+- 스냅샷: `tools/sources/tftflow_set19_20261123.json` · 변환기: `tools/apply_tftflow_set19.py` · 데이터: `data/encounters.json`, `data/game-rules.json`, `data/shop-odds.json`.
+- 롤체지지·Liquipedia: 자동 요청 차단(403) → 사용하지 않음.

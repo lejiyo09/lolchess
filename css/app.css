@@ -392,3 +392,4 @@ nav.side button.active{background:linear-gradient(90deg,#3a2c12,#1a2350);border-
 .card .pool{top:auto;bottom:30px;left:4px;right:auto}
 .shopbar{grid-template-columns:128px minmax(0,1fr)}
 @media (min-width:1500px){.shopbar{grid-template-columns:150px minmax(0,1fr)}}
+.enc-host{width:64px;height:64px}.enc-card .mc-name{font-size:17px;color:var(--gold2)}

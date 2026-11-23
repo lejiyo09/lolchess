@@ -1,7 +1,7 @@
 /* PWA service worker — offline app shell for GitHub Pages / any http(s) host (not used on file://).
    Strategy: precache everything on install; network-first for navigations/data/code so updates arrive when online,
    cache fallback when offline. Bump VERSION on every release so clients pick up the new shell. */
-const VERSION = '2.2.0';
+const VERSION = '2.3.0';
 const CACHE = 'tft-lab-' + VERSION;
 const ASSETS = [
   './', './index.html', './manifest.webmanifest', './css/app.css', './data/bundle.js',
